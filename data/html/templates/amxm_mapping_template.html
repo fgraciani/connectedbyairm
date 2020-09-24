@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   AMXM 2.0.0 to AIRM 1.0.0 Mapping - Developers | AIRM.aero
+  </title>
+      <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.21/datatables.min.css"/>-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+
+      <!-- DataTables BEGIN-->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css"/>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.21/datatables.min.js"></script>
+      
+      <script>
+          $(document).ready( function () {
+              $('#example').DataTable({
+              "ordering": true,
+              "info":     true,
+              "columnDefs": [
+                { "width": "180px", "targets": 1 }
+              ]
+              } );
+          } );
+      </script>
+      <!-- DataTables END-->
+
+      <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/> 
+      
+      <!-- From the bottom-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    </head>
+<body>
+
+   <main class="page">
+    <section class="clean-block features">
+     <div style="margin-left: 60px; margin-right: 60px;">
+      <div class="block-heading">
+       <h2 class="text-info" style="color: rgb(143,170,220); margin-top: 20px;">
+        AMXM 2.0.0 to AIRM 1.0.0 Mapping
+       </h2>
+       <div>
+       </div>
+       <p>
+        Use the search box to find the semantic correspondence for each
+        <a href="https://amxm.aero/">
+         AMXM 2.0.0
+        </a>
+        concept.
+        <br/>
+       </p>
+      </div>
+      <div class="row align-items-center">
+       <div class="col-md-12 col-lg-12 col-xl-12">
+        <div class="items">
+         <div class="product">
+          <div class="row justify-content-center align-items-center">
+           <div class="col text-justify">
+            <div class="table-responsive" id="mapping">
+             
+             
+
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+  <thead>
+      <tr>
+          <th>Information Concept</th>
+          <th>Data Concept</th>
+          <th>Definition</th>
+          <th>AIRM Concept</th>
+          <th>in FIXM</th>
+          <th>in AIXM</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+  <tfoot>
+      <tr>
+          <th>Information Concept</th>
+          <th>Data Concept</th>
+          <th>Definition</th>
+          <th>AIRM Concept</th>
+          <th>in FIXM</th>
+          <th>in AIXM</th>
+      </tr>
+  </tfoot>
+</table>
+
+
+             
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main>
+
+
+</body>
+</html>
