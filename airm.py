@@ -45,7 +45,7 @@ class Airm:
           dataframe = self.conceptual_properties.copy()
         else:
           dataframe = self.conceptual_classes.copy()
-      elif "LogicalModel" in urn:
+      elif "Logical" in urn:
         if "@" in urn:
           dataframe = self.logical_properties.copy()
         else:
