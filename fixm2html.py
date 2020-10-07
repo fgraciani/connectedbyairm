@@ -238,7 +238,8 @@ def create_html_pages():
       property_div.insert(8,h5)
 
       p = soup.new_tag("p")
-      p.string = trace["Rationale"]
+      p.string = str(trace["Rationale"])
+      print('Rationale:'+str(trace["Rationale"]))
       property_div.insert(9,h4)
 
       h4 = soup.new_tag("h4")
@@ -246,7 +247,8 @@ def create_html_pages():
       property_div.insert(10,h4)
 
       p = soup.new_tag("p")
-      p.string = trace["Rationale"]
+      p.string = str(trace["Notes"])
+      print('NOTES:'+str(trace["Notes"]))
       property_div.insert(11,h4)
 
       soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
