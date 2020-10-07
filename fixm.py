@@ -44,7 +44,7 @@ class Fixm:
   def get_information_concepts(self):
     fixm_df = self.fixm_mapping_dataframe.copy()
     fixm_df = fixm_df.drop_duplicates(subset='Information Concept', keep="last")
-    fixm_df = fixm_df.drop(["Data Concept", "Definition", "Identifier", "Type", "Semantic Correspondence", "Additional Traces", "Rationale", "Notes"], axis=1)
+    fixm_df = fixm_df.drop(["Data Concept", "Definition", "Type", "Semantic Correspondence", "Additional Traces", "Rationale", "Notes"], axis=1)
     
     if fixm_df.empty:
       return None
