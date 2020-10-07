@@ -187,7 +187,13 @@ def create_html_pages():
         h3["data-toggle"] = "tooltip"
         h3["data-placement"] = "right"
         h3["title"] = trace["Identifier"]
-        property_div.insert(1,h3)
+        property_div.insert(0,h3)
+
+        code = soup.new_tag("code")
+        identifier = trace['Identifier']
+        code.string = identifier
+        code["class"] = "text-secondary"
+        property_div.insert(1,code)
         
         p = soup.new_tag("p")
         p.string = str(trace["Definition"])
