@@ -228,6 +228,7 @@ def create_html_pages():
         a.string = text
         
         a["data-toggle"] = "tooltip"
+        a["data-placement"] = "right"
         a["title"] = line
 
         td.insert(1,a)
@@ -268,10 +269,22 @@ def create_html_pages():
         print('\t\t\t'+line)
         tr = soup.new_tag("tr")
         td = soup.new_tag("td")
-        td.string = line
+        url = create_url(line)
+        text = create_name(line)
+        a = soup.new_tag("a")
+        a['href'] = url
+        a['target'] = "_blank"
+        a.string = text
+        
+        a["data-toggle"] = "tooltip"
+        a["data-placement"] = "right"
+        a["title"] = line
+
+        td.insert(1,a)
         tr.insert(1,td)
         td = soup.new_tag("td")
-        td.string = "ddddddddddd ddddddddd dddddddd ddddDefinition"
+        airm_entry = airm.load_and_find_urn(line)
+        td.string = airm_entry["definition"]
         tr.insert(2,td)
         tbody.insert(1,tr)
 
