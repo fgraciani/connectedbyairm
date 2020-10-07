@@ -185,7 +185,7 @@ def create_html_pages():
         print('\t\t\t'+line)
         tr = soup.new_tag("tr")
         td = soup.new_tag("td")
-        td.string = "dddddddddddddddddddAIRM Concept"
+        td.string = line
         tr.insert(1,td)
         td = soup.new_tag("td")
         td.string = "ddddddddddd ddddddddd dddddddd ddddDefinition"
@@ -222,7 +222,7 @@ def create_html_pages():
         print('\t\t\t'+line)
         tr = soup.new_tag("tr")
         td = soup.new_tag("td")
-        td.string = "dddddddddddddddddddAIRM Concept"
+        td.string = line
         tr.insert(1,td)
         td = soup.new_tag("td")
         td.string = "ddddddddddd ddddddddd dddddddd ddddDefinition"
