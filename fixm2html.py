@@ -43,8 +43,6 @@ def create_html():
 
     if record["Data Concept"] != "":
       td_dc_name = soup.new_tag("td")
-      td_dc_name.string = record["Data Concept"]
-
       url = "fixm-4.2.0-to-airm-1.0.0/"+record["Information Concept"]+".html"+"#"+record["Data Concept"]
       text = record["Data Concept"]
       print(text)
