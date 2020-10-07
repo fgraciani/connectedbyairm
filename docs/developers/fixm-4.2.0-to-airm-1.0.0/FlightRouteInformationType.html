@@ -90,21 +90,21 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="#">
+        <a href="../semantic-correspondences.html">
          <span>
-          Mappings
+          Semantic Correspondences
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="#">
+        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
          <span>
           FIXM 4.2.0 to AIRM 1.0.0
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="#" id="BC_INFO_CONCEPT_NAME">
+        <a id="BC_INFO_CONCEPT_NAME">
          <span>
           FlightRouteInformationType
          </span>
@@ -157,20 +157,6 @@
                </td>
                <td>
                 fb:TimeType
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#totalEstimatedElapsedTime">
-                 totalEstimatedElapsedTime
-                </a>
-               </td>
-               <td>
-                For IFR flights, the estimated time required from take-off to arrive over that designated point, defined by reference to navigation aids, from which it is intended that an instrument approach procedure will be commenced, or, if no navigation aid is associated with the destination aerodrome, to arrive over the destination aerodrome. For VFR flights, the estimated time required from take-off to arrive over the destination aerodrome. [ICAO Doc 4444]
-For a flight plan received from an aircraft in flight, the total estimated elapsed time is the estimated time from the first point of the route to which the flight plan applies to the termination point of the flight plan. [ICAO Doc 4444, Appendix 2, ITEM 16]
-               </td>
-               <td>
-                fb:DurationType
                </td>
               </tr>
               <tr>
@@ -256,107 +242,123 @@ For a flight plan received from an aircraft in flight, the total estimated elaps
            </div>
            <p>
            </p>
-           <h3>
-            FIXM_PROPERTY_NAME
-           </h3>
-           <code class="text-secondary">
-            FIXM_PROPERTY_ID
-            <br/>
-           </code>
-           <p>
-            FIXM_PROPERTY_ID
-            <br/>
-           </p>
-           <p>
-            Type:
-            <a href="#">
-             <span style="text-decoration: underline;">
-              FIXM_PROPERTY_TYPE
-             </span>
-            </a>
-            <br/>
-           </p>
-           <h4 style="margin-top: 40px;">
-            Semantic Correspondence
-           </h4>
-           <div class="table-responsive">
-            <table class="table">
-             <thead>
-              <tr>
-               <th>
-                AIRM Concept
-               </th>
-               <th>
-                Definition
-               </th>
-              </tr>
-             </thead>
-             <tbody>
-              <tr>
-               <td>
-                <a href="#">
-                 AIRM_CONCEPT_NAME_MAIN
-                </a>
-               </td>
-               <td>
-                AIRM_CONCEPT_DEFINITION_MAIN
-                <br/>
-               </td>
-              </tr>
-             </tbody>
-            </table>
-           </div>
-           <h5>
-            Additional Traces
-           </h5>
-           <div class="table-responsive">
-            <table class="table">
-             <thead>
-              <tr>
-               <th>
-                AIRM Concept
-               </th>
-               <th>
-                Definition
-               </th>
-              </tr>
-             </thead>
-             <tbody>
-              <tr>
-               <td>
-                <a href="#">
-                 AIRM_CONCEPT_NAME_ADDITIONAL
-                </a>
-               </td>
-               <td>
-                AIRM_CONCEPT_DEFINITION_ADDITIONAL
-                <br/>
-               </td>
-              </tr>
-             </tbody>
-            </table>
-           </div>
-           <div class="alert alert-warning" role="alert">
-            <span>
-             The semantic correspondence facilitates semantic interoperability by making explicit how the information definition conforms to the semantics of the AIRM.
-             <a class="alert-link" href="https://ext.eurocontrol.int/swim_confluence/display/SWIM/Guidance+on+semantic+correspondence">
-              Guidance on semantic correspondence
+           <div id="DATA_CONCEPTS_DETAIL">
+            <tr>
+             <td>
+              <a href="#totalEstimatedElapsedTime">
+               totalEstimatedElapsedTime
+              </a>
+             </td>
+             <td>
+              For IFR flights, the estimated time required from take-off to arrive over that designated point, defined by reference to navigation aids, from which it is intended that an instrument approach procedure will be commenced, or, if no navigation aid is associated with the destination aerodrome, to arrive over the destination aerodrome. For VFR flights, the estimated time required from take-off to arrive over the destination aerodrome. [ICAO Doc 4444]
+For a flight plan received from an aircraft in flight, the total estimated elapsed time is the estimated time from the first point of the route to which the flight plan applies to the termination point of the flight plan. [ICAO Doc 4444, Appendix 2, ITEM 16]
+             </td>
+             <td>
+              fb:DurationType
+             </td>
+            </tr>
+            <h3>
+             FIXM_PROPERTY_NAME
+            </h3>
+            <code class="text-secondary">
+             FIXM_PROPERTY_ID
+             <br/>
+            </code>
+            <p>
+             FIXM_PROPERTY_ID
+             <br/>
+            </p>
+            <p>
+             Type:
+             <a href="#">
+              <span style="text-decoration: underline;">
+               FIXM_PROPERTY_TYPE
+              </span>
              </a>
              <br/>
-            </span>
+            </p>
+            <h4 style="margin-top: 40px;">
+             Semantic Correspondence
+            </h4>
+            <div class="table-responsive">
+             <table class="table">
+              <thead>
+               <tr>
+                <th>
+                 AIRM Concept
+                </th>
+                <th>
+                 Definition
+                </th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td>
+                 <a href="#">
+                  AIRM_CONCEPT_NAME_MAIN
+                 </a>
+                </td>
+                <td>
+                 AIRM_CONCEPT_DEFINITION_MAIN
+                 <br/>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <h5>
+             Additional Traces
+            </h5>
+            <div class="table-responsive">
+             <table class="table">
+              <thead>
+               <tr>
+                <th>
+                 AIRM Concept
+                </th>
+                <th>
+                 Definition
+                </th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td>
+                 <a href="#">
+                  AIRM_CONCEPT_NAME_ADDITIONAL
+                 </a>
+                </td>
+                <td>
+                 AIRM_CONCEPT_DEFINITION_ADDITIONAL
+                 <br/>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <div class="alert alert-warning" role="alert">
+             <span>
+              The semantic correspondence facilitates semantic interoperability by making explicit how the information definition conforms to the semantics of the AIRM.
+              <a class="alert-link" href="https://ext.eurocontrol.int/swim_confluence/display/SWIM/Guidance+on+semantic+correspondence">
+               Guidance on semantic correspondence
+              </a>
+              <br/>
+             </span>
+            </div>
+            <h5>
+             Rationale
+            </h5>
+            <p>
+             RATIONALE_HERE
+            </p>
+            <h4>
+             Notes
+            </h4>
+            <p>
+             NOTES_HERE
+            </p>
            </div>
-           <h5>
-            Rationale
-           </h5>
-           <p>
-            RATIONALE_HERE
-           </p>
-           <h4>
-            Notes
-           </h4>
-           <p>
-            NOTES_HERE
-           </p>
           </div>
          </div>
         </div>
