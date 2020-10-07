@@ -7,8 +7,8 @@ def create_html():
   # Create Index
   # Create page per class
   
-  mapping_pages_directory = "docs/developers/amxm-2.0.0-to-airm-1.0.0"
-  # creates developers/amxm-2.0.0-to-airm-1.0.0 directory
+  mapping_pages_directory = "docs/developers/fixm-4.2.0-to-airm-1.0.0"
+  # creates developers/docs/developers/fixm-4.2.0-to-airm-1.0.0 directory
   path = mapping_pages_directory
   try:
       os.mkdir(path)
@@ -65,6 +65,6 @@ def create_html():
     
     soup.find('tbody').insert(1,tr)
 
-  f= open("docs/developers/amxm-2.0.0-to-airm-1.0.0.html","w+")
+  f= open("docs/developers/fixm-4.2.0-to-airm-1.0.0.html","w+")
   f.write(soup.prettify())
   f.close() 
