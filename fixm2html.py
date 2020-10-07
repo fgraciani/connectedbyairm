@@ -2,7 +2,6 @@
 from bs4 import BeautifulSoup
 import os
 
-
 def create_html():
   # Create Index
   # Create page per class
@@ -86,6 +85,39 @@ def print_create_html_pages():
       add_correspondences = str(trace['Additional Traces']).split('\n')
       for line in add_correspondences:
         print('\t\t\t'+line)
+
+def create_url(urn):
+  issue_url="http://fixm.aero"
+  url=""
+  if isinstance(urn, str):
+    if urn.startswith("changeRequest"):
+      url="https://ext.eurocontrol.int/swim_confluence/display/SWIM/SWIM-INFO-014+Forms+of+semantic+correspondence"
+    elif urn=="outOfScope":
+      url="https://ext.eurocontrol.int/swim_confluence/display/SWIM/SWIM-INFO-015+Out-of-scope+or+no+correspondence"
+    elif urn.startswith("noSemanticCorrespondence"):
+      url=issue_url
+    elif urn.startswith("urn"):
+      components = urn.split(":")
+      last_component = components[-1]
+      components = last_component.split("@")
+      entity = components[0]
+      url="http://airm.aero/viewer/1.0.0/includes-supplements/logical-model.html#"+entity
+  return url
+
+def create_name(urn):
+  name=""
+  if isinstance(urn, str):
+    if urn.startswith("changeRequest"):
+      name="AIRM Change Request"
+    elif urn=="outOfScope":
+      name="Out of Scope"
+    elif urn.startswith("noSemanticCorrespondence"):
+      name="No Semantic Correspondence"
+    elif urn.startswith("urn"):
+      components = urn.split(":")
+      last_component = components[-1]
+      name = last_component
+  return name
 
 def create_html_pages():
   import fixm
@@ -185,7 +217,18 @@ def create_html_pages():
         print('\t\t\t'+line)
         tr = soup.new_tag("tr")
         td = soup.new_tag("td")
-        td.string = line
+        
+        url = create_url(line)
+        text = create_name(line)
+        a = soup.new_tag("a")
+        a['href'] = url
+        a['target'] = "_blank"
+        a.string = text
+        
+        a["data-toggle"] = "tooltip"
+        a["title"] = line
+
+        td.insert(1,a)
         tr.insert(1,td)
         td = soup.new_tag("td")
         td.string = "ddddddddddd ddddddddd dddddddd ddddDefinition"
@@ -248,8 +291,6 @@ def create_html_pages():
 
       p = soup.new_tag("p")
       p.string = str(trace["Notes"])
-      p["data-toggle"] = "tooltip"
-      p["title"] = "this is a test"
       print('NOTES:'+str(trace["Notes"]))
       property_div.insert(11,p)
 
