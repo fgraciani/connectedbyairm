@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#flightRulesChange">
+                 flightRulesChange
+                </a>
+               </td>
+               <td>
+                Describes the planned change of flight rules (e.g., IFR/VFR) associated with a route point.
+               </td>
+               <td>
+                fx:FlightRulesType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#routeChange">
                  routeChange
                 </a>
@@ -308,19 +321,240 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#flightRulesChange">
-               flightRulesChange
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              flightRulesChange
+             </h3>
+             <p>
               Describes the planned change of flight rules (e.g., IFR/VFR) associated with a route point.
-             </td>
-             <td>
-              fx:FlightRulesType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:FlightRulesType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              routeChange
+             </h3>
+             <p>
+              Flight Route element may contain a list of route changes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RouteChangeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              modified
+             </h3>
+             <p>
+              Identifies if the route point or element was modified from the reference version, identified in the message, during negotiation by an ASP.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:ModifiedRouteItemIndicatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              modifiedRouteItemReference
+             </h3>
+             <p>
+              A reference to an ATFM program name that modified the route.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CharacterStringType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              point4D
+             </h3>
+             <p>
+              Identifies the location, altitude and time of a trajectory point.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:TrajectoryPoint4DType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              elementStartPoint
+             </h3>
+             <p>
+              A specified geographical location used in defining the flight route or expanded route. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:SignificantPointChoiceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              routeDesignatorToNextElement
+             </h3>
+             <p>
+              The route (airway) to the next element on the route. Can be either an en route airway, standard instrument departure route, or standard instrument arrival route. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RouteDesignatorToNextElementChoiceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              routeTruncationIndicator
+             </h3>
+             <p>
+              Indicates the route description is truncated at the preceding point.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RouteTruncationIndicatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              seqNum
+             </h3>
+             <p>
+              Incrementing identifier used to ensure the sequence of ordered lists is retained. The identifier should begin at zero. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CountType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              enRouteDelay
+             </h3>
+             <p>
+              En Route delay or holding planned to occur at a significant point or along a route element.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:EnRouteDelayType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:RouteTrajectoryElementExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              alongRouteDistance
+             </h3>
+             <p>
+              The distance along the route.  For an eASP-provided expanded route, it is computed from the first converted point in the eASP's airspace for each route point in the expanded route. For an operator-provided expanded route, it is computed from the beginning of the route.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:DistanceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              constraint
+             </h3>
+             <p>
+              A number of constraints can be associated with each Expanded Route Point and Trajectory point.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RouteTrajectoryConstraintType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

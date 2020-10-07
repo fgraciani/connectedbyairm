@@ -169,7 +169,7 @@ def create_html_pages():
       #for each insert row
       #add to div
 
-      soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,tr)
+      soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
       print('\t\tSemantic Corresponce:')
       sem_correspondences = str(trace['Semantic Correspondence']).split('\n')

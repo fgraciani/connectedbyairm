@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#ATFM">
+                 ATFM
+                </a>
+               </td>
+               <td>
+                The delay is an ASP request for airborne holding. The holding pattern name is in the delayReference field. The delay value used to compute estimates as in OPERATOR_REQUEST_POINT.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#OPERATOR_REQUEST_AERODROME">
                  OPERATOR_REQUEST_AERODROME
                 </a>
@@ -217,19 +230,114 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#ATFM">
-               ATFM
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              ATFM
+             </h3>
+             <p>
               The delay is an ASP request for airborne holding. The holding pattern name is in the delayReference field. The delay value used to compute estimates as in OPERATOR_REQUEST_POINT.
-             </td>
-             <td>
-              enum value
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               enum value
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              OPERATOR_REQUEST_AERODROME
+             </h3>
+             <p>
+              The delay is an Operator (Airspace User) request to 'spend time' at an aerodrome after the RoutePoint, the name of the aerodrome is in the delayReference field, the points at which the Operator leaves its route and rejoin it go to the aerodrome are in the BEGIN_STAY and END_STAY info of the trajectory
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               enum value
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              OPERATOR_REQUEST_SEGMENT
+             </h3>
+             <p>
+              The delay is an Operator (Airspace User) request to 'spend time' at the segment starting at point, thus the delay has to be understood as the total duration between the point and the next one.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               enum value
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              OPERATOR_REQUEST_POINT
+             </h3>
+             <p>
+              The delay is an Operator (Airspace User) request to 'spend time' at the point, thus the delay has to be added to the flight duration to the next point to compute the estimate to the next point.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               enum value
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              OPERATOR_REQUEST_HOLDING
+             </h3>
+             <p>
+              The delay is an Operator (Airspace User) request to 'spend time' at a holding pattern the anchor point of which is the RoutePoint.  The holding pattern name if any is in delayReference.  delayValue used to compute estimates as in OPERATOR_REQUEST_POINT
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               enum value
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              OPERATOR_REQUEST_AIRSPACE
+             </h3>
+             <p>
+              The delay is an Operator (Airspace User) request to 'spend time' in an airspace after the RoutePoint the name of which is in delayReference, the delayValue is the time in that airspace, the entry and exit time into that airspace is in the BEGIN_STAY and END_STAY info of the trajectory.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               enum value
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

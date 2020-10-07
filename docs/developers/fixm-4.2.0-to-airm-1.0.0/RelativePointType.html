@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#bearing">
+                 bearing
+                </a>
+               </td>
+               <td>
+                The radius from a chosen Navaid
+               </td>
+               <td>
+                fb:BearingType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#distance">
                  distance
                 </a>
@@ -206,19 +219,98 @@ This optional field may be used to provide the actual position of the relative p
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#bearing">
-               bearing
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              bearing
+             </h3>
+             <p>
               The radius from a chosen Navaid
-             </td>
-             <td>
-              fb:BearingType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:BearingType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              distance
+             </h3>
+             <p>
+              Distance from the chosen Navaid to the Intersection.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:DistanceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:RelativePointExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              position
+             </h3>
+             <p>
+              The values of latitude and longitude that define the position of the Relative Point on the surface of the Earth with respect to a reference datum. [specialised from ICAO Doc 9881]
+
+This optional field may be used to provide the actual position of the relative point if already known / computed.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:GeographicalPositionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              referencePoint
+             </h3>
+             <p>
+              The navaid used as reference for building an intersection
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:NavaidType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

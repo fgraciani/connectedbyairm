@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#estimatedOffBlockTime">
+                 estimatedOffBlockTime
+                </a>
+               </td>
+               <td>
+                The estimated time at which the aircraft will commence movement associated with departure. [ICAO Doc 4444]
+               </td>
+               <td>
+                fb:TimeType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#actualTimeOfDeparture">
                  actualTimeOfDeparture
                 </a>
@@ -269,19 +282,186 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#estimatedOffBlockTime">
-               estimatedOffBlockTime
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              estimatedOffBlockTime
+             </h3>
+             <p>
               The estimated time at which the aircraft will commence movement associated with departure. [ICAO Doc 4444]
-             </td>
-             <td>
-              fb:TimeType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TimeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              actualTimeOfDeparture
+             </h3>
+             <p>
+              The actual time of departure from the aerodrome. [ICAO Doc 4444, Appendix 3, Field Type 13]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TimeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              aerodrome
+             </h3>
+             <p>
+              The aerodrome from which the flight departs. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AerodromeReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              aerodromePrevious
+             </h3>
+             <p>
+              Specifies the previous departure aerodrome value when a change is made.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AerodromeReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              airfileIndicator
+             </h3>
+             <p>
+              Identifies a flight that has filed its flight plan while in the air, beginning its route description from a specified point en-route, and therefore may not have provided a departure aerodrome.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:AirfileIndicatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              airportSlotIdentification
+             </h3>
+             <p>
+              The identifier of the departure airport slot allocated to the flight. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AirportSlotIdentificationType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              estimatedOffBlockTimePrevious
+             </h3>
+             <p>
+              Specifies the previous estimated off block time value when a change is made.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TimeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              runwayDirection
+             </h3>
+             <p>
+              The runway direction used for taking off. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:RunwayDirectionDesignatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              takeoffAlternateAerodrome
+             </h3>
+             <p>
+              An alternate aerodrome at which an aircraft can land should this become necessary shortly after take-off and it is not possible to use the aerodrome of departure. [ICAO Doc 4444]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AerodromeReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:DepartureExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

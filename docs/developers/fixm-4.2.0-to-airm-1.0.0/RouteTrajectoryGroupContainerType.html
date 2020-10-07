@@ -162,6 +162,19 @@ This Route is used during collaboration between the FF-ICE enabled airspace user
               </tr>
               <tr>
                <td>
+                <a href="#extension">
+                 extension
+                </a>
+               </td>
+               <td>
+                An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:RouteTrajectoryGroupContainerExtensionType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#desired">
                  desired
                 </a>
@@ -234,19 +247,136 @@ This trajectory expresses the 4D trajectory filed by the FF-ICE enabled airspace
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#extension">
-               extension
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
               An extension hook for attaching extension (non-core) classes.
-             </td>
-             <td>
-              fb:RouteTrajectoryGroupContainerExtensionType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:RouteTrajectoryGroupContainerExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              desired
+             </h3>
+             <p>
+              The preferred route of flight submitted by the FF-ICE enabled airspace user (eAU) to the FF-ICE enabled Air Traffic Management Service Providers (eASP) subject to required constraints.
+This trajectory indicates the preferred 4D trajectory submitted by the FF-ICE enabled airspace user (eAU) to the FF-ICE enabled Air Traffic Management Service Providers (eASP) subject to required constraints.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RouteTrajectoryGroupType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              agreed
+             </h3>
+             <p>
+              The 4D Trajectory agreed to by a FF-ICE enabled Air Traffic Management Service Providers (eASP) after collaboration between the FF-ICE enabled airspace user (eAU) and the eASP.
+The route of flight agreed to by a FF-ICE enabled Air Traffic Management Service Providers (eASP) after collaboration between the FF-ICE enabled airspace user (eAU) and the eASP.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RouteTrajectoryGroupType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              current
+             </h3>
+             <p>
+              Represents the current flight plan concept described by EICAO PANS-ATM Doc 4444.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RouteTrajectoryGroupType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              ranked
+             </h3>
+             <p>
+              Ranked Trajectories associated with the flight. Order is based on trajectory preference from highest to lowest.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RankedTrajectoryType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              filed
+             </h3>
+             <p>
+              The route of flight filed by the FF-ICE enabled airspace user (eAU) with the FF-ICE enabled Air Traffic Management Service Providers (eASP).
+This trajectory expresses the 4D trajectory filed by the FF-ICE enabled airspace user (eAU) with the FF-ICE enabled Air Traffic Management Service Providers (eASP).
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RouteTrajectoryGroupType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              negotiating
+             </h3>
+             <p>
+              The 4D Trajectory used during the collaboration between the FF-ICE enabled airspace user (eAU) and the FF-ICE enabled Air Traffic Management Service Providers (eASP) in order to agree on a 4D trajectory. This trajectory is intended to be transitory. 
+This Route is used during collaboration between the FF-ICE enabled airspace user (eAU) and the FF-ICE enabled Air Traffic Management Service Providers (eASP) in order to agree on a route. This route field is intended to be transitory.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:RouteTrajectoryGroupType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

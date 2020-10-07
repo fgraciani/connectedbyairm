@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#extension">
+                 extension
+                </a>
+               </td>
+               <td>
+                An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:RouteChangeExtensionType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#cruiseClimbStart">
                  cruiseClimbStart
                 </a>
@@ -191,19 +204,78 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#extension">
-               extension
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
               An extension hook for attaching extension (non-core) classes.
-             </td>
-             <td>
-              fb:RouteChangeExtensionType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:RouteChangeExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              cruiseClimbStart
+             </h3>
+             <p>
+              The parameters of a cruise climb executed at the associated significant point. It contains the following parameters: 1. the speed to be maintained during cruise climb; 2. either the minimum and maximum levels defining the layer to be occupied during cruise climb, or the level above which cruise climb is planned.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:CruiseClimbStartType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              speed
+             </h3>
+             <p>
+              The planned speed  that the aircraft will change to upon reaching the associated Significant Point along its Route.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:CruisingSpeedChangeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              level
+             </h3>
+             <p>
+              The planned altitude that the aircraft will change to upon reaching the associated Significant Point along its Route.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:CruisingLevelChangeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#title">
+                 title
+                </a>
+               </td>
+               <td>
+                The official title of the contact.
+               </td>
+               <td>
+                fb:TextNameType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#onlineContact">
                  onlineContact
                 </a>
@@ -219,19 +232,116 @@ If the usage of  ContactInformation is associated with a person, this field shou
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#title">
-               title
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              title
+             </h3>
+             <p>
               The official title of the contact.
-             </td>
-             <td>
-              fb:TextNameType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TextNameType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              onlineContact
+             </h3>
+             <p>
+              Optional e-mail address of the contact.[FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:OnlineContactType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              name
+             </h3>
+             <p>
+              The official name of the contact. In case of the organization use, it is the name of the person within the organization who is the contact point.
+
+If the usage of  ContactInformation is associated with a person, this field should not be used, insead, the Person class' name should be used instead.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TextNameType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:ContactInformationExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              address
+             </h3>
+             <p>
+              Optional postal address of the contact.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:PostalAddressType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              phoneFax
+             </h3>
+             <p>
+              Optional phone or facsimile number of the contact.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TelephoneContactType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

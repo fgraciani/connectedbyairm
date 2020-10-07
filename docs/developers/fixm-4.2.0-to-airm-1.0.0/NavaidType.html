@@ -164,6 +164,19 @@ The combinations of fields that would make the reference unique are name + posit
               </tr>
               <tr>
                <td>
+                <a href="#designator">
+                 designator
+                </a>
+               </td>
+               <td>
+                The name of the navaid.
+               </td>
+               <td>
+                fb:NavaidDesignatorType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#extension">
                  extension
                 </a>
@@ -209,19 +222,101 @@ The combinations of fields that would make the reference unique are designator +
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#designator">
-               designator
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              designator
+             </h3>
+             <p>
               The name of the navaid.
-             </td>
-             <td>
-              fb:NavaidDesignatorType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:NavaidDesignatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:NavaidExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              href
+             </h3>
+             <p>
+              Provides an optional mechanism enabling FIXM aeronautical fields to be supplemented with references to AIXM features.  This field should be considered functionally equivalent to the xlink:href field used in AIXM to reference features. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:HypertextReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              navaidServiceType
+             </h3>
+             <p>
+              Type of the navaid service. [AIXM 5.1]
+This optional field may be used as a complement of the designator in order to achieve unambiguous reference to the navaid. 
+The combinations of fields that would make the reference unique are designator + position + navaid service type.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:NavaidServiceTypeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              position
+             </h3>
+             <p>
+              The values of latitude and longitude that define the position of the Navaid on the surface of the Earth with respect to a reference datum. [specialised from ICAO Doc 9881]
+
+This optional field may be used to achieve unambiguous reference to the navaid. 
+The combinations of fields that would make the reference unique are name + position + navaid service type.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:GeographicalPositionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

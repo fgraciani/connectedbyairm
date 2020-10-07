@@ -161,6 +161,20 @@
               </tr>
               <tr>
                <td>
+                <a href="#totalEstimatedElapsedTime">
+                 totalEstimatedElapsedTime
+                </a>
+               </td>
+               <td>
+                For IFR flights, the estimated time required from take-off to arrive over that designated point, defined by reference to navigation aids, from which it is intended that an instrument approach procedure will be commenced, or, if no navigation aid is associated with the destination aerodrome, to arrive over the destination aerodrome. For VFR flights, the estimated time required from take-off to arrive over the destination aerodrome. [ICAO Doc 4444]
+For a flight plan received from an aircraft in flight, the total estimated elapsed time is the estimated time from the first point of the route to which the flight plan applies to the termination point of the flight plan. [ICAO Doc 4444, Appendix 2, ITEM 16]
+               </td>
+               <td>
+                fb:DurationType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#cruisingLevel">
                  cruisingLevel
                 </a>
@@ -243,20 +257,151 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#totalEstimatedElapsedTime">
-               totalEstimatedElapsedTime
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              totalEstimatedElapsedTime
+             </h3>
+             <p>
               For IFR flights, the estimated time required from take-off to arrive over that designated point, defined by reference to navigation aids, from which it is intended that an instrument approach procedure will be commenced, or, if no navigation aid is associated with the destination aerodrome, to arrive over the destination aerodrome. For VFR flights, the estimated time required from take-off to arrive over the destination aerodrome. [ICAO Doc 4444]
 For a flight plan received from an aircraft in flight, the total estimated elapsed time is the estimated time from the first point of the route to which the flight plan applies to the termination point of the flight plan. [ICAO Doc 4444, Appendix 2, ITEM 16]
-             </td>
-             <td>
-              fb:DurationType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:DurationType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              cruisingLevel
+             </h3>
+             <p>
+              The filed altitude (flight level) for the first or the whole cruising portion of the flight.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:FlightLevelOrAltitudeChoiceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              cruisingSpeed
+             </h3>
+             <p>
+              The true airspeed for the first or the whole cruising portion of the flight.  This can be for a filed flight or an active flight.  This element is strategic in nature.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TrueAirspeedType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              routeText
+             </h3>
+             <p>
+              A string of route elements complying with PANS-ATM Item 15c
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CharacterStringType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              flightRulesCategory
+             </h3>
+             <p>
+              The category of flight rules with which the pilot intends to comply. [ICAO Doc 4444, Appendix 2, Item 8]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:FlightRulesCategoryType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:FlightRouteInformationExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              estimatedElapsedTime
+             </h3>
+             <p>
+              The estimated amount of time from takeoff to reach a significant point or Flight Information Region (FIR) boundary along the route of flight. Elements are ordered according to increasing duration from start.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:EstimatedElapsedTimeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              airfileRouteStartTime
+             </h3>
+             <p>
+              The actual or estimated time of departure from the first point on the route for a flight filed in the air.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TimeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

@@ -161,6 +161,21 @@
               </tr>
               <tr>
                <td>
+                <a href="#phase">
+                 phase
+                </a>
+               </td>
+               <td>
+                A generic term meaning, as the case may be, uncertainty phase, alert phase or distress phase. [ICAO Annex 11]
+
+This is the stage of emergency the flight is currently under or an indication the emergency has been cancelled, as designated by an ATS unit. [FIXM]
+               </td>
+               <td>
+                fx:EmergencyPhaseType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#otherInformation">
                  otherInformation
                 </a>
@@ -230,21 +245,134 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#phase">
-               phase
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              phase
+             </h3>
+             <p>
               A generic term meaning, as the case may be, uncertainty phase, alert phase or distress phase. [ICAO Annex 11]
 
 This is the stage of emergency the flight is currently under or an indication the emergency has been cancelled, as designated by an ATS unit. [FIXM]
-             </td>
-             <td>
-              fx:EmergencyPhaseType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:EmergencyPhaseType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              otherInformation
+             </h3>
+             <p>
+              Other pertinent information not captured elsewhere needed to notify appropriate organizations regarding aircraft in need of search and rescue.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CharacterStringType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              originator
+             </h3>
+             <p>
+              The ICAO identifier of the ATS unit originating the emergency message.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AtcUnitReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:FlightEmergencyExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              actionTaken
+             </h3>
+             <p>
+              A description of the actions taken by the reporting Air Traffic Service (ATS) unit, in the event of search and rescue.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CharacterStringType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              emergencyDescription
+             </h3>
+             <p>
+              A short, plain-language description of the nature of the emergency.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CharacterStringType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              lastContact
+             </h3>
+             <p>
+              The last two-way contact between an ATS unit and the aircraft. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:LastContactType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

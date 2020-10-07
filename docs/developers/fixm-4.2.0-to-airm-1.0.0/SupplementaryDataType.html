@@ -161,6 +161,21 @@
               </tr>
               <tr>
                <td>
+                <a href="#supplementaryDataSource">
+                 supplementaryDataSource
+                </a>
+               </td>
+               <td>
+                Describes the source of the supplementary data. Can be either a Person/Organization or ATC Unit.
+
+A Supplementary Information Source can be identified using a location identifier (from Doc. 7910 + Doc. 8585) for an ATS unit; an AFTN address; FF-ICE Participant identification per B-2.28; or appropriate contact information per B-2.12.
+               </td>
+               <td>
+                fx:SupplementaryDataSourceChoiceType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#pilotInCommand">
                  pilotInCommand
                 </a>
@@ -204,21 +219,98 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#supplementaryDataSource">
-               supplementaryDataSource
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              supplementaryDataSource
+             </h3>
+             <p>
               Describes the source of the supplementary data. Can be either a Person/Organization or ATC Unit.
 
 A Supplementary Information Source can be identified using a location identifier (from Doc. 7910 + Doc. 8585) for an ATS unit; an AFTN address; FF-ICE Participant identification per B-2.28; or appropriate contact information per B-2.12.
-             </td>
-             <td>
-              fx:SupplementaryDataSourceChoiceType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:SupplementaryDataSourceChoiceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              pilotInCommand
+             </h3>
+             <p>
+              The pilot designated by the operator, or in the case of general aviation, the owner, as being in command and charged with the safe conduct of a flight. [ICAO Doc 4444]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:PersonOrOrganizationType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              personsOnBoard
+             </h3>
+             <p>
+              The total number of persons (passengers and crew) on board the aircraft. [ICAO Doc 4444, Appendix 2, Item 19]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CountType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              fuelEndurance
+             </h3>
+             <p>
+              The estimated maximum length of time the aircraft can spend in the cruise phase of flight, determined by the amount of fuel at takeoff. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:DurationType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:SupplementaryDataExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

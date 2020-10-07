@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#applicability">
+                 applicability
+                </a>
+               </td>
+               <td>
+                Expression of a general flight constraint shall allow for a description of applicability.  Description of the applicability shall accommodate a free-text description. [FF-ICE]
+               </td>
+               <td>
+                fb:CharacterStringType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#extension">
                  extension
                 </a>
@@ -191,19 +204,78 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#applicability">
-               applicability
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              applicability
+             </h3>
+             <p>
               Expression of a general flight constraint shall allow for a description of applicability.  Description of the applicability shall accommodate a free-text description. [FF-ICE]
-             </td>
-             <td>
-              fb:CharacterStringType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CharacterStringType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:FlightConstraintExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              impact
+             </h3>
+             <p>
+              Expression of a general flight constraint shall allow for a description of the impact of the restriction on the flight. Description of the impact of the constraint shall accommodate a free-text description.  [FF-ICE]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CharacterStringType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              restrictionReference
+             </h3>
+             <p>
+              A general flight constraint should allow reference to a NOTAM; advisory; or AIXM identifier as necessary. [FF-ICE]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:RestrictionReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

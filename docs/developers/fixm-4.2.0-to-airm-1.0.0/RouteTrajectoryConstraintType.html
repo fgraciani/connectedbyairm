@@ -162,6 +162,19 @@ a profile.
               </tr>
               <tr>
                <td>
+                <a href="#time">
+                 time
+                </a>
+               </td>
+               <td>
+                The time constraint applicable to a specific point on the route.
+               </td>
+               <td>
+                fx:TimeConstraintType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#speed">
                  speed
                 </a>
@@ -231,19 +244,133 @@ a profile.
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#time">
-               time
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              time
+             </h3>
+             <p>
               The time constraint applicable to a specific point on the route.
-             </td>
-             <td>
-              fx:TimeConstraintType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:TimeConstraintType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              speed
+             </h3>
+             <p>
+              The speed constraint applicable to a specific point or segment on the route.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:SpeedConstraintType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              restrictionReference
+             </h3>
+             <p>
+              Reference to a named restriction, if applicable.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:RestrictionReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              level
+             </h3>
+             <p>
+              The level constraint applicable to a specific point or segment on the route.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:LevelConstraintType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:RouteTrajectoryConstraintExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              description
+             </h3>
+             <p>
+              Textual description of the constraint.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CharacterStringType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              departureOrArrivalIndicator
+             </h3>
+             <p>
+              Identifies whether the constraint is applicable on climb or descent.  This provides an indication of which constraints take priority in the event of conflict when establishing 
+a profile.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:DepartureOrArrivalIndicatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

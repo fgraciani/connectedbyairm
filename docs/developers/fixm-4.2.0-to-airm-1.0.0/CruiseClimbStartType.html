@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#speed">
+                 speed
+                </a>
+               </td>
+               <td>
+                The speed to be maintained during cruise climb.
+               </td>
+               <td>
+                fb:TrueAirspeedType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#level">
                  level
                 </a>
@@ -191,19 +204,78 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#speed">
-               speed
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              speed
+             </h3>
+             <p>
               The speed to be maintained during cruise climb.
-             </td>
-             <td>
-              fb:TrueAirspeedType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TrueAirspeedType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              level
+             </h3>
+             <p>
+              Either the minimum and maximum levels defining the layer to be occupied during cruise climb, or the level above which cruise climb is planned
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:FlightLevelOrAltitudeOrRangeChoiceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:CruiseClimbStartExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              atOrAboveAltitude
+             </h3>
+             <p>
+              Indicates the cruise climb start  level indicates a  level above which cruise climb is planned.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:AtOrAboveAltitudeIndicatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

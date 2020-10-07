@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#href">
+                 href
+                </a>
+               </td>
+               <td>
+                Provides an optional mechanism enabling FIXM aeronautical fields to be supplemented with references to AIXM features.  This field should be considered functionally equivalent to the xlink:href field used in AIXM to reference features. [FIXM]
+               </td>
+               <td>
+                fb:HypertextReferenceType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#extension">
                  extension
                 </a>
@@ -191,19 +204,78 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#href">
-               href
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              href
+             </h3>
+             <p>
               Provides an optional mechanism enabling FIXM aeronautical fields to be supplemented with references to AIXM features.  This field should be considered functionally equivalent to the xlink:href field used in AIXM to reference features. [FIXM]
-             </td>
-             <td>
-              fb:HypertextReferenceType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:HypertextReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:SidStarReferenceExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              designator
+             </h3>
+             <p>
+              The textual designator of a SID or STAR. [Specialised from AIXM 5.1]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:SidStarDesignatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              abbreviatedDesignator
+             </h3>
+             <p>
+              A shortened designator of the SID or STAR. [FIXM] This abbreviated designator is based on ARINC 424 chapter 7.4 rules.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:SidStarAbbreviatedDesignatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

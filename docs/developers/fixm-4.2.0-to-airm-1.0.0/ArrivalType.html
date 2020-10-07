@@ -162,6 +162,19 @@ the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 
               </tr>
               <tr>
                <td>
+                <a href="#actualTimeOfArrival">
+                 actualTimeOfArrival
+                </a>
+               </td>
+               <td>
+                The actual time of arrival. [ICAO Doc 4444, Appendix 3, Field Type 17]
+               </td>
+               <td>
+                fb:TimeType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#airportSlotIdentification">
                  airportSlotIdentification
                 </a>
@@ -258,19 +271,170 @@ This is the aerodrome at which the flight is scheduled to arrive. [FIXM]
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#actualTimeOfArrival">
-               actualTimeOfArrival
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              actualTimeOfArrival
+             </h3>
+             <p>
               The actual time of arrival. [ICAO Doc 4444, Appendix 3, Field Type 17]
-             </td>
-             <td>
-              fb:TimeType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TimeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              airportSlotIdentification
+             </h3>
+             <p>
+              The identifier of the arrival airport slot allocated to the flight. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AirportSlotIdentificationType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              runwayDirection
+             </h3>
+             <p>
+              The runway direction on which the flight has actually landed. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:RunwayDirectionDesignatorType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:ArrivalExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              destinationAerodromePrevious
+             </h3>
+             <p>
+              Specifies the previous destination aerodrome value when a change is made.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AerodromeReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              destinationAerodromeAlternate
+             </h3>
+             <p>
+              An alternate aerodrome to which an aircraft may proceed should it become either impossible or inadvisable to land at the aerodrome of intended landing. [ICAO Doc 4444]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AerodromeReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              destinationAerodrome
+             </h3>
+             <p>
+              The aerodrome of intended landing. [ICAO Doc 4444 - extracted from the definition of Destination Alternate]
+This is the aerodrome at which the flight is scheduled to arrive. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AerodromeReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              arrivalAerodrome
+             </h3>
+             <p>
+              The aerodrome at which the flight has actually arrived. [FIXM]
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:AerodromeReferenceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              reclearanceInFlight
+             </h3>
+             <p>
+              The route details to the revised destination aerodrome, followed by the ICAO four-letter location indicator of
+the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 4444]"
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:ReclearanceInFlightType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

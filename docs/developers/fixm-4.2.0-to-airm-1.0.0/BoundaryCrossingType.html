@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#crossingPoint">
+                 crossingPoint
+                </a>
+               </td>
+               <td>
+                The point where the flight will cross an ATS facility boundary.
+               </td>
+               <td>
+                fb:SignificantPointChoiceType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#altitudeInTransition">
                  altitudeInTransition
                 </a>
@@ -204,19 +217,96 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#crossingPoint">
-               crossingPoint
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              crossingPoint
+             </h3>
+             <p>
               The point where the flight will cross an ATS facility boundary.
-             </td>
-             <td>
-              fb:SignificantPointChoiceType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:SignificantPointChoiceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              altitudeInTransition
+             </h3>
+             <p>
+              Negotiated boundary crossing transition altitude.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fx:AltitudeInTransitionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              clearedLevel
+             </h3>
+             <p>
+              The cleared altitude (flight level) at which the aircraft will cross the boundary crossing point if in level cruising flight or, if the aircraft is climbing or descending at the boundary crossing point, the cleared flight level to which it is proceeding.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:FlightLevelOrAltitudeChoiceType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              crossingTime
+             </h3>
+             <p>
+              The estimated time at which a flight will cross the associated boundary crossing point.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:TimeType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:BoundaryCrossingExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>

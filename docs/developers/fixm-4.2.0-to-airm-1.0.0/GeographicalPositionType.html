@@ -161,6 +161,19 @@
               </tr>
               <tr>
                <td>
+                <a href="#extension">
+                 extension
+                </a>
+               </td>
+               <td>
+                An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:GeographicalPositionExtensionType
+               </td>
+              </tr>
+              <tr>
+               <td>
                 <a href="#pos">
                  pos
                 </a>
@@ -179,19 +192,61 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <tr>
-             <td>
-              <a href="#extension">
-               extension
-              </a>
-             </td>
-             <td>
+            <div>
+             <h3>
+              extension
+             </h3>
+             <p>
               An extension hook for attaching extension (non-core) classes.
-             </td>
-             <td>
-              fb:GeographicalPositionExtensionType
-             </td>
-            </tr>
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:GeographicalPositionExtensionType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              pos
+             </h3>
+             <p>
+              This list of doubles contains the latitude and longitude of the location
+in order of LATITUDE FIRST, THEN LONGITUDE.
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               fb:LatLongPosType
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
+            <div>
+             <h3>
+              srsName
+             </h3>
+             <p>
+              Names the coordinate reference system (CRS) that defines the semantics of the lat/long pair according to the ISO6709 standard. FIXM uses only "urn:ogc:def:crs:EPSG::4326".
+              <br/>
+             </p>
+             <p>
+              Type:&amp;nbsp;
+              <span>
+               xs:string
+              </span>
+             </p>
+             <h4 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h4>
+            </div>
             <h3>
              FIXM_PROPERTY_NAME
             </h3>
