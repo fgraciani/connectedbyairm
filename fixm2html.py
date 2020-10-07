@@ -121,7 +121,9 @@ def create_name(urn):
 
 def create_html_pages():
   import fixm
+  import airm
   fixm = fixm.Fixm()
+  airm = airm.Airm()
   fixm_info_concepts_dict = fixm.get_information_concepts()
 
   for info_concept in fixm_info_concepts_dict:
@@ -231,7 +233,8 @@ def create_html_pages():
         td.insert(1,a)
         tr.insert(1,td)
         td = soup.new_tag("td")
-        td.string = "ddddddddddd ddddddddd dddddddd ddddDefinition"
+        airm_entry = airm.load_and_find_urn(line)
+        td.string = airm_entry["definition"]
         tr.insert(2,td)
         tbody.insert(1,tr)
 
