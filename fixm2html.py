@@ -139,6 +139,10 @@ def create_html_pages():
 
     for trace in traces:
       property_div = soup.new_tag("div")
+
+      hr = soup.new_tag("hr")
+      property_div.insert(0,hr)
+
       h3 = soup.new_tag("h3")
       h3.string = str(trace["Data Concept"])
       property_div.insert(1,h3)
@@ -161,9 +165,39 @@ def create_html_pages():
       h4['style'] = "margin-top: 40px;"
       property_div.insert(4,h4)
 
-      #create table sc
+      sc_div = soup.new_tag("div")
+      sc_div["class"] = "table-responsive"
+      sc_table = soup.new_tag("table")
+      sc_table["class"] = "table"
+      sc_thead = soup.new_tag("thead")
+      tr = soup.new_tag("tr")
+      th = soup.new_tag("th")
+      th.string = "AIRM Concept"
+      tr.insert(1,th)
+      th = soup.new_tag("th")
+      th.string = "Definition"
+      tr.insert(2,th)
+      sc_thead.insert(1,tr)
+      sc_table.insert(1,sc_thead)
+      tbody = soup.new_tag("tbody")
       #for each insert row
-      #add to div
+      print('\t\tSemantic Corresponce:')
+      sem_correspondences = str(trace['Semantic Correspondence']).split('\n')
+      for line in sem_correspondences:
+        print('\t\t\t'+line)
+        tr = soup.new_tag("tr")
+        td = soup.new_tag("td")
+        td.string = "dddddddddddddddddddAIRM Concept"
+        tr.insert(1,td)
+        td = soup.new_tag("td")
+        td.string = "ddddddddddd ddddddddd dddddddd ddddDefinition"
+        tr.insert(2,td)
+        tbody.insert(1,tr)
+
+      sc_table.insert(2,tbody)
+      sc_div.insert(1,sc_table)
+      property_div.insert(5,sc_div)
+
 
       #create table add
       #for each insert row
@@ -171,10 +205,7 @@ def create_html_pages():
 
       soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
-      print('\t\tSemantic Corresponce:')
-      sem_correspondences = str(trace['Semantic Correspondence']).split('\n')
-      for line in sem_correspondences:
-        print('\t\t\t'+line)
+      
       print('\t\tAdditional Traces:')
       add_correspondences = str(trace['Additional Traces']).split('\n')
       for line in add_correspondences:
