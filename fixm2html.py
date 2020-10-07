@@ -139,7 +139,7 @@ def create_html_pages():
 
     for trace in traces:
       property_div = soup.new_tag("div")
-      property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px;"
+      property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
 
       h3 = soup.new_tag("h3")
       h3.string = str(trace["Data Concept"])
@@ -152,16 +152,16 @@ def create_html_pages():
       property_div.insert(2,p)
       
       p = soup.new_tag("p")
-      p.string = "Type:&nbsp;"
+      p.string = "Type: "
       span = soup.new_tag("span")
       span.string = str(trace['Type'])
       p.insert(2,span)
       property_div.insert(3,p)
 
-      h4 = soup.new_tag("h4")
-      h4.string = "Semantic Correspondence"
-      h4['style'] = "margin-top: 40px;"
-      property_div.insert(4,h4)
+      sc_h4 = soup.new_tag("h4")
+      sc_h4.string = "Semantic Correspondence"
+      sc_h4['style'] = "margin-top: 40px;"
+      property_div.insert(4,sc_h4)
 
       sc_div = soup.new_tag("div")
       sc_div["class"] = "table-responsive"
@@ -240,7 +240,7 @@ def create_html_pages():
       p = soup.new_tag("p")
       p.string = str(trace["Rationale"])
       print('Rationale:'+str(trace["Rationale"]))
-      property_div.insert(9,h4)
+      property_div.insert(9,p)
 
       h4 = soup.new_tag("h4")
       h4.string = "Notes"
