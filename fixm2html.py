@@ -100,7 +100,8 @@ def create_html_pages():
     
     #span = soup.new_tag("span")
     #span.string = str(info_concept['Information Concept'])
-    #soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)
+    #soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)span = soup.new_tag("span")
+    #span.string = str(info_concept['Information Concept'])
 
     soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(info_concept['Information Concept']))
 
@@ -135,6 +136,40 @@ def create_html_pages():
         tr.insert(3,td_def)
       
       soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
+
+    for trace in traces:
+      property_div = soup.new_tag("div")
+      h3 = soup.new_tag("h3")
+      h3.string = str(trace["Data Concept"])
+      property_div.insert(1,h3)
+      
+      p = soup.new_tag("p")
+      p.string = str(trace["Definition"])
+      br = soup.new_tag("br")
+      p.insert(2,br)
+      property_div.insert(2,p)
+      
+      p = soup.new_tag("p")
+      p.string = "Type:&nbsp;"
+      span = soup.new_tag("span")
+      span.string = str(trace['Type'])
+      p.insert(2,span)
+      property_div.insert(3,p)
+
+      h4 = soup.new_tag("h4")
+      h4.string = "Semantic Correspondence"
+      h4['style'] = "margin-top: 40px;"
+      property_div.insert(4,h4)
+
+      #create table sc
+      #for each insert row
+      #add to div
+
+      #create table add
+      #for each insert row
+      #add to div
+
+      soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,tr)
 
       print('\t\tSemantic Corresponce:')
       sem_correspondences = str(trace['Semantic Correspondence']).split('\n')
