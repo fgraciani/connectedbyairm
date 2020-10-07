@@ -126,10 +126,6 @@
              fx:TrajectoryPointPropertyTypeType
             </code>
            </div>
-           <code class="text-secondary">
-            FIXM_CLASS_ID
-            <br/>
-           </code>
            <p>
             FIXM_CLASS_DEFINITION
            </p>
@@ -546,9 +542,99 @@
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:END_EXPECT_VECTORS">
+              END_EXPECT_VECTORS
+             </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:END_EXPECT_VECTORS
+             </code>
+             <p>
+              When procedures specify "Expect Vectors", the associated point identifies the ending point of the vectoring.  The Point4D data at this point includes an estimate of the impact of vectoring.
+              <br/>
+             </p>
+             <p>
+              Type:
+              <span>
+               enum value
+              </span>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a data-placement="right" data-toggle="tooltip" href="https://ext.eurocontrol.int/swim_confluence/display/SWIM/SWIM-INFO-014+Forms+of+semantic+correspondence" target="_blank" title="changeRequest">
+                   AIRM Change Request
+                  </a>
+                 </td>
+                 <td>
+                  invalid urn
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Additional Traces
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a data-placement="right" data-toggle="tooltip" href="" target="_blank" title="missing data">
+                  </a>
+                 </td>
+                 <td>
+                  invalid urn
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Rationale
+             </h5>
+             <p>
+              missing data
+             </p>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:START_EXPECT_VECTORS">
               START_EXPECT_VECTORS
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:START_EXPECT_VECTORS
+             </code>
              <p>
               When procedures specify "Expect Vectors", the associated point identifies the starting point of the vectoring.
               <br/>
@@ -633,6 +719,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:EXIT_CONSTRAINED_AIRSPACE">
               EXIT_CONSTRAINED_AIRSPACE
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:EXIT_CONSTRAINED_AIRSPACE
+             </code>
              <p>
               Indicates that the associated trajectory point is the point at which the trajectory is predicted to exit from designated constrained airspace.
               <br/>
@@ -717,6 +806,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:EXIT_RESTRICTED_OR_RESERVED_AIRSPACE">
               EXIT_RESTRICTED_OR_RESERVED_AIRSPACE
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:EXIT_RESTRICTED_OR_RESERVED_AIRSPACE
+             </code>
              <p>
               Indicates that the associated trajectory point is the point at which the flight is predicted to exit an airspace restriction/reservation, including any additional separation requirements. An identifier to the airspace is provided in the trajectory point reference.
               <br/>
@@ -801,6 +893,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:FIR_BOUNDARY_CROSSING_POINT">
               FIR_BOUNDARY_CROSSING_POINT
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:FIR_BOUNDARY_CROSSING_POINT
+             </code>
              <p>
               Indicates the point at which the trajectory crosses from one FIR into another. A named reference to the FIR being entered may also be provided.
               <br/>
@@ -885,6 +980,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:HOLD_ENTRY">
               HOLD_ENTRY
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:HOLD_ENTRY
+             </code>
              <p>
               Indicates that the associated trajectory point is a point at which the flight is expected to enter into planned holding.
               <br/>
@@ -969,6 +1067,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:HOLD_EXIT">
               HOLD_EXIT
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:HOLD_EXIT
+             </code>
              <p>
               Indicates that the associated trajectory point is a point at which the flight is expected to exit from planned holding
               <br/>
@@ -1053,6 +1154,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:INITIAL_PREDICTION_POINT">
               INITIAL_PREDICTION_POINT
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:INITIAL_PREDICTION_POINT
+             </code>
              <p>
               Indicates that the associated trajectory point is the initial point at which a prediction was made. For FF-ICE Planning, an eASP may provide a trajectory which is predicted to begin at an entry point into the eASP airspace. This includes a point near entry into the Area of Responsibility.
               <br/>
@@ -1137,6 +1241,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:PRESCRIBED_EET_POINT">
               PRESCRIBED_EET_POINT
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:PRESCRIBED_EET_POINT
+             </code>
              <p>
               Indicates that the associated trajectory point represents a point that has been prescribed for required Estimated Elapsed Time reporting.  This can include a FIR boundary crossing point or a significant point as prescribed on the basis of regional air navigation agreements, or by the appropriate ATS authority.
               <br/>
@@ -1221,6 +1328,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:RUNWAY_THRESHOLD">
               RUNWAY_THRESHOLD
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:RUNWAY_THRESHOLD
+             </code>
              <p>
               This point is the threshold (which may be displaced) at the center of the runway at the arrival end when arriving.  See ICAO Annex 14.
               <br/>
@@ -1305,6 +1415,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:TOP_OF_CLIMB">
               TOP_OF_CLIMB
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TOP_OF_CLIMB
+             </code>
              <p>
               The point where the trajectory arrives at the cruise flight level after a climb.  There will be one top-of-climb for each cruise flight level (step climbs). (From ARINC 702A)
               <br/>
@@ -1389,6 +1502,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:START_TAKEOFF_ROLL">
               START_TAKEOFF_ROLL
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:START_TAKEOFF_ROLL
+             </code>
              <p>
               Indicates that the associated trajectory point corresponds to the point at the start of takeoff roll (used for departures only)
               <br/>
@@ -1473,6 +1589,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:TCP_LATERAL">
               TCP_LATERAL
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TCP_LATERAL
+             </code>
              <p>
               Indicates that the associated trajectory change point (TCP) is one at which the course, track or heading is expected to change.
               <br/>
@@ -1557,6 +1676,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:TCP_SPEED">
               TCP_SPEED
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TCP_SPEED
+             </code>
              <p>
               The point where the airplane will begin accelerating or decelerating as a result of a speed constraint or limit, or reaches the target speed (ARINC 702A)
               <br/>
@@ -1641,6 +1763,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:TCP_VERTICAL">
               TCP_VERTICAL
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TCP_VERTICAL
+             </code>
              <p>
               Indicates that the associated trajectory change point (TCP) is one at which a level segment (intermediate or cruise) will be initiated or terminated.
               <br/>
@@ -1725,6 +1850,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:ENTRY_CONSTRAINED_AIRSPACE ">
               ENTRY_CONSTRAINED_AIRSPACE
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:ENTRY_CONSTRAINED_AIRSPACE
+             </code>
              <p>
               Indicates that the associated trajectory point is the point at which the trajectory is predicted to cross into designated constrained airspace.
               <br/>
@@ -1809,6 +1937,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:TOP_OF_DESCENT">
               TOP_OF_DESCENT
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TOP_OF_DESCENT
+             </code>
              <p>
               The point where the trajectory begins a descent from the final cruise flight level.
               <br/>
@@ -1893,6 +2024,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:TRANSITION_ALTITUDE_OR_LEVEL">
               TRANSITION_ALTITUDE_OR_LEVEL
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TRANSITION_ALTITUDE_OR_LEVEL
+             </code>
              <p>
               Indicates that the associated trajectory point is the point at which the trajectory reaches the transition altitude (in climb) or level (in descent).
               <br/>
@@ -1977,6 +2111,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:WHEELS_ON">
               WHEELS_ON
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:WHEELS_ON
+             </code>
              <p>
               Indicates that the associated trajectory point corresponds to the point at which the aircraft is predicted to be wheels on the runway for arrival.
               <br/>
@@ -2061,6 +2198,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:ENTRY_RESTRICTED_OR_RESERVED_AIRSPACE">
               ENTRY_RESTRICTED_OR_RESERVED_AIRSPACE
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:ENTRY_RESTRICTED_OR_RESERVED_AIRSPACE
+             </code>
              <p>
               Indicates that the associated trajectory point is the point at which the flight is predicted to enter an airspace restriction/reservation, including any additional safety buffer. An identifier to the airspace is provided in the trajectory point reference.
               <br/>
@@ -2145,6 +2285,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:WHEELS_OFF">
               WHEELS_OFF
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:WHEELS_OFF
+             </code>
              <p>
               Indicates that the associated trajectory point corresponds to the point at which the aircraft is predicted to be wheels off the runway on departure.
               <br/>
@@ -2229,6 +2372,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:END_STAY">
               END_STAY
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:END_STAY
+             </code>
              <p>
               Indicates that the associated trajectory point is a point at which the flight is expected to terminate an operation at which it remained for some time.
               <br/>
@@ -2313,6 +2459,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:CROSSING_CONSTRAINED_AIRSPACE">
               CROSSING_CONSTRAINED_AIRSPACE
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:CROSSING_CONSTRAINED_AIRSPACE
+             </code>
              <p>
               Indicates that the associated trajectory point is the point at which the trajectory is predicted to cross constrained airspace designated as a line.
               <br/>
@@ -2397,6 +2546,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:END_PREDICTION_POINT">
               END_PREDICTION_POINT
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:END_PREDICTION_POINT
+             </code>
              <p>
               Indicates that the associated trajectory point is the final point at which a prediction was made. For FF-ICE Planning, an eASP may provide a trajectory which is predicted to end at an exit point from the eASP airspace.
               <br/>
@@ -2481,6 +2633,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:AIRPORT_REFERENCE_LOCATION">
               AIRPORT_REFERENCE_LOCATION
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:AIRPORT_REFERENCE_LOCATION
+             </code>
              <p>
               Indicates that the associated trajectory point is the airport reference location.
               <br/>
@@ -2565,6 +2720,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:BEGIN_STAY">
               BEGIN_STAY
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:BEGIN_STAY
+             </code>
              <p>
               Indicates that the associated trajectory point is a point at which the flight is expected to begin an operation at which the flight will remain for some time.
               <br/>
@@ -2649,6 +2807,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:CONSTRAINT_POINT">
               CONSTRAINT_POINT
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:CONSTRAINT_POINT
+             </code>
              <p>
               Indicates that the associated trajectory point is the point of application of a constraint.  These can include explicit altitude, speed or time constraints or implicit MIT/MINIT, or sequencing constraints. For named constraints, a reference to the name of the constraint should be provided under trajectory point reference.
               <br/>
@@ -2733,6 +2894,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:END_LANDING_ROLL">
               END_LANDING_ROLL
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:END_LANDING_ROLL
+             </code>
              <p>
               Indicates that the associated trajectory point corresponds to the point at which the aircraft is predicted to come to a full stop on the arrival runway. (A prediction only, the flight will likely exit the runway without coming to a full stop).
               <br/>
@@ -2817,6 +2981,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:CROSSOVER_ALTITUDE">
               CROSSOVER_ALTITUDE
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:CROSSOVER_ALTITUDE
+             </code>
              <p>
               The point in climb or descent where the airplane will transition between Mach and IAS control. (ARINC 702A)
               <br/>
@@ -2901,6 +3068,9 @@
              <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:DEPARTURE_RUNWAY_END">
               DEPARTURE_RUNWAY_END
              </h3>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:DEPARTURE_RUNWAY_END
+             </code>
              <p>
               Indicates that the associated trajectory point corresponds to the point at the end of the runway on departure. This point is at the center of the runway at the departure end when departing.
               <br/>
@@ -2981,191 +3151,6 @@
               Not found in AIRM
              </p>
             </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" title="fx:TrajectoryPointPropertyTypeType:END_EXPECT_VECTORS">
-              END_EXPECT_VECTORS
-             </h3>
-             <p>
-              When procedures specify "Expect Vectors", the associated point identifies the ending point of the vectoring.  The Point4D data at this point includes an estimate of the impact of vectoring.
-              <br/>
-             </p>
-             <p>
-              Type:
-              <span>
-               enum value
-              </span>
-             </p>
-             <h5 style="margin-top: 40px;">
-              Semantic Correspondence
-             </h5>
-             <div class="table-responsive">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  AIRM Concept
-                 </th>
-                 <th>
-                  Definition
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <a data-placement="right" data-toggle="tooltip" href="https://ext.eurocontrol.int/swim_confluence/display/SWIM/SWIM-INFO-014+Forms+of+semantic+correspondence" target="_blank" title="changeRequest">
-                   AIRM Change Request
-                  </a>
-                 </td>
-                 <td>
-                  invalid urn
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <h5>
-              Additional Traces
-             </h5>
-             <div class="table-responsive">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  AIRM Concept
-                 </th>
-                 <th>
-                  Definition
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <a data-placement="right" data-toggle="tooltip" href="" target="_blank" title="missing data">
-                  </a>
-                 </td>
-                 <td>
-                  invalid urn
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <h5>
-              Rationale
-             </h5>
-             <p>
-              missing data
-             </p>
-             <h5>
-              Notes
-             </h5>
-             <p>
-              Not found in AIRM
-             </p>
-            </div>
-            <h3>
-             FIXM_PROPERTY_NAME
-            </h3>
-            <code class="text-secondary">
-             FIXM_PROPERTY_ID
-             <br/>
-            </code>
-            <p>
-             FIXM_PROPERTY_ID
-             <br/>
-            </p>
-            <p>
-             Type:
-             <a href="#">
-              <span style="text-decoration: underline;">
-               FIXM_PROPERTY_TYPE
-              </span>
-             </a>
-             <br/>
-            </p>
-            <h4 style="margin-top: 40px;">
-             Semantic Correspondence
-            </h4>
-            <div class="table-responsive">
-             <table class="table">
-              <thead>
-               <tr>
-                <th>
-                 AIRM Concept
-                </th>
-                <th>
-                 Definition
-                </th>
-               </tr>
-              </thead>
-              <tbody>
-               <tr>
-                <td>
-                 <a href="#">
-                  AIRM_CONCEPT_NAME_MAIN
-                 </a>
-                </td>
-                <td>
-                 AIRM_CONCEPT_DEFINITION_MAIN
-                 <br/>
-                </td>
-               </tr>
-              </tbody>
-             </table>
-            </div>
-            <h5>
-             Additional Traces
-            </h5>
-            <div class="table-responsive">
-             <table class="table">
-              <thead>
-               <tr>
-                <th>
-                 AIRM Concept
-                </th>
-                <th>
-                 Definition
-                </th>
-               </tr>
-              </thead>
-              <tbody>
-               <tr>
-                <td>
-                 <a href="#">
-                  AIRM_CONCEPT_NAME_ADDITIONAL
-                 </a>
-                </td>
-                <td>
-                 AIRM_CONCEPT_DEFINITION_ADDITIONAL
-                 <br/>
-                </td>
-               </tr>
-              </tbody>
-             </table>
-            </div>
-            <div class="alert alert-warning" role="alert">
-             <span>
-              The semantic correspondence facilitates semantic interoperability by making explicit how the information definition conforms to the semantics of the AIRM.
-              <a class="alert-link" href="https://ext.eurocontrol.int/swim_confluence/display/SWIM/Guidance+on+semantic+correspondence">
-               Guidance on semantic correspondence
-              </a>
-              <br/>
-             </span>
-            </div>
-            <h5>
-             Rationale
-            </h5>
-            <p>
-             RATIONALE_HERE
-            </p>
-            <h4>
-             Notes
-            </h4>
-            <p>
-             NOTES_HERE
-            </p>
            </div>
           </div>
          </div>
