@@ -235,18 +235,24 @@ def create_html_pages():
       add_div.insert(1,add_table)
       property_div.insert(6,add_div)
 
-      #create table add
-      #for each insert row
-      #add to div
+      h5 = soup.new_tag("h5")
+      h5.string = "Rationale"
+      property_div.insert(7,h5)
+
+      p = soup.new_tag("p")
+      p.string = trace["Rationale"]
+      property_div.insert(8,h4)
+
+      h4 = soup.new_tag("h4")
+      h4.string = "Notes"
+      property_div.insert(9,h4)
+
+      p = soup.new_tag("p")
+      p.string = trace["Rationale"]
+      property_div.insert(10,h4)
 
       soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
-      
-      print('\t\tAdditional Traces:')
-      add_correspondences = str(trace['Additional Traces']).split('\n')
-      for line in add_correspondences:
-        print('\t\t\t'+line)
-    
     f= open("docs/developers/fixm-4.2.0-to-airm-1.0.0/"+str(info_concept['Information Concept'])+".html","w+")
     f.write(soup.prettify())
     f.close()
