@@ -141,13 +141,14 @@ def create_html_pages():
 
       h2 = soup.new_tag("h2")
       h2.string = str(info_concept['Information Concept'])
-      h2["data-toggle"] = "tooltip"
-      h2["data-placement"] = "right"
+      soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+      code = soup.new_tag("code")
       datac_identifier = info_concept['Identifier']
       parts = datac_identifier.split(":")
       identifier = parts[0]+":"+parts[1]
-      h2["title"] = identifier
-      soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+      code.string = identifier
+      code["class"] = "text-secondary"
+      soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
       
       traces = fixm.get_traces_by_info_concept(info_concept['Information Concept'])
       for trace in traces:
