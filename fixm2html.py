@@ -67,3 +67,41 @@ def create_html():
   f= open("docs/developers/fixm-4.2.0-to-airm-1.0.0.html","w+")
   f.write(soup.prettify())
   f.close() 
+
+def print_create_html_pages():
+  import fixm
+  fixm = fixm.Fixm()
+  fixm_info_concepts_dict = fixm.get_information_concepts()
+
+  for info_concept in fixm_info_concepts_dict:
+    print(info_concept['Information Concept'])
+    traces = fixm.get_traces_by_info_concept(info_concept['Information Concept'])
+    for trace in traces:
+      print('\t'+trace['Data Concept'])
+      print('\t\tSemantic Corresponce:')
+      sem_correspondences = str(trace['Semantic Correspondence']).split('\n')
+      for line in sem_correspondences:
+        print('\t\t\t'+line)
+      print('\t\tAdditional Traces:')
+      add_correspondences = str(trace['Additional Traces']).split('\n')
+      for line in add_correspondences:
+        print('\t\t\t'+line)
+
+def create_html_pages():
+  import fixm
+  fixm = fixm.Fixm()
+  fixm_info_concepts_dict = fixm.get_information_concepts()
+
+  for info_concept in fixm_info_concepts_dict:
+    print(info_concept['Information Concept'])
+    traces = fixm.get_traces_by_info_concept(info_concept['Information Concept'])
+    for trace in traces:
+      print('\t'+trace['Data Concept'])
+      print('\t\tSemantic Corresponce:')
+      sem_correspondences = str(trace['Semantic Correspondence']).split('\n')
+      for line in sem_correspondences:
+        print('\t\t\t'+line)
+      print('\t\tAdditional Traces:')
+      add_correspondences = str(trace['Additional Traces']).split('\n')
+      for line in add_correspondences:
+        print('\t\t\t'+line)

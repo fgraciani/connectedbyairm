@@ -40,4 +40,29 @@ class Fixm:
     else:
       results_dict = df_results.to_dict('records')
       return results_dict
+  
+  def get_information_concepts(self):
+    fixm_df = self.fixm_mapping_dataframe.copy()
+    fixm_df = fixm_df.drop_duplicates(subset='Information Concept', keep="last")
+    fixm_df = fixm_df.drop(["Data Concept", "Definition", "Identifier", "Type", "Semantic Correspondence", "Additional Traces", "Rationale", "Notes"], axis=1)
+    
+    if fixm_df.empty:
+      return None
+    else:
+      results_dict = fixm_df.to_dict('records')
+      return results_dict
+  
+  def get_traces_by_info_concept(self, info_concept):
+    fixm_df = self.fixm_mapping_dataframe.copy()
+    
+    filter = fixm_df["Information Concept"]==info_concept
+    fixm_df.sort_values("Information Concept", inplace = True)
+    fixm_df.where(filter, inplace = True) 
+    df_results = fixm_df.dropna(how='all')      
+
+    if df_results.empty:
+      return None
+    else:
+      results_dict = df_results.to_dict('records')
+      return results_dict
     

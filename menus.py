@@ -21,7 +21,8 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("6: Compare AMXM other XMs")
       print("7: Compare FIXM other XMs")
       print("8: Create html pages from AMXM mapping")
-      print("9: Create html pages from FIXM mapping")
+      print("9: Create html index from FIXM mapping")
+      print("10: Create html pages from FIXM mapping")
 
       choice = input ("Please make a choice: ")
 
@@ -70,7 +71,12 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           print('\n')
           print("Creating html pages from xls file...")
           fixm2html.create_html()
-          main()     
+          main()   
+      elif choice == "10":
+          print('\n')
+          print("Creating html pages from xls file...")
+          fixm2html.create_html_pages()
+          main()    
       else:
           print("I don't understand your choice.")
           main()
