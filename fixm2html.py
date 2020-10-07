@@ -46,6 +46,7 @@ def create_html():
 
       url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"+"#"+record["Data Concept"]
       text = record["Data Concept"]
+      print(text)
       new_link = soup.new_tag("a")
       new_link['href'] = url
       new_link['target'] = "_blank"
@@ -53,9 +54,10 @@ def create_html():
       td_ic_name.insert(1,new_link)
       tr.insert(2,td_dc_name)
 
-    td_def = soup.new_tag("td")
-    td_def.string = record["Definition"]
-    tr.insert(3,td_def)
+    if record["Definition"] != "":
+      td_def = soup.new_tag("td")
+      td_def.string = str(record["Definition"])
+      tr.insert(3,td_def)
 
     td_type = soup.new_tag("td")
     td_type.string = record["Type"]
