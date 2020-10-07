@@ -242,14 +242,16 @@ def create_html_pages():
       print('Rationale:'+str(trace["Rationale"]))
       property_div.insert(9,p)
 
-      h4 = soup.new_tag("h4")
-      h4.string = "Notes"
-      property_div.insert(10,h4)
+      notes_h5 = soup.new_tag("h5")
+      notes_h5.string = "Notes"
+      property_div.insert(10,notes_h5)
 
       p = soup.new_tag("p")
       p.string = str(trace["Notes"])
+      p["data-toggle"] = "tooltip"
+      p["title"] = "this is a test"
       print('NOTES:'+str(trace["Notes"]))
-      property_div.insert(11,h4)
+      property_div.insert(11,p)
 
       soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
