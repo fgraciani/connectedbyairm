@@ -177,6 +177,13 @@ def create_html_pages():
 
       h3 = soup.new_tag("h3")
       h3.string = str(trace["Data Concept"])
+      badge = soup.new_tag("span")
+      badge["class"] = "badge badge-secondary"
+      badge.string = "FIXM Concept"
+      badge["data-toggle"] = "tooltip"
+      badge["data-placement"] = "right"
+      badge["title"] = trace["Identifier"]
+      h3.insert(1,badge)
       property_div.insert(1,h3)
       
       p = soup.new_tag("p")
@@ -192,10 +199,10 @@ def create_html_pages():
       p.insert(2,span)
       property_div.insert(3,p)
 
-      sc_h4 = soup.new_tag("h4")
-      sc_h4.string = "Semantic Correspondence"
-      sc_h4['style'] = "margin-top: 40px;"
-      property_div.insert(4,sc_h4)
+      sc_h5 = soup.new_tag("h5")
+      sc_h5.string = "Semantic Correspondence"
+      sc_h5['style'] = "margin-top: 40px;"
+      property_div.insert(4,sc_h5)
 
       sc_div = soup.new_tag("div")
       sc_div["class"] = "table-responsive"
