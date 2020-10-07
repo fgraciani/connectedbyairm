@@ -98,9 +98,11 @@ def create_html_pages():
     html = open("data/html/templates/concept-template.html").read()
     soup = BeautifulSoup(html, "lxml") 
     
-    span = soup.new_tag("span")
-    span.string = str(info_concept['Information Concept'])
-    soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)
+    #span = soup.new_tag("span")
+    #span.string = str(info_concept['Information Concept'])
+    #soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)
+
+    soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(info_concept['Information Concept']))
 
     h2 = soup.new_tag("h2")
     h2.string = str(info_concept['Information Concept'])
