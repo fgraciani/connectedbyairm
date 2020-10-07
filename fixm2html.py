@@ -141,9 +141,6 @@ def create_html_pages():
       property_div = soup.new_tag("div")
       property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px;"
 
-      hr = soup.new_tag("hr")
-      property_div.insert(0,hr)
-
       h3 = soup.new_tag("h3")
       h3.string = str(trace["Data Concept"])
       property_div.insert(1,h3)
@@ -201,7 +198,7 @@ def create_html_pages():
 
       h5 = soup.new_tag("h5")
       h5.string = "Additional Traces"
-      property_div.insert(5,h5)
+      property_div.insert(6,h5)
 
       add_div = soup.new_tag("div")
       add_div["class"] = "table-responsive"
@@ -234,23 +231,23 @@ def create_html_pages():
 
       add_table.insert(2,tbody)
       add_div.insert(1,add_table)
-      property_div.insert(6,add_div)
+      property_div.insert(7,add_div)
 
       h5 = soup.new_tag("h5")
       h5.string = "Rationale"
-      property_div.insert(7,h5)
+      property_div.insert(8,h5)
 
       p = soup.new_tag("p")
       p.string = trace["Rationale"]
-      property_div.insert(8,h4)
+      property_div.insert(9,h4)
 
       h4 = soup.new_tag("h4")
       h4.string = "Notes"
-      property_div.insert(9,h4)
+      property_div.insert(10,h4)
 
       p = soup.new_tag("p")
       p.string = trace["Rationale"]
-      property_div.insert(10,h4)
+      property_div.insert(11,h4)
 
       soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
