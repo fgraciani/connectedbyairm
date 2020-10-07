@@ -1,0 +1,34 @@
+.card a {
+  margin-bottom: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.img-thumbnail.w-100.d-block {
+  border: 0px;
+}
+
+.carousel-indicators {
+  visibility: hidden;
+}
+
+.clean-block.clean-hero.section {
+  min-height: 255px;
+}
+
+.clean-blog-post {
+  padding-bottom: 12px;
+}
+
+.toast.fade.show {
+  position: absolute;
+  top: 97.2px;
+  right: 10px;
+}
+
+.clean-block.clean-hero {
+  position: relative;
+}
+
