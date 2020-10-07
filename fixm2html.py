@@ -139,6 +139,6 @@ def create_html_pages():
       for line in add_correspondences:
         print('\t\t\t'+line)
     
-    f= open("docs/developers/fixm-4.2.0-to-airm-1.0.0/"+str(info_concept['Information Concept'])+"/.html","w+")
+    f= open("docs/developers/fixm-4.2.0-to-airm-1.0.0/"+str(info_concept['Information Concept'])+".html","w+")
     f.write(soup.prettify())
     f.close()
