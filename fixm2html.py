@@ -139,6 +139,7 @@ def create_html_pages():
 
     for trace in traces:
       property_div = soup.new_tag("div")
+      property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px;"
 
       hr = soup.new_tag("hr")
       property_div.insert(0,hr)
