@@ -122,9 +122,6 @@
             <h2>
              FlightConstraintType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 A general flight constraint should allow reference to a NOTAM; advisory; or AIXM identifier as necessary. [FF-ICE]
                </td>
+               <td>
+                fb:RestrictionReferenceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 Expression of a general flight constraint shall allow for a description of applicability.  Description of the applicability shall accommodate a free-text description. [FF-ICE]
+               </td>
+               <td>
+                fb:CharacterStringType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:FlightConstraintExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 Expression of a general flight constraint shall allow for a description of the impact of the restriction on the flight. Description of the impact of the constraint shall accommodate a free-text description.  [FF-ICE]
+               </td>
+               <td>
+                fb:CharacterStringType
                </td>
               </tr>
              </tbody>

@@ -122,9 +122,6 @@
             <h2>
              EnRouteDelayTypeType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 The delay is an Operator (Airspace User) request to 'spend time' in an airspace after the RoutePoint the name of which is in delayReference, the delayValue is the time in that airspace, the entry and exit time into that airspace is in the BEGIN_STAY and END_STAY info of the trajectory.
                </td>
+               <td>
+                enum value
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 The delay is an ASP request for airborne holding. The holding pattern name is in the delayReference field. The delay value used to compute estimates as in OPERATOR_REQUEST_POINT.
+               </td>
+               <td>
+                enum value
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 The delay is an Operator (Airspace User) request to 'spend time' at an aerodrome after the RoutePoint, the name of the aerodrome is in the delayReference field, the points at which the Operator leaves its route and rejoin it go to the aerodrome are in the BEGIN_STAY and END_STAY info of the trajectory
                </td>
+               <td>
+                enum value
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 The delay is an Operator (Airspace User) request to 'spend time' at the segment starting at point, thus the delay has to be understood as the total duration between the point and the next one.
+               </td>
+               <td>
+                enum value
                </td>
               </tr>
               <tr>
@@ -195,6 +207,9 @@
                <td>
                 The delay is an Operator (Airspace User) request to 'spend time' at the point, thus the delay has to be added to the flight duration to the next point to compute the estimate to the next point.
                </td>
+               <td>
+                enum value
+               </td>
               </tr>
               <tr>
                <td>
@@ -204,6 +219,9 @@
                </td>
                <td>
                 The delay is an Operator (Airspace User) request to 'spend time' at a holding pattern the anchor point of which is the RoutePoint.  The holding pattern name if any is in delayReference.  delayValue used to compute estimates as in OPERATOR_REQUEST_POINT
+               </td>
+               <td>
+                enum value
                </td>
               </tr>
              </tbody>

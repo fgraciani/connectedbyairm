@@ -122,9 +122,6 @@
             <h2>
              RelativePointType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 The navaid used as reference for building an intersection
                </td>
+               <td>
+                fb:NavaidType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 The radius from a chosen Navaid
+               </td>
+               <td>
+                fb:BearingType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 Distance from the chosen Navaid to the Intersection.
                </td>
+               <td>
+                fb:DistanceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:RelativePointExtensionType
                </td>
               </tr>
               <tr>
@@ -196,6 +208,9 @@
                 The values of latitude and longitude that define the position of the Relative Point on the surface of the Earth with respect to a reference datum. [specialised from ICAO Doc 9881]
 
 This optional field may be used to provide the actual position of the relative point if already known / computed.
+               </td>
+               <td>
+                fb:GeographicalPositionType
                </td>
               </tr>
              </tbody>

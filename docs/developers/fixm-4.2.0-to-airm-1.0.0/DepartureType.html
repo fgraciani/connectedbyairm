@@ -122,9 +122,6 @@
             <h2>
              DepartureType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:DepartureExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 The estimated time at which the aircraft will commence movement associated with departure. [ICAO Doc 4444]
+               </td>
+               <td>
+                fb:TimeType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 The actual time of departure from the aerodrome. [ICAO Doc 4444, Appendix 3, Field Type 13]
                </td>
+               <td>
+                fb:TimeType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 The aerodrome from which the flight departs. [FIXM]
+               </td>
+               <td>
+                fb:AerodromeReferenceType
                </td>
               </tr>
               <tr>
@@ -195,6 +207,9 @@
                <td>
                 Specifies the previous departure aerodrome value when a change is made.
                </td>
+               <td>
+                fb:AerodromeReferenceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -204,6 +219,9 @@
                </td>
                <td>
                 Identifies a flight that has filed its flight plan while in the air, beginning its route description from a specified point en-route, and therefore may not have provided a departure aerodrome.
+               </td>
+               <td>
+                fx:AirfileIndicatorType
                </td>
               </tr>
               <tr>
@@ -215,6 +233,9 @@
                <td>
                 The identifier of the departure airport slot allocated to the flight. [FIXM]
                </td>
+               <td>
+                fb:AirportSlotIdentificationType
+               </td>
               </tr>
               <tr>
                <td>
@@ -224,6 +245,9 @@
                </td>
                <td>
                 Specifies the previous estimated off block time value when a change is made.
+               </td>
+               <td>
+                fb:TimeType
                </td>
               </tr>
               <tr>
@@ -235,6 +259,9 @@
                <td>
                 The runway direction used for taking off. [FIXM]
                </td>
+               <td>
+                fb:RunwayDirectionDesignatorType
+               </td>
               </tr>
               <tr>
                <td>
@@ -244,6 +271,9 @@
                </td>
                <td>
                 An alternate aerodrome at which an aircraft can land should this become necessary shortly after take-off and it is not possible to use the aerodrome of departure. [ICAO Doc 4444]
+               </td>
+               <td>
+                fb:AerodromeReferenceType
                </td>
               </tr>
              </tbody>

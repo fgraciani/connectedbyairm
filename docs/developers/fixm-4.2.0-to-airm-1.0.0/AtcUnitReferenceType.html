@@ -122,9 +122,6 @@
             <h2>
              AtcUnitReferenceType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 The full textual name of the ATC unit [adapted from AIXM 5.1] or an alternate identifier for the unit. [FIXM]
                </td>
+               <td>
+                fb:TextNameType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 The geographical point of the Unit. [AIXM 5.1]
+               </td>
+               <td>
+                fb:GeographicalPositionType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 Provides an optional mechanism enabling FIXM aeronautical fields to be supplemented with references to AIXM features.  This field should be considered functionally equivalent to the xlink:href field used in AIXM to reference features. [FIXM]
                </td>
+               <td>
+                fb:HypertextReferenceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 A four-letter code group formulated in accordance with rules prescribed by ICAO and assigned to the atc unit. [Specialised from ICAO Annex 10] The list of ICAO location indicators is provided by ICAO Doc 7910.
+               </td>
+               <td>
+                fb:LocationIndicatorType
                </td>
               </tr>
               <tr>
@@ -195,6 +207,9 @@
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:AtcUnitReferenceExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -204,6 +219,9 @@
                </td>
                <td>
                 A published sequence of characters allowing the identification of a subdivision of a designated control area within which responsibility is assigned to one controller or to a small group of controllers.
+               </td>
+               <td>
+                fb:AirspaceDesignatorType
                </td>
               </tr>
              </tbody>

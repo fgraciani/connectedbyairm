@@ -122,9 +122,6 @@
             <h2>
              ContactInformationType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 Optional phone or facsimile number of the contact.
                </td>
+               <td>
+                fb:TelephoneContactType
+               </td>
               </tr>
               <tr>
                <td>
@@ -165,6 +168,9 @@
                <td>
                 The official title of the contact.
                </td>
+               <td>
+                fb:TextNameType
+               </td>
               </tr>
               <tr>
                <td>
@@ -174,6 +180,9 @@
                </td>
                <td>
                 Optional e-mail address of the contact.[FIXM]
+               </td>
+               <td>
+                fb:OnlineContactType
                </td>
               </tr>
               <tr>
@@ -187,6 +196,9 @@
 
 If the usage of  ContactInformation is associated with a person, this field should not be used, insead, the Person class' name should be used instead.
                </td>
+               <td>
+                fb:TextNameType
+               </td>
               </tr>
               <tr>
                <td>
@@ -197,6 +209,9 @@ If the usage of  ContactInformation is associated with a person, this field shou
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:ContactInformationExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -206,6 +221,9 @@ If the usage of  ContactInformation is associated with a person, this field shou
                </td>
                <td>
                 Optional postal address of the contact.
+               </td>
+               <td>
+                fb:PostalAddressType
                </td>
               </tr>
              </tbody>

@@ -122,9 +122,6 @@
             <h2>
              TrajectoryPoint4DType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 Vertical Range representing block altitude clearances
                </td>
+               <td>
+                fb:VerticalRangeType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 4D Point time expressed as either absolute or relative time.
+               </td>
+               <td>
+                fx:Point4DTimeChoiceType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 The barometric pressure reading used to adjust a pressure altimeter for variations in existing atmospheric pressure or to the standard altimeter setting (29.92).
                </td>
+               <td>
+                fb:PressureType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:TrajectoryPoint4DExtensionType
                </td>
               </tr>
               <tr>
@@ -195,6 +207,9 @@
                <td>
                 Altitude of the 4D point.
                </td>
+               <td>
+                fb:FlightLevelOrAltitudeChoiceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -204,6 +219,9 @@
                </td>
                <td>
                 In a predicted trajectory, the instantaneous temperature and wind vector used at the 4D Point for creating the 4D trajectory.
+               </td>
+               <td>
+                fx:MeteorologicalDataType
                </td>
               </tr>
               <tr>
@@ -215,6 +233,9 @@
                <td>
                 Describes any applicable properties of the trajectory point.  May include multiple properties per point.
                </td>
+               <td>
+                fx:TrajectoryPointPropertyType
+               </td>
               </tr>
               <tr>
                <td>
@@ -224,6 +245,9 @@
                </td>
                <td>
                 The geographical location of the 4D point.
+               </td>
+               <td>
+                fb:GeographicalPositionType
                </td>
               </tr>
               <tr>
@@ -235,6 +259,9 @@
                <td>
                 The predicted  indicated airspeed or Mach at the trajectory point.
                </td>
+               <td>
+                fb:IndicatedAirspeedType
+               </td>
               </tr>
               <tr>
                <td>
@@ -244,6 +271,9 @@
                </td>
                <td>
                 The predicted ground speed at the Trajectory Point in knots or kilometers per hour.
+               </td>
+               <td>
+                fb:GroundSpeedType
                </td>
               </tr>
              </tbody>

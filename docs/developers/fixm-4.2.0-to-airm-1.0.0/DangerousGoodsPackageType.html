@@ -122,9 +122,6 @@
             <h2>
              DangerousGoodsPackageType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 A four-digit identification number assigned by the United Nations Committee of Experts on the Transport of Dangerous Goods to identify a substance or a particular group of substances considered dangerous goods.
                </td>
+               <td>
+                fx:UnNumberType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 Describes whether the shipment is packed to comply with the limitations prescribed for passenger and cargo aircraft or the limitations for cargo aircraft only.
+               </td>
+               <td>
+                fx:AircraftDangerousGoodsLimitationType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:DangerousGoodsPackageExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 A statement identifying the dangerous goods listed are all contained within the same outer packaging.
+               </td>
+               <td>
+                fx:AllPackedInOneType
                </td>
               </tr>
               <tr>
@@ -195,6 +207,9 @@
                <td>
                 When shipping dangerous goods, the reference to the group which identifies the kind of substances and articles deemed to be compatible.
                </td>
+               <td>
+                fx:CompatibilityGroupType
+               </td>
               </tr>
               <tr>
                <td>
@@ -204,6 +219,9 @@
                </td>
                <td>
                 A code that indicates the relative degree of danger presented by various articles and substances within a Class or Division.
+               </td>
+               <td>
+                fx:PackingGroupType
                </td>
               </tr>
               <tr>
@@ -215,6 +233,9 @@
                <td>
                 A number assigned to a dangerous good that represents a classification (Class) according to the most dominant hazard it represents, potentially followed by a number representing a subdivision (Division) within the Class.
                </td>
+               <td>
+                fx:HazardClassType
+               </td>
               </tr>
               <tr>
                <td>
@@ -224,6 +245,9 @@
                </td>
                <td>
                 The total number of dangerous good packages of the same type and content.
+               </td>
+               <td>
+                fb:CountPositiveType
                </td>
               </tr>
               <tr>
@@ -235,6 +259,9 @@
                <td>
                 The name used to describe a particular article or substance in all shipping documents and notifications and, where appropriate, on packaging, as shown in the UN Model Regulations Dangerous Goods List.
                </td>
+               <td>
+                fb:CharacterStringType
+               </td>
               </tr>
               <tr>
                <td>
@@ -244,6 +271,9 @@
                </td>
                <td>
                 The grouping element for goods that contain radioactive materials.
+               </td>
+               <td>
+                fx:RadioactiveMaterialType
                </td>
               </tr>
               <tr>
@@ -255,6 +285,9 @@
                <td>
                 Weight and volume (not height, width, and depth)
                </td>
+               <td>
+                fx:DangerousGoodsDimensionsType
+               </td>
               </tr>
               <tr>
                <td>
@@ -264,6 +297,9 @@
                </td>
                <td>
                 An identifier of any subsidiary hazard class(es)/division(s) in addition to the primary hazard class and division.
+               </td>
+               <td>
+                fx:HazardClassType
                </td>
               </tr>
              </tbody>

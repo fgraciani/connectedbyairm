@@ -122,9 +122,6 @@
             <h2>
              LastContactType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 The position of the aircraft last known to ATS and a corresponding timestamp.
                </td>
+               <td>
+                fx:LastPositionReportType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 The last ATS unit which had two-way contact with the aircraft.
+               </td>
+               <td>
+                fb:AtcUnitNameType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 The transmitting/receiving frequency of the last two-way contact between the aircraft and an ATS unit.
                </td>
+               <td>
+                fb:FrequencyType
+               </td>
               </tr>
               <tr>
                <td>
@@ -185,6 +194,9 @@
                <td>
                 The time of the last two-way contact between the aircraft and an ATS unit. The time is given in UTC.
                </td>
+               <td>
+                fb:TimeType
+               </td>
               </tr>
               <tr>
                <td>
@@ -194,6 +206,9 @@
                </td>
                <td>
                 An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:LastContactExtensionType
                </td>
               </tr>
              </tbody>

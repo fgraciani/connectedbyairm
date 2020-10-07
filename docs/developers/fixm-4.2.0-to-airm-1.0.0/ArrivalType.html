@@ -122,9 +122,6 @@
             <h2>
              ArrivalType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -156,6 +156,9 @@
                 The route details to the revised destination aerodrome, followed by the ICAO four-letter location indicator of
 the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 4444]"
                </td>
+               <td>
+                fx:ReclearanceInFlightType
+               </td>
               </tr>
               <tr>
                <td>
@@ -165,6 +168,9 @@ the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 
                </td>
                <td>
                 The actual time of arrival. [ICAO Doc 4444, Appendix 3, Field Type 17]
+               </td>
+               <td>
+                fb:TimeType
                </td>
               </tr>
               <tr>
@@ -176,6 +182,9 @@ the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 
                <td>
                 The identifier of the arrival airport slot allocated to the flight. [FIXM]
                </td>
+               <td>
+                fb:AirportSlotIdentificationType
+               </td>
               </tr>
               <tr>
                <td>
@@ -185,6 +194,9 @@ the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 
                </td>
                <td>
                 The runway direction on which the flight has actually landed. [FIXM]
+               </td>
+               <td>
+                fb:RunwayDirectionDesignatorType
                </td>
               </tr>
               <tr>
@@ -196,6 +208,9 @@ the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:ArrivalExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -206,6 +221,9 @@ the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 
                <td>
                 Specifies the previous destination aerodrome value when a change is made.
                </td>
+               <td>
+                fb:AerodromeReferenceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -215,6 +233,9 @@ the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 
                </td>
                <td>
                 An alternate aerodrome to which an aircraft may proceed should it become either impossible or inadvisable to land at the aerodrome of intended landing. [ICAO Doc 4444]
+               </td>
+               <td>
+                fb:AerodromeReferenceType
                </td>
               </tr>
               <tr>
@@ -227,6 +248,9 @@ the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 
                 The aerodrome of intended landing. [ICAO Doc 4444 - extracted from the definition of Destination Alternate]
 This is the aerodrome at which the flight is scheduled to arrive. [FIXM]
                </td>
+               <td>
+                fb:AerodromeReferenceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -236,6 +260,9 @@ This is the aerodrome at which the flight is scheduled to arrive. [FIXM]
                </td>
                <td>
                 The aerodrome at which the flight has actually arrived. [FIXM]
+               </td>
+               <td>
+                fb:AerodromeReferenceType
                </td>
               </tr>
              </tbody>

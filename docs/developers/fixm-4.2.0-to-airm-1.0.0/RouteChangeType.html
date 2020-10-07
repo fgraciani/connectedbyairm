@@ -122,9 +122,6 @@
             <h2>
              RouteChangeType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 The planned altitude that the aircraft will change to upon reaching the associated Significant Point along its Route.
                </td>
+               <td>
+                fx:CruisingLevelChangeType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:RouteChangeExtensionType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 The parameters of a cruise climb executed at the associated significant point. It contains the following parameters: 1. the speed to be maintained during cruise climb; 2. either the minimum and maximum levels defining the layer to be occupied during cruise climb, or the level above which cruise climb is planned.
                </td>
+               <td>
+                fx:CruiseClimbStartType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 The planned speed  that the aircraft will change to upon reaching the associated Significant Point along its Route.
+               </td>
+               <td>
+                fx:CruisingSpeedChangeType
                </td>
               </tr>
              </tbody>

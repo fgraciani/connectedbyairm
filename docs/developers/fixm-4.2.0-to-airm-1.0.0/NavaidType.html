@@ -122,9 +122,6 @@
             <h2>
              NavaidType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -158,6 +158,9 @@
 This optional field may be used to achieve unambiguous reference to the navaid. 
 The combinations of fields that would make the reference unique are name + position + navaid service type.
                </td>
+               <td>
+                fb:GeographicalPositionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -167,6 +170,9 @@ The combinations of fields that would make the reference unique are name + posit
                </td>
                <td>
                 The name of the navaid.
+               </td>
+               <td>
+                fb:NavaidDesignatorType
                </td>
               </tr>
               <tr>
@@ -178,6 +184,9 @@ The combinations of fields that would make the reference unique are name + posit
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:NavaidExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -187,6 +196,9 @@ The combinations of fields that would make the reference unique are name + posit
                </td>
                <td>
                 Provides an optional mechanism enabling FIXM aeronautical fields to be supplemented with references to AIXM features.  This field should be considered functionally equivalent to the xlink:href field used in AIXM to reference features. [FIXM]
+               </td>
+               <td>
+                fb:HypertextReferenceType
                </td>
               </tr>
               <tr>
@@ -199,6 +211,9 @@ The combinations of fields that would make the reference unique are name + posit
                 Type of the navaid service. [AIXM 5.1]
 This optional field may be used as a complement of the designator in order to achieve unambiguous reference to the navaid. 
 The combinations of fields that would make the reference unique are designator + position + navaid service type.
+               </td>
+               <td>
+                fb:NavaidServiceTypeType
                </td>
               </tr>
              </tbody>

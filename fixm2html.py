@@ -134,9 +134,7 @@ def create_html_pages():
         td_def.string = str(trace["Type"])
         tr.insert(3,td_def)
       
-
       soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
-
 
       print('\t\tSemantic Corresponce:')
       sem_correspondences = str(trace['Semantic Correspondence']).split('\n')

@@ -122,9 +122,6 @@
             <h2>
              RouteTrajectoryConstraintType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -156,6 +156,9 @@
                 Identifies whether the constraint is applicable on climb or descent.  This provides an indication of which constraints take priority in the event of conflict when establishing 
 a profile.
                </td>
+               <td>
+                fx:DepartureOrArrivalIndicatorType
+               </td>
               </tr>
               <tr>
                <td>
@@ -165,6 +168,9 @@ a profile.
                </td>
                <td>
                 The time constraint applicable to a specific point on the route.
+               </td>
+               <td>
+                fx:TimeConstraintType
                </td>
               </tr>
               <tr>
@@ -176,6 +182,9 @@ a profile.
                <td>
                 The speed constraint applicable to a specific point or segment on the route.
                </td>
+               <td>
+                fx:SpeedConstraintType
+               </td>
               </tr>
               <tr>
                <td>
@@ -185,6 +194,9 @@ a profile.
                </td>
                <td>
                 Reference to a named restriction, if applicable.
+               </td>
+               <td>
+                fb:RestrictionReferenceType
                </td>
               </tr>
               <tr>
@@ -196,6 +208,9 @@ a profile.
                <td>
                 The level constraint applicable to a specific point or segment on the route.
                </td>
+               <td>
+                fx:LevelConstraintType
+               </td>
               </tr>
               <tr>
                <td>
@@ -206,6 +221,9 @@ a profile.
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:RouteTrajectoryConstraintExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -215,6 +233,9 @@ a profile.
                </td>
                <td>
                 Textual description of the constraint.
+               </td>
+               <td>
+                fb:CharacterStringType
                </td>
               </tr>
              </tbody>

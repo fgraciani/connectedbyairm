@@ -122,9 +122,6 @@
             <h2>
              RouteTrajectoryGroupType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 A zero-wind, standard atmosphere, unconstrained climb profile reflective of the flight capabilities and desired parameters during climb.
                </td>
+               <td>
+                fx:PerformanceProfileType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 A zero-wind, standard atmosphere, unconstrained descent profile reflective of the flight capabilities and desired parameters during descent.
+               </td>
+               <td>
+                fx:PerformanceProfileType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 The estimated takeoff mass of the aircraft.
                </td>
+               <td>
+                fb:MassType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 Contains information about the Flight Route. The route is comprised of Route Segments, which are comprised of Route Point/Airway pairs. Route also contains an expanded route.
+               </td>
+               <td>
+                fx:FlightRouteInformationType
                </td>
               </tr>
               <tr>
@@ -195,6 +207,9 @@
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:RouteTrajectoryGroupExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -204,6 +219,9 @@
                </td>
                <td>
                 A container for information pertinent to a single point in a trajectory. The elements are ordered according to increasing time/distance from the start point.
+               </td>
+               <td>
+                fx:RouteTrajectoryElementType
                </td>
               </tr>
               <tr>
@@ -215,6 +233,9 @@
                <td>
                 Initially submitted by the airspace user, this defines the target speed in both (Indicated Airspeed) IAS and MACH so the aircraft can descend through the crossover altitude and target the IAS speed when needed.
                </td>
+               <td>
+                fx:SpeedScheduleType
+               </td>
               </tr>
               <tr>
                <td>
@@ -224,6 +245,9 @@
                </td>
                <td>
                 Initially submitted by the airspace user, this defines the target speed in both Indicated Airspeed (IAS) and MACH so the aircraft can climb through the crossover altitude and target the MACH speed when needed.
+               </td>
+               <td>
+                fx:SpeedScheduleType
                </td>
               </tr>
              </tbody>

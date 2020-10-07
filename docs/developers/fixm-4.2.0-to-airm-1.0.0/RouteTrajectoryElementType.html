@@ -122,9 +122,6 @@
             <h2>
              RouteTrajectoryElementType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 A number of constraints can be associated with each Expanded Route Point and Trajectory point.
                </td>
+               <td>
+                fx:RouteTrajectoryConstraintType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 Describes the planned change of flight rules (e.g., IFR/VFR) associated with a route point.
+               </td>
+               <td>
+                fx:FlightRulesType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 Flight Route element may contain a list of route changes.
                </td>
+               <td>
+                fx:RouteChangeType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 Identifies if the route point or element was modified from the reference version, identified in the message, during negotiation by an ASP.
+               </td>
+               <td>
+                fx:ModifiedRouteItemIndicatorType
                </td>
               </tr>
               <tr>
@@ -195,6 +207,9 @@
                <td>
                 A reference to an ATFM program name that modified the route.
                </td>
+               <td>
+                fb:CharacterStringType
+               </td>
               </tr>
               <tr>
                <td>
@@ -204,6 +219,9 @@
                </td>
                <td>
                 Identifies the location, altitude and time of a trajectory point.
+               </td>
+               <td>
+                fx:TrajectoryPoint4DType
                </td>
               </tr>
               <tr>
@@ -215,6 +233,9 @@
                <td>
                 A specified geographical location used in defining the flight route or expanded route. [FIXM]
                </td>
+               <td>
+                fb:SignificantPointChoiceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -224,6 +245,9 @@
                </td>
                <td>
                 The route (airway) to the next element on the route. Can be either an en route airway, standard instrument departure route, or standard instrument arrival route. [FIXM]
+               </td>
+               <td>
+                fx:RouteDesignatorToNextElementChoiceType
                </td>
               </tr>
               <tr>
@@ -235,6 +259,9 @@
                <td>
                 Indicates the route description is truncated at the preceding point.
                </td>
+               <td>
+                fx:RouteTruncationIndicatorType
+               </td>
               </tr>
               <tr>
                <td>
@@ -244,6 +271,9 @@
                </td>
                <td>
                 Incrementing identifier used to ensure the sequence of ordered lists is retained. The identifier should begin at zero. [FIXM]
+               </td>
+               <td>
+                fb:CountType
                </td>
               </tr>
               <tr>
@@ -255,6 +285,9 @@
                <td>
                 En Route delay or holding planned to occur at a significant point or along a route element.
                </td>
+               <td>
+                fx:EnRouteDelayType
+               </td>
               </tr>
               <tr>
                <td>
@@ -265,6 +298,9 @@
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:RouteTrajectoryElementExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -274,6 +310,9 @@
                </td>
                <td>
                 The distance along the route.  For an eASP-provided expanded route, it is computed from the first converted point in the eASP's airspace for each route point in the expanded route. For an operator-provided expanded route, it is computed from the beginning of the route.
+               </td>
+               <td>
+                fb:DistanceType
                </td>
               </tr>
              </tbody>

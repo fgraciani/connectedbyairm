@@ -122,9 +122,6 @@
             <h2>
              EnRouteDelayType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 The reason for the delay.  [FIXM]
                </td>
+               <td>
+                fb:CharacterStringType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 Indicates a named hold pattern, airspace or aerodrome at which the en route delay is expected to occur.
+               </td>
+               <td>
+                fb:CharacterStringType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 Indicates if the en route delay is planned airborne holding, or Operator (Airspace User) requested operations at a specified location.
                </td>
+               <td>
+                fx:EnRouteDelayTypeType
+               </td>
               </tr>
               <tr>
                <td>
@@ -185,6 +194,9 @@
                <td>
                 The length of time the flight is expected to be delayed at a specific point en route.
                </td>
+               <td>
+                fb:DurationType
+               </td>
               </tr>
               <tr>
                <td>
@@ -194,6 +206,9 @@
                </td>
                <td>
                 An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:EnRouteDelayExtensionType
                </td>
               </tr>
              </tbody>

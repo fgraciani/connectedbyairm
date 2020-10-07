@@ -122,9 +122,6 @@
             <h2>
              PostalAddressType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 The state or province of the location or organisation.
                </td>
+               <td>
+                fb:TextNameType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 The ZIP or other postal code for the location or organisation.
+               </td>
+               <td>
+                fb:TextNameType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 An extension hook for attaching extension (non-core) classes.
                </td>
+               <td>
+                fb:PostalAddressExtensionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 The street address line for the location.  More than one address line may be used. [FIXM]
+               </td>
+               <td>
+                fb:TextAddressType
                </td>
               </tr>
               <tr>
@@ -195,6 +207,9 @@
                <td>
                 The country of the physical address for the location or organisation.  Full name, not ISO 3166 abbreviations.
                </td>
+               <td>
+                fb:TextCountryNameType
+               </td>
               </tr>
               <tr>
                <td>
@@ -205,6 +220,9 @@
                <td>
                 The country of the physical address for the location or organisation.  ISO 3166 abbreviations.
                </td>
+               <td>
+                fb:TextCountryCodeType
+               </td>
               </tr>
               <tr>
                <td>
@@ -214,6 +232,9 @@
                </td>
                <td>
                 The city of the location or organisation.
+               </td>
+               <td>
+                fb:TextCityType
                </td>
               </tr>
              </tbody>

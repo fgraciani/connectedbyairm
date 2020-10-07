@@ -122,9 +122,6 @@
             <h2>
              LevelConstraintType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 Specifies that the flight level or altitude be achieved based on the condition relative to the point.
                </td>
+               <td>
+                fx:LevelConditionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 Provides an indication of whether the profile constraint is met or initiated at the Location
+               </td>
+               <td>
+                fx:ActivationType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 Level or altitude specification of the constraint.
                </td>
+               <td>
+                fb:FlightLevelOrAltitudeOrRangeChoiceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -184,6 +193,9 @@
                </td>
                <td>
                 An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:LevelConstraintExtensionType
                </td>
               </tr>
              </tbody>

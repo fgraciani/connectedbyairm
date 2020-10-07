@@ -122,9 +122,6 @@
             <h2>
              DesignatedPointType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -154,6 +154,9 @@
                </td>
                <td>
                 The name of the designated point.
+               </td>
+               <td>
+                fb:DesignatedPointDesignatorType
                </td>
               </tr>
               <tr>
@@ -168,6 +171,9 @@
 This optional field may be used to achieve unambiguous reference to the designated point. 
 The combinations of fields that would make the reference unique are name + position.
                </td>
+               <td>
+                fb:GeographicalPositionType
+               </td>
               </tr>
               <tr>
                <td>
@@ -178,6 +184,9 @@ The combinations of fields that would make the reference unique are name + posit
                <td>
                 Provides an optional mechanism enabling FIXM aeronautical fields to be supplemented with references to AIXM features.  This field should be considered functionally equivalent to the xlink:href field used in AIXM to reference features. [FIXM]
                </td>
+               <td>
+                fb:HypertextReferenceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -187,6 +196,9 @@ The combinations of fields that would make the reference unique are name + posit
                </td>
                <td>
                 An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:DesignatedPointExtensionType
                </td>
               </tr>
              </tbody>

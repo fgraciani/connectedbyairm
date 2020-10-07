@@ -122,9 +122,6 @@
             <h2>
              RouteDesignatorToNextElementChoiceType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 Indication that RouteToNextElement may be: DIRECT, LAST_POINT, UNSPECIFIED.
                </td>
+               <td>
+                fx:OtherRouteDesignatorType
+               </td>
               </tr>
               <tr>
                <td>
@@ -165,6 +168,9 @@
                <td>
                 This is the name of a published procedure extending from the departure runway to the start of the en route part of the aircraft's route.
                </td>
+               <td>
+                fb:SidStarReferenceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -174,6 +180,9 @@
                </td>
                <td>
                 The textual designator of the Standard Instrument Arrival (STAR).
+               </td>
+               <td>
+                fb:SidStarReferenceType
                </td>
               </tr>
               <tr>
@@ -186,6 +195,9 @@
                 Provides a reference to the route point or element on the route and/or expanded route.
 Flight route element  contained within the route. Each segment may contain a route point or an airway.
 The route element describes an ATS route (Field 15(c2)), a Standard Departure Route (Field 15(c1)), or a Standard Arrival Route (Field 15(c3)). These fields may be used consistent with the definition in ICAO Doc 4444.
+               </td>
+               <td>
+                fb:RouteDesignatorType
                </td>
               </tr>
              </tbody>

@@ -122,9 +122,6 @@
             <h2>
              FlightEmergencyType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -154,6 +154,9 @@
                </td>
                <td>
                 The last two-way contact between an ATS unit and the aircraft. [FIXM]
+               </td>
+               <td>
+                fx:LastContactType
                </td>
               </tr>
               <tr>
@@ -167,6 +170,9 @@
 
 This is the stage of emergency the flight is currently under or an indication the emergency has been cancelled, as designated by an ATS unit. [FIXM]
                </td>
+               <td>
+                fx:EmergencyPhaseType
+               </td>
               </tr>
               <tr>
                <td>
@@ -176,6 +182,9 @@ This is the stage of emergency the flight is currently under or an indication th
                </td>
                <td>
                 Other pertinent information not captured elsewhere needed to notify appropriate organizations regarding aircraft in need of search and rescue.
+               </td>
+               <td>
+                fb:CharacterStringType
                </td>
               </tr>
               <tr>
@@ -187,6 +196,9 @@ This is the stage of emergency the flight is currently under or an indication th
                <td>
                 The ICAO identifier of the ATS unit originating the emergency message.
                </td>
+               <td>
+                fb:AtcUnitReferenceType
+               </td>
               </tr>
               <tr>
                <td>
@@ -196,6 +208,9 @@ This is the stage of emergency the flight is currently under or an indication th
                </td>
                <td>
                 An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:FlightEmergencyExtensionType
                </td>
               </tr>
               <tr>
@@ -207,6 +222,9 @@ This is the stage of emergency the flight is currently under or an indication th
                <td>
                 A description of the actions taken by the reporting Air Traffic Service (ATS) unit, in the event of search and rescue.
                </td>
+               <td>
+                fb:CharacterStringType
+               </td>
               </tr>
               <tr>
                <td>
@@ -216,6 +234,9 @@ This is the stage of emergency the flight is currently under or an indication th
                </td>
                <td>
                 A short, plain-language description of the nature of the emergency.
+               </td>
+               <td>
+                fb:CharacterStringType
                </td>
               </tr>
              </tbody>

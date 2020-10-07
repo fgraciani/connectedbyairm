@@ -122,9 +122,6 @@
             <h2>
              GeographicalPositionType
             </h2>
-            <h2>
-             FIXM_CLASS_NAME
-            </h2>
            </div>
            <code class="text-secondary">
             FIXM_CLASS_ID
@@ -143,6 +140,9 @@
                <th>
                 Definition
                </th>
+               <th>
+                Type
+               </th>
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
@@ -155,6 +155,9 @@
                <td>
                 Names the coordinate reference system (CRS) that defines the semantics of the lat/long pair according to the ISO6709 standard. FIXM uses only "urn:ogc:def:crs:EPSG::4326".
                </td>
+               <td>
+                xs:string
+               </td>
               </tr>
               <tr>
                <td>
@@ -164,6 +167,9 @@
                </td>
                <td>
                 An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                fb:GeographicalPositionExtensionType
                </td>
               </tr>
               <tr>
@@ -175,6 +181,9 @@
                <td>
                 This list of doubles contains the latitude and longitude of the location
 in order of LATITUDE FIRST, THEN LONGITUDE.
+               </td>
+               <td>
+                fb:LatLongPosType
                </td>
               </tr>
              </tbody>
