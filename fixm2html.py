@@ -21,7 +21,7 @@ def create_html():
   fixm_mapping_dict = fixm.fixm_mapping_dataframe.to_dict('records')
 
   #Create index page
-  #creates soup for data/html/templates/concept-list-template.html using fixm_mapping_template.html
+  #creates soup for index using concept-list-template.html
   html = open("data/html/templates/concept-list-template.html").read()
   soup = BeautifulSoup(html, "lxml") 
 
@@ -94,9 +94,42 @@ def create_html_pages():
 
   for info_concept in fixm_info_concepts_dict:
     print(info_concept['Information Concept'])
+    #creates soup for concept page using concept-template.html
+    html = open("data/html/templates/concept-template.html").read()
+    soup = BeautifulSoup(html, "lxml") 
+    
+    span = soup.new_tag("span")
+    span.string = str(info_concept['Information Concept'])
+    soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)
+
+    h2 = soup.new_tag("h2")
+    h2.string = str(info_concept['Information Concept'])
+    soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+    
     traces = fixm.get_traces_by_info_concept(info_concept['Information Concept'])
     for trace in traces:
       print('\t'+trace['Data Concept'])
+      
+      tr = soup.new_tag("tr")
+
+      if trace["Data Concept"] != "":
+        td_dc_name = soup.new_tag("td")
+        url = "#"+trace["Data Concept"]
+        text = trace["Data Concept"]
+        new_link = soup.new_tag("a")
+        new_link['href'] = url
+        new_link.string = text
+        td_dc_name.insert(1,new_link)
+        tr.insert(1,td_dc_name)
+      
+      if trace["Definition"] != "":
+        td_def = soup.new_tag("td")
+        td_def.string = str(trace["Definition"])
+        tr.insert(2,td_def)
+
+      soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
+
+
       print('\t\tSemantic Corresponce:')
       sem_correspondences = str(trace['Semantic Correspondence']).split('\n')
       for line in sem_correspondences:
@@ -105,3 +138,7 @@ def create_html_pages():
       add_correspondences = str(trace['Additional Traces']).split('\n')
       for line in add_correspondences:
         print('\t\t\t'+line)
+    
+    f= open("docs/developers/fixm-4.2.0-to-airm-1.0.0/"+str(info_concept['Information Concept'])+"/.html","w+")
+    f.write(soup.prettify())
+    f.close()
