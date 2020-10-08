@@ -141,9 +141,14 @@ def create_html_pages():
             tr.insert(2,td_def)
           
           if trace["type"] != "":
-            td_def = soup.new_tag("td")
-            td_def.string = str(trace["type"])
-            tr.insert(3,td_def)
+            td_dc_type = soup.new_tag("td")
+            url = trace["type"]+".html"
+            text = trace["type"]
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link.string = text
+            td_dc_type.insert(1,new_link)
+            tr.insert(3,td_dc_type)
           
           soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
 
