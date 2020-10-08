@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+   The additional information about the Precision Final Segment. Most attributes describe the LPV path point record required for WAAS procedures. - Logical Model | AIRM.aero
   </title>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -91,23 +91,24 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="../../../developers/semantic-correspondences.html">
+        <a href="../../developers/semantic-correspondences.html">
          <span>
-          Semantic Correspondences
+          AIRM Advanced Viewer
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+        <a href="../logical-model.html">
          <span>
-          FIXM 4.2.0 to AIRM 1.0.0
+          Logical Model
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a id="BC_INFO_CONCEPT_NAME">
+        <a>
          <span>
           FinalApproachSegmentDataBlock
+          <br/>
          </span>
         </a>
        </li>
@@ -124,11 +125,11 @@
              FinalApproachSegmentDataBlock
             </h2>
             <code class="text-secondary">
-             urn:aero
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalApproachSegmentDataBlock
             </code>
            </div>
            <p>
-            FIXM_CLASS_DEFINITION
+            The additional information about the Precision Final Segment. Most attributes describe the LPV path point record required for WAAS procedures.
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -156,7 +157,9 @@
                 Distance from the stop end of the runway to the Flight Path Alignment Point
                </td>
                <td>
-                ValDistanceType
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
                </td>
               </tr>
               <tr>
@@ -169,7 +172,9 @@
                 Operation Type. A number from 0 to 15 that indicates the type of the final approach segment.
                </td>
                <td>
-                Integer
+                <a href="Integer.html">
+                 Integer
+                </a>
                </td>
               </tr>
               <tr>
@@ -182,7 +187,9 @@
                 The radius of a circle in the horizontal plane (the local plane tangent to the WGS-84 ellipsoid), with its centre being at the true position, which describes the region which is required to contain the indicated horizontal position with the required probability for a particular navigation mode assuming the probability of a GPS satellite integrity failure being included in the position solution is less than or equal to E-4 per hour.
                </td>
                <td>
-                Decimal
+                <a href="Decimal.html">
+                 Decimal
+                </a>
                </td>
               </tr>
               <tr>
@@ -195,7 +202,9 @@
                 The first two designators of the ICAO location identifier, as identified in ICAO Doc 7910.
                </td>
                <td>
-                CharacterString
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
                </td>
               </tr>
               <tr>
@@ -208,7 +217,9 @@
                 Approach Performance Designator. A number from 0 to 7 that identifies the type of approach.
                </td>
                <td>
-                Integer
+                <a href="Integer.html">
+                 Integer
+                </a>
                </td>
               </tr>
               <tr>
@@ -221,7 +232,9 @@
                 Reference Path Data Selector (RPDS). A number (0-48) that enables automatic tuning of a procedure by LAAS avionics.
                </td>
                <td>
-                Integer
+                <a href="Integer.html">
+                 Integer
+                </a>
                </td>
               </tr>
               <tr>
@@ -234,7 +247,9 @@
                 Reference Path Identifier. A four-character identifier that is used to confirm selection of the correct approach procedure.
                </td>
                <td>
-                CharacterString
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
                </td>
               </tr>
               <tr>
@@ -247,7 +262,9 @@
                 Half the length of a segment on the vertical axis (perpendicular to the horizontal plane of WGS-84 ellipsoid), with its centre being at the true position, which describes the region which is required to contain the indicated vertical position with a probability of 1-E-7 per approach, assuming the probability of a GPS satellite integrity failure being included in the position solution is less than or equal to E-4 per hour.
                </td>
                <td>
-                Decimal
+                <a href="Decimal.html">
+                 Decimal
+                </a>
                </td>
               </tr>
               <tr>
@@ -260,7 +277,9 @@
                 Hexadecimal representation of the 32-bit CRC used to check the integrity of the FAS data block.
                </td>
                <td>
-                ValHexType
+                <a href="ValHexType.html">
+                 ValHexType
+                </a>
                </td>
               </tr>
               <tr>
@@ -273,7 +292,9 @@
                 Route Indicator. A single alpha character (A through Z or blank, omitting I and O) used to differentiate between multiple final approach segments to the same runway or heliport.
                </td>
                <td>
-                CharacterString
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
                </td>
               </tr>
               <tr>
@@ -286,7 +307,9 @@
                 SBAS Service Provider Identifier. A number from 0 to 15 that associates the approach procedure to a particular satellite based approach system service provider.
                </td>
                <td>
-                Integer
+                <a href="Integer.html">
+                 Integer
+                </a>
                </td>
               </tr>
               <tr>
@@ -299,7 +322,9 @@
                 The width of the lateral course at the Landing Threshold Point (LTP). This width, in conjunction with the location of the Flight Path Alignment Point (FPAP) defines the sensitivity of the lateral deviations throughout the approach.
                </td>
                <td>
-                ValDistanceType
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
                </td>
               </tr>
              </tbody>

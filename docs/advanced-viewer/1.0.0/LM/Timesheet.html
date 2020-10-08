@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+   The definition of a single time interval, that occurs repeatedly as part of a schedule. - Logical Model | AIRM.aero
   </title>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -91,23 +91,24 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="../../../developers/semantic-correspondences.html">
+        <a href="../../developers/semantic-correspondences.html">
          <span>
-          Semantic Correspondences
+          AIRM Advanced Viewer
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+        <a href="../logical-model.html">
          <span>
-          FIXM 4.2.0 to AIRM 1.0.0
+          Logical Model
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a id="BC_INFO_CONCEPT_NAME">
+        <a>
          <span>
           Timesheet
+          <br/>
          </span>
         </a>
        </li>
@@ -124,11 +125,11 @@
              Timesheet
             </h2>
             <code class="text-secondary">
-             urn:aero
+             urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet
             </code>
            </div>
            <p>
-            FIXM_CLASS_DEFINITION
+            The definition of a single time interval, that occurs repeatedly as part of a schedule.
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -156,7 +157,9 @@
                 The number of minutes before or after the end event when the period described in the timesheet ends.
                </td>
                <td>
-                TM_Duration
+                <a href="TM_Duration.html">
+                 TM_Duration
+                </a>
                </td>
               </tr>
               <tr>
@@ -169,7 +172,9 @@
                 The start date of the validity of the timesheet.
                </td>
                <td>
-                Date
+                <a href="Date.html">
+                 Date
+                </a>
                </td>
               </tr>
               <tr>
@@ -182,7 +187,9 @@
                 The time of the day when the period described in the timesheet ends.
                </td>
                <td>
-                ClockTime
+                <a href="ClockTime.html">
+                 ClockTime
+                </a>
                </td>
               </tr>
               <tr>
@@ -195,7 +202,9 @@
                 An indicator that the time block indicated by the timesheet is excluded (subtracted) from the total time interval(s) defined by one or more additional timesheet(s).
                </td>
                <td>
-                Boolean
+                <a href="Boolean.html">
+                 Boolean
+                </a>
                </td>
               </tr>
               <tr>
@@ -208,7 +217,9 @@
                 An indicator of the time reference system or reference system offset for time values specified in the timesheet.
                </td>
                <td>
-                CodeTimeReferenceType
+                <a href="CodeTimeReferenceType.html">
+                 CodeTimeReferenceType
+                </a>
                </td>
               </tr>
               <tr>
@@ -221,7 +232,9 @@
                 The number of minutes before or after the start event when the period described in the timesheet starts.
                </td>
                <td>
-                TM_Duration
+                <a href="TM_Duration.html">
+                 TM_Duration
+                </a>
                </td>
               </tr>
               <tr>
@@ -234,7 +247,9 @@
                 The time of the day when the period described in the timesheet starts.
                </td>
                <td>
-                ClockTime
+                <a href="ClockTime.html">
+                 ClockTime
+                </a>
                </td>
               </tr>
               <tr>
@@ -247,7 +262,9 @@
                 When both the 'StartTime' and 'StartEvent' values of a timesheet are not blank, this explains how the combination of the two values should be interpreted, i.e. which of the two moments in time is the beginning of the period described by the timesheet.
                </td>
                <td>
-                CodeTimeEventCombinationType
+                <a href="CodeTimeEventCombinationType.html">
+                 CodeTimeEventCombinationType
+                </a>
                </td>
               </tr>
               <tr>
@@ -260,7 +277,9 @@
                 The end date of the validity of the timesheet.
                </td>
                <td>
-                Date
+                <a href="Date.html">
+                 Date
+                </a>
                </td>
               </tr>
               <tr>
@@ -273,7 +292,9 @@
                 A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in the timesheet starts.
                </td>
                <td>
-                CodeTimeEventType
+                <a href="CodeTimeEventType.html">
+                 CodeTimeEventType
+                </a>
                </td>
               </tr>
               <tr>
@@ -286,7 +307,9 @@
                 When both the 'EndTime' and 'EndEvent' values of the timesheet are not blank, this attribute explains how the combination of the two attributes should be interpreted, i.e. which of the two moments in time is the end of the period described by the timesheet.
                </td>
                <td>
-                CodeTimeEventCombinationType
+                <a href="CodeTimeEventCombinationType.html">
+                 CodeTimeEventCombinationType
+                </a>
                </td>
               </tr>
               <tr>
@@ -299,7 +322,9 @@
                 An indicator of the day the timesheet is referring to.
                </td>
                <td>
-                CodeParticularDayType
+                <a href="CodeParticularDayType.html">
+                 CodeParticularDayType
+                </a>
                </td>
               </tr>
               <tr>
@@ -312,7 +337,9 @@
                 Indicates that the startTime and endTime values of the timesheet have to be decreased by one hour when Daylight Saving is in force (summer time).
                </td>
                <td>
-                Boolean
+                <a href="Boolean.html">
+                 Boolean
+                </a>
                </td>
               </tr>
               <tr>
@@ -325,7 +352,9 @@
                 A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in the timesheet ends.
                </td>
                <td>
-                CodeTimeEventType
+                <a href="CodeTimeEventType.html">
+                 CodeTimeEventType
+                </a>
                </td>
               </tr>
               <tr>
@@ -338,7 +367,9 @@
                 An indicator of the days affected by the timesheet.
                </td>
                <td>
-                CodeParticularDayType
+                <a href="CodeParticularDayType.html">
+                 CodeParticularDayType
+                </a>
                </td>
               </tr>
              </tbody>

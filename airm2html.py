@@ -104,7 +104,8 @@ def create_html_pages():
       #span.string = str(info_concept['Information Concept'])
       #soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)span = soup.new_tag("span")
       #span.string = str(info_concept['Information Concept'])
-      soup.find(text="CONCEPT_NAME_HERE").replace_with(str(info_concept['name']))
+      #soup.find(text="CONCEPT_NAME_HERE").replace_with(str(info_concept['name']))
+      soup.title.string = str(info_concept['definition'])+" - Logical Model | AIRM.aero"
 
       soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(info_concept['name']))
 

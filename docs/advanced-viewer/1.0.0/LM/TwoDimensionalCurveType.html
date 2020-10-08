@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+   Derived from GM_Curve and extended to include Horizontal Accuracy properties - Logical Model | AIRM.aero
   </title>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -91,23 +91,24 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="../../../developers/semantic-correspondences.html">
+        <a href="../../developers/semantic-correspondences.html">
          <span>
-          Semantic Correspondences
+          AIRM Advanced Viewer
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+        <a href="../logical-model.html">
          <span>
-          FIXM 4.2.0 to AIRM 1.0.0
+          Logical Model
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a id="BC_INFO_CONCEPT_NAME">
+        <a>
          <span>
           TwoDimensionalCurveType
+          <br/>
          </span>
         </a>
        </li>
@@ -124,11 +125,11 @@
              TwoDimensionalCurveType
             </h2>
             <code class="text-secondary">
-             urn:aero
+             urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:TwoDimensionalCurveType
             </code>
            </div>
            <p>
-            FIXM_CLASS_DEFINITION
+            Derived from GM_Curve and extended to include Horizontal Accuracy properties
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -156,7 +157,9 @@
                 A distance corresponding to the number of units or digits to which a measured or calculated value is expressed and used.
                </td>
                <td>
-                ValDistanceType
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
                </td>
               </tr>
               <tr>
@@ -169,7 +172,9 @@
                 The difference between the recorded horizontal coordinates of an entity and its true position referenced to the same geodetic datum expressed as a circular error at 95 percent probability.
                </td>
                <td>
-                ValDistanceType
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
                </td>
               </tr>
               <tr>
@@ -182,7 +187,9 @@
                 A statistical measure of the estimated confidence with which the data captured met its required accuracy. A required confidence level of 90% indicates that 90% of the measured point(s) should meet their respective accuracy requirements.
                </td>
                <td>
-                Integer
+                <a href="Integer.html">
+                 Integer
+                </a>
                </td>
               </tr>
              </tbody>

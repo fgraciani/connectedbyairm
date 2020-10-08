@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+   A portion of the flight route or trajectory. - Logical Model | AIRM.aero
   </title>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -91,23 +91,24 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="../../../developers/semantic-correspondences.html">
+        <a href="../../developers/semantic-correspondences.html">
          <span>
-          Semantic Correspondences
+          AIRM Advanced Viewer
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+        <a href="../logical-model.html">
          <span>
-          FIXM 4.2.0 to AIRM 1.0.0
+          Logical Model
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a id="BC_INFO_CONCEPT_NAME">
+        <a>
          <span>
           RouteTrajectorySegment
+          <br/>
          </span>
         </a>
        </li>
@@ -124,11 +125,11 @@
              RouteTrajectorySegment
             </h2>
             <code class="text-secondary">
-             urn:aero
+             urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Movement:RouteTrajectorySegment
             </code>
            </div>
            <p>
-            FIXM_CLASS_DEFINITION
+            A portion of the flight route or trajectory.
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -156,7 +157,9 @@
                 The fuelBurn for the FlightSegment, expressed in kg.
                </td>
                <td>
-                Number
+                <a href="Number.html">
+                 Number
+                </a>
                </td>
               </tr>
               <tr>
@@ -169,7 +172,9 @@
                 Alternate aerodrome applicable to this trajectory element.
                </td>
                <td>
-                Aerodrome
+                <a href="Aerodrome.html">
+                 Aerodrome
+                </a>
                </td>
               </tr>
               <tr>
@@ -182,7 +187,9 @@
                 The starting point of the trajectory segment.
                </td>
                <td>
-                RouteTrajectoryPoint
+                <a href="RouteTrajectoryPoint.html">
+                 RouteTrajectoryPoint
+                </a>
                </td>
               </tr>
               <tr>
@@ -195,7 +202,9 @@
                 The clearance giving the cleared taxi path.
                </td>
                <td>
-                TaxiOutClearance
+                <a href="TaxiOutClearance.html">
+                 TaxiOutClearance
+                </a>
                </td>
               </tr>
               <tr>
@@ -208,7 +217,9 @@
                 The route used by the trajectory element.
                </td>
                <td>
-                Route
+                <a href="Route.html">
+                 Route
+                </a>
                </td>
               </tr>
               <tr>
@@ -221,7 +232,9 @@
                 Average Fuel burn rate for the leg. Derived from the deltaFuelBurn for the WayPoints delimiting the FlightSegment.
                </td>
                <td>
-                Number
+                <a href="Number.html">
+                 Number
+                </a>
                </td>
               </tr>
               <tr>
@@ -234,7 +247,9 @@
                 The regulation, or combination of regulations, that governs all aspects of operations under which the pilot plans to fly that trajectory element.
                </td>
                <td>
-                CodeFlightRulesType
+                <a href="CodeFlightRulesType.html">
+                 CodeFlightRulesType
+                </a>
                </td>
               </tr>
               <tr>
@@ -247,7 +262,9 @@
                 Indirect matter emissions from the main engines when flying the trajectory segment.
                </td>
                <td>
-                MatterEmission
+                <a href="MatterEmission.html">
+                 MatterEmission
+                </a>
                </td>
               </tr>
               <tr>
@@ -260,7 +277,9 @@
                 The clearance giving the cleared taxi path.
                </td>
                <td>
-                TaxiInClearance
+                <a href="TaxiInClearance.html">
+                 TaxiInClearance
+                </a>
                </td>
               </tr>
               <tr>
@@ -273,7 +292,9 @@
                 Direct matter emissions from the main engines when flying the trajectory segment.
                </td>
                <td>
-                MatterEmission
+                <a href="MatterEmission.html">
+                 MatterEmission
+                </a>
                </td>
               </tr>
               <tr>
@@ -286,7 +307,9 @@
                 The type of TrajectorySegment.
                </td>
                <td>
-                CodeRouteTrajectorySegmentType
+                <a href="CodeRouteTrajectorySegmentType.html">
+                 CodeRouteTrajectorySegmentType
+                </a>
                </td>
               </tr>
               <tr>
@@ -299,7 +322,9 @@
                 A value used to indicate that only Direct Flight Segments (DCT) that exceed this value are concerned by a Flight Restriction.
                </td>
                <td>
-                ValDistanceType
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
                </td>
               </tr>
               <tr>
@@ -312,7 +337,9 @@
                 The procedure used by the trajectory element.
                </td>
                <td>
-                Procedure
+                <a href="Procedure.html">
+                 Procedure
+                </a>
                </td>
               </tr>
               <tr>
@@ -325,7 +352,9 @@
                 The amount of  fuel burn of the main engines during the flight segment.
                </td>
                <td>
-                Decimal
+                <a href="Decimal.html">
+                 Decimal
+                </a>
                </td>
               </tr>
               <tr>
@@ -338,7 +367,9 @@
                 The estimated time required to proceed from one significant point to another.
                </td>
                <td>
-                TM_Duration
+                <a href="TM_Duration.html">
+                 TM_Duration
+                </a>
                </td>
               </tr>
               <tr>
@@ -351,7 +382,9 @@
                 Duration of the Trajectory Segment, derived from the eventTime and the eventEndTime.
                </td>
                <td>
-                TM_Duration
+                <a href="TM_Duration.html">
+                 TM_Duration
+                </a>
                </td>
               </tr>
               <tr>
@@ -364,7 +397,9 @@
                 The planned cruising level for the first or the whole portion of the route to be flown.
                </td>
                <td>
-                Integer
+                <a href="Integer.html">
+                 Integer
+                </a>
                </td>
               </tr>
               <tr>
@@ -377,7 +412,9 @@
                 The amount of fuel burn of the auxiliary power unit usage during flight segment.
                </td>
                <td>
-                Decimal
+                <a href="Decimal.html">
+                 Decimal
+                </a>
                </td>
               </tr>
               <tr>
@@ -390,7 +427,9 @@
                 The True Airspeed for the first or the whole cruising portion of the flight.
                </td>
                <td>
-                ValSpeedType
+                <a href="ValSpeedType.html">
+                 ValSpeedType
+                </a>
                </td>
               </tr>
               <tr>
@@ -403,7 +442,9 @@
                 Average rate of climb and descent for the leg (ft per minute), derived from rateOfAltitudeChange of the two Waypoints delimiting the FlightSegment.
                </td>
                <td>
-                Integer
+                <a href="Integer.html">
+                 Integer
+                </a>
                </td>
               </tr>
               <tr>
@@ -416,7 +457,9 @@
                 Gaseous emissions from the auxiliary power unit when flying the trajectory segment.
                </td>
                <td>
-                MatterEmission
+                <a href="MatterEmission.html">
+                 MatterEmission
+                </a>
                </td>
               </tr>
               <tr>
@@ -429,7 +472,9 @@
                 The emission of particles with an aerodynamic diameter of 10 micrometres or less.
                </td>
                <td>
-                MatterEmission
+                <a href="MatterEmission.html">
+                 MatterEmission
+                </a>
                </td>
               </tr>
               <tr>
@@ -442,7 +487,9 @@
                 The route portion used by the trajectory element.
                </td>
                <td>
-                RoutePortion
+                <a href="RoutePortion.html">
+                 RoutePortion
+                </a>
                </td>
               </tr>
               <tr>
@@ -455,7 +502,9 @@
                 Gaseous emissions from the main engines when flying the trajectory segment.
                </td>
                <td>
-                MatterEmission
+                <a href="MatterEmission.html">
+                 MatterEmission
+                </a>
                </td>
               </tr>
               <tr>
@@ -468,7 +517,9 @@
                 Applicable special requirements to this trajectory element. This is an indicator that the flight is expected to be operating in accordance with regulations issued by the relevant State for aircraft operating as State aircraft, as per Article 3 of the Convention on International Civil Aviation (Doc 7300) and for aircraft operating in accordance with State regulations for non-standard flying activities, normally through the use of reserved airspace.
                </td>
                <td>
-                CharacterString
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
                </td>
               </tr>
               <tr>
@@ -481,7 +532,9 @@
                 The published route segment on which the trajectory segment is based.
                </td>
                <td>
-                RouteSegment
+                <a href="RouteSegment.html">
+                 RouteSegment
+                </a>
                </td>
               </tr>
              </tbody>

@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+   A calculated take-off time attributed by the central unit for ATFM with a time tolerance managed by the local ATS unit. - Logical Model | AIRM.aero
   </title>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -91,23 +91,24 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="../../../developers/semantic-correspondences.html">
+        <a href="../../developers/semantic-correspondences.html">
          <span>
-          Semantic Correspondences
+          AIRM Advanced Viewer
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+        <a href="../logical-model.html">
          <span>
-          FIXM 4.2.0 to AIRM 1.0.0
+          Logical Model
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a id="BC_INFO_CONCEPT_NAME">
+        <a>
          <span>
           ATFMDepartureSlot
+          <br/>
          </span>
         </a>
        </li>
@@ -124,11 +125,11 @@
              ATFMDepartureSlot
             </h2>
             <code class="text-secondary">
-             urn:aero
+             urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMDepartureSlot
             </code>
            </div>
            <p>
-            FIXM_CLASS_DEFINITION
+            A calculated take-off time attributed by the central unit for ATFM with a time tolerance managed by the local ATS unit.
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -156,7 +157,9 @@
                 Tolerance window (-5min/+10min) around the Calculated Take-Off Time (CTOT) at which the allocated flight has to adherence.
                </td>
                <td>
-                TM_Duration
+                <a href="TM_Duration.html">
+                 TM_Duration
+                </a>
                </td>
               </tr>
               <tr>
@@ -169,7 +172,9 @@
                 A time calculated and issued by the appropriate Central Management Unit, as a result of tactical slot allocation, at which a flight is expected to become airborne.
                </td>
                <td>
-                TakeOff
+                <a href="TakeOff.html">
+                 TakeOff
+                </a>
                </td>
               </tr>
               <tr>
@@ -182,7 +187,9 @@
                 Indication on the allocation status.
                </td>
                <td>
-                CodeSlotAllocationStatusType
+                <a href="CodeSlotAllocationStatusType.html">
+                 CodeSlotAllocationStatusType
+                </a>
                </td>
               </tr>
              </tbody>

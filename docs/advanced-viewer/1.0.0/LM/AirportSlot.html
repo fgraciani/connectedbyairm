@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+   The scheduled time of arrival or departure available for allocation by, or as allocated by, a coordinator for an aircraft movement on a specific date at a coordinated airport. For scheduling purposes, the slot is the scheduled time of arrival or departure at the terminal, not the time of landing or take-off from the runway. An allocated slot will take account of all the coordination parameters at the airport e.g. runway(s), taxiways, aircraft parking stands, gates, terminal capacity (e.g. check-in and baggage delivery), environmental constraints e.g. night restrictions etc. - Logical Model | AIRM.aero
   </title>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -91,23 +91,24 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="../../../developers/semantic-correspondences.html">
+        <a href="../../developers/semantic-correspondences.html">
          <span>
-          Semantic Correspondences
+          AIRM Advanced Viewer
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+        <a href="../logical-model.html">
          <span>
-          FIXM 4.2.0 to AIRM 1.0.0
+          Logical Model
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a id="BC_INFO_CONCEPT_NAME">
+        <a>
          <span>
           AirportSlot
+          <br/>
          </span>
         </a>
        </li>
@@ -124,11 +125,11 @@
              AirportSlot
             </h2>
             <code class="text-secondary">
-             urn:aero
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot
             </code>
            </div>
            <p>
-            FIXM_CLASS_DEFINITION
+            The scheduled time of arrival or departure available for allocation by, or as allocated by, a coordinator for an aircraft movement on a specific date at a coordinated airport. For scheduling purposes, the slot is the scheduled time of arrival or departure at the terminal, not the time of landing or take-off from the runway. An allocated slot will take account of all the coordination parameters at the airport e.g. runway(s), taxiways, aircraft parking stands, gates, terminal capacity (e.g. check-in and baggage delivery), environmental constraints e.g. night restrictions etc.
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -156,7 +157,9 @@
                 Time allocated by the Slot Coordinator to the airport slot at which the movement can take place
                </td>
                <td>
-                DateTime
+                <a href="DateTime.html">
+                 DateTime
+                </a>
                </td>
               </tr>
               <tr>
@@ -169,7 +172,9 @@
                 Co-ordinated airport for which the slot is allocated.
                </td>
                <td>
-                Aerodrome
+                <a href="Aerodrome.html">
+                 Aerodrome
+                </a>
                </td>
               </tr>
               <tr>
@@ -182,7 +187,9 @@
                 Year in which the scheduling season starts.
                </td>
                <td>
-                Date
+                <a href="Date.html">
+                 Date
+                </a>
                </td>
               </tr>
               <tr>
@@ -195,7 +202,9 @@
                 Code indicating whether the Airport Slot is for the Departure or the Arrival of the flight.
                </td>
                <td>
-                CodeAirportSlotKindType
+                <a href="CodeAirportSlotKindType.html">
+                 CodeAirportSlotKindType
+                </a>
                </td>
               </tr>
               <tr>
@@ -208,7 +217,9 @@
                 Time requested by the Airspace User
                </td>
                <td>
-                DateTime
+                <a href="DateTime.html">
+                 DateTime
+                </a>
                </td>
               </tr>
               <tr>
@@ -221,7 +232,9 @@
                 Scheduling season in which the airport slot is defined.
                </td>
                <td>
-                CodeIATASeasonType
+                <a href="CodeIATASeasonType.html">
+                 CodeIATASeasonType
+                </a>
                </td>
               </tr>
              </tbody>

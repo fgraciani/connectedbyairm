@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+   Information needed for assessment of the KPIs for fuel efficiency. This is information about number of movements and amount of fuel burn for the phase within a specific timeframe for a specific kind if airspace (LandingTake-Off, TerminalControlArea, En-Route). Derived from the number of movements and amount of fuel burn, the average fuel burn for each flight in the phase for the airspace kind is derived. The amount of fuel burn is derived from the fuel burn in related PhaseOfFlight. - Logical Model | AIRM.aero
   </title>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -91,23 +91,24 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="../../../developers/semantic-correspondences.html">
+        <a href="../../developers/semantic-correspondences.html">
          <span>
-          Semantic Correspondences
+          AIRM Advanced Viewer
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+        <a href="../logical-model.html">
          <span>
-          FIXM 4.2.0 to AIRM 1.0.0
+          Logical Model
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a id="BC_INFO_CONCEPT_NAME">
+        <a>
          <span>
           PhaseFuelEfficiency
+          <br/>
          </span>
         </a>
        </li>
@@ -124,11 +125,11 @@
              PhaseFuelEfficiency
             </h2>
             <code class="text-secondary">
-             urn:aero
+             urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency
             </code>
            </div>
            <p>
-            FIXM_CLASS_DEFINITION
+            Information needed for assessment of the KPIs for fuel efficiency. This is information about number of movements and amount of fuel burn for the phase within a specific timeframe for a specific kind if airspace (LandingTake-Off, TerminalControlArea, En-Route). Derived from the number of movements and amount of fuel burn, the average fuel burn for each flight in the phase for the airspace kind is derived. The amount of fuel burn is derived from the fuel burn in related PhaseOfFlight.
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -156,7 +157,9 @@
                 The number of movements in this phase within a specific timeframe.
                </td>
                <td>
-                Integer
+                <a href="Integer.html">
+                 Integer
+                </a>
                </td>
               </tr>
               <tr>
@@ -169,7 +172,9 @@
                 The timeframe used in establishing the phase fuel efficiency.
                </td>
                <td>
-                TM_Duration
+                <a href="TM_Duration.html">
+                 TM_Duration
+                </a>
                </td>
               </tr>
               <tr>
@@ -182,7 +187,9 @@
                 Amount of fuel burn in phase within specific timeframe.
                </td>
                <td>
-                ValMassType
+                <a href="ValMassType.html">
+                 ValMassType
+                </a>
                </td>
               </tr>
               <tr>
@@ -195,7 +202,9 @@
                 The average fuel burn per flight for the phase within a specific timeframe. Is derived from the number of movements and amount of fuel burn for the phase within the specific time frame.
                </td>
                <td>
-                ValMassType
+                <a href="ValMassType.html">
+                 ValMassType
+                </a>
                </td>
               </tr>
               <tr>
@@ -208,7 +217,9 @@
                 The baseline average fuel burn for the phase within the time frame.
                </td>
                <td>
-                ValMassType
+                <a href="ValMassType.html">
+                 ValMassType
+                </a>
                </td>
               </tr>
               <tr>
@@ -221,7 +232,9 @@
                 The fuel efficiency calculated based on baseline and current average fuel burn for phase. Expressed in percent.
                </td>
                <td>
-                Decimal
+                <a href="Decimal.html">
+                 Decimal
+                </a>
                </td>
               </tr>
               <tr>
@@ -234,7 +247,9 @@
                 The phase of flight.
                </td>
                <td>
-                CodeFlightPhaseType
+                <a href="CodeFlightPhaseType.html">
+                 CodeFlightPhaseType
+                </a>
                </td>
               </tr>
              </tbody>

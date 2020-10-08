@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+   An aggregation of horizontal visibility conditions typically reported together at an aerodrome, including the prevailing visibility and minimum visibility. - Logical Model | AIRM.aero
   </title>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -91,23 +91,24 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="../../../developers/semantic-correspondences.html">
+        <a href="../../developers/semantic-correspondences.html">
          <span>
-          Semantic Correspondences
+          AIRM Advanced Viewer
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+        <a href="../logical-model.html">
          <span>
-          FIXM 4.2.0 to AIRM 1.0.0
+          Logical Model
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a id="BC_INFO_CONCEPT_NAME">
+        <a>
          <span>
           HorizontalVisibility
+          <br/>
          </span>
         </a>
        </li>
@@ -124,11 +125,11 @@
              HorizontalVisibility
             </h2>
             <code class="text-secondary">
-             urn:aero
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:HorizontalVisibility
             </code>
            </div>
            <p>
-            FIXM_CLASS_DEFINITION
+            An aggregation of horizontal visibility conditions typically reported together at an aerodrome, including the prevailing visibility and minimum visibility.
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -156,7 +157,9 @@
                 The greatest visibility value, observed in accordance with the definition of "visibility", which is reached within at least half the horizon circle or within at least half of the surface of the aerodrome. These areas could comprise contiguous or non-contiguous sectors.
                </td>
                <td>
-                ValDistanceType
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
                </td>
               </tr>
               <tr>
@@ -171,7 +174,9 @@ a) the greatest distance at which a black object of suitable dimensions, situate
 b) the greatest distance at which lights in the vicinity of 1 000 candelas can be seen and identified against an unlit background.
                </td>
                <td>
-                ValDistanceType
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
                </td>
               </tr>
               <tr>
@@ -184,7 +189,9 @@ b) the greatest distance at which lights in the vicinity of 1 000 candelas can b
                 Indication whether the horizontalVisibility is given for a single direction or not.
                </td>
                <td>
-                Boolean
+                <a href="Boolean.html">
+                 Boolean
+                </a>
                </td>
               </tr>
               <tr>
@@ -197,7 +204,9 @@ b) the greatest distance at which lights in the vicinity of 1 000 candelas can b
                 Indication that the prevailing visibility is of at least 10000 meters.
                </td>
                <td>
-                Boolean
+                <a href="Boolean.html">
+                 Boolean
+                </a>
                </td>
               </tr>
               <tr>
@@ -210,7 +219,9 @@ b) the greatest distance at which lights in the vicinity of 1 000 candelas can b
                 The direction of the minimum visibility relative to the reporting station.
                </td>
                <td>
-                CodeCompassPointType
+                <a href="CodeCompassPointType.html">
+                 CodeCompassPointType
+                </a>
                </td>
               </tr>
              </tbody>

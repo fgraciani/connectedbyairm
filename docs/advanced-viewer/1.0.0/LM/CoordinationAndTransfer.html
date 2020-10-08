@@ -4,7 +4,11 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+   A dialogue procedure between ATC Units successively in control of a flight, comprising
+- notification of the flight
+- coordination of conditions of transfer by the transferring ATC unit
+- coordination, if necessary, and acceptance of conditions of transfer by the accepting ATC unit
+- transfer of control to the accepting ATC unit. - Logical Model | AIRM.aero
   </title>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -91,23 +95,24 @@
      <div class="block-heading" style="padding-top: 24px;">
       <ol class="breadcrumb">
        <li class="breadcrumb-item">
-        <a href="../../../developers/semantic-correspondences.html">
+        <a href="../../developers/semantic-correspondences.html">
          <span>
-          Semantic Correspondences
+          AIRM Advanced Viewer
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+        <a href="../logical-model.html">
          <span>
-          FIXM 4.2.0 to AIRM 1.0.0
+          Logical Model
          </span>
         </a>
        </li>
        <li class="breadcrumb-item">
-        <a id="BC_INFO_CONCEPT_NAME">
+        <a>
          <span>
           CoordinationAndTransfer
+          <br/>
          </span>
         </a>
        </li>
@@ -124,11 +129,15 @@
              CoordinationAndTransfer
             </h2>
             <code class="text-secondary">
-             urn:aero
+             urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:Coordination:CoordinationAndTransfer
             </code>
            </div>
            <p>
-            FIXM_CLASS_DEFINITION
+            A dialogue procedure between ATC Units successively in control of a flight, comprising
+- notification of the flight
+- coordination of conditions of transfer by the transferring ATC unit
+- coordination, if necessary, and acceptance of conditions of transfer by the accepting ATC unit
+- transfer of control to the accepting ATC unit.
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -156,7 +165,9 @@
                 The boundary for the transfer of control.
                </td>
                <td>
-                RouteTrajectoryPoint
+                <a href="RouteTrajectoryPoint.html">
+                 RouteTrajectoryPoint
+                </a>
                </td>
               </tr>
               <tr>
@@ -169,7 +180,9 @@
                 Indication whether the next authority has been notified or not.
                </td>
                <td>
-                Boolean
+                <a href="Boolean.html">
+                 Boolean
+                </a>
                </td>
               </tr>
               <tr>
@@ -182,7 +195,9 @@
                 Indicator of whether or not the receiving unit is requested to assign an SSR code to the flight.
                </td>
                <td>
-                Boolean
+                <a href="Boolean.html">
+                 Boolean
+                </a>
                </td>
               </tr>
               <tr>
@@ -195,7 +210,9 @@
                 The state of progress of the coordination and transfer of control process (between civilian ATSUs or between a civilian and a military ATSU or with an Oceanic centre)
                </td>
                <td>
-                CodeCoordinationAndTransferStatusType
+                <a href="CodeCoordinationAndTransferStatusType.html">
+                 CodeCoordinationAndTransferStatusType
+                </a>
                </td>
               </tr>
               <tr>
@@ -208,7 +225,9 @@
                 Indicator of whether or not the coordination process is in agreement with pre-defined criteria (agreed coordination points, flight levels on these points, ADEP, ADES, time or distance limits after which coordination is considered non standard etc.).
                </td>
                <td>
-                Boolean
+                <a href="Boolean.html">
+                 Boolean
+                </a>
                </td>
               </tr>
               <tr>
@@ -221,7 +240,9 @@
                 The trajectory data coordinated for handover between adjacent ATC sectors or units.
                </td>
                <td>
-                CoordinationConditions
+                <a href="CoordinationConditions.html">
+                 CoordinationConditions
+                </a>
                </td>
               </tr>
               <tr>
@@ -234,7 +255,9 @@
                 The state of coordination of the time and level at the coordination point.
                </td>
                <td>
-                CodeBasicCoordinationStatusType
+                <a href="CodeBasicCoordinationStatusType.html">
+                 CodeBasicCoordinationStatusType
+                </a>
                </td>
               </tr>
               <tr>
@@ -247,7 +270,9 @@
                 The reason for a non standard coordination.
                </td>
                <td>
-                CodeNonStandardReasonType
+                <a href="CodeNonStandardReasonType.html">
+                 CodeNonStandardReasonType
+                </a>
                </td>
               </tr>
               <tr>
@@ -260,7 +285,9 @@
                 A constraint used during the coordination dialog.
                </td>
                <td>
-                CoordinationAndTransferConstraint
+                <a href="CoordinationAndTransferConstraint.html">
+                 CoordinationAndTransferConstraint
+                </a>
                </td>
               </tr>
               <tr>
@@ -273,7 +300,9 @@
                 The transferring operational entity for a given coordination.
                </td>
                <td>
-                Unit
+                <a href="Unit.html">
+                 Unit
+                </a>
                </td>
               </tr>
               <tr>
@@ -286,7 +315,9 @@
                 The reason for coordination.
                </td>
                <td>
-                CodeCoordinationReasonType
+                <a href="CodeCoordinationReasonType.html">
+                 CodeCoordinationReasonType
+                </a>
                </td>
               </tr>
               <tr>
@@ -299,7 +330,9 @@
                 Data exchanged during the transfer phase.
                </td>
                <td>
-                TransferData
+                <a href="TransferData.html">
+                 TransferData
+                </a>
                </td>
               </tr>
               <tr>
@@ -312,7 +345,9 @@
                 The release request that may cause the release of some constraints imposed on the flight during the coordination phase.
                </td>
                <td>
-                Release
+                <a href="Release.html">
+                 Release
+                </a>
                </td>
               </tr>
               <tr>
@@ -325,7 +360,9 @@
                 The operational entity currently in communication with the flight, indicating the unique contoller that is controlling the flight.
                </td>
                <td>
-                Unit
+                <a href="Unit.html">
+                 Unit
+                </a>
                </td>
               </tr>
               <tr>
@@ -338,7 +375,9 @@
                 The receiving operational entity for a given coordination.
                </td>
                <td>
-                Unit
+                <a href="Unit.html">
+                 Unit
+                </a>
                </td>
               </tr>
               <tr>
@@ -351,7 +390,9 @@
                 The SSR code used by the receiving system instance.
                </td>
                <td>
-                SSRCode
+                <a href="SSRCode.html">
+                 SSRCode
+                </a>
                </td>
               </tr>
               <tr>
@@ -364,7 +405,9 @@
                 The operational entity that will be in communication with the aircraft after the transfer.
                </td>
                <td>
-                Unit
+                <a href="Unit.html">
+                 Unit
+                </a>
                </td>
               </tr>
               <tr>
@@ -377,7 +420,9 @@
                 The operational entity communicating with the aircraft in the transferring system instance before the transfer.
                </td>
                <td>
-                Unit
+                <a href="Unit.html">
+                 Unit
+                </a>
                </td>
               </tr>
               <tr>
@@ -390,7 +435,9 @@
                 The SSR code used by the flight immediately before the one communicated or requested during transfer.
                </td>
                <td>
-                SSRCode
+                <a href="SSRCode.html">
+                 SSRCode
+                </a>
                </td>
               </tr>
              </tbody>
