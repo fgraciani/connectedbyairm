@@ -49,6 +49,9 @@ def create_html():
       td_def.string = str(record["definition"])
       tr.insert(3,td_def)
 
+    td = soup.new_tag("td")
+    td.string = "-"
+    tr.insert(4,td)
     
     soup.find('tbody').insert(1,tr)
 
