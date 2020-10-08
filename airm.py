@@ -76,3 +76,17 @@ class Airm:
     }
     
     return entry
+
+def get_properties_by_parent(self,info_concept):
+    properties_df = self.logical_properties.copy()
+    
+    filter = properties_df["parent"]==info_concept
+    properties_df.sort_values("parent", inplace = True)
+    properties_df.where(filter, inplace = True) 
+    df_results = properties_df.dropna(how='all')      
+
+    if df_results.empty:
+      return None
+    else:
+      results_dict = df_results.to_dict('records')
+      return results_dict

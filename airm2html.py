@@ -87,3 +87,97 @@ def create_html():
   f= open("docs/advanced-viewer/1.0.0/logical-model.html","w+")
   f.write(soup.prettify())
   f.close() 
+
+def create_html_pages():
+  import airm
+  my_airm = airm.Airm()
+  airm_logical_classes = my_airm.logical_classes.to_dict('records')
+
+  for info_concept in airm_logical_classes:
+    if info_concept['name']!="missing data":
+      print(info_concept['name'])
+      #creates soup for concept page using concept-template.html
+      html = open("data/html/templates/airm-concept-template.html").read()
+      soup = BeautifulSoup(html, "lxml") 
+      
+      #span = soup.new_tag("span")
+      #span.string = str(info_concept['Information Concept'])
+      #soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)span = soup.new_tag("span")
+      #span.string = str(info_concept['Information Concept'])
+      soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(info_concept['name']))
+
+      h2 = soup.new_tag("h2")
+      h2.string = str(info_concept['name'])
+      soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+      code = soup.new_tag("code")
+      datac_identifier = info_concept['urn']
+      parts = datac_identifier.split(":")
+      identifier = parts[0]+":"+parts[1]
+      code.string = identifier
+      code["class"] = "text-secondary"
+      soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+      
+      traces = airm.get_properties_by_parent(my_airm, info_concept['name'])
+      if traces != None:
+        for trace in traces:
+          print('\t'+trace['name'])
+          
+          tr = soup.new_tag("tr")
+
+          if trace["name"] != "":
+            td_dc_name = soup.new_tag("td")
+            url = "#"+trace["name"]
+            text = trace["name"]
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link.string = text
+            td_dc_name.insert(1,new_link)
+            tr.insert(1,td_dc_name)
+          
+          if trace["definition"] != "":
+            td_def = soup.new_tag("td")
+            td_def.string = str(trace["definition"])
+            tr.insert(2,td_def)
+          
+          if trace["type"] != "":
+            td_def = soup.new_tag("td")
+            td_def.string = str(trace["type"])
+            tr.insert(3,td_def)
+          
+          soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
+
+        for trace in traces:
+          property_div = soup.new_tag("div")
+          property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
+
+          h3 = soup.new_tag("h3")
+          h3.string = str(trace["name"])
+          h3["data-toggle"] = "tooltip"
+          h3["data-placement"] = "right"
+          h3["title"] = trace["urn"]
+          property_div.insert(0,h3)
+
+          code = soup.new_tag("code")
+          identifier = trace['urn']
+          code.string = identifier
+          code["class"] = "text-secondary"
+          property_div.insert(1,code)
+          
+          p = soup.new_tag("p")
+          p.string = str(trace["definition"])
+          br = soup.new_tag("br")
+          p.insert(2,br)
+          property_div.insert(2,p)
+          
+          p = soup.new_tag("p")
+          p.string = "type: "
+          span = soup.new_tag("span")
+          span.string = str(trace['type'])
+          p.insert(2,span)
+          property_div.insert(3,p)
+
+          soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
+
+      f= open("docs/advanced-viewer/1.0.0/LM/"+str(info_concept['name'])+".html","w+")
+      f.write(soup.prettify())
+      f.close()

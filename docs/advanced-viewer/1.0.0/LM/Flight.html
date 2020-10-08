@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+      <ol class="breadcrumb">
+       <li class="breadcrumb-item">
+        <a href="../../../developers/semantic-correspondences.html">
+         <span>
+          Semantic Correspondences
+         </span>
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+         <span>
+          FIXM 4.2.0 to AIRM 1.0.0
+         </span>
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a id="BC_INFO_CONCEPT_NAME">
+         <span>
+          Flight
+         </span>
+        </a>
+       </li>
+      </ol>
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             Flight
+            </h2>
+            <code class="text-secondary">
+             urn:aero
+            </code>
+           </div>
+           <p>
+            FIXM_CLASS_DEFINITION
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#isAbleToAcceptAirToAirSeparation">
+                 isAbleToAcceptAirToAirSeparation
+                </a>
+               </td>
+               <td>
+                The aircraft operator may be unwilling to perform air-to-air separation.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#pilot">
+                 pilot
+                </a>
+               </td>
+               <td>
+                The pilot in command of the aircraft.
+               </td>
+               <td>
+                PilotInCommand
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isReRouteOf120NmAcceptable">
+                 isReRouteOf120NmAcceptable
+                </a>
+               </td>
+               <td>
+                Any reroute less than 120 nm or less is acceptable.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#civilMilitaryCrossing">
+                 civilMilitaryCrossing
+                </a>
+               </td>
+               <td>
+                A civil military crossing during flight execution.
+               </td>
+               <td>
+                CivilMilitaryCrossing
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isIFPLIdentifierTemporary">
+                 isIFPLIdentifierTemporary
+                </a>
+               </td>
+               <td>
+                For an AFIL flight, indication whether the IFPL identifier is temporary assigned by FDP.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightCapability">
+                 flightCapability
+                </a>
+               </td>
+               <td>
+                The capabilities of the flight.
+               </td>
+               <td>
+                FlightCapability
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ssrCode">
+                 ssrCode
+                </a>
+               </td>
+               <td>
+                SSR code assigned to the flight.
+               </td>
+               <td>
+                SSRCode
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#statusFFICE">
+                 statusFFICE
+                </a>
+               </td>
+               <td>
+                Status information for information management of the flight information.
+               </td>
+               <td>
+                CodeFFICEStatusType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isGroundDelayPreferrableOverReRoute">
+                 isGroundDelayPreferrableOverReRoute
+                </a>
+               </td>
+               <td>
+                Preferring a ground delay over a reroute for pre-departure flights.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isFlightManagementForced">
+                 isFlightManagementForced
+                </a>
+               </td>
+               <td>
+                Indication whether a change in the management of the flight has been forced by a manual arbitration.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isAbleToAcceptSpecificRunway">
+                 isAbleToAcceptSpecificRunway
+                </a>
+               </td>
+               <td>
+                The operator may be unwilling or unable to accept a specific runway.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#destinationAerodrome">
+                 destinationAerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome of intended landing.
+               </td>
+               <td>
+                Aerodrome
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#departureAerodrome">
+                 departureAerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome from which the flight departs.
+               </td>
+               <td>
+                Aerodrome
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#alternateAerodrome">
+                 alternateAerodrome
+                </a>
+               </td>
+               <td>
+                An  aerodrome  to  which  an  aircraft  may  proceed  when it  becomes either  impossible  or inadvisable  to  proceed  to  or  to  land  at  the aerodrome  of  intended  landing  where  the  necessary  services  and facilities  are  available,  where  aircraft  performance  requirements  can  be  met  and  which  is  operational at  the expected time of use.
+               </td>
+               <td>
+                Aerodrome
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#diplomaticClearance">
+                 diplomaticClearance
+                </a>
+               </td>
+               <td>
+                Diplomatic clearance applicable to the flight.
+               </td>
+               <td>
+                DiplomaticClearance
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraft">
+                 aircraft
+                </a>
+               </td>
+               <td>
+                The aircraft enabling the flight.
+               </td>
+               <td>
+                Aircraft
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#emergencyContact">
+                 emergencyContact
+                </a>
+               </td>
+               <td>
+                Emergency contact information.
+               </td>
+               <td>
+                ContactInformation
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#emergencyPhase">
+                 emergencyPhase
+                </a>
+               </td>
+               <td>
+                Emergency situation in which the flight may be.
+               </td>
+               <td>
+                EmergencyPhase
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#formationComponent">
+                 formationComponent
+                </a>
+               </td>
+               <td>
+                Description of the set of airframes belonging to the formation flight that are of the same type.
+               </td>
+               <td>
+                FormationComponent
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightPhase">
+                 flightPhase
+                </a>
+               </td>
+               <td>
+                A phase of flight in which the flight is divided.
+               </td>
+               <td>
+                FlightPhase
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightDesignator">
+                 flightDesignator
+                </a>
+               </td>
+               <td>
+                An IATA designator of the IATA flight leg.
+               </td>
+               <td>
+                FlightDesignator
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#iataUniqueFlightIdentifier">
+                 iataUniqueFlightIdentifier
+                </a>
+               </td>
+               <td>
+                The unique IATA identifier of the IATA flight leg.
+               </td>
+               <td>
+                IATAUniqueFlightIdentifier
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightInMeasure">
+                 flightInMeasure
+                </a>
+               </td>
+               <td>
+                The impact of the ATFM measure on the flight.
+               </td>
+               <td>
+                FlightInMeasure
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#revisionTime">
+                 revisionTime
+                </a>
+               </td>
+               <td>
+                Times to insert aircraft in sequence and remove aircraft from sequence.
+               </td>
+               <td>
+                RevisionTimes
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#numberOfAircraft">
+                 numberOfAircraft
+                </a>
+               </td>
+               <td>
+                Number of aircraft flying in a formation in which the aircraft are governed by one flight plan.
+               </td>
+               <td>
+                Integer
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraftIdentification">
+                 aircraftIdentification
+                </a>
+               </td>
+               <td>
+                The aircraft identifiation of the flight.
+               </td>
+               <td>
+                AircraftIdentification
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#airspaceExit">
+                 airspaceExit
+                </a>
+               </td>
+               <td>
+                Airspace exit event occurring during the flight.
+               </td>
+               <td>
+                AirspaceExit
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#nextFlight">
+                 nextFlight
+                </a>
+               </td>
+               <td>
+                The departure flight that will use the same aircraft.
+               </td>
+               <td>
+                Flight
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#atfmBehaviour">
+                 atfmBehaviour
+                </a>
+               </td>
+               <td>
+                The behaviour of the flight when concerned by ATFM Measures.
+               </td>
+               <td>
+                ATFMBehaviour
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#diversionRecoveryFlight">
+                 diversionRecoveryFlight
+                </a>
+               </td>
+               <td>
+                Indication that a flight is the recovery for a flight that changed its original destination.
+               </td>
+               <td>
+                Flight
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dataLinkAuthority">
+                 dataLinkAuthority
+                </a>
+               </td>
+               <td>
+                The Air traffic services unit (ATSU) with which the aircraft is communicating using Controller-pilot data link communications (CPDLC).
+               </td>
+               <td>
+                Unit
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#militaryAircraftOperator">
+                 militaryAircraftOperator
+                </a>
+               </td>
+               <td>
+                The Unit that flies the Sortie.
+               </td>
+               <td>
+                MilitaryAuthority
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isAirborne">
+                 isAirborne
+                </a>
+               </td>
+               <td>
+                Indication whether the flight is airborne.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#statusForCount">
+                 statusForCount
+                </a>
+               </td>
+               <td>
+                A flight status for limiting the traffic count.
+               </td>
+               <td>
+                CodeFlightStatusForCountType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#responsibleATSU">
+                 responsibleATSU
+                </a>
+               </td>
+               <td>
+                The ATSU controlling the flight.
+               </td>
+               <td>
+                Unit
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#operatorFlightPriority">
+                 operatorFlightPriority
+                </a>
+               </td>
+               <td>
+                Value between 0 and 100 that the flight operator assigns to the aircraft to indicate a relative level or priority among its aircrafts arriving in a given airport in case of traffic, in order to assign delays.
+               </td>
+               <td>
+                Integer
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#globallyUniqueFlightIdentifier">
+                 globallyUniqueFlightIdentifier
+                </a>
+               </td>
+               <td>
+                A single reference for FF-ICE information pertinent to a flight that is unique globally.
+               </td>
+               <td>
+                CharacterString
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#reason">
+                 reason
+                </a>
+               </td>
+               <td>
+                The mission for which the Sortie is executed.
+               </td>
+               <td>
+                Mission
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#allocatedSlot">
+                 allocatedSlot
+                </a>
+               </td>
+               <td>
+                Departure slot resulting from the ATFM regulation.
+               </td>
+               <td>
+                AirportSlot
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#allocatedSlot">
+                 allocatedSlot
+                </a>
+               </td>
+               <td>
+                missing data
+               </td>
+               <td>
+                AirportSlot
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#rif">
+                 rif
+                </a>
+               </td>
+               <td>
+                The reclearance in flight.
+               </td>
+               <td>
+                ReclearanceInFlight
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#oceanicEntryClearance">
+                 oceanicEntryClearance
+                </a>
+               </td>
+               <td>
+                An oceanic entry clearance for the flight.
+               </td>
+               <td>
+                OceanicClearance
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of the flight.
+               </td>
+               <td>
+                CodeFlightType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#militaryFligthActivity">
+                 militaryFligthActivity
+                </a>
+               </td>
+               <td>
+                Military flight activity performed by the flight.
+               </td>
+               <td>
+                MilitaryFlightActivity
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#emergencySSRCode">
+                 emergencySSRCode
+                </a>
+               </td>
+               <td>
+                Special SSR code used by the flight in case of an emergency.
+               </td>
+               <td>
+                SpecialSSRCode
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#crossingTFV">
+                 crossingTFV
+                </a>
+               </td>
+               <td>
+                Traffic volume for which the flight satifies the criteria.
+               </td>
+               <td>
+                TrafficVolume
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#departureOperations">
+                 departureOperations
+                </a>
+               </td>
+               <td>
+                The set of flight operations following procedures associated with the departure aerodrome.
+               </td>
+               <td>
+                DepartureOperations
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dateOfDeparture">
+                 dateOfDeparture
+                </a>
+               </td>
+               <td>
+                The date of flight departure.
+               </td>
+               <td>
+                Date
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightDataKind">
+                 flightDataKind
+                </a>
+               </td>
+               <td>
+                Indication whether the flight information is real or a copy of a real flight (alternative or what-if flight).
+               </td>
+               <td>
+                CodeFlightDataKindType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#fuelEndurance">
+                 fuelEndurance
+                </a>
+               </td>
+               <td>
+                The estimated maximum length of time the aircraft can spend in the cruise phase of flight, determined by the amount of fuel at take-off.
+               </td>
+               <td>
+                TM_Duration
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#coordination">
+                 coordination
+                </a>
+               </td>
+               <td>
+                The coordination of the conditions of transfer between ATC units successively in control of the flight.
+               </td>
+               <td>
+                CoordinationAndTransfer
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#hasSpecialRequirements">
+                 hasSpecialRequirements
+                </a>
+               </td>
+               <td>
+                Indicator that the flight is expected to be operating in accordance with regulations issued by the relevant State for aircraft operating as State aircraft, as per Article 3 of the Convention on International Civil Aviation (Doc 7300), and for aircraft operating in accordance with State regulations for non-standard flying activities, normally through the use of reserved airspace.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#origin">
+                 origin
+                </a>
+               </td>
+               <td>
+                An indication of the origin of the flight with regard to the national borders.
+               </td>
+               <td>
+                CodeFlightOriginType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ifplIdentifier">
+                 ifplIdentifier
+                </a>
+               </td>
+               <td>
+                A unique flight plan identifier allocated by the IFPS.
+               </td>
+               <td>
+                CharacterString
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#preferredCourseDeviationIfReRoute">
+                 preferredCourseDeviationIfReRoute
+                </a>
+               </td>
+               <td>
+                Preferring a southerly course deviation if a re-route is necessary.
+               </td>
+               <td>
+                CodeCompassPointType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#readyStatus">
+                 readyStatus
+                </a>
+               </td>
+               <td>
+                The flight readiness status.
+               </td>
+               <td>
+                CodeFlightReadyStatusType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#reasonForSpecialHandling">
+                 reasonForSpecialHandling
+                </a>
+               </td>
+               <td>
+                The reason for special handling of a flight by ATS.
+               </td>
+               <td>
+                CodeReasonForSpecialHandlingType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#totalEstimatedElapsedTime">
+                 totalEstimatedElapsedTime
+                </a>
+               </td>
+               <td>
+                For IFR flights, the estimated time required from take-off to arrive over that designated point, defined by reference to navigation aids, from which it is intended that an instrument approach procedure will be commenced, or, if no navigation aid is associated with the destination aerodrome, to arrive over the destination aerodrome. For VFR flights, the estimated time required from take-off to arrive over the destination aerodrome.
+               </td>
+               <td>
+                TM_Duration
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isAbleToAcceptCirclingApproaches">
+                 isAbleToAcceptCirclingApproaches
+                </a>
+               </td>
+               <td>
+                The aircraft operator may be unwilling to perform circling approaches.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isAbleToAcceptAirToAirSeparation">
+              isAbleToAcceptAirToAirSeparation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isAbleToAcceptAirToAirSeparation
+             </code>
+             <p>
+              The aircraft operator may be unwilling to perform air-to-air separation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@pilot">
+              pilot
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@pilot
+             </code>
+             <p>
+              The pilot in command of the aircraft.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               PilotInCommand
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isReRouteOf120NmAcceptable">
+              isReRouteOf120NmAcceptable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isReRouteOf120NmAcceptable
+             </code>
+             <p>
+              Any reroute less than 120 nm or less is acceptable.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@civilMilitaryCrossing">
+              civilMilitaryCrossing
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@civilMilitaryCrossing
+             </code>
+             <p>
+              A civil military crossing during flight execution.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CivilMilitaryCrossing
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isIFPLIdentifierTemporary">
+              isIFPLIdentifierTemporary
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isIFPLIdentifierTemporary
+             </code>
+             <p>
+              For an AFIL flight, indication whether the IFPL identifier is temporary assigned by FDP.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightCapability">
+              flightCapability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightCapability
+             </code>
+             <p>
+              The capabilities of the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               FlightCapability
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@ssrCode">
+              ssrCode
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@ssrCode
+             </code>
+             <p>
+              SSR code assigned to the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               SSRCode
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@statusFFICE">
+              statusFFICE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@statusFFICE
+             </code>
+             <p>
+              Status information for information management of the flight information.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeFFICEStatusType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isGroundDelayPreferrableOverReRoute">
+              isGroundDelayPreferrableOverReRoute
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isGroundDelayPreferrableOverReRoute
+             </code>
+             <p>
+              Preferring a ground delay over a reroute for pre-departure flights.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isFlightManagementForced">
+              isFlightManagementForced
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isFlightManagementForced
+             </code>
+             <p>
+              Indication whether a change in the management of the flight has been forced by a manual arbitration.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isAbleToAcceptSpecificRunway">
+              isAbleToAcceptSpecificRunway
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isAbleToAcceptSpecificRunway
+             </code>
+             <p>
+              The operator may be unwilling or unable to accept a specific runway.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@destinationAerodrome">
+              destinationAerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@destinationAerodrome
+             </code>
+             <p>
+              The aerodrome of intended landing.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Aerodrome
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@departureAerodrome">
+              departureAerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@departureAerodrome
+             </code>
+             <p>
+              The aerodrome from which the flight departs.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Aerodrome
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@alternateAerodrome">
+              alternateAerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@alternateAerodrome
+             </code>
+             <p>
+              An  aerodrome  to  which  an  aircraft  may  proceed  when it  becomes either  impossible  or inadvisable  to  proceed  to  or  to  land  at  the aerodrome  of  intended  landing  where  the  necessary  services  and facilities  are  available,  where  aircraft  performance  requirements  can  be  met  and  which  is  operational at  the expected time of use.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Aerodrome
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@diplomaticClearance">
+              diplomaticClearance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@diplomaticClearance
+             </code>
+             <p>
+              Diplomatic clearance applicable to the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               DiplomaticClearance
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@aircraft">
+              aircraft
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@aircraft
+             </code>
+             <p>
+              The aircraft enabling the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Aircraft
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@emergencyContact">
+              emergencyContact
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@emergencyContact
+             </code>
+             <p>
+              Emergency contact information.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               ContactInformation
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@emergencyPhase">
+              emergencyPhase
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@emergencyPhase
+             </code>
+             <p>
+              Emergency situation in which the flight may be.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               EmergencyPhase
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@formationComponent">
+              formationComponent
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@formationComponent
+             </code>
+             <p>
+              Description of the set of airframes belonging to the formation flight that are of the same type.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               FormationComponent
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightPhase">
+              flightPhase
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightPhase
+             </code>
+             <p>
+              A phase of flight in which the flight is divided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               FlightPhase
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightDesignator">
+              flightDesignator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightDesignator
+             </code>
+             <p>
+              An IATA designator of the IATA flight leg.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               FlightDesignator
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@iataUniqueFlightIdentifier">
+              iataUniqueFlightIdentifier
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@iataUniqueFlightIdentifier
+             </code>
+             <p>
+              The unique IATA identifier of the IATA flight leg.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               IATAUniqueFlightIdentifier
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightInMeasure">
+              flightInMeasure
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightInMeasure
+             </code>
+             <p>
+              The impact of the ATFM measure on the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               FlightInMeasure
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@revisionTime">
+              revisionTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@revisionTime
+             </code>
+             <p>
+              Times to insert aircraft in sequence and remove aircraft from sequence.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               RevisionTimes
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@numberOfAircraft">
+              numberOfAircraft
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@numberOfAircraft
+             </code>
+             <p>
+              Number of aircraft flying in a formation in which the aircraft are governed by one flight plan.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Integer
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@aircraftIdentification">
+              aircraftIdentification
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@aircraftIdentification
+             </code>
+             <p>
+              The aircraft identifiation of the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AircraftIdentification
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@airspaceExit">
+              airspaceExit
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@airspaceExit
+             </code>
+             <p>
+              Airspace exit event occurring during the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AirspaceExit
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@nextFlight">
+              nextFlight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@nextFlight
+             </code>
+             <p>
+              The departure flight that will use the same aircraft.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Flight
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@atfmBehaviour">
+              atfmBehaviour
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@atfmBehaviour
+             </code>
+             <p>
+              The behaviour of the flight when concerned by ATFM Measures.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               ATFMBehaviour
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@diversionRecoveryFlight">
+              diversionRecoveryFlight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@diversionRecoveryFlight
+             </code>
+             <p>
+              Indication that a flight is the recovery for a flight that changed its original destination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Flight
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@dataLinkAuthority">
+              dataLinkAuthority
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@dataLinkAuthority
+             </code>
+             <p>
+              The Air traffic services unit (ATSU) with which the aircraft is communicating using Controller-pilot data link communications (CPDLC).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Unit
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@militaryAircraftOperator">
+              militaryAircraftOperator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@militaryAircraftOperator
+             </code>
+             <p>
+              The Unit that flies the Sortie.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               MilitaryAuthority
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isAirborne">
+              isAirborne
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isAirborne
+             </code>
+             <p>
+              Indication whether the flight is airborne.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@statusForCount">
+              statusForCount
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@statusForCount
+             </code>
+             <p>
+              A flight status for limiting the traffic count.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeFlightStatusForCountType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@responsibleATSU">
+              responsibleATSU
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@responsibleATSU
+             </code>
+             <p>
+              The ATSU controlling the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Unit
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@operatorFlightPriority">
+              operatorFlightPriority
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@operatorFlightPriority
+             </code>
+             <p>
+              Value between 0 and 100 that the flight operator assigns to the aircraft to indicate a relative level or priority among its aircrafts arriving in a given airport in case of traffic, in order to assign delays.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Integer
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@globallyUniqueFlightIdentifier">
+              globallyUniqueFlightIdentifier
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@globallyUniqueFlightIdentifier
+             </code>
+             <p>
+              A single reference for FF-ICE information pertinent to a flight that is unique globally.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CharacterString
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@reason">
+              reason
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@reason
+             </code>
+             <p>
+              The mission for which the Sortie is executed.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Mission
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@allocatedSlot">
+              allocatedSlot
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@allocatedSlot
+             </code>
+             <p>
+              Departure slot resulting from the ATFM regulation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AirportSlot
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@allocatedSlot">
+              allocatedSlot
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@allocatedSlot
+             </code>
+             <p>
+              missing data
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AirportSlot
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@rif">
+              rif
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@rif
+             </code>
+             <p>
+              The reclearance in flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               ReclearanceInFlight
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@oceanicEntryClearance">
+              oceanicEntryClearance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@oceanicEntryClearance
+             </code>
+             <p>
+              An oceanic entry clearance for the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               OceanicClearance
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@type
+             </code>
+             <p>
+              The type of the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeFlightType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@militaryFligthActivity">
+              militaryFligthActivity
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@militaryFligthActivity
+             </code>
+             <p>
+              Military flight activity performed by the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               MilitaryFlightActivity
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@emergencySSRCode">
+              emergencySSRCode
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@emergencySSRCode
+             </code>
+             <p>
+              Special SSR code used by the flight in case of an emergency.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               SpecialSSRCode
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@crossingTFV">
+              crossingTFV
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@crossingTFV
+             </code>
+             <p>
+              Traffic volume for which the flight satifies the criteria.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               TrafficVolume
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@departureOperations">
+              departureOperations
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@departureOperations
+             </code>
+             <p>
+              The set of flight operations following procedures associated with the departure aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               DepartureOperations
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@dateOfDeparture">
+              dateOfDeparture
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@dateOfDeparture
+             </code>
+             <p>
+              The date of flight departure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Date
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightDataKind">
+              flightDataKind
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@flightDataKind
+             </code>
+             <p>
+              Indication whether the flight information is real or a copy of a real flight (alternative or what-if flight).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeFlightDataKindType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@fuelEndurance">
+              fuelEndurance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@fuelEndurance
+             </code>
+             <p>
+              The estimated maximum length of time the aircraft can spend in the cruise phase of flight, determined by the amount of fuel at take-off.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               TM_Duration
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@coordination">
+              coordination
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@coordination
+             </code>
+             <p>
+              The coordination of the conditions of transfer between ATC units successively in control of the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CoordinationAndTransfer
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@hasSpecialRequirements">
+              hasSpecialRequirements
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@hasSpecialRequirements
+             </code>
+             <p>
+              Indicator that the flight is expected to be operating in accordance with regulations issued by the relevant State for aircraft operating as State aircraft, as per Article 3 of the Convention on International Civil Aviation (Doc 7300), and for aircraft operating in accordance with State regulations for non-standard flying activities, normally through the use of reserved airspace.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@origin">
+              origin
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@origin
+             </code>
+             <p>
+              An indication of the origin of the flight with regard to the national borders.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeFlightOriginType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@ifplIdentifier">
+              ifplIdentifier
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@ifplIdentifier
+             </code>
+             <p>
+              A unique flight plan identifier allocated by the IFPS.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CharacterString
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@preferredCourseDeviationIfReRoute">
+              preferredCourseDeviationIfReRoute
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@preferredCourseDeviationIfReRoute
+             </code>
+             <p>
+              Preferring a southerly course deviation if a re-route is necessary.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeCompassPointType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@readyStatus">
+              readyStatus
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@readyStatus
+             </code>
+             <p>
+              The flight readiness status.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeFlightReadyStatusType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@reasonForSpecialHandling">
+              reasonForSpecialHandling
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@reasonForSpecialHandling
+             </code>
+             <p>
+              The reason for special handling of a flight by ATS.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeReasonForSpecialHandlingType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@totalEstimatedElapsedTime">
+              totalEstimatedElapsedTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@totalEstimatedElapsedTime
+             </code>
+             <p>
+              For IFR flights, the estimated time required from take-off to arrive over that designated point, defined by reference to navigation aids, from which it is intended that an instrument approach procedure will be commenced, or, if no navigation aid is associated with the destination aerodrome, to arrive over the destination aerodrome. For VFR flights, the estimated time required from take-off to arrive over the destination aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               TM_Duration
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isAbleToAcceptCirclingApproaches">
+              isAbleToAcceptCirclingApproaches
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Flight@isAbleToAcceptCirclingApproaches
+             </code>
+             <p>
+              The aircraft operator may be unwilling to perform circling approaches.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <script src="assets/js/list.min.js">
+  </script>
+  <script>
+   var options = {
+            valueNames: ['Concept', 'Definition','Correspondence'],
+            // Since there are no elements in the list, this will be used as template.
+            //page: 10,
+            //pagination: true,
+            item: '<tr><td class="Term"></td><td class="Definition"><td class="Correspondence"></tr>'
+        };
+
+        var values = [
+	{
+		"Term":"Application Message Exchange Pattern",
+		"Definition":"A Message Exchange Pattern that describes the information interactions at application level and that is implemented using SWIM TI primitive MEPs."
+	},
+	{
+		"Term":"ATM Information Sharing Capability",
+		"Definition":"The ability of a system or information service to share ATM information."
+	},
+	{
+		"Term":"Availability (of a service)",
+		"Definition":"The degree to which a service is operational and accessible when required for use."
+	},
+	{
+		"Term":"Business Domain",
+		"Definition":"A set of business activities that: (a) have a common mission or purpose; (b) share common operational and functional requirements and capabilities; and (c) need to be considered separately from other activities, while maintaining relevant relationships with them."
+	},
+	{
+		"Term":"Business Process",
+		"Definition":"A defined set of business activities that represent the steps required to achieve a business objective. It includes the flow and use of information and resources. "
+	},
+	{
+		"Term":"Capability",
+		"Definition":"The ability of a system to provide a service or perform a function that, either on its own or with other services or functions, can deliver a definable level of performance."
+	},
+	{
+		"Term":"Capacity (of a service)",
+		"Definition":"The maximum rate at which a service can process transactions and the maximum message size of responses. Note: Measurements can include the number of items that can be stored, the number of concurrent users, the communication bandwidth, throughput of transactions, and size of messages."
+	},
+	{
+		"Term":"Collaborative Validation",
+		"Definition":"A validation of service jointly carried out by the service provider together with service users."
+	},
+	{
+		"Term":"Community of Interest [CoI]",
+		"Definition":"A collaborative group of users who exchange information in pursuit of shared goals, interests, missions or business processes. Note: Communities of interest are established in a variety of ways and may be composed of members from one or more functions and organizations as needed for a shared mission."
+	},
+	{
+		"Term":"Confidentiality (of a service)",
+		"Definition":"The degree to which a service ensures that data are accessible only to those authorized to have access."
+	},
+	{
+		"Term":"Data",
+		"Definition":"A representation of facts, concepts or instructions in a formalized manner suitable for communication, interpretation or processing."
+	},
+	{
+		"Term":"Data Exchange Language",
+		"Definition":"Data definition language for describing data and data structures in an information exchange."
+	},
+	{
+		"Term":"Data Format",
+		"Definition":"A structure of data elements, records and files arranged to meet standards, specifications or data quality requirements."
+	},
+	{
+		"Term":"Data Quality",
+		"Definition":"A degree or level of confidence that the data provided meet the requirements of the data user in terms of accuracy, resolution, integrity (or equivalent assurance level), traceability, timeliness, completeness and format."
+	},
+	{
+		"Term":"Data Set",
+		"Definition":"Identifiable collection of data."
+	},
+	{
+		"Term":"Dataset Metadata",
+		"Definition":"Data about data."
+	},
+	{
+		"Term":"End Point",
+		"Definition":"Location at which information is received to invoke and configure interaction."
+	},
+	{
+		"Term":"Exchange Model",
+		"Definition":"Formal description of the concepts involved in an information exchange."
+	},
+	{
+		"Term":"Exchange Schema",
+		"Definition":"Formal description of the data involved in an information exchange."
+	},
+	{
+		"Term":"Functional Requirement",
+		"Definition":"Requirement that specifies a function that a system or service must be able to perform."
+	},
+	{
+		"Term":"Independent Validation",
+		"Definition":"A validation of service carried out by an independent authority."
+	},
+	{
+		"Term":"Information",
+		"Definition":"The result of the assembly, analysis, formatting, and documenting of data, to make the data useful in an ATM context."
+	},
+	{
+		"Term":"Information Domain",
+		"Definition":"The scope of the integrated data for a distinct set of business activities that produce a set of unique information products and services."
+	},
+	{
+		"Term":"Information Exchange",
+		"Definition":"Information that is required to be exchanged by actors in a business process."
+	},
+	{
+		"Term":"Information Exchange Model",
+		"Definition":"A document in a formal language identifying the information that is agreed to be shared between two or more organisations or groups. Note: An information exchange model is normally defined for a specific information domain, such as aeronautical information, meteorological information or flight information. This includes the definition of relationships between the represented information entities. An information exchange model includes for information exchange purposes a standardized exchange language."
+	},
+	{
+		"Term":"Information Exchange Requirement",
+		"Definition":"A specification of the information that is to be exchanged."
+	},
+	{
+		"Term":"Information Quality",
+		"Definition":"The degree or level of confidence that both the data quality and the process used to convert data into information meet user requirements."
+	},
+	{
+		"Term":"Information Service",
+		"Definition":"A type of service that provides an ATM information sharing capability."
+	},
+	{
+		"Term":"Information Service Payload",
+		"Definition":"The assembly of information exchanged using an information service. Note: Information Service Payloads support specified function(s) or purpose, independent of overhead required to enable the information exchange, such as headers, and security requirements."
+	},
+	{
+		"Term":"Infrastructure Service",
+		"Definition":"A type of service that provides SWIM infrastructure capabilities such as interface management, request-reply and publish-subscribe messaging, service security, and enterprise service management."
+	},
+	{
+		"Term":"Integrity (of a service)",
+		"Definition":"An expression of the assurance that a system, product or component prevents unauthorized access to, or modification of, an information service interface or information."
+	},
+	{
+		"Term":"Interface Binding",
+		"Definition":"Specification of the protocols and data formats to be used in transmitting messages defined by the associated interface. Note: Two systems that implement the same interface binding are considered technically interoperable and are able to connect to each other and exchange information. There are two types of interface bindings to be distinguished based on their position in the TCP/IP protocol: service bindings and network bindings. Service bindings specify the service interface protocols (e.g. protocols to interface with the applications, such as HTTP and AMQP). Network bindings specify the transport and network related protocols that will be used to exchange data over the network (e.g. TCP, IP v4/v6)."
+	},
+	{
+		"Term":"Interoperability",
+		"Definition":"The ability of information and communication technology (ICT) systems and of the business processes they support to exchange data and to enable the sharing of information and knowledge. "
+	},
+	{
+		"Term":"IP-based Network",
+		"Definition":"A telecommunications network using the Internet Protocol."
+	},
+	{
+		"Term":"IT Infrastructure",
+		"Definition":"All the hardware, software, networks, facilities, etc. required to develop, test, deliver, monitor, control or support applications and IT services. The term includes all the information technology but not the associated people, processes and documentation."
+	},
+	{
+		"Term":"Loose coupling",
+		"Definition":"A characteristic of systems, in which dependencies among system's constituting parts are minimal."
+	},
+	{
+		"Term":"Message",
+		"Definition":"A discrete unit of communication intended by the source for consumption by a given recipient or group of recipients. Note: The term message refers to a unit of information exchange between systems that communicate via information services. Although there are similarities, no direct comparison should be made with the term message used in other ICAO documents (e.g. CPDLC message)."
+	},
+	{
+		"Term":"Message Exchange Pattern [MEP]",
+		"Definition":"A template that describes relationships of multiple messages exchanged between interacting components to accomplish a single complete information exchange."
+	},
+	{
+		"Term":"Message Metadata",
+		"Definition":"A structure that represents information about a specific aspect of the message."
+	},
+	{
+		"Term":"Message Payload",
+		"Definition":"The structure that represents the primary application-specific content that the message sender intends to deliver to the message recipient."
+	},
+	{
+		"Term":"Messaging Capability",
+		"Definition":"The SWIM Technical Infrastructure capability enabling the delivery of messages."
+	},
+	{
+		"Term":"Message Protocol",
+		"Definition":"A protocol providing rules, formats and functions for exchanging messages between the components of a messaging system."
+	},
+	{
+		"Term":"Metadata",
+		"Definition":"Information about a resource. Note: A service, a service overview, a dataset, are examples of resources."
+	},
+	{
+		"Term":"Modelling Language",
+		"Definition":"Language or notation that is used to model some aspect of an information exchange."
+	},
+	{
+		"Term":"Network Interface Binding",
+		"Definition":"An interface binding that enables the SWIM TI to exchange data with the network."
+	},
+	{
+		"Term":"Non Functional Requirement",
+		"Definition":"Requirement that specifies criteria or constraints on the design or implementation of a system or service."
+	},
+	{
+		"Term":"Open Standard",
+		"Definition":"A standard which is made available to the general public and is developed (or approved) and maintained via a collaborative and consensus driven process. "
+	},
+	{
+		"Term":"Operational (status of a service)",
+		"Definition":"The status indicating that the service is employed in its operational environment."
+	},
+	{
+		"Term":"Organisational Interoperability",
+		"Definition":"An aspect of interoperability concerned with how organisations, such as public administrations in different Member States, cooperate to achieve their mutually agreed goals. Note: In practice, organisational interoperability implies integrating business processes and related data exchange. Organisational interoperability also aims to meet the requirements of the user community by making services available, easily identifiable, accessible and user-focused. "
+	},
+	{
+		"Term":"Performance",
+		"Definition":"The performance relative to the amount of resources used under stated conditions. It includes time behaviour, resource utilization and capacity."
+	},
+	{
+		"Term":"Primitive Message Exchange Pattern",
+		"Definition":"A Message Exchange Pattern that is directly related to the capability of the lower level protocols of the SWIM TI."
+	},
+	{
+		"Term":"Prospective (status of a service)",
+		"Definition":"The status indicating that the service is being designed, developed, or tested for operational activities and is expected to be available in the future."
+	},
+	{
+		"Term":"Protocol",
+		"Definition":"A set of semantic and syntactic rules for exchanging information."
+	},
+	{
+		"Term":"Public Key Infrastructure [PKI]",
+		"Definition":"A common infrastructure component used for signing, emitting and maintaining certificates and revocation lists."
+	},
+	{
+		"Term":"Quality of Service [QoS]",
+		"Definition":"The degree or level of confidence that the performance of a service meets users requirements. "
+	},
+	{
+		"Term":"Recoverability (of a service)",
+		"Definition":"The degree to which, in the event of an interruption or a failure, the desired state of the service can be re-established."
+	},
+	{
+		"Term":"Reference Model",
+		"Definition":"An abstract framework for understanding significant relationships among the entities of some environment."
+	},
+	{
+		"Term":"Reliability",
+		"Definition":"The degree to which a service performs specified functions under specified conditions for a specified period of time."
+	},
+	{
+		"Term":"Resource",
+		"Definition":"Identifiable asset or means that fulfils a requirement."
+	},
+	{
+		"Term":"Retired (status of a service)",
+		"Definition":"The status indicating that active support for the service has been withdrawn, the service has been partially or totally replaced by a new service, or an upgraded service has been installed."
+	},
+	{
+		"Term":"Security",
+		"Definition":"The degree to which a service protects information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. It includes confidentiality, integrity, non-repudiation, accountability, authenticity."
+	},
+	{
+		"Term":"Security Capability",
+		"Definition":"The SWIM Technical Infrastructure capability enabling secured information exchange."
+	},
+	{
+		"Term":"Self Validation",
+		"Definition":"A validation of service carried out by the service provider."
+	},
+	{
+		"Term":"Semantic Interoperability",
+		"Definition":"The ability of computer systems and organisations to exchange information with unambiguous, shared meaning."
+	},
+	{
+		"Term":"Service",
+		"Definition":"A mechanism to enable access to one or more capabilities using a prescribed interface. Note: In the context of system wide information management, the notion of service addresses machine-to-machine interaction based on service oriented architecture principles, and is not to be confused with the notion of service as used in ICAO provisions referring to business services such as AIS, ATS, etc."
+	},
+	{
+		"Term":"Service Category",
+		"Definition":"A class of services which share a common feature."
+	},
+	{
+		"Term":"Service Consumer",
+		"Definition":"An entity which seeks to satisfy a particular need through the use of capabilities offered by means of a service."
+	},
+	{
+		"Term":"Service Definition",
+		"Definition":"A document, issued by a community of interest, used to harmonize service implementations."
+	},
+	{
+		"Term":"Service Description",
+		"Definition":"Information needed in order to use, or consider using, a service."
+	},
+	{
+		"Term":"Service Function",
+		"Definition":"A type of activity describing the functionality of a service."
+	},
+	{
+		"Term":"Service Instance",
+		"Definition":"The service deployed into a running ICT system."
+	},
+	{
+		"Term":"Service Interface",
+		"Definition":"The means by which the underlying capabilities of a service are accessed."
+	},
+	{
+		"Term":"Service Interface Binding",
+		"Definition":"An interface binding that enables services to exchange data with consuming applications."
+	},
+	{
+		"Term":"Service Interoperability",
+		"Definition":"Ability of service providers and service consumers to communicate, invoke services and exchange information at both the syntactic and semantic level leading to effects as defined by the service description."
+	},
+	{
+		"Term":"Service Lifecycle Stage",
+		"Definition":"A classification of services based on their current, past, or future availability for provisioning."
+	},
+	{
+		"Term":"Service Metadata",
+		"Definition":"Data about the service."
+	},
+	{
+		"Term":"Service Operation",
+		"Definition":"Specification of a transformation or query that an object may be called to execute."
+	},
+	{
+		"Term":"Service Orientation",
+		"Definition":"The designing of systems in terms of services and service-based development."
+	},
+	{
+		"Term":"Service Oriented Architecture [SOA]",
+		"Definition":"Architectural style that supports service orientation."
+	},
+	{
+		"Term":"Service Overview",
+		"Definition":"A set of information service metadata intended to promote service discovery and an initial evaluation of the information service characteristics. "
+	},
+	{
+		"Term":"Service Parameter",
+		"Definition":"A variable that an operation can interpret when invoked."
+	},
+	{
+		"Term":"Service Provider",
+		"Definition":"An entity (person or organization) that offers the use of capabilities by means of a service."
+	},
+	{
+		"Term":"Service Registration And Discovery Capability",
+		"Definition":"The ability to register and discover Services in a SWIM environment."
+	},
+	{
+		"Term":"Service Specification",
+		"Definition":"A service definition issued by a standards developing organisation that formally specifies a service in a provider-independent manner."
+	},
+	{
+		"Term":"Standard",
+		"Definition":"Documented agreement containing technical specifications or other precise criteria to be used consistently as rules, guidelines or definitions of characteristics, to ensure that materials, products, processes and services are fit for their purpose."
+	},
+	{
+		"Term":"Standardized Exchange Language",
+		"Definition":"A language used to formalize data exchanges in a particular domain context. Note: A standardized exchange language is used to formalize data. For example, XML Schema is used to define the structure of an XML encoded message."
+	},	
+	{
+		"Term":"SWIM Governance",
+		"Definition":"The set of governance bodies, standards, policies and processes that ensure information required for global interoperability is provided by reliable, trusted services."
+	},
+	{
+		"Term":"SWIM Service Registry",
+		"Definition":"A directory containing entries with the information necessary to discover and access services."
+	},
+	{
+		"Term":"SWIM Stakeholder",
+		"Definition":"A stakeholder in the SWIM community, having distinct roles pertaining to and aligned with the components of SWIM."
+	},
+	{
+		"Term":"Syntactic Interoperability",
+		"Definition":"The ability of systems to correctly interpret the structure of exchanged data."
+	},
+	{
+		"Term":"System Wide Information Management [SWIM]",
+		"Definition":"Standards, infrastructure and governance enabling the management of ATM related information and its exchange between qualified parties via interoperable services."
+	},
+	{
+		"Term":"Technical Infrastructure",
+		"Definition":"The assembly of software and hardware used to enable the provision of information services."
+	},
+	{
+		"Term":"Technical Infrastructure Capability",
+		"Definition":"A characteristic of the SWIM TI."
+	},
+	{
+		"Term":"Technical Infrastructure Management Capability",
+		"Definition":"The SWIM technical infrastructure capability that monitors the performance of the technical infrastructure."
+	},
+	{
+		"Term":"Technical Infrastructure Profile",
+		"Definition":"Specification defining an implementation of the SWIM TI. Multiple SWIM TI Profiles can coexist, each of them focused on the implementation of technical infrastructure but with different scope and applicability."
+	},
+	{
+		"Term":"Technical Interoperability",
+		"Definition":"An aspect of interoperability which covers the technical aspects of linking information systems. It includes topics such as interface specifications, interconnection services, data integration services, and data presentation and exchange."
+	},
+	{
+		"Term":"Time Behaviour (of a service)",
+		"Definition":"A measurement of the processing times of a service. Note: This parameter may be expressed as an indication of a maximum time needed for the service provider to complete the request, measured from the time instant the service provider receives the request to the time instant the service provider sends the response or makes it available."
+	},
+	{
+		"Term":"Transport Protocol",
+		"Definition":"A protocol providing end-to-end communication services for applications."
+	},
+	{
+		"Term":"User Validation",
+		"Definition":"A validation of service carried out by service users."
+	},
+	{
+		"Term":"Validation of Service",
+		"Definition":"An activity whereby a service is checked for conformance with the service objectives and requirements. Note: The service objectives and requirements are captured in the service overview and the technical specifications."
+	}
+];
+
+        var termList = new List('mapping', options, values);
+  </script>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.21/datatables.min.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="../../../assets/js/datatables.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+ </body>
+</html>

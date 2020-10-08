@@ -1,0 +1,2843 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CONCEPT_NAME_HERE - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+      <ol class="breadcrumb">
+       <li class="breadcrumb-item">
+        <a href="../../../developers/semantic-correspondences.html">
+         <span>
+          Semantic Correspondences
+         </span>
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a href="../fixm-4.2.0-to-airm-1.0.0.html">
+         <span>
+          FIXM 4.2.0 to AIRM 1.0.0
+         </span>
+        </a>
+       </li>
+       <li class="breadcrumb-item">
+        <a id="BC_INFO_CONCEPT_NAME">
+         <span>
+          Aerodrome
+         </span>
+        </a>
+       </li>
+      </ol>
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             Aerodrome
+            </h2>
+            <code class="text-secondary">
+             urn:aero
+            </code>
+           </div>
+           <p>
+            FIXM_CLASS_DEFINITION
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#atz">
+                 atz
+                </a>
+               </td>
+               <td>
+                An airspace of defined dimensions established around an aerodrome for the protection of aerodrome traffic.
+               </td>
+               <td>
+                Airspace
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designator">
+                 designator
+                </a>
+               </td>
+               <td>
+                A designator for an aerodrome.
+               </td>
+               <td>
+                CharacterString
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isAbandoned">
+                 isAbandoned
+                </a>
+               </td>
+               <td>
+                An indicator that the aerodrome is no longer in operational use, but its infrastructure is still present and visible from the air.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isWindDirectionIndicatorAvailable">
+                 isWindDirectionIndicatorAvailable
+                </a>
+               </td>
+               <td>
+                The availability of a device at the aerodrome that indicates the direction and the intensity of the wind.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isSecondaryPowerSupplyAvailable">
+                 isSecondaryPowerSupplyAvailable
+                </a>
+               </td>
+               <td>
+                The availability of emergency power supply for the aerodrome.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiway">
+                 taxiway
+                </a>
+               </td>
+               <td>
+                A Taxiway which is situated at the Aerodrome
+               </td>
+               <td>
+                Taxiway
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isPolarGridUsed">
+                 isPolarGridUsed
+                </a>
+               </td>
+               <td>
+                An indicator used to identify an aerodrome at which a Polar Grid is being used instead of Magnetic Variance since there is no True North at the South Pole (Antarctica).
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isAltimeterCheckLocationAvailable">
+                 isAltimeterCheckLocationAvailable
+                </a>
+               </td>
+               <td>
+                The availability of a point or area designated at an aerodrome where the checking of an altimeter system can be accomplished.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isLandingDirectionIndicatorAvailable">
+                 isLandingDirectionIndicatorAvailable
+                </a>
+               </td>
+               <td>
+                The availability of a device that indicates visually the direction currently designated for landing and for take-off.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#hasSegmentedCircleMarker">
+                 hasSegmentedCircleMarker
+                </a>
+               </td>
+               <td>
+                An indicator used to identify weather a segmented circle marker system is available at an unmanned airport.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#iataCoordinationLevel">
+                 iataCoordinationLevel
+                </a>
+               </td>
+               <td>
+                IATA classification of Airports according to level of activity and the need for coordination, such as the approval of planned operations by facilitators (at Level 2 airports) or the allocation of airport slots by coordinators (at Level 3 airports).
+               </td>
+               <td>
+                CodeIATACoordinationLevelType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designatorIATA">
+                 designatorIATA
+                </a>
+               </td>
+               <td>
+                The identifier that is assigned to a location in accordance with rules (resolution 767) governed by the International Air Transport Association (IATA).
+               </td>
+               <td>
+                CharacterString
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#fieldElevation">
+                 fieldElevation
+                </a>
+               </td>
+               <td>
+                The vertical distance above Mean Sea Level (MSL) of the highest point of the landing area.
+               </td>
+               <td>
+                ValVerticalDistanceType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lowestTemperature">
+                 lowestTemperature
+                </a>
+               </td>
+               <td>
+                The mean lowest temperature of the coldest month of the year at an aerodrome.
+               </td>
+               <td>
+                ValTemperatureType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#certificationICAO">
+                 certificationICAO
+                </a>
+               </td>
+               <td>
+                The aerodrome conformity to applicable safety regulatory requirements.
+               </td>
+               <td>
+                CodeCertificationStatusType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dateMagneticVariation">
+                 dateMagneticVariation
+                </a>
+               </td>
+               <td>
+                The date on which an associated magnetic variation was measured at the aerodrome.
+               </td>
+               <td>
+                Date
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#fieldElevationAccuracy">
+                 fieldElevationAccuracy
+                </a>
+               </td>
+               <td>
+                The vertical distance from the stated elevation within which there is a defined confidence of the true position falling.
+               </td>
+               <td>
+                ValVerticalDistanceType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#locationIndicatorICAO">
+                 locationIndicatorICAO
+                </a>
+               </td>
+               <td>
+                A four-letter code group formulated in accordance with rules prescribed by ICAO and assigned to the aerodrome.
+               </td>
+               <td>
+                CharacterString
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#referenceTemperature">
+                 referenceTemperature
+                </a>
+               </td>
+               <td>
+                The monthly mean of the daily maximum temperatures for the hottest month of the year at an aerodrome.
+               </td>
+               <td>
+                ValTemperatureType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#magneticVariation">
+                 magneticVariation
+                </a>
+               </td>
+               <td>
+                The angular difference between True North and Magnetic North measured at a given position and date.
+               </td>
+               <td>
+                Angle
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of aerodrome.
+               </td>
+               <td>
+                CodeAerodromeType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiwayConfiguration">
+                 taxiwayConfiguration
+                </a>
+               </td>
+               <td>
+                A taxiway configuration at the aerodrome.
+               </td>
+               <td>
+                TaxiwayConfiguration
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraftStandConfiguration">
+                 aircraftStandConfiguration
+                </a>
+               </td>
+               <td>
+                An aircraft stand configuration at the aerodrome.
+               </td>
+               <td>
+                AircraftStandConfiguration
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runwayConfiguration">
+                 runwayConfiguration
+                </a>
+               </td>
+               <td>
+                A runway configuration at the aerodrome.
+               </td>
+               <td>
+                RunwayConfiguration
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodromeSet">
+                 aerodromeSet
+                </a>
+               </td>
+               <td>
+                The aerodrome set containing this aerodrome.
+               </td>
+               <td>
+                AerodromeSet
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#groundTrafficControlService">
+                 groundTrafficControlService
+                </a>
+               </td>
+               <td>
+                The surface traffic control service provided at the Aerodrome
+               </td>
+               <td>
+                GroundTrafficControlService
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalDatum">
+                 verticalDatum
+                </a>
+               </td>
+               <td>
+                A reference surface with respect to which elevations and/or depths are specified at the aerodrome.
+               </td>
+               <td>
+                CodeVerticalDatumType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#transitionLevel">
+                 transitionLevel
+                </a>
+               </td>
+               <td>
+                The lowest flight level available for use above the transition altitude.
+               </td>
+               <td>
+                Integer
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#magneticVariationAccuracy">
+                 magneticVariationAccuracy
+                </a>
+               </td>
+               <td>
+                The accuracy of the magnetic variation.
+               </td>
+               <td>
+                Angle
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#transitionAltitude">
+                 transitionAltitude
+                </a>
+               </td>
+               <td>
+                The altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes.
+               </td>
+               <td>
+                ValVerticalDistanceType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timeZoneAdjustment">
+                 timeZoneAdjustment
+                </a>
+               </td>
+               <td>
+                The time zone adjustment for the aerodrome.
+               </td>
+               <td>
+                TM_Duration
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timeZone">
+                 timeZone
+                </a>
+               </td>
+               <td>
+                The time zone of the aerodrome.
+               </td>
+               <td>
+                CodeTimeReferenceType
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#name">
+                 name
+                </a>
+               </td>
+               <td>
+                The primary official name of an aerodrome as designated by an appropriate authority.
+               </td>
+               <td>
+                CharacterString
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#certificationDate">
+                 certificationDate
+                </a>
+               </td>
+               <td>
+                The date when the aerodrome certification has been issued by the supervising authority.
+               </td>
+               <td>
+                Date
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#magneticVariationChange">
+                 magneticVariationChange
+                </a>
+               </td>
+               <td>
+                The annual rate of change of the magnetic variation at a specified aerodrome.
+               </td>
+               <td>
+                Angle
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#certificationExpirationDate">
+                 certificationExpirationDate
+                </a>
+               </td>
+               <td>
+                The date when the aerodrome certification will become invalid.
+               </td>
+               <td>
+                Date
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isPrivateUse">
+                 isPrivateUse
+                </a>
+               </td>
+               <td>
+                Indication whether the aerodrome is only for the use of the owners and not open for the public.
+               </td>
+               <td>
+                Boolean
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#country">
+                 country
+                </a>
+               </td>
+               <td>
+                The country where the airport is located.
+               </td>
+               <td>
+                State
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#navaid">
+                 navaid
+                </a>
+               </td>
+               <td>
+                Navaid used for homing at a particular Aerodrome
+               </td>
+               <td>
+                RadioNavigationService
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#servingProcedure">
+                 servingProcedure
+                </a>
+               </td>
+               <td>
+                Procedure which serves the aerodrome
+               </td>
+               <td>
+                Procedure
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#seaplaneLandingArea">
+                 seaplaneLandingArea
+                </a>
+               </td>
+               <td>
+                A seaplane landing area which is situated at the Aerodrome
+               </td>
+               <td>
+                SeaplaneLandingArea
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#capacity">
+                 capacity
+                </a>
+               </td>
+               <td>
+                The capacity of the aerodrome.
+               </td>
+               <td>
+                Capacity
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodromeSystem">
+                 aerodromeSystem
+                </a>
+               </td>
+               <td>
+                System at the aerodrome.
+               </td>
+               <td>
+                AerodromeSystem
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altimeterSource">
+                 altimeterSource
+                </a>
+               </td>
+               <td>
+                The altimeter source used by the aerodrome.
+               </td>
+               <td>
+                AltimeterSource
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#terminal">
+                 terminal
+                </a>
+               </td>
+               <td>
+                The terminal(s) used by the aerodrome
+               </td>
+               <td>
+                Terminal
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#supervisingAuthority">
+                 supervisingAuthority
+                </a>
+               </td>
+               <td>
+                The organisation that granted the aerodrome certificate.
+               </td>
+               <td>
+                Organisation
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#availability">
+                 availability
+                </a>
+               </td>
+               <td>
+                The operational status of the aerodrome.
+               </td>
+               <td>
+                AerodromeAvailability
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#rule">
+                 rule
+                </a>
+               </td>
+               <td>
+                An instruction or regulation which is in relation with the Aerodrome
+               </td>
+               <td>
+                RulesProcedures
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#informationService">
+                 informationService
+                </a>
+               </td>
+               <td>
+                The Service which provides information for the Aerodrome
+               </td>
+               <td>
+                InformationService
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#road">
+                 road
+                </a>
+               </td>
+               <td>
+                Road which is situated at the Aerodrome
+               </td>
+               <td>
+                Road
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#radarSystem">
+                 radarSystem
+                </a>
+               </td>
+               <td>
+                RadarSystem located at or near the Aerodrome
+               </td>
+               <td>
+                RadarSystem
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#apron">
+                 apron
+                </a>
+               </td>
+               <td>
+                An Apron which is situated at the Aerodrome
+               </td>
+               <td>
+                Apron
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#workArea">
+                 workArea
+                </a>
+               </td>
+               <td>
+                A WorkArea which is situated at the Aerodrome
+               </td>
+               <td>
+                WorkArea
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#groundLight">
+                 groundLight
+                </a>
+               </td>
+               <td>
+                GroundLight situated in the area of the Aerodrome
+               </td>
+               <td>
+                AeronauticalGroundLight
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodromeReferencePoint">
+                 aerodromeReferencePoint
+                </a>
+               </td>
+               <td>
+                The designated geographical location of an aerodrome.
+               </td>
+               <td>
+                InfrastructurePoint
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#msa">
+                 msa
+                </a>
+               </td>
+               <td>
+                A series of minimum altitudes in the area around the aerodrome.
+               </td>
+               <td>
+                SafeAltitudeArea
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#nas">
+                 nas
+                </a>
+               </td>
+               <td>
+                The NAS Airspace in which the Aerodrome is located.
+               </td>
+               <td>
+                Airspace
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#tma">
+                 tma
+                </a>
+               </td>
+               <td>
+                The terminal control area.
+               </td>
+               <td>
+                Airspace
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#touchDownLiftOff">
+                 touchDownLiftOff
+                </a>
+               </td>
+               <td>
+                A TouchDownLiftOff area which is situated at the Aerodrome
+               </td>
+               <td>
+                TouchDownLiftOff
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#hotSpot">
+                 hotSpot
+                </a>
+               </td>
+               <td>
+                A HotSpot defined for the aerodrome.
+               </td>
+               <td>
+                AerodromeHotSpot
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodromeTerrain">
+                 aerodromeTerrain
+                </a>
+               </td>
+               <td>
+                The summary of the terrain at the aerodrome.
+               </td>
+               <td>
+                AerodromeTerrain
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runway">
+                 runway
+                </a>
+               </td>
+               <td>
+                A Runway which is situated at the Aerodrome
+               </td>
+               <td>
+                Runway
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#contact">
+                 contact
+                </a>
+               </td>
+               <td>
+                Contact details for the aerodrome.
+               </td>
+               <td>
+                ContactInformation
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#nonMovementArea">
+                 nonMovementArea
+                </a>
+               </td>
+               <td>
+                The Non-movement Area which is situated at the Aerodrome
+               </td>
+               <td>
+                NonMovementArea
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surveyControlPoint">
+                 surveyControlPoint
+                </a>
+               </td>
+               <td>
+                The SurveyControlPoint associated with the Aerodrome
+               </td>
+               <td>
+                InfrastructurePoint
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#infrastucturePoint">
+                 infrastucturePoint
+                </a>
+               </td>
+               <td>
+                Infrastructure point associated with an aerodrome.
+               </td>
+               <td>
+                InfrastructurePoint
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#checkPoint">
+                 checkPoint
+                </a>
+               </td>
+               <td>
+                A point established and marked on the surface of the aerodrome allowing the checking of a navigation system (like VOR, GNSS, etc.) or initialisation of an inertial navigation system.
+               </td>
+               <td>
+                InfrastructurePoint
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@atz">
+              atz
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@atz
+             </code>
+             <p>
+              An airspace of defined dimensions established around an aerodrome for the protection of aerodrome traffic.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Airspace
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@designator">
+              designator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@designator
+             </code>
+             <p>
+              A designator for an aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CharacterString
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isAbandoned">
+              isAbandoned
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isAbandoned
+             </code>
+             <p>
+              An indicator that the aerodrome is no longer in operational use, but its infrastructure is still present and visible from the air.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isWindDirectionIndicatorAvailable">
+              isWindDirectionIndicatorAvailable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isWindDirectionIndicatorAvailable
+             </code>
+             <p>
+              The availability of a device at the aerodrome that indicates the direction and the intensity of the wind.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isSecondaryPowerSupplyAvailable">
+              isSecondaryPowerSupplyAvailable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isSecondaryPowerSupplyAvailable
+             </code>
+             <p>
+              The availability of emergency power supply for the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@taxiway">
+              taxiway
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@taxiway
+             </code>
+             <p>
+              A Taxiway which is situated at the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Taxiway
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isPolarGridUsed">
+              isPolarGridUsed
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isPolarGridUsed
+             </code>
+             <p>
+              An indicator used to identify an aerodrome at which a Polar Grid is being used instead of Magnetic Variance since there is no True North at the South Pole (Antarctica).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isAltimeterCheckLocationAvailable">
+              isAltimeterCheckLocationAvailable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isAltimeterCheckLocationAvailable
+             </code>
+             <p>
+              The availability of a point or area designated at an aerodrome where the checking of an altimeter system can be accomplished.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isLandingDirectionIndicatorAvailable">
+              isLandingDirectionIndicatorAvailable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isLandingDirectionIndicatorAvailable
+             </code>
+             <p>
+              The availability of a device that indicates visually the direction currently designated for landing and for take-off.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@hasSegmentedCircleMarker">
+              hasSegmentedCircleMarker
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@hasSegmentedCircleMarker
+             </code>
+             <p>
+              An indicator used to identify weather a segmented circle marker system is available at an unmanned airport.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@iataCoordinationLevel">
+              iataCoordinationLevel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@iataCoordinationLevel
+             </code>
+             <p>
+              IATA classification of Airports according to level of activity and the need for coordination, such as the approval of planned operations by facilitators (at Level 2 airports) or the allocation of airport slots by coordinators (at Level 3 airports).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeIATACoordinationLevelType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@designatorIATA">
+              designatorIATA
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@designatorIATA
+             </code>
+             <p>
+              The identifier that is assigned to a location in accordance with rules (resolution 767) governed by the International Air Transport Association (IATA).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CharacterString
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@fieldElevation">
+              fieldElevation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@fieldElevation
+             </code>
+             <p>
+              The vertical distance above Mean Sea Level (MSL) of the highest point of the landing area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               ValVerticalDistanceType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@lowestTemperature">
+              lowestTemperature
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@lowestTemperature
+             </code>
+             <p>
+              The mean lowest temperature of the coldest month of the year at an aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               ValTemperatureType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@certificationICAO">
+              certificationICAO
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@certificationICAO
+             </code>
+             <p>
+              The aerodrome conformity to applicable safety regulatory requirements.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeCertificationStatusType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@dateMagneticVariation">
+              dateMagneticVariation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@dateMagneticVariation
+             </code>
+             <p>
+              The date on which an associated magnetic variation was measured at the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Date
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@fieldElevationAccuracy">
+              fieldElevationAccuracy
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@fieldElevationAccuracy
+             </code>
+             <p>
+              The vertical distance from the stated elevation within which there is a defined confidence of the true position falling.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               ValVerticalDistanceType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@locationIndicatorICAO">
+              locationIndicatorICAO
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@locationIndicatorICAO
+             </code>
+             <p>
+              A four-letter code group formulated in accordance with rules prescribed by ICAO and assigned to the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CharacterString
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@referenceTemperature">
+              referenceTemperature
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@referenceTemperature
+             </code>
+             <p>
+              The monthly mean of the daily maximum temperatures for the hottest month of the year at an aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               ValTemperatureType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@magneticVariation">
+              magneticVariation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@magneticVariation
+             </code>
+             <p>
+              The angular difference between True North and Magnetic North measured at a given position and date.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Angle
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@type
+             </code>
+             <p>
+              The type of aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeAerodromeType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@taxiwayConfiguration">
+              taxiwayConfiguration
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@taxiwayConfiguration
+             </code>
+             <p>
+              A taxiway configuration at the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               TaxiwayConfiguration
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aircraftStandConfiguration">
+              aircraftStandConfiguration
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aircraftStandConfiguration
+             </code>
+             <p>
+              An aircraft stand configuration at the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AircraftStandConfiguration
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@runwayConfiguration">
+              runwayConfiguration
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@runwayConfiguration
+             </code>
+             <p>
+              A runway configuration at the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               RunwayConfiguration
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aerodromeSet">
+              aerodromeSet
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aerodromeSet
+             </code>
+             <p>
+              The aerodrome set containing this aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AerodromeSet
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@groundTrafficControlService">
+              groundTrafficControlService
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@groundTrafficControlService
+             </code>
+             <p>
+              The surface traffic control service provided at the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               GroundTrafficControlService
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@verticalDatum">
+              verticalDatum
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@verticalDatum
+             </code>
+             <p>
+              A reference surface with respect to which elevations and/or depths are specified at the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeVerticalDatumType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@transitionLevel">
+              transitionLevel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@transitionLevel
+             </code>
+             <p>
+              The lowest flight level available for use above the transition altitude.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Integer
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@magneticVariationAccuracy">
+              magneticVariationAccuracy
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@magneticVariationAccuracy
+             </code>
+             <p>
+              The accuracy of the magnetic variation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Angle
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@transitionAltitude">
+              transitionAltitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@transitionAltitude
+             </code>
+             <p>
+              The altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               ValVerticalDistanceType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@timeZoneAdjustment">
+              timeZoneAdjustment
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@timeZoneAdjustment
+             </code>
+             <p>
+              The time zone adjustment for the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               TM_Duration
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@timeZone">
+              timeZone
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@timeZone
+             </code>
+             <p>
+              The time zone of the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CodeTimeReferenceType
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@name">
+              name
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@name
+             </code>
+             <p>
+              The primary official name of an aerodrome as designated by an appropriate authority.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               CharacterString
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@certificationDate">
+              certificationDate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@certificationDate
+             </code>
+             <p>
+              The date when the aerodrome certification has been issued by the supervising authority.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Date
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@magneticVariationChange">
+              magneticVariationChange
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@magneticVariationChange
+             </code>
+             <p>
+              The annual rate of change of the magnetic variation at a specified aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Angle
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@certificationExpirationDate">
+              certificationExpirationDate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@certificationExpirationDate
+             </code>
+             <p>
+              The date when the aerodrome certification will become invalid.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Date
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isPrivateUse">
+              isPrivateUse
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@isPrivateUse
+             </code>
+             <p>
+              Indication whether the aerodrome is only for the use of the owners and not open for the public.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Boolean
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@country">
+              country
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@country
+             </code>
+             <p>
+              The country where the airport is located.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               State
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@navaid">
+              navaid
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@navaid
+             </code>
+             <p>
+              Navaid used for homing at a particular Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               RadioNavigationService
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@servingProcedure">
+              servingProcedure
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@servingProcedure
+             </code>
+             <p>
+              Procedure which serves the aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Procedure
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@seaplaneLandingArea">
+              seaplaneLandingArea
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@seaplaneLandingArea
+             </code>
+             <p>
+              A seaplane landing area which is situated at the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               SeaplaneLandingArea
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@capacity">
+              capacity
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@capacity
+             </code>
+             <p>
+              The capacity of the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Capacity
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aerodromeSystem">
+              aerodromeSystem
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aerodromeSystem
+             </code>
+             <p>
+              System at the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AerodromeSystem
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@altimeterSource">
+              altimeterSource
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@altimeterSource
+             </code>
+             <p>
+              The altimeter source used by the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AltimeterSource
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@terminal">
+              terminal
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@terminal
+             </code>
+             <p>
+              The terminal(s) used by the aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Terminal
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@supervisingAuthority">
+              supervisingAuthority
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@supervisingAuthority
+             </code>
+             <p>
+              The organisation that granted the aerodrome certificate.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Organisation
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@availability">
+              availability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@availability
+             </code>
+             <p>
+              The operational status of the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AerodromeAvailability
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@rule">
+              rule
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@rule
+             </code>
+             <p>
+              An instruction or regulation which is in relation with the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               RulesProcedures
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@informationService">
+              informationService
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@informationService
+             </code>
+             <p>
+              The Service which provides information for the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               InformationService
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@road">
+              road
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@road
+             </code>
+             <p>
+              Road which is situated at the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Road
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@radarSystem">
+              radarSystem
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@radarSystem
+             </code>
+             <p>
+              RadarSystem located at or near the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               RadarSystem
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@apron">
+              apron
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@apron
+             </code>
+             <p>
+              An Apron which is situated at the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Apron
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@workArea">
+              workArea
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@workArea
+             </code>
+             <p>
+              A WorkArea which is situated at the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               WorkArea
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@groundLight">
+              groundLight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@groundLight
+             </code>
+             <p>
+              GroundLight situated in the area of the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AeronauticalGroundLight
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aerodromeReferencePoint">
+              aerodromeReferencePoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aerodromeReferencePoint
+             </code>
+             <p>
+              The designated geographical location of an aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               InfrastructurePoint
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@msa">
+              msa
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@msa
+             </code>
+             <p>
+              A series of minimum altitudes in the area around the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               SafeAltitudeArea
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@nas">
+              nas
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@nas
+             </code>
+             <p>
+              The NAS Airspace in which the Aerodrome is located.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Airspace
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@tma">
+              tma
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@tma
+             </code>
+             <p>
+              The terminal control area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Airspace
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@touchDownLiftOff">
+              touchDownLiftOff
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@touchDownLiftOff
+             </code>
+             <p>
+              A TouchDownLiftOff area which is situated at the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               TouchDownLiftOff
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@hotSpot">
+              hotSpot
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@hotSpot
+             </code>
+             <p>
+              A HotSpot defined for the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AerodromeHotSpot
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aerodromeTerrain">
+              aerodromeTerrain
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@aerodromeTerrain
+             </code>
+             <p>
+              The summary of the terrain at the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               AerodromeTerrain
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@runway">
+              runway
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@runway
+             </code>
+             <p>
+              A Runway which is situated at the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               Runway
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@contact">
+              contact
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@contact
+             </code>
+             <p>
+              Contact details for the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               ContactInformation
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@nonMovementArea">
+              nonMovementArea
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@nonMovementArea
+             </code>
+             <p>
+              The Non-movement Area which is situated at the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               NonMovementArea
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@surveyControlPoint">
+              surveyControlPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@surveyControlPoint
+             </code>
+             <p>
+              The SurveyControlPoint associated with the Aerodrome
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               InfrastructurePoint
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@infrastucturePoint">
+              infrastucturePoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@infrastucturePoint
+             </code>
+             <p>
+              Infrastructure point associated with an aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               InfrastructurePoint
+              </span>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@checkPoint">
+              checkPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Aerodrome@checkPoint
+             </code>
+             <p>
+              A point established and marked on the surface of the aerodrome allowing the checking of a navigation system (like VOR, GNSS, etc.) or initialisation of an inertial navigation system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               InfrastructurePoint
+              </span>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <script src="assets/js/list.min.js">
+  </script>
+  <script>
+   var options = {
+            valueNames: ['Concept', 'Definition','Correspondence'],
+            // Since there are no elements in the list, this will be used as template.
+            //page: 10,
+            //pagination: true,
+            item: '<tr><td class="Term"></td><td class="Definition"><td class="Correspondence"></tr>'
+        };
+
+        var values = [
+	{
+		"Term":"Application Message Exchange Pattern",
+		"Definition":"A Message Exchange Pattern that describes the information interactions at application level and that is implemented using SWIM TI primitive MEPs."
+	},
+	{
+		"Term":"ATM Information Sharing Capability",
+		"Definition":"The ability of a system or information service to share ATM information."
+	},
+	{
+		"Term":"Availability (of a service)",
+		"Definition":"The degree to which a service is operational and accessible when required for use."
+	},
+	{
+		"Term":"Business Domain",
+		"Definition":"A set of business activities that: (a) have a common mission or purpose; (b) share common operational and functional requirements and capabilities; and (c) need to be considered separately from other activities, while maintaining relevant relationships with them."
+	},
+	{
+		"Term":"Business Process",
+		"Definition":"A defined set of business activities that represent the steps required to achieve a business objective. It includes the flow and use of information and resources. "
+	},
+	{
+		"Term":"Capability",
+		"Definition":"The ability of a system to provide a service or perform a function that, either on its own or with other services or functions, can deliver a definable level of performance."
+	},
+	{
+		"Term":"Capacity (of a service)",
+		"Definition":"The maximum rate at which a service can process transactions and the maximum message size of responses. Note: Measurements can include the number of items that can be stored, the number of concurrent users, the communication bandwidth, throughput of transactions, and size of messages."
+	},
+	{
+		"Term":"Collaborative Validation",
+		"Definition":"A validation of service jointly carried out by the service provider together with service users."
+	},
+	{
+		"Term":"Community of Interest [CoI]",
+		"Definition":"A collaborative group of users who exchange information in pursuit of shared goals, interests, missions or business processes. Note: Communities of interest are established in a variety of ways and may be composed of members from one or more functions and organizations as needed for a shared mission."
+	},
+	{
+		"Term":"Confidentiality (of a service)",
+		"Definition":"The degree to which a service ensures that data are accessible only to those authorized to have access."
+	},
+	{
+		"Term":"Data",
+		"Definition":"A representation of facts, concepts or instructions in a formalized manner suitable for communication, interpretation or processing."
+	},
+	{
+		"Term":"Data Exchange Language",
+		"Definition":"Data definition language for describing data and data structures in an information exchange."
+	},
+	{
+		"Term":"Data Format",
+		"Definition":"A structure of data elements, records and files arranged to meet standards, specifications or data quality requirements."
+	},
+	{
+		"Term":"Data Quality",
+		"Definition":"A degree or level of confidence that the data provided meet the requirements of the data user in terms of accuracy, resolution, integrity (or equivalent assurance level), traceability, timeliness, completeness and format."
+	},
+	{
+		"Term":"Data Set",
+		"Definition":"Identifiable collection of data."
+	},
+	{
+		"Term":"Dataset Metadata",
+		"Definition":"Data about data."
+	},
+	{
+		"Term":"End Point",
+		"Definition":"Location at which information is received to invoke and configure interaction."
+	},
+	{
+		"Term":"Exchange Model",
+		"Definition":"Formal description of the concepts involved in an information exchange."
+	},
+	{
+		"Term":"Exchange Schema",
+		"Definition":"Formal description of the data involved in an information exchange."
+	},
+	{
+		"Term":"Functional Requirement",
+		"Definition":"Requirement that specifies a function that a system or service must be able to perform."
+	},
+	{
+		"Term":"Independent Validation",
+		"Definition":"A validation of service carried out by an independent authority."
+	},
+	{
+		"Term":"Information",
+		"Definition":"The result of the assembly, analysis, formatting, and documenting of data, to make the data useful in an ATM context."
+	},
+	{
+		"Term":"Information Domain",
+		"Definition":"The scope of the integrated data for a distinct set of business activities that produce a set of unique information products and services."
+	},
+	{
+		"Term":"Information Exchange",
+		"Definition":"Information that is required to be exchanged by actors in a business process."
+	},
+	{
+		"Term":"Information Exchange Model",
+		"Definition":"A document in a formal language identifying the information that is agreed to be shared between two or more organisations or groups. Note: An information exchange model is normally defined for a specific information domain, such as aeronautical information, meteorological information or flight information. This includes the definition of relationships between the represented information entities. An information exchange model includes for information exchange purposes a standardized exchange language."
+	},
+	{
+		"Term":"Information Exchange Requirement",
+		"Definition":"A specification of the information that is to be exchanged."
+	},
+	{
+		"Term":"Information Quality",
+		"Definition":"The degree or level of confidence that both the data quality and the process used to convert data into information meet user requirements."
+	},
+	{
+		"Term":"Information Service",
+		"Definition":"A type of service that provides an ATM information sharing capability."
+	},
+	{
+		"Term":"Information Service Payload",
+		"Definition":"The assembly of information exchanged using an information service. Note: Information Service Payloads support specified function(s) or purpose, independent of overhead required to enable the information exchange, such as headers, and security requirements."
+	},
+	{
+		"Term":"Infrastructure Service",
+		"Definition":"A type of service that provides SWIM infrastructure capabilities such as interface management, request-reply and publish-subscribe messaging, service security, and enterprise service management."
+	},
+	{
+		"Term":"Integrity (of a service)",
+		"Definition":"An expression of the assurance that a system, product or component prevents unauthorized access to, or modification of, an information service interface or information."
+	},
+	{
+		"Term":"Interface Binding",
+		"Definition":"Specification of the protocols and data formats to be used in transmitting messages defined by the associated interface. Note: Two systems that implement the same interface binding are considered technically interoperable and are able to connect to each other and exchange information. There are two types of interface bindings to be distinguished based on their position in the TCP/IP protocol: service bindings and network bindings. Service bindings specify the service interface protocols (e.g. protocols to interface with the applications, such as HTTP and AMQP). Network bindings specify the transport and network related protocols that will be used to exchange data over the network (e.g. TCP, IP v4/v6)."
+	},
+	{
+		"Term":"Interoperability",
+		"Definition":"The ability of information and communication technology (ICT) systems and of the business processes they support to exchange data and to enable the sharing of information and knowledge. "
+	},
+	{
+		"Term":"IP-based Network",
+		"Definition":"A telecommunications network using the Internet Protocol."
+	},
+	{
+		"Term":"IT Infrastructure",
+		"Definition":"All the hardware, software, networks, facilities, etc. required to develop, test, deliver, monitor, control or support applications and IT services. The term includes all the information technology but not the associated people, processes and documentation."
+	},
+	{
+		"Term":"Loose coupling",
+		"Definition":"A characteristic of systems, in which dependencies among system's constituting parts are minimal."
+	},
+	{
+		"Term":"Message",
+		"Definition":"A discrete unit of communication intended by the source for consumption by a given recipient or group of recipients. Note: The term message refers to a unit of information exchange between systems that communicate via information services. Although there are similarities, no direct comparison should be made with the term message used in other ICAO documents (e.g. CPDLC message)."
+	},
+	{
+		"Term":"Message Exchange Pattern [MEP]",
+		"Definition":"A template that describes relationships of multiple messages exchanged between interacting components to accomplish a single complete information exchange."
+	},
+	{
+		"Term":"Message Metadata",
+		"Definition":"A structure that represents information about a specific aspect of the message."
+	},
+	{
+		"Term":"Message Payload",
+		"Definition":"The structure that represents the primary application-specific content that the message sender intends to deliver to the message recipient."
+	},
+	{
+		"Term":"Messaging Capability",
+		"Definition":"The SWIM Technical Infrastructure capability enabling the delivery of messages."
+	},
+	{
+		"Term":"Message Protocol",
+		"Definition":"A protocol providing rules, formats and functions for exchanging messages between the components of a messaging system."
+	},
+	{
+		"Term":"Metadata",
+		"Definition":"Information about a resource. Note: A service, a service overview, a dataset, are examples of resources."
+	},
+	{
+		"Term":"Modelling Language",
+		"Definition":"Language or notation that is used to model some aspect of an information exchange."
+	},
+	{
+		"Term":"Network Interface Binding",
+		"Definition":"An interface binding that enables the SWIM TI to exchange data with the network."
+	},
+	{
+		"Term":"Non Functional Requirement",
+		"Definition":"Requirement that specifies criteria or constraints on the design or implementation of a system or service."
+	},
+	{
+		"Term":"Open Standard",
+		"Definition":"A standard which is made available to the general public and is developed (or approved) and maintained via a collaborative and consensus driven process. "
+	},
+	{
+		"Term":"Operational (status of a service)",
+		"Definition":"The status indicating that the service is employed in its operational environment."
+	},
+	{
+		"Term":"Organisational Interoperability",
+		"Definition":"An aspect of interoperability concerned with how organisations, such as public administrations in different Member States, cooperate to achieve their mutually agreed goals. Note: In practice, organisational interoperability implies integrating business processes and related data exchange. Organisational interoperability also aims to meet the requirements of the user community by making services available, easily identifiable, accessible and user-focused. "
+	},
+	{
+		"Term":"Performance",
+		"Definition":"The performance relative to the amount of resources used under stated conditions. It includes time behaviour, resource utilization and capacity."
+	},
+	{
+		"Term":"Primitive Message Exchange Pattern",
+		"Definition":"A Message Exchange Pattern that is directly related to the capability of the lower level protocols of the SWIM TI."
+	},
+	{
+		"Term":"Prospective (status of a service)",
+		"Definition":"The status indicating that the service is being designed, developed, or tested for operational activities and is expected to be available in the future."
+	},
+	{
+		"Term":"Protocol",
+		"Definition":"A set of semantic and syntactic rules for exchanging information."
+	},
+	{
+		"Term":"Public Key Infrastructure [PKI]",
+		"Definition":"A common infrastructure component used for signing, emitting and maintaining certificates and revocation lists."
+	},
+	{
+		"Term":"Quality of Service [QoS]",
+		"Definition":"The degree or level of confidence that the performance of a service meets users requirements. "
+	},
+	{
+		"Term":"Recoverability (of a service)",
+		"Definition":"The degree to which, in the event of an interruption or a failure, the desired state of the service can be re-established."
+	},
+	{
+		"Term":"Reference Model",
+		"Definition":"An abstract framework for understanding significant relationships among the entities of some environment."
+	},
+	{
+		"Term":"Reliability",
+		"Definition":"The degree to which a service performs specified functions under specified conditions for a specified period of time."
+	},
+	{
+		"Term":"Resource",
+		"Definition":"Identifiable asset or means that fulfils a requirement."
+	},
+	{
+		"Term":"Retired (status of a service)",
+		"Definition":"The status indicating that active support for the service has been withdrawn, the service has been partially or totally replaced by a new service, or an upgraded service has been installed."
+	},
+	{
+		"Term":"Security",
+		"Definition":"The degree to which a service protects information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. It includes confidentiality, integrity, non-repudiation, accountability, authenticity."
+	},
+	{
+		"Term":"Security Capability",
+		"Definition":"The SWIM Technical Infrastructure capability enabling secured information exchange."
+	},
+	{
+		"Term":"Self Validation",
+		"Definition":"A validation of service carried out by the service provider."
+	},
+	{
+		"Term":"Semantic Interoperability",
+		"Definition":"The ability of computer systems and organisations to exchange information with unambiguous, shared meaning."
+	},
+	{
+		"Term":"Service",
+		"Definition":"A mechanism to enable access to one or more capabilities using a prescribed interface. Note: In the context of system wide information management, the notion of service addresses machine-to-machine interaction based on service oriented architecture principles, and is not to be confused with the notion of service as used in ICAO provisions referring to business services such as AIS, ATS, etc."
+	},
+	{
+		"Term":"Service Category",
+		"Definition":"A class of services which share a common feature."
+	},
+	{
+		"Term":"Service Consumer",
+		"Definition":"An entity which seeks to satisfy a particular need through the use of capabilities offered by means of a service."
+	},
+	{
+		"Term":"Service Definition",
+		"Definition":"A document, issued by a community of interest, used to harmonize service implementations."
+	},
+	{
+		"Term":"Service Description",
+		"Definition":"Information needed in order to use, or consider using, a service."
+	},
+	{
+		"Term":"Service Function",
+		"Definition":"A type of activity describing the functionality of a service."
+	},
+	{
+		"Term":"Service Instance",
+		"Definition":"The service deployed into a running ICT system."
+	},
+	{
+		"Term":"Service Interface",
+		"Definition":"The means by which the underlying capabilities of a service are accessed."
+	},
+	{
+		"Term":"Service Interface Binding",
+		"Definition":"An interface binding that enables services to exchange data with consuming applications."
+	},
+	{
+		"Term":"Service Interoperability",
+		"Definition":"Ability of service providers and service consumers to communicate, invoke services and exchange information at both the syntactic and semantic level leading to effects as defined by the service description."
+	},
+	{
+		"Term":"Service Lifecycle Stage",
+		"Definition":"A classification of services based on their current, past, or future availability for provisioning."
+	},
+	{
+		"Term":"Service Metadata",
+		"Definition":"Data about the service."
+	},
+	{
+		"Term":"Service Operation",
+		"Definition":"Specification of a transformation or query that an object may be called to execute."
+	},
+	{
+		"Term":"Service Orientation",
+		"Definition":"The designing of systems in terms of services and service-based development."
+	},
+	{
+		"Term":"Service Oriented Architecture [SOA]",
+		"Definition":"Architectural style that supports service orientation."
+	},
+	{
+		"Term":"Service Overview",
+		"Definition":"A set of information service metadata intended to promote service discovery and an initial evaluation of the information service characteristics. "
+	},
+	{
+		"Term":"Service Parameter",
+		"Definition":"A variable that an operation can interpret when invoked."
+	},
+	{
+		"Term":"Service Provider",
+		"Definition":"An entity (person or organization) that offers the use of capabilities by means of a service."
+	},
+	{
+		"Term":"Service Registration And Discovery Capability",
+		"Definition":"The ability to register and discover Services in a SWIM environment."
+	},
+	{
+		"Term":"Service Specification",
+		"Definition":"A service definition issued by a standards developing organisation that formally specifies a service in a provider-independent manner."
+	},
+	{
+		"Term":"Standard",
+		"Definition":"Documented agreement containing technical specifications or other precise criteria to be used consistently as rules, guidelines or definitions of characteristics, to ensure that materials, products, processes and services are fit for their purpose."
+	},
+	{
+		"Term":"Standardized Exchange Language",
+		"Definition":"A language used to formalize data exchanges in a particular domain context. Note: A standardized exchange language is used to formalize data. For example, XML Schema is used to define the structure of an XML encoded message."
+	},	
+	{
+		"Term":"SWIM Governance",
+		"Definition":"The set of governance bodies, standards, policies and processes that ensure information required for global interoperability is provided by reliable, trusted services."
+	},
+	{
+		"Term":"SWIM Service Registry",
+		"Definition":"A directory containing entries with the information necessary to discover and access services."
+	},
+	{
+		"Term":"SWIM Stakeholder",
+		"Definition":"A stakeholder in the SWIM community, having distinct roles pertaining to and aligned with the components of SWIM."
+	},
+	{
+		"Term":"Syntactic Interoperability",
+		"Definition":"The ability of systems to correctly interpret the structure of exchanged data."
+	},
+	{
+		"Term":"System Wide Information Management [SWIM]",
+		"Definition":"Standards, infrastructure and governance enabling the management of ATM related information and its exchange between qualified parties via interoperable services."
+	},
+	{
+		"Term":"Technical Infrastructure",
+		"Definition":"The assembly of software and hardware used to enable the provision of information services."
+	},
+	{
+		"Term":"Technical Infrastructure Capability",
+		"Definition":"A characteristic of the SWIM TI."
+	},
+	{
+		"Term":"Technical Infrastructure Management Capability",
+		"Definition":"The SWIM technical infrastructure capability that monitors the performance of the technical infrastructure."
+	},
+	{
+		"Term":"Technical Infrastructure Profile",
+		"Definition":"Specification defining an implementation of the SWIM TI. Multiple SWIM TI Profiles can coexist, each of them focused on the implementation of technical infrastructure but with different scope and applicability."
+	},
+	{
+		"Term":"Technical Interoperability",
+		"Definition":"An aspect of interoperability which covers the technical aspects of linking information systems. It includes topics such as interface specifications, interconnection services, data integration services, and data presentation and exchange."
+	},
+	{
+		"Term":"Time Behaviour (of a service)",
+		"Definition":"A measurement of the processing times of a service. Note: This parameter may be expressed as an indication of a maximum time needed for the service provider to complete the request, measured from the time instant the service provider receives the request to the time instant the service provider sends the response or makes it available."
+	},
+	{
+		"Term":"Transport Protocol",
+		"Definition":"A protocol providing end-to-end communication services for applications."
+	},
+	{
+		"Term":"User Validation",
+		"Definition":"A validation of service carried out by service users."
+	},
+	{
+		"Term":"Validation of Service",
+		"Definition":"An activity whereby a service is checked for conformance with the service objectives and requirements. Note: The service objectives and requirements are captured in the service overview and the technical specifications."
+	}
+];
+
+        var termList = new List('mapping', options, values);
+  </script>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.21/datatables.min.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="../../../assets/js/datatables.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+ </body>
+</html>

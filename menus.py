@@ -24,7 +24,8 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("8: Create html pages from AMXM mapping")
       print("9: Create html index from FIXM mapping")
       print("10: Create html pages from FIXM mapping")
-      print("11: Create html pages from AIRM Advanced Viewer")
+      print("11: Create html index for AIRM Advanced Viewer")
+      print("12: Create html pages fpr AIRM Advanced Viewer")
 
       choice = input ("Please make a choice: ")
 
@@ -83,6 +84,11 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           print('\n')
           print("Creating html pages from xls file...")
           airm2html.create_html()
+          main()        
+      elif choice == "12":
+          print('\n')
+          print("Creating html pages from xls file...")
+          airm2html.create_html_pages()
           main()   
       else:
           print("I don't understand your choice.")
