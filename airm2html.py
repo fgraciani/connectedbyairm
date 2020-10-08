@@ -104,19 +104,20 @@ def create_html_pages():
       #span.string = str(info_concept['Information Concept'])
       #soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)span = soup.new_tag("span")
       #span.string = str(info_concept['Information Concept'])
+      soup.find(text="CONCEPT_NAME_HERE").replace_with(str(info_concept['name']))
+
       soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(info_concept['name']))
 
       h2 = soup.new_tag("h2")
       h2.string = str(info_concept['name'])
       soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
       code = soup.new_tag("code")
-      datac_identifier = info_concept['urn']
-      parts = datac_identifier.split(":")
-      identifier = parts[0]+":"+parts[1]
-      code.string = identifier
+      code.string = info_concept['urn']
       code["class"] = "text-secondary"
       soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
       
+      soup.find(text="FIXM_CLASS_DEFINITION").replace_with(str(info_concept['definition']))
+
       traces = airm.get_properties_by_parent(my_airm, info_concept['name'])
       if traces != None:
         for trace in traces:
