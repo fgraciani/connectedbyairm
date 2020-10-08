@@ -159,6 +159,7 @@ def create_html_pages():
 
           h3 = soup.new_tag("h3")
           h3.string = str(trace["name"])
+          h3["id"] = str(trace["name"])
           h3["data-toggle"] = "tooltip"
           h3["data-placement"] = "right"
           h3["title"] = trace["urn"]
@@ -179,7 +180,12 @@ def create_html_pages():
           p = soup.new_tag("p")
           p.string = "type: "
           span = soup.new_tag("span")
-          span.string = str(trace['type'])
+          url = trace["type"]+".html"
+          text = trace["type"]
+          new_link = soup.new_tag("a")
+          new_link['href'] = url
+          new_link.string = text
+          span.insert(1,new_link)
           p.insert(2,span)
           property_div.insert(3,p)
 
