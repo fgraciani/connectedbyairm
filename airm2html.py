@@ -17,21 +17,21 @@ def create_html():
       print ("Successfully created the directory %s " % path)
   import airm
   airm = airm.Airm()
-  airm_logical_model = fixm.fixm_mapping_dataframe.to_dict('records')
+  airm_logical_classes = airm.logical_classes.to_dict('records')
 
   #Create index page
   #creates soup for index using concept-list-template.html
-  html = open("data/html/templates/concept-list-template.html").read()
+  html = open("data/html/templates/airm-concept-list-template.html").read()
   soup = BeautifulSoup(html, "lxml") 
 
   #For each entry
     #create table entry
-  for record in fixm_mapping_dict:
+  for record in airm_logical_classes:
     tr = soup.new_tag("tr")
 
     td_ic_name = soup.new_tag("td")
-    url = "fixm-4.2.0-to-airm-1.0.0/"+record["Information Concept"]+".html"
-    text = record["Information Concept"]
+    url = "LM/"+record["name"]+".html"
+    text = record["name"]
     print(text)
     new_link = soup.new_tag("a")
     new_link['href'] = url
@@ -40,29 +40,14 @@ def create_html():
     td_ic_name.insert(1,new_link)
     tr.insert(1,td_ic_name)
 
-    if record["Data Concept"] != "":
-      td_dc_name = soup.new_tag("td")
-      url = "fixm-4.2.0-to-airm-1.0.0/"+record["Information Concept"]+".html"+"#"+record["Data Concept"]
-      text = record["Data Concept"]
-      print(text)
-      new_link = soup.new_tag("a")
-      new_link['href'] = url
-      new_link['target'] = "_blank"
-      new_link.string = text
-      td_dc_name.insert(1,new_link)
-      tr.insert(2,td_dc_name)
-
-    if record["Definition"] != "":
+    if record["definition"] != "":
       td_def = soup.new_tag("td")
-      td_def.string = str(record["Definition"])
+      td_def.string = str(record["definition"])
       tr.insert(3,td_def)
 
-    td_type = soup.new_tag("td")
-    td_type.string = record["Type"]
-    tr.insert(4,td_type)
     
     soup.find('tbody').insert(1,tr)
 
-  f= open("docs/developers/fixm-4.2.0-to-airm-1.0.0.html","w+")
+  f= open("docs/advanced-viewer/1.0.0/logical-model.html","w+")
   f.write(soup.prettify())
   f.close() 

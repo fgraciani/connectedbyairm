@@ -82,7 +82,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       elif choice == "11":
           print('\n')
           print("Creating html pages from xls file...")
-          airm2html.create_html_pages()
+          airm2html.create_html()
           main()   
       else:
           print("I don't understand your choice.")
