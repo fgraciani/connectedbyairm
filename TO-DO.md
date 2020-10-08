@@ -3,48 +3,39 @@ Semantic correspondence explorer
 
 Task list
 -----------
-  * Type class for properties imported as EA UUID, transform to urn or name.
+### General
+  * fix #links are hidden under the navbar
+
+### Advanced Viewer
+  * replace current import module. we need an excel filem too many problems with the xmi
   * Sources to be imported.
-  * Create html pages for entities + properties
-  * Create index pages based on smart tables
-  * Create a database for airm info? maybe a set of data frames importing as much info as possible form xmi, enabling to find info by EA UUID
+  * Parent class (inheritance) to be imported 
+  * Create Conceptual/Contextul indexes and pages
+  * insert semantic correspondence presence per class/property
+
+#### Wish list
   * generate pages for sources listing every definition coming from a source.
 
-Markdown examples
------------
+### Mapping Viewers
 
-Paragraphs are separated
-by a blank line.
+#### FIXM Mapping Viewer
+  * Fix page title for index page
+  * Fix type links in index page. many link to non existing pages
+  * inject FIXM class definition. We need to import this from a new source.
+  * expand/fix ids (discuss with Hubert) also in types
+  * include overlaps with other mappings
+  * remove empty fields from pages (only insert if not empty)
+  * improve or remove urn tooltip for sem correspondence
 
-Two spaces at the end of a line  
-produces a line break.
+#### AIXM Mapping Viewer
+  * build
 
-Text attributes _italic_, 
-**bold**, `monospace`.
+#### AMXM Mapping Viewer
+  * adapt
 
-Horizontal rule:
+#### Others
+  * discuss more mappings
 
----
-
-Strikethrough:
-~~strikethrough~~
-
-Bullet list:
-
-  * apples
-  * oranges
-  * pears
-
-Numbered list:
-
-  1. lather
-  2. rinse
-  3. repeat
-
-An [example](http://example.com).
-
-![Image](Icon-pictures.png "icon")
-
-> Markdown uses email-style > characters for blockquoting.
-
-Inline <abbr title="Hypertext Markup Language">HTML</abbr> is supported.
+### Wish list
+  * organise code deleting unused code
+  * create common template for mappings and generalise processing
