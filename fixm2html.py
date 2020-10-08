@@ -30,14 +30,7 @@ def create_html():
     tr = soup.new_tag("tr")
 
     td_ic_name = soup.new_tag("td")
-    url = "fixm-4.2.0-to-airm-1.0.0/"+record["Information Concept"]+".html"
-    text = record["Information Concept"]
-    print(text)
-    new_link = soup.new_tag("a")
-    new_link['href'] = url
-    new_link['target'] = "_blank"
-    new_link.string = text
-    td_ic_name.insert(1,new_link)
+    td_ic_name.string = str(record["Information Concept"])
     tr.insert(1,td_ic_name)
 
     if record["Data Concept"] != "":
@@ -57,9 +50,19 @@ def create_html():
       td_def.string = str(record["Definition"])
       tr.insert(3,td_def)
 
-    td_type = soup.new_tag("td")
-    td_type.string = record["Type"]
-    tr.insert(4,td_type)
+    if record["Type"] != "":
+      td_dc_type = soup.new_tag("td")
+      parts = str(record["Type"]).split(":")
+      clean_type = parts[-1]
+      url = "fixm-4.2.0-to-airm-1.0.0/"+clean_type+".html"
+      text = clean_type
+      print(text)
+      new_link = soup.new_tag("a")
+      new_link['href'] = url
+      new_link['target'] = "_blank"
+      new_link.string = text
+      td_dc_type.insert(1,new_link)
+      tr.insert(4,td_dc_type)
     
     soup.find('tbody').insert(1,tr)
 
@@ -101,7 +104,10 @@ def create_url(urn):
       last_component = components[-1]
       components = last_component.split("@")
       entity = components[0]
-      url="http://airm.aero/viewer/1.0.0/includes-supplements/logical-model.html#"+entity
+      prop = ""
+      if len(components) == 2:
+        prop = components[1]
+      url="../../advanced-viewer/1.0.0/LM/"+entity+"#"+prop
   return url
 
 def create_name(urn):
@@ -172,9 +178,18 @@ def create_html_pages():
           tr.insert(2,td_def)
         
         if trace["Type"] != "":
-          td_def = soup.new_tag("td")
-          td_def.string = str(trace["Type"])
-          tr.insert(3,td_def)
+          td_type = soup.new_tag("td")
+          parts = str(trace["Type"]).split(":")
+          clean_type = parts[-1]
+          url = clean_type+".html"
+          text = clean_type
+          print(text)
+          new_link = soup.new_tag("a")
+          new_link['href'] = url
+          new_link['target'] = "_blank"
+          new_link.string = text
+          td_type.insert(1,new_link)
+          tr.insert(3,td_type)
         
         soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
 
@@ -184,6 +199,7 @@ def create_html_pages():
 
         h3 = soup.new_tag("h3")
         h3.string = str(trace["Data Concept"])
+        h3["id"] = str(trace["Data Concept"])
         h3["data-toggle"] = "tooltip"
         h3["data-placement"] = "right"
         h3["title"] = trace["Identifier"]
@@ -204,7 +220,16 @@ def create_html_pages():
         p = soup.new_tag("p")
         p.string = "Type: "
         span = soup.new_tag("span")
-        span.string = str(trace['Type'])
+        parts = str(trace["Type"]).split(":")
+        clean_type = parts[-1]
+        url = clean_type+".html"
+        text = clean_type
+        print(text)
+        new_link = soup.new_tag("a")
+        new_link['href'] = url
+        new_link['target'] = "_blank"
+        new_link.string = text
+        span.insert(1,new_link)
         p.insert(2,span)
         property_div.insert(3,p)
 

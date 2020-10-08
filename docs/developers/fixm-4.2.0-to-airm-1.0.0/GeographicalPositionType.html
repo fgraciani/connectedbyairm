@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   Downloads - Developers | AIRM.aero
+   CONCEPT_NAME_HERE - FIXM 4.2.0 to AIRM 1.0.0 | AIRM.aero
   </title>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -155,7 +155,9 @@
                 Names the coordinate reference system (CRS) that defines the semantics of the lat/long pair according to the ISO6709 standard. FIXM uses only "urn:ogc:def:crs:EPSG::4326".
                </td>
                <td>
-                xs:string
+                <a href="string.html" target="_blank">
+                 string
+                </a>
                </td>
               </tr>
               <tr>
@@ -168,7 +170,9 @@
                 An extension hook for attaching extension (non-core) classes.
                </td>
                <td>
-                fb:GeographicalPositionExtensionType
+                <a href="GeographicalPositionExtensionType.html" target="_blank">
+                 GeographicalPositionExtensionType
+                </a>
                </td>
               </tr>
               <tr>
@@ -182,7 +186,9 @@
 in order of LATITUDE FIRST, THEN LONGITUDE.
                </td>
                <td>
-                fb:LatLongPosType
+                <a href="LatLongPosType.html" target="_blank">
+                 LatLongPosType
+                </a>
                </td>
               </tr>
              </tbody>
@@ -192,7 +198,7 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" title="fb:GeographicalPositionType:srsName">
+             <h3 data-placement="right" data-toggle="tooltip" id="srsName" title="fb:GeographicalPositionType:srsName">
               srsName
              </h3>
              <code class="text-secondary">
@@ -205,7 +211,9 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
              <p>
               Type:
               <span>
-               xs:string
+               <a href="string.html" target="_blank">
+                string
+               </a>
               </span>
              </p>
              <h5 style="margin-top: 40px;">
@@ -226,7 +234,7 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
                <tbody>
                 <tr>
                  <td>
-                  <a data-placement="right" data-toggle="tooltip" href="http://airm.aero/viewer/1.0.0/includes-supplements/logical-model.html#GeoEnabledEntity" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:GeoEnabledEntity@position">
+                  <a data-placement="right" data-toggle="tooltip" href="../../advanced-viewer/1.0.0/LM/GeoEnabledEntity#position" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:GeoEnabledEntity@position">
                    GeoEnabledEntity@position
                   </a>
                  </td>
@@ -279,7 +287,7 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" title="fb:GeographicalPositionType:extension">
+             <h3 data-placement="right" data-toggle="tooltip" id="extension" title="fb:GeographicalPositionType:extension">
               extension
              </h3>
              <code class="text-secondary">
@@ -292,7 +300,9 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
              <p>
               Type:
               <span>
-               fb:GeographicalPositionExtensionType
+               <a href="GeographicalPositionExtensionType.html" target="_blank">
+                GeographicalPositionExtensionType
+               </a>
               </span>
              </p>
              <h5 style="margin-top: 40px;">
@@ -366,7 +376,7 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" title="fb:GeographicalPositionType:pos">
+             <h3 data-placement="right" data-toggle="tooltip" id="pos" title="fb:GeographicalPositionType:pos">
               pos
              </h3>
              <code class="text-secondary">
@@ -380,7 +390,9 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
              <p>
               Type:
               <span>
-               fb:LatLongPosType
+               <a href="LatLongPosType.html" target="_blank">
+                LatLongPosType
+               </a>
               </span>
              </p>
              <h5 style="margin-top: 40px;">
@@ -401,7 +413,7 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
                <tbody>
                 <tr>
                  <td>
-                  <a data-placement="right" data-toggle="tooltip" href="http://airm.aero/viewer/1.0.0/includes-supplements/logical-model.html#GeoEnabledEntity" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:GeoEnabledEntity@position">
+                  <a data-placement="right" data-toggle="tooltip" href="../../advanced-viewer/1.0.0/LM/GeoEnabledEntity#position" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:GeoEnabledEntity@position">
                    GeoEnabledEntity@position
                   </a>
                  </td>
@@ -1052,6 +1064,8 @@ in order of LATITUDE FIRST, THEN LONGITUDE.
   <script src="../../assets/js/theme.js">
   </script>
   <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
   </script>
