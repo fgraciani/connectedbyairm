@@ -39,6 +39,10 @@ def create_html():
     new_link.string = text
     td_ic_name.insert(1,new_link)
     tr.insert(1,td_ic_name)
+    
+    td = soup.new_tag("td")
+    td.string = "-"
+    tr.insert(2,td)
 
     if record["definition"] != "":
       td_def = soup.new_tag("td")
