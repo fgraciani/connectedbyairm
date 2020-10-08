@@ -143,6 +143,8 @@ def create_html_pages():
       #span.string = str(info_concept['Information Concept'])
       #soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)span = soup.new_tag("span")
       #span.string = str(info_concept['Information Concept'])
+      soup.title.string = str(info_concept['Information Concept'])+" - FIXM 4.2.0 to AIRM 1.0.0 | AIRM.aero"
+  
       soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(info_concept['Information Concept']))
 
       h2 = soup.new_tag("h2")
@@ -200,9 +202,6 @@ def create_html_pages():
         h3 = soup.new_tag("h3")
         h3.string = str(trace["Data Concept"])
         h3["id"] = str(trace["Data Concept"])
-        h3["data-toggle"] = "tooltip"
-        h3["data-placement"] = "right"
-        h3["title"] = trace["Identifier"]
         property_div.insert(0,h3)
 
         code = soup.new_tag("code")
