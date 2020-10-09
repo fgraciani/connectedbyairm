@@ -61,6 +61,7 @@ def create_html():
     tr = soup.new_tag("tr")
     
     td = soup.new_tag("td")
+    td["data-order"] = record["parent"]
     td.string = record["parent"]
     tr.insert(1,td)
 
