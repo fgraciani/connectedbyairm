@@ -31,6 +31,7 @@ def create_html():
     tr = soup.new_tag("tr")
 
     td_ic_name = soup.new_tag("td")
+    td_ic_name["data-order"] = record["name"]
     url = "LM/"+record["name"]+".html"
     text = record["name"]
     print(text)
@@ -64,6 +65,7 @@ def create_html():
     tr.insert(1,td)
 
     td_ic_name = soup.new_tag("td")
+    td_ic_name["data-order"] = record["name"]
     url = "LM/"+record["parent"]+".html#"+record["name"]
     text = record["name"]
     print(text)
