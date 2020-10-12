@@ -90,3 +90,21 @@ def get_properties_by_parent(self,info_concept):
     else:
       results_dict = df_results.to_dict('records')
       return results_dict
+
+def create_connceted_index():
+  df_connected_index_cols = ["airm_urn", "model_name", "concept_name", "concept_id", "concept_type"]
+  df_connected_index_rows = []
+
+  import fixm
+  fixm = fixm.Fixm()
+  fixm_mapping_dict = fixm.fixm_mapping_dataframe.to_dict('records')
+
+  for entry in fixm_mapping_dict:
+    sem_correspondences = str(entry['Semantic Correspondence']).split('\n')
+    for line in sem_correspondences:
+      urn = line
+      df_connected_index_rows.append({"airm_urn": urn, "model_name": "FIXM 4.2.0", "concept_name": entry["Data Concept"], "concept_id": entry["Identifier"], "concept_type": entry["Type"]})
+
+  df_connected_index_out = pd.DataFrame(df_connected_index_rows, columns = df_connected_index_cols) 
+  with pd.ExcelWriter('data/xlsx/'+'connected_index.xlsx', engine='xlsxwriter') as writer:  
+      df_connected_index_out.to_excel(writer, sheet_name='connceted_index')
