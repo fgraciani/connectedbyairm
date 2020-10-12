@@ -305,50 +305,52 @@ def create_html_pages():
         #for each insert row
         print('\t\tAdditional Traces:')
         add_correspondences = str(trace['Additional Traces']).split('\n')
-        for line in add_correspondences:
-          print('\t\t\t'+line)
-          tr = soup.new_tag("tr")
-          td = soup.new_tag("td")
-          url = create_url(line)
-          text = create_name(line)
-          a = soup.new_tag("a")
-          a['href'] = url
-          a['target'] = "_blank"
-          a.string = text
-          
-          a["data-toggle"] = "tooltip"
-          a["data-placement"] = "right"
-          a["title"] = line
+        if len(add_correspondences) > 0:
+          for line in add_correspondences:
+            print('\t\t\t'+line)
+            tr = soup.new_tag("tr")
+            td = soup.new_tag("td")
+            url = create_url(line)
+            text = create_name(line)
+            a = soup.new_tag("a")
+            a['href'] = url
+            a['target'] = "_blank"
+            a.string = text
+            
+            a["data-toggle"] = "tooltip"
+            a["data-placement"] = "right"
+            a["title"] = line
 
-          td.insert(1,a)
-          tr.insert(1,td)
-          td = soup.new_tag("td")
-          airm_entry = airm.load_and_find_urn(line)
-          td.string = airm_entry["definition"]
-          tr.insert(2,td)
-          tbody.insert(1,tr)
+            td.insert(1,a)
+            tr.insert(1,td)
+            td = soup.new_tag("td")
+            airm_entry = airm.load_and_find_urn(line)
+            td.string = airm_entry["definition"]
+            tr.insert(2,td)
+            tbody.insert(1,tr)
 
-        add_table.insert(2,tbody)
-        add_div.insert(1,add_table)
-        property_div.insert(7,add_div)
+          add_table.insert(2,tbody)
+          add_div.insert(1,add_table)
+          property_div.insert(7,add_div)
+        if str(trace["Rationale"]) != "missing data":
+          h5 = soup.new_tag("h5")
+          h5.string = "Rationale"
+          property_div.insert(8,h5)
 
-        h5 = soup.new_tag("h5")
-        h5.string = "Rationale"
-        property_div.insert(8,h5)
+          p = soup.new_tag("p")
+          p.string = str(trace["Rationale"])
+          print('Rationale:'+str(trace["Rationale"]))
+          property_div.insert(9,p)
+        
+        if str(trace["Notes"]) != "missing data":
+          notes_h5 = soup.new_tag("h5")
+          notes_h5.string = "Notes"
+          property_div.insert(10,notes_h5)
 
-        p = soup.new_tag("p")
-        p.string = str(trace["Rationale"])
-        print('Rationale:'+str(trace["Rationale"]))
-        property_div.insert(9,p)
-
-        notes_h5 = soup.new_tag("h5")
-        notes_h5.string = "Notes"
-        property_div.insert(10,notes_h5)
-
-        p = soup.new_tag("p")
-        p.string = str(trace["Notes"])
-        print('NOTES:'+str(trace["Notes"]))
-        property_div.insert(11,p)
+          p = soup.new_tag("p")
+          p.string = str(trace["Notes"])
+          print('NOTES:'+str(trace["Notes"]))
+          property_div.insert(11,p)
 
         soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
