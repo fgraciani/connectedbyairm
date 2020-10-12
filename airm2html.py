@@ -192,29 +192,39 @@ def create_html_pages():
           p.insert(2,span)
           property_div.insert(3,p)
 
-          h4 = soup.new_tag("h4")
-          h4.string = "Presence in mappings"
-          property_div.insert(4,h4)
-
-          sc_div = soup.new_tag("div")
-          sc_div["class"] = "table-responsive"
-          sc_table = soup.new_tag("table")
-          sc_table["class"] = "table"
-          sc_thead = soup.new_tag("thead")
-          tr = soup.new_tag("tr")
-          th = soup.new_tag("th")
-          th.string = "Model"
-          tr.insert(1,th)
-          th = soup.new_tag("th")
-          th.string = "Concept"
-          tr.insert(2,th)
-          sc_thead.insert(1,tr)
-          sc_table.insert(1,sc_thead)
-          tbody = soup.new_tag("tbody")
-          #for each insert row
-          #print('\t\tPresence in Mappings:')
           connections = airm.get_connections_by_urn(my_airm, trace['urn'])
           if connections != None:
+            p = soup.new_tag("p")
+            button = soup.new_tag("button")
+            button["class"] = "btn btn-light"
+            button["type"] = "button"
+            button["data-toggle"] = "collapse"
+            button["data-target"] = "#"+identifier+"collapse"
+            button["aria-expanded"] = "false"
+            button["aria-controls"] = "collapseExample"
+            button.string = "Show presence in mappings"
+            p.insert(1,button)
+            property_div.insert(4,p)
+
+            sc_div = soup.new_tag("div")
+            sc_div["class"] = "table-responsive collapse"
+            sc_div["id"] = identifier+"collapse"
+            sc_table = soup.new_tag("table")
+            sc_table["class"] = "table"
+            sc_thead = soup.new_tag("thead")
+            tr = soup.new_tag("tr")
+            th = soup.new_tag("th")
+            th.string = "Model"
+            tr.insert(1,th)
+            th = soup.new_tag("th")
+            th.string = "Concept"
+            tr.insert(2,th)
+            sc_thead.insert(1,tr)
+            sc_table.insert(1,sc_thead)
+            tbody = soup.new_tag("tbody")
+            #for each insert row
+            #print('\t\tPresence in Mappings:')
+          
             for entry in connections:
               #print('\t\t\t'+line)
               tr = soup.new_tag("tr")
