@@ -192,6 +192,58 @@ def create_html_pages():
           p.insert(2,span)
           property_div.insert(3,p)
 
+          h4 = soup.new_tag("h4")
+          h4.string = "Presence in mappings"
+          property_div.insert(4,h4)
+
+          sc_div = soup.new_tag("div")
+          sc_div["class"] = "table-responsive"
+          sc_table = soup.new_tag("table")
+          sc_table["class"] = "table"
+          sc_thead = soup.new_tag("thead")
+          tr = soup.new_tag("tr")
+          th = soup.new_tag("th")
+          th.string = "Model"
+          tr.insert(1,th)
+          th = soup.new_tag("th")
+          th.string = "Concept"
+          tr.insert(2,th)
+          sc_thead.insert(1,tr)
+          sc_table.insert(1,sc_thead)
+          tbody = soup.new_tag("tbody")
+          #for each insert row
+          #print('\t\tPresence in Mappings:')
+          connections = airm.get_connections_by_urn(my_airm, trace['urn'])
+          if connections != None:
+            for entry in connections:
+              #print('\t\t\t'+line)
+              tr = soup.new_tag("tr")
+              if entry["model_name"] == "FIXM 4.2.0":
+                td = soup.new_tag("td")
+                url = "../../../developers/fixm-4.2.0-to-airm-1.0.0.html"
+                text = "FIXM 4.2.0"
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a.string = text
+                td.insert(1,a)
+                tr.insert(1,td)
+                td = soup.new_tag("td")
+                parts = str(entry["concept_id"]).split(":")
+                url = "../../../developers/fixm-4.2.0-to-airm-1.0.0/"+parts[1]+".html#"+entry["concept_name"]
+                text = entry["concept_name"]
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a.string = text
+                td.insert(1,a)
+                tr.insert(2,td)
+              tbody.insert(1,tr)
+
+            sc_table.insert(2,tbody)
+            sc_div.insert(1,sc_table)
+            property_div.insert(5,sc_div)
+
           soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
       f= open("docs/advanced-viewer/1.0.0/LM/"+str(info_concept['name'])+".html","w+")

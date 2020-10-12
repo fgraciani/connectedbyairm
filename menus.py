@@ -94,7 +94,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       elif choice == "13":
           print('\n')
           print("Creating conncected index...")
-          airm.create_connceted_index()
+          airm.create_connected_index()
           main()  
       else:
           print("I don't understand your choice.")

@@ -7,6 +7,7 @@ class Airm:
   contextual_properties = pd.read_excel (r'data/xlsx/AIRM 1.0.0.xlsx', sheet_name='Contextual Properties')
   conceptual_properties = pd.read_excel (r'data/xlsx/AIRM 1.0.0.xlsx', sheet_name='Conceptual Properties')
   logical_properties = pd.read_excel (r'data/xlsx/AIRM 1.0.0.xlsx', sheet_name='Logical Properties')
+  df_connected_index = pd.read_excel (r'data/xlsx/connected_index.xlsx', sheet_name='connceted_index')
   not_found_counter = 0
    
   def __init__(self):
@@ -16,6 +17,7 @@ class Airm:
     self.contextual_properties.fillna("missing data", inplace = True)
     self.conceptual_properties.fillna("missing data", inplace = True)
     self.logical_properties.fillna("missing data", inplace = True)
+    self.df_connected_index.fillna("missing data", inplace = True)
 
   def valid_urn(urn): #TO DO: adapt regex to urn grammar
     import re
@@ -91,7 +93,21 @@ def get_properties_by_parent(self,info_concept):
       results_dict = df_results.to_dict('records')
       return results_dict
 
-def create_connceted_index():
+def get_connections_by_urn(self,urn):
+    connections_df = self.df_connected_index.copy()
+    
+    filter = connections_df["airm_urn"]==urn
+    connections_df.sort_values("airm_urn", inplace = True)
+    connections_df.where(filter, inplace = True) 
+    df_results = connections_df.dropna(how='all')      
+
+    if df_results.empty:
+      return None
+    else:
+      results_dict = df_results.to_dict('records')
+      return results_dict
+
+def create_connected_index():
   df_connected_index_cols = ["airm_urn", "model_name", "concept_name", "concept_id", "concept_type"]
   df_connected_index_rows = []
 
