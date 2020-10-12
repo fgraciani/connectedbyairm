@@ -306,7 +306,7 @@ def create_html_pages():
         print('\t\tAdditional Traces:')
         add_correspondences = str(trace['Additional Traces']).split('\n')
         if len(add_correspondences) > 0:
-          if add_correspondences[0] != "":
+          if add_correspondences[0] != "missing data":
             for line in add_correspondences:
               print('\t\t\t'+line)
               tr = soup.new_tag("tr")
