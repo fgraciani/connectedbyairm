@@ -25,7 +25,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("9: Create html index from FIXM mapping")
       print("10: Create html pages from FIXM mapping")
       print("11: Create html index for AIRM Advanced Viewer")
-      print("12: Create html pages fpr AIRM Advanced Viewer")
+      print("12: Create html pages for AIRM Advanced Viewer")
       print("13: Create xml with connected index for Advanced Viewer")
 
       choice = input ("Please make a choice: ")

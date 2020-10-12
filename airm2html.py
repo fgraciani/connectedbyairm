@@ -199,7 +199,7 @@ def create_html_pages():
             button["class"] = "btn btn-light"
             button["type"] = "button"
             button["data-toggle"] = "collapse"
-            button["data-target"] = "#"+identifier+"collapse"
+            button["data-target"] = "#"+str(trace["name"])+"collapse"
             button["aria-expanded"] = "false"
             button["aria-controls"] = "collapseExample"
             button.string = "Show presence in mappings"
@@ -208,7 +208,7 @@ def create_html_pages():
 
             sc_div = soup.new_tag("div")
             sc_div["class"] = "table-responsive collapse"
-            sc_div["id"] = identifier+"collapse"
+            sc_div["id"] = str(trace["name"])+"collapse"
             sc_table = soup.new_tag("table")
             sc_table["class"] = "table"
             sc_thead = soup.new_tag("thead")
@@ -245,6 +245,9 @@ def create_html_pages():
                 a = soup.new_tag("a")
                 a['href'] = url
                 a['target'] = "_blank"
+                a["data-toggle"] = "tooltip"
+                a["data-placement"] = "left"
+                a["title"] = entry["concept_id"]
                 a.string = text
                 td.insert(1,a)
                 tr.insert(2,td)

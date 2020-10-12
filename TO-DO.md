@@ -12,6 +12,7 @@ Task list
   * Parent class (inheritance) to be imported 
   * Create Conceptual/Contextul indexes and pages
   * insert semantic correspondence presence per class/property
+  * enum properties show missing data as type
 
 #### Wish list
   * generate pages for sources listing every definition coming from a source.
@@ -24,7 +25,7 @@ Task list
   * inject FIXM class definition. We need to import this from a new source.
   * expand/fix ids (discuss with Hubert) also in types
   * include overlaps with other mappings
-  * remove empty fields from pages (only insert if not empty)
+  * ~~remove empty fields from pages (only insert if not empty)~~
   * improve or remove urn tooltip for sem correspondence
 
 #### AIXM Mapping Viewer
