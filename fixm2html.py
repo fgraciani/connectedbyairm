@@ -283,30 +283,32 @@ def create_html_pages():
         sc_div.insert(1,sc_table)
         property_div.insert(5,sc_div)
 
-        h5 = soup.new_tag("h5")
-        h5.string = "Additional Traces"
-        property_div.insert(6,h5)
-
-        add_div = soup.new_tag("div")
-        add_div["class"] = "table-responsive"
-        add_table = soup.new_tag("table")
-        add_table["class"] = "table"
-        add_thead = soup.new_tag("thead")
-        tr = soup.new_tag("tr")
-        th = soup.new_tag("th")
-        th.string = "AIRM Concept"
-        tr.insert(1,th)
-        th = soup.new_tag("th")
-        th.string = "Definition"
-        tr.insert(2,th)
-        add_thead.insert(1,tr)
-        add_table.insert(1,add_thead)
-        tbody = soup.new_tag("tbody")
-        #for each insert row
-        print('\t\tAdditional Traces:')
         add_correspondences = str(trace['Additional Traces']).split('\n')
         if len(add_correspondences) > 0:
           if add_correspondences[0] != "missing data":
+
+            h5 = soup.new_tag("h5")
+            h5.string = "Additional Traces"
+            property_div.insert(6,h5)
+
+            add_div = soup.new_tag("div")
+            add_div["class"] = "table-responsive"
+            add_table = soup.new_tag("table")
+            add_table["class"] = "table"
+            add_thead = soup.new_tag("thead")
+            tr = soup.new_tag("tr")
+            th = soup.new_tag("th")
+            th.string = "AIRM Concept"
+            tr.insert(1,th)
+            th = soup.new_tag("th")
+            th.string = "Definition"
+            tr.insert(2,th)
+            add_thead.insert(1,tr)
+            add_table.insert(1,add_thead)
+            tbody = soup.new_tag("tbody")
+            #for each insert row
+            print('\t\tAdditional Traces:')
+        
             for line in add_correspondences:
               print('\t\t\t'+line)
               tr = soup.new_tag("tr")
