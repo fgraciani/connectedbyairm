@@ -29,7 +29,7 @@ def create_html():
     print(record)
     print("\n")
 
-    if record["Data Concept"] != "missing data":
+    if str(record["Data Concept"]) != "missing data" and record["Data Concept"] != "":
       td_ic_name = soup.new_tag("td")
       td_ic_name.string = str(record["Information Concept"])
       tr.insert(1,td_ic_name)
