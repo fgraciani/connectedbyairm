@@ -26,6 +26,8 @@ def create_html():
     #create table entry
   for record in amxm_mapping_dict:
     tr = soup.new_tag("tr")
+    print(record)
+    print("\n")
 
     if record["Data Concept"] != "missing data":
       td_ic_name = soup.new_tag("td")
@@ -35,7 +37,7 @@ def create_html():
       td_dc_name = soup.new_tag("td")
       url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"+"#"+record["Data Concept"]
       text = record["Data Concept"]
-      print(text)
+      #print(text)
       new_link = soup.new_tag("a")
       new_link['href'] = url
       new_link['target'] = "_blank"
@@ -46,7 +48,7 @@ def create_html():
       td_ic_name = soup.new_tag("td")
       url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"
       text = record["Information Concept"]
-      print(text)
+      #print(text)
       new_link = soup.new_tag("a")
       new_link['href'] = url
       new_link['target'] = "_blank"
@@ -55,7 +57,7 @@ def create_html():
       tr.insert(1,td_ic_name)
 
       td_dc_name = soup.new_tag("td")
-      td_dc_name.string = "--"
+      td_dc_name.string = "-"
       tr.insert(2,td_dc_name)
 
     if record["Concept Definition"] != "missing data":
@@ -64,7 +66,7 @@ def create_html():
       tr.insert(3,td_def)
     else:
       td_def = soup.new_tag("td")
-      td_def.string = "--"
+      td_def.string = "-"
       tr.insert(3,td_def)
 
     if record["Data Concept's Basic Type"] != "missing data":
@@ -73,7 +75,7 @@ def create_html():
       clean_type = parts[-1]
       url = "amxm-2.0.0-to-airm-1.0.0/"+clean_type+".html"
       text = clean_type
-      print(text)
+      #print(text)
       new_link = soup.new_tag("a")
       new_link['href'] = url
       new_link['target'] = "_blank"
@@ -82,7 +84,7 @@ def create_html():
       tr.insert(4,td_dc_type)
     else:
       td_dc_type = soup.new_tag("td")
-      td_dc_type.string = "--"
+      td_dc_type.string = "-"
       td_dc_type.insert(1,new_link)
       tr.insert(4,td_dc_type)
     
@@ -90,6 +92,8 @@ def create_html():
   
   for record in amxm_enum_mapping_dict:
     tr = soup.new_tag("tr")
+    print(record)
+    print("\n")
 
     if record["Data Concept"] != "missing data":
       td_ic_name = soup.new_tag("td")
@@ -99,7 +103,7 @@ def create_html():
       td_dc_name = soup.new_tag("td")
       url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"+"#"+record["Data Concept"]
       text = record["Data Concept"]
-      print(text)
+      #print(text)
       new_link = soup.new_tag("a")
       new_link['href'] = url
       new_link['target'] = "_blank"
@@ -110,7 +114,7 @@ def create_html():
       td_ic_name = soup.new_tag("td")
       url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"
       text = record["Information Concept"]
-      print(text)
+      #print(text)
       new_link = soup.new_tag("a")
       new_link['href'] = url
       new_link['target'] = "_blank"
@@ -119,7 +123,7 @@ def create_html():
       tr.insert(1,td_ic_name)
 
       td_dc_name = soup.new_tag("td")
-      td_dc_name.string = "--"
+      td_dc_name.string = "-"
       tr.insert(2,td_dc_name)
 
     if record["Concept Definition"] != "missing data":
@@ -128,7 +132,7 @@ def create_html():
       tr.insert(3,td_def)
     else:
       td_def = soup.new_tag("td")
-      td_def.string = "--"
+      td_def.string = "-"
       tr.insert(3,td_def)
 
     if record["Data Concept's Basic Type"] != "missing data":
@@ -137,7 +141,7 @@ def create_html():
       clean_type = parts[-1]
       url = "amxm-2.0.0-to-airm-1.0.0/"+clean_type+".html"
       text = clean_type
-      print(text)
+      #print(text)
       new_link = soup.new_tag("a")
       new_link['href'] = url
       new_link['target'] = "_blank"
@@ -146,7 +150,7 @@ def create_html():
       tr.insert(4,td_dc_type)
     else:
       td_dc_type = soup.new_tag("td")
-      td_dc_type.string = "--"
+      td_dc_type.string = "-"
       td_dc_type.insert(1,new_link)
       tr.insert(4,td_dc_type)
     
