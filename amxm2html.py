@@ -30,7 +30,7 @@ def create_html():
   for record in amxm_mapping_dict:
     tr = soup.new_tag("tr")
 
-    if record["Data Concept"] != "":
+    if record["Data Concept"] != "missing data":
       td_ic_name = soup.new_tag("td")
       td_ic_name.string = str(record["Information Concept"])
       tr.insert(1,td_ic_name)
@@ -61,12 +61,16 @@ def create_html():
       td_dc_name.string = "-"
       tr.insert(2,td_dc_name)
 
-    if record["Concept Definition"] != "":
+    if record["Concept Definition"] != "missing data":
       td_def = soup.new_tag("td")
       td_def.string = str(record["Concept Definition"])
       tr.insert(3,td_def)
+    else:
+      td_def = soup.new_tag("td")
+      td_def.string = "-"
+      tr.insert(3,td_def)
 
-    if record["Data Concept's Basic Type"] != "":
+    if record["Data Concept's Basic Type"] != "missing data":
       td_dc_type = soup.new_tag("td")
       parts = str(record["Data Concept's Basic Type"]).split(":")
       clean_type = parts[-1]
