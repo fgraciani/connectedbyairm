@@ -29,23 +29,8 @@ def create_html():
     print(record)
     print("\n")
 
-    if str(record["Data Concept"]) != "missing data" and record["Data Concept"] != "":
-      td_ic_name = soup.new_tag("td")
-      td_ic_name.string = str(record["Information Concept"])
-      tr.insert(0,td_ic_name)
-
-      td_dc_name = soup.new_tag("td")
-      url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"+"#"+record["Data Concept"]
-      text = record["Data Concept"]
-      #print(text)
-      new_link = soup.new_tag("a")
-      new_link['href'] = url
-      new_link['target'] = "_blank"
-      new_link.string = text
-      td_dc_name.insert(1,new_link)
-      tr.insert(1,td_dc_name)
-    else:
-      td_ic_name = soup.new_tag("td")
+    td_ic_name = soup.new_tag("td")
+    if str(record["Information Concept"]) != "missing data" and str(record["Information Concept"]) != "":
       url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"
       text = record["Information Concept"]
       #print(text)
@@ -54,23 +39,33 @@ def create_html():
       new_link['target'] = "_blank"
       new_link.string = text
       td_ic_name.insert(1,new_link)
-      tr.insert(0,td_ic_name)
-
-      td_dc_name = soup.new_tag("td")
-      td_dc_name.string = "-"
-      tr.insert(1,td_dc_name)
-
-    if record["Concept Definition"] != "missing data":
-      td_def = soup.new_tag("td")
-      td_def.string = str(record["Concept Definition"])
-      tr.insert(2,td_def)
     else:
-      td_def = soup.new_tag("td")
-      td_def.string = "-"
-      tr.insert(2,td_def)
+      td_ic_name.string = "-"
+    tr.insert(0,td_ic_name)
 
-    if record["Data Concept's Basic Type"] != "missing data":
-      td_dc_type = soup.new_tag("td")
+    td_dc_name = soup.new_tag("td")
+    if str(record["Data Concept"]) != "missing data" and str(record["Data Concept"]) != "":
+      url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"+"#"+record["Data Concept"]
+      text = record["Data Concept"]
+      #print(text)
+      new_link = soup.new_tag("a")
+      new_link['href'] = url
+      new_link['target'] = "_blank"
+      new_link.string = text
+      td_dc_name.insert(1,new_link)
+    else:
+      td_dc_name.string = "-"
+    tr.insert(1,td_dc_name)
+
+    td_def = soup.new_tag("td")
+    if str(record["Concept Definition"]) != "missing data":
+      td_def.string = str(record["Concept Definition"])
+    else:
+      td_def.string = "-"
+    tr.insert(2,td_def)
+
+    td_dc_type = soup.new_tag("td")
+    if str(record["Data Concept's Basic Type"]) != "missing data":
       parts = str(record["Data Concept's Basic Type"]).split(":")
       clean_type = parts[-1]
       url = "amxm-2.0.0-to-airm-1.0.0/"+clean_type+".html"
@@ -81,12 +76,10 @@ def create_html():
       new_link['target'] = "_blank"
       new_link.string = text
       td_dc_type.insert(1,new_link)
-      tr.insert(3,td_dc_type)
     else:
       td_dc_type = soup.new_tag("td")
       td_dc_type.string = "-"
-      td_dc_type.insert(1,new_link)
-      tr.insert(3,td_dc_type)
+    tr.insert(3,td_dc_type)
     
     soup.find('tbody').insert(1,tr)
   
@@ -95,23 +88,8 @@ def create_html():
     print(record)
     print("\n")
 
-    if record["Data Concept"] != "missing data":
-      td_ic_name = soup.new_tag("td")
-      td_ic_name.string = str(record["Information Concept"])
-      tr.insert(0,td_ic_name)
-
-      td_dc_name = soup.new_tag("td")
-      url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"+"#"+record["Data Concept"]
-      text = record["Data Concept"]
-      #print(text)
-      new_link = soup.new_tag("a")
-      new_link['href'] = url
-      new_link['target'] = "_blank"
-      new_link.string = text
-      td_dc_name.insert(1,new_link)
-      tr.insert(1,td_dc_name)
-    else:
-      td_ic_name = soup.new_tag("td")
+    td_ic_name = soup.new_tag("td")
+    if str(record["Information Concept"]) != "missing data" and str(record["Information Concept"]) != "":
       url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"
       text = record["Information Concept"]
       #print(text)
@@ -120,23 +98,33 @@ def create_html():
       new_link['target'] = "_blank"
       new_link.string = text
       td_ic_name.insert(1,new_link)
-      tr.insert(0,td_ic_name)
-
-      td_dc_name = soup.new_tag("td")
-      td_dc_name.string = "-"
-      tr.insert(1,td_dc_name)
-
-    if record["Concept Definition"] != "missing data":
-      td_def = soup.new_tag("td")
-      td_def.string = str(record["Concept Definition"])
-      tr.insert(2,td_def)
     else:
-      td_def = soup.new_tag("td")
-      td_def.string = "-"
-      tr.insert(2,td_def)
+      td_ic_name.string = "-"
+    tr.insert(0,td_ic_name)
 
-    if record["Data Concept's Basic Type"] != "missing data":
-      td_dc_type = soup.new_tag("td")
+    td_dc_name = soup.new_tag("td")
+    if str(record["Data Concept"]) != "missing data" and str(record["Data Concept"]) != "":
+      url = "amxm-2.0.0-to-airm-1.0.0/"+record["Information Concept"]+".html"+"#"+record["Data Concept"]
+      text = record["Data Concept"]
+      #print(text)
+      new_link = soup.new_tag("a")
+      new_link['href'] = url
+      new_link['target'] = "_blank"
+      new_link.string = text
+      td_dc_name.insert(1,new_link)
+    else:
+      td_dc_name.string = "-"
+    tr.insert(1,td_dc_name)
+
+    td_def = soup.new_tag("td")
+    if str(record["Concept Definition"]) != "missing data":
+      td_def.string = str(record["Concept Definition"])
+    else:
+      td_def.string = "-"
+    tr.insert(2,td_def)
+
+    td_dc_type = soup.new_tag("td")
+    if str(record["Data Concept's Basic Type"]) != "missing data":
       parts = str(record["Data Concept's Basic Type"]).split(":")
       clean_type = parts[-1]
       url = "amxm-2.0.0-to-airm-1.0.0/"+clean_type+".html"
@@ -147,14 +135,12 @@ def create_html():
       new_link['target'] = "_blank"
       new_link.string = text
       td_dc_type.insert(1,new_link)
-      tr.insert(3,td_dc_type)
     else:
       td_dc_type = soup.new_tag("td")
       td_dc_type.string = "-"
-      td_dc_type.insert(1,new_link)
-      tr.insert(3,td_dc_type)
+    tr.insert(3,td_dc_type)
     
-    soup.find('tbody').insert(1,tr)
+    soup.find('tbody').insert(1,tr)   
 
   f= open("docs/developers/amxm-2.0.0-to-airm-1.0.0.html","w+")
   f.write(soup.prettify())
