@@ -1,8 +1,5 @@
 from bs4 import BeautifulSoup
 import os
-import xlsx2json
-import json
-import lxml
 
 def create_html():
   mapping_pages_directory = "docs/developers/amxm-2.0.0-to-airm-1.0.0"
@@ -58,7 +55,7 @@ def create_html():
       tr.insert(1,td_ic_name)
 
       td_dc_name = soup.new_tag("td")
-      td_dc_name.string = "-"
+      td_dc_name.string = "--"
       tr.insert(2,td_dc_name)
 
     if record["Concept Definition"] != "missing data":
@@ -67,7 +64,7 @@ def create_html():
       tr.insert(3,td_def)
     else:
       td_def = soup.new_tag("td")
-      td_def.string = "-"
+      td_def.string = "--"
       tr.insert(3,td_def)
 
     if record["Data Concept's Basic Type"] != "missing data":
@@ -85,7 +82,7 @@ def create_html():
       tr.insert(4,td_dc_type)
     else:
       td_dc_type = soup.new_tag("td")
-      td_dc_type.string = "-"
+      td_dc_type.string = "--"
       td_dc_type.insert(1,new_link)
       tr.insert(4,td_dc_type)
     
@@ -122,7 +119,7 @@ def create_html():
       tr.insert(1,td_ic_name)
 
       td_dc_name = soup.new_tag("td")
-      td_dc_name.string = "-"
+      td_dc_name.string = "--"
       tr.insert(2,td_dc_name)
 
     if record["Concept Definition"] != "missing data":
@@ -131,7 +128,7 @@ def create_html():
       tr.insert(3,td_def)
     else:
       td_def = soup.new_tag("td")
-      td_def.string = "-"
+      td_def.string = "--"
       tr.insert(3,td_def)
 
     if record["Data Concept's Basic Type"] != "missing data":
@@ -149,7 +146,7 @@ def create_html():
       tr.insert(4,td_dc_type)
     else:
       td_dc_type = soup.new_tag("td")
-      td_dc_type.string = "-"
+      td_dc_type.string = "--"
       td_dc_type.insert(1,new_link)
       tr.insert(4,td_dc_type)
     
