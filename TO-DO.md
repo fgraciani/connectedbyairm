@@ -38,8 +38,9 @@ Task list
   * build
 
 #### AMXM Mapping Viewer
-  * fix definitions ("Definition:...")
-  * remove type from index (Types not provided in mapping...)
+  * ~~fix definitions ("Definition:...")~~
+  * ~~remove type from index (Types not provided in mapping...)~~
+  * fix Semantic Correspondence display for changeRequest and outOfScope
 
 #### ADR Extension to AIXM Mapping Viewer
   * build
