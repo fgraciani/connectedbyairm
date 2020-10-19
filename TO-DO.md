@@ -38,7 +38,8 @@ Task list
   * build
 
 #### AMXM Mapping Viewer
-  * adapt
+  * fix definitions ("Definition:...")
+  * remove type from index (Types not provided in mapping...)
 
 #### ADR Extension to AIXM Mapping Viewer
   * build
