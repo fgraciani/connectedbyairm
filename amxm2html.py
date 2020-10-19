@@ -366,7 +366,7 @@ def create_html_pages():
 
         soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
-      f= open("docs/developers/fixm-4.2.0-to-airm-1.0.0/"+str(info_concept['Information Concept'])+".html","w+")
+      f= open("docs/developers/amxm-2.0.0-to-airm-1.0.0/"+str(info_concept['Information Concept'])+".html","w+")
       f.write(soup.prettify())
       f.close()
 
