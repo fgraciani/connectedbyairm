@@ -143,6 +143,7 @@ def create_connected_index():
       if str(entry["Data Concept"]) == "":
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
       else:
+        print("AMXM: "+urn )
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
 
   df_connected_index_out = pd.DataFrame(df_connected_index_rows, columns = df_connected_index_cols) 
