@@ -125,7 +125,8 @@ def create_html():
 
     td_def = soup.new_tag("td")
     if str(record["Concept Definition"]) != "missing data":
-      td_def.string = str(record["Concept Definition"])
+      definition = str(record["Concept Definition"])
+      td_def.string = definition.replace("Definition: ","")
     else:
       td_def.string = "-"
     tr.insert(2,td_def)
@@ -211,7 +212,9 @@ def create_html_pages():
   
       soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(info_concept['Information Concept']))
 
-      soup.find(text="FIXM_CLASS_DEFINITION").replace_with(str(info_concept['Concept Definition']))
+      definition = str(info_concept["Concept Definition"])
+      definition = definition.replace("Definition: ","")
+      soup.find(text="FIXM_CLASS_DEFINITION").replace_with(definition)
 
       h2 = soup.new_tag("h2")
       h2.string = str(info_concept['Information Concept'])
@@ -241,7 +244,9 @@ def create_html_pages():
         
         if trace["Concept Definition"] != "":
           td_def = soup.new_tag("td")
-          td_def.string = str(trace["Concept Definition"])
+          definition = str(trace["Concept Definition"])
+          definition = definition.replace("Definition: ","")
+          td_def.string = definition
           tr.insert(2,td_def)
                 
         soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
@@ -262,7 +267,9 @@ def create_html_pages():
         property_div.insert(1,code)
         
         p = soup.new_tag("p")
-        p.string = str(trace["Concept Definition"])
+        definition = str(trace["Concept Definition"])
+        definition = definition.replace("Definition: ","")
+        p.string = definition
         br = soup.new_tag("br")
         p.insert(2,br)
         property_div.insert(2,p)
