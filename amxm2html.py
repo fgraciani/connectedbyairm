@@ -130,22 +130,22 @@ def create_html():
       td_def.string = "-"
     tr.insert(2,td_def)
 
-    td_dc_type = soup.new_tag("td")
-    if str(record["Data Concept's Basic Type"]) != "missing data":
-      parts = str(record["Data Concept's Basic Type"]).split(":")
-      clean_type = parts[-1]
-      url = "amxm-2.0.0-to-airm-1.0.0/"+clean_type+".html"
-      text = clean_type
-      #print(text)
-      new_link = soup.new_tag("a")
-      new_link['href'] = url
-      new_link['target'] = "_blank"
-      new_link.string = text
-      td_dc_type.insert(1,new_link)
-    else:
-      td_dc_type = soup.new_tag("td")
-      td_dc_type.string = "-"
-    tr.insert(3,td_dc_type)
+#    td_dc_type = soup.new_tag("td")
+#    if str(record["Data Concept's Basic Type"]) != "missing data":
+#      parts = str(record["Data Concept's Basic Type"]).split(":")
+#      clean_type = parts[-1]
+#      url = "amxm-2.0.0-to-airm-1.0.0/"+clean_type+".html"
+#      text = clean_type
+#      #print(text)
+#      new_link = soup.new_tag("a")
+#      new_link['href'] = url
+#      new_link['target'] = "_blank"
+#      new_link.string = text
+#      td_dc_type.insert(1,new_link)
+#    else:
+#      td_dc_type = soup.new_tag("td")
+#      td_dc_type.string = "-"
+#    tr.insert(3,td_dc_type)
     
     soup.find('tbody').insert(1,tr) 
 
