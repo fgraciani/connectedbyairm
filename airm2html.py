@@ -266,8 +266,11 @@ def create_html_pages():
                 td.insert(1,a)
                 tr.insert(1,td)
                 td = soup.new_tag("td")
-                parts = str(entry["concept_id"]).split(".")
-                url = "../../../developers/amxm-2.0.0-to-airm-1.0.0/"+parts[-2]+".html#"+entry["concept_name"]
+                if "." in str(entry["concept_id"]):
+                  parts = str(entry["concept_id"]).split(".")
+                  url = "../../../developers/amxm-2.0.0-to-airm-1.0.0/"+parts[-2]+".html#"+entry["concept_name"]
+                else:
+                  url = "../../../developers/amxm-2.0.0-to-airm-1.0.0/"+entry["concept_name"]+".html#"
                 text = entry["concept_name"]
                 a = soup.new_tag("a")
                 a['href'] = url
