@@ -5,6 +5,8 @@ Task list
 -----------
 ### General
   * fix #links are hidden under the navbar
+  * licenses
+  * add thin navbar with where you are model
 
 ### Advanced Viewer
   * replace current import module. we need an excel filem too many problems with the xmi
@@ -13,6 +15,9 @@ Task list
   * Create Conceptual/Contextul indexes and pages
   * insert semantic correspondence presence per class/property
   * enum properties show missing data as type
+  * remove linkls to models from presence in mappings
+  * chancge mappings to semantic correspondences
+
 
 #### Wish list
   * generate pages for sources listing every definition coming from a source.
@@ -20,6 +25,7 @@ Task list
 ### Mapping Viewers
 
 #### FIXM Mapping Viewer
+  * fix .html for links from fixm to airm
   * Fix page title for index page
   * Fix type links in index page. many link to non existing pages
   * inject FIXM class definition. We need to import this from a new source.
@@ -34,8 +40,10 @@ Task list
 #### AMXM Mapping Viewer
   * adapt
 
-#### Others
-  * discuss more mappings
+#### ADR Extension to AIXM Mapping Viewer
+  * build
+
+#### Superset mapping viewer
 
 ### Wish list
   * organise code deleting unused code

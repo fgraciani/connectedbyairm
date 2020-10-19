@@ -54,14 +54,15 @@ def create_html():
       td_dc_type = soup.new_tag("td")
       parts = str(record["Type"]).split(":")
       clean_type = parts[-1]
-      url = "fixm-4.2.0-to-airm-1.0.0/"+clean_type+".html"
-      text = clean_type
+      #url = "fixm-4.2.0-to-airm-1.0.0/"+clean_type+".html"
+      #text = clean_type
       print(text)
-      new_link = soup.new_tag("a")
-      new_link['href'] = url
-      new_link['target'] = "_blank"
-      new_link.string = text
-      td_dc_type.insert(1,new_link)
+      td_dc_type.string = clean_type
+      #new_link = soup.new_tag("a")
+      #new_link['href'] = url
+      #new_link['target'] = "_blank"
+      #new_link.string = text
+      #td_dc_type.insert(1,new_link)
       tr.insert(4,td_dc_type)
     
     soup.find('tbody').insert(1,tr)
