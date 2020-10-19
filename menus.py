@@ -27,6 +27,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("11: Create html index for AIRM Advanced Viewer")
       print("12: Create html pages for AIRM Advanced Viewer")
       print("13: Create xml with connected index for Advanced Viewer")
+      print("14: Create html pages from AMXM mapping")
 
       choice = input ("Please make a choice: ")
 
@@ -96,6 +97,11 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           print("Creating conncected index...")
           airm.create_connected_index()
           main()  
+      elif choice == "14":
+          print('\n')
+          print("Creating html pages...")
+          amxm2html.create_html_pages()
+          main()   
       else:
           print("I don't understand your choice.")
           main()
