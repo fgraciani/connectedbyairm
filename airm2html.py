@@ -251,6 +251,33 @@ def create_html_pages():
                 a.string = text
                 td.insert(1,a)
                 tr.insert(2,td)
+              elif entry["model_name"] == "AMXM 2.0.0":
+                print("*********************************************")
+                print("*********************************************")
+                print("*********************************************")
+                print("*********************************************")
+                td = soup.new_tag("td")
+                url = "../../../developers/amxm-2.0.0-to-airm-1.0.0.html"
+                text = "FIXM 4.2.0"
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a.string = text
+                td.insert(1,a)
+                tr.insert(1,td)
+                td = soup.new_tag("td")
+                parts = str(entry["concept_id"]).split(":")
+                url = "../../../developers/amxm-2.0.0-to-airm-1.0.0/"+parts[1]+".html#"+entry["concept_name"]
+                text = entry["concept_name"]
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a["data-toggle"] = "tooltip"
+                a["data-placement"] = "left"
+                a["title"] = entry["concept_id"]
+                a.string = text
+                td.insert(1,a)
+                tr.insert(2,td)
               tbody.insert(1,tr)
 
             sc_table.insert(2,tbody)
