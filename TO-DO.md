@@ -27,7 +27,7 @@ Task list
 #### FIXM Mapping Viewer
   * fix .html for links from fixm to airm
   * Fix page title for index page
-  * Fix type links in index page. many link to non existing pages
+  * ~~Fix type links in index page. many link to non existing pages~~
   * inject FIXM class definition. We need to import this from a new source.
   * expand/fix ids (discuss with Hubert) also in types
   * include overlaps with other mappings

@@ -23,6 +23,7 @@ def create_html():
   #creates soup for index using concept-list-template.html
   html = open("data/html/templates/concept-list-template.html").read()
   soup = BeautifulSoup(html, "lxml") 
+  soup.title.string = "FIXM 4.2.0 to AIRM 1.0.0 | AIRM.aero"
 
   #For each entry
     #create table entry
