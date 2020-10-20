@@ -37,6 +37,49 @@
   </script>
  </head>
  <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(143,170,220,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../../developers/semantic-correspondences.html">
+          <span>
+           AIRM Advanced Viewer
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../logical-model.html">
+          <span>
+           Logical Model
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           CodeContaminationType
+           <br/>
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
   <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
    <div class="container">
     <a class="navbar-brand logo" href="developers.html">
@@ -85,34 +128,10 @@
     </div>
    </div>
   </nav>
-  <main class="page">
+  <main class="page" style="margin-top: 30px;">
    <section class="clean-block features">
     <div class="container">
      <div class="block-heading" style="padding-top: 24px;">
-      <ol class="breadcrumb">
-       <li class="breadcrumb-item">
-        <a href="../../developers/semantic-correspondences.html">
-         <span>
-          AIRM Advanced Viewer
-         </span>
-        </a>
-       </li>
-       <li class="breadcrumb-item">
-        <a href="../logical-model.html">
-         <span>
-          Logical Model
-         </span>
-        </a>
-       </li>
-       <li class="breadcrumb-item">
-        <a>
-         <span>
-          CodeContaminationType
-          <br/>
-         </span>
-        </a>
-       </li>
-      </ol>
      </div>
      <div class="row align-items-center">
       <div class="col-md-12 col-lg-12 col-xl-12">
@@ -409,7 +428,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#OILcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="OILcollapse">
@@ -462,7 +481,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ICEcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="ICEcollapse">
@@ -515,7 +534,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#RIME_OR_FROST_COVEREDcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="RIME_OR_FROST_COVEREDcollapse">
@@ -568,7 +587,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#WET_SNOWcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="WET_SNOWcollapse">
@@ -621,7 +640,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#WETcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="WETcollapse">
@@ -674,7 +693,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#VOLCANIC_ASHcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="VOLCANIC_ASHcollapse">
@@ -727,7 +746,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#CLEAR_AND_DRYcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="CLEAR_AND_DRYcollapse">
@@ -780,7 +799,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#COMPACTED_OR_ROLLED_SNOWcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="COMPACTED_OR_ROLLED_SNOWcollapse">
@@ -833,7 +852,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#DAMPcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="DAMPcollapse">
@@ -886,7 +905,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#DRY_SNOWcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="DRY_SNOWcollapse">
@@ -939,7 +958,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#FROZEN_RUTS_OR_RIDGEScollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="FROZEN_RUTS_OR_RIDGEScollapse">
@@ -992,7 +1011,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#GRASScollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="GRASScollapse">
@@ -1055,7 +1074,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#SLUSHcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="SLUSHcollapse">
@@ -1108,7 +1127,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#SANDcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="SANDcollapse">
@@ -1161,7 +1180,7 @@ from slush.
              </p>
              <p>
               <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#RUBBERcollapse" data-toggle="collapse" type="button">
-               Show presence in mappings
+               Show presence in semantic correspondences
               </button>
              </p>
              <div class="table-responsive collapse" id="RUBBERcollapse">

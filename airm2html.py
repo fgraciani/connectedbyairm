@@ -202,7 +202,7 @@ def create_html_pages():
             button["data-target"] = "#"+str(trace["name"])+"collapse"
             button["aria-expanded"] = "false"
             button["aria-controls"] = "collapseExample"
-            button.string = "Show presence in mappings"
+            button.string = "Show presence in semantic correspondences"
             p.insert(1,button)
             property_div.insert(4,p)
 
