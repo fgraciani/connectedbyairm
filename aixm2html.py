@@ -58,7 +58,7 @@ def create_html():
       new_link['target'] = "_blank"
       new_link.string = text
       td_dc_name.insert(1,new_link)
-      td_ic_name["data-order"] = record["Data Concept"]
+      td_dc_name["data-order"] = record["Data Concept"]
     else:
       td_dc_name.string = "-"
     tr.insert(1,td_dc_name)
