@@ -106,8 +106,8 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       elif choice == "15":
           print('\n')
           print("Creating html pages from xls file...")
-          import aixm
-          aixm = aixm.Aixm()
+          import aixm2html
+          aixm2html.create_html()
           print("Done")
           main()    
       else:
