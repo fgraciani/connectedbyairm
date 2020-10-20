@@ -5,8 +5,9 @@ class Aixm:
   aixm_mapping_enum_dataframe = pd.read_excel (r'data/xlsx/AIXM_5.1.1_Semantic_Correspondence_Report.xlsx', sheet_name='codelists')
   #classes = pd.Dataframe() #TO DO load in init
   #properties = pd.Dataframe() #TO DO load in init
-     
-  def __init__(self):
+  aixm_mapping_merged_dataframe = pd.read_excel (r'data/xlsx/aixm_mapping_merged.xlsx', sheet_name='merged')
+
+  def merge_semantic_and_enum_dataframes(self):
     self.aixm_mapping_dataframe["AIRM Concept Identifier"] = self.aixm_mapping_dataframe["AIRM Concept Identifier"].str.strip()
     self.aixm_mapping_dataframe.fillna("missing data", inplace = True)
     self.aixm_mapping_dataframe.columns = ["Information Concept","Data Concept","Basic Type", "Concept Identifier", "Concept Definition", "AIRM Concept Identifier", "Special Case", "CR Number",  "Rationale", "Level of semantic correspondence", "Remarks", "url"]
@@ -23,11 +24,9 @@ class Aixm:
 
     frames = [self.aixm_mapping_dataframe, self.aixm_mapping_enum_dataframe]
 
-    aixm_mapping_merged_dataframe = pd.concat(frames)
+    self.aixm_mapping_merged_dataframe = pd.concat(frames)
     with pd.ExcelWriter('data/xlsx/'+'aixm_mapping_merged.xlsx', engine='xlsxwriter') as writer:  
-      aixm_mapping_merged_dataframe.to_excel(writer, sheet_name='merged')
-
-
+      self.aixm_mapping_merged_dataframe.to_excel(writer, sheet_name='merged')
 
   def is_in_amxm_mapping(self, airm_urn):
     results = self.get_from_amxm_mapping(airm_urn) 
