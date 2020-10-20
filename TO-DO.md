@@ -13,10 +13,11 @@ Task list
   * Sources to be imported.
   * Parent class (inheritance) to be imported 
   * Create Conceptual/Contextul indexes and pages
-  * insert semantic correspondence presence per class/property
+  * insert semantic correspondence presence per class
+  * ~~insert semantic correspondence presence per property~~
   * enum properties show missing data as type
-  * remove linkls to models from presence in mappings
-  * chancge mappings to semantic correspondences
+  * remove links to models from presence in mappings
+  * change mappings to semantic correspondences
 
 
 #### Wish list
@@ -25,8 +26,7 @@ Task list
 ### Mapping Viewers
 
 #### FIXM Mapping Viewer
-  * fix .html for links from fixm to airm
-  * Fix page title for index page
+  * ~~Fix page title for index page~~
   * ~~Fix type links in index page. many link to non existing pages~~
   * inject FIXM class definition. We need to import this from a new source.
   * expand/fix ids (discuss with Hubert) also in types
@@ -35,7 +35,7 @@ Task list
   * improve or remove urn tooltip for sem correspondence
 
 #### AIXM Mapping Viewer
-  * build
+  * ~~build~~
 
 #### AMXM Mapping Viewer
   * ~~fix definitions ("Definition:...")~~
