@@ -29,6 +29,7 @@ def create_html():
     print("\n")
 
     td_ic_name = soup.new_tag("td")
+    
     if str(record["Information Concept"]) != "missing data" and str(record["Information Concept"]) != "":
       if str(record["Data Concept"]) == "missing data" or str(record["Data Concept"]) == "":
         url = "aixm-5.1.1-to-airm-1.0.0/"+str(record["Information Concept"])+".html"
@@ -39,8 +40,10 @@ def create_html():
         new_link['target'] = "_blank"
         new_link.string = text
         td_ic_name.insert(1,new_link)
+        td_ic_name["data-order"] = record["Information Concept"]
       else:
         td_ic_name.string = str(record["Information Concept"])
+        td_ic_name["data-order"] = record["Information Concept"]
     else:
       td_ic_name.string = "-"
     tr.insert(0,td_ic_name)
@@ -55,6 +58,7 @@ def create_html():
       new_link['target'] = "_blank"
       new_link.string = text
       td_dc_name.insert(1,new_link)
+      td_ic_name["data-order"] = record["Data Concept"]
     else:
       td_dc_name.string = "-"
     tr.insert(1,td_dc_name)
