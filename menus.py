@@ -28,6 +28,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("12: Create html pages for AIRM Advanced Viewer")
       print("13: Create xml with connected index for Advanced Viewer")
       print("14: Create html pages from AMXM mapping")
+      print("15: Create index from AIXM mapping")
 
       choice = input ("Please make a choice: ")
 
@@ -101,7 +102,14 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           print('\n')
           print("Creating html pages...")
           amxm2html.create_html_pages()
-          main()   
+          main()  
+      elif choice == "15":
+          print('\n')
+          print("Creating html pages from xls file...")
+          import aixm
+          aixm = aixm.Aixm()
+          print("Done")
+          main()    
       else:
           print("I don't understand your choice.")
           main()
