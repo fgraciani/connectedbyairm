@@ -29,6 +29,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("13: Create xml with connected index for Advanced Viewer")
       print("14: Create html pages from AMXM mapping")
       print("15: Create index from AIXM mapping")
+      print("16: Create pages from AIXM mapping")
 
       choice = input ("Please make a choice: ")
 
@@ -109,7 +110,14 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           import aixm2html
           aixm2html.create_html()
           print("Done")
-          main()    
+          main()  
+      elif choice == "16":
+          print('\n')
+          print("Creating html pages from xls file...")
+          import aixm2html
+          aixm2html.create_html_pages()
+          print("Done")
+          main()     
       else:
           print("I don't understand your choice.")
           main()

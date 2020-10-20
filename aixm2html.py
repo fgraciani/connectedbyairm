@@ -134,24 +134,24 @@ def create_name(urn):
   return name
 
 def create_html_pages():
-  import amxm
+  import aixm
   import airm
-  amxm = amxm.Amxm()
+  aixm = aixm.Aixm()
   airm = airm.Airm()
-  amxm_info_concepts_dict = amxm.get_information_concepts()
+  aixm_info_concepts_dict = aixm.get_information_concepts()
 
-  for info_concept in amxm_info_concepts_dict:
+  for info_concept in aixm_info_concepts_dict:
     if info_concept['Information Concept']!="missing data":
       print(info_concept['Information Concept'])
       #creates soup for concept page using concept-template.html
-      html = open("data/html/templates/AMXM-concept-template.html").read()
+      html = open("data/html/templates/AIXM-concept-template.html").read()
       soup = BeautifulSoup(html, "lxml") 
       
       #span = soup.new_tag("span")
       #span.string = str(info_concept['Information Concept'])
       #soup.find(id="BC_INFO_CONCEPT_NAME").insert(0,span)span = soup.new_tag("span")
       #span.string = str(info_concept['Information Concept'])
-      soup.title.string = str(info_concept['Information Concept'])+" - AMXM 2.0.0 to AIRM 1.0.0 | AIRM.aero"
+      soup.title.string = str(info_concept['Information Concept'])+" - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero"
   
       soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(info_concept['Information Concept']))
 
@@ -169,16 +169,16 @@ def create_html_pages():
       code["class"] = "text-secondary"
       soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
       
-      traces = amxm.get_traces_by_info_concept(info_concept['Information Concept'])
+      traces = aixm.get_traces_by_info_concept(info_concept['Information Concept'])
       for trace in traces:
-        print('\t'+trace['Data Concept'])
+        print('\t'+str(trace['Data Concept']))
         
         tr = soup.new_tag("tr")
 
-        if trace["Data Concept"] != "":
+        if str(trace["Data Concept"]) != "":
           td_dc_name = soup.new_tag("td")
-          url = "#"+trace["Data Concept"]
-          text = trace["Data Concept"]
+          url = "#"+str(trace["Data Concept"])
+          text = str(trace["Data Concept"])
           new_link = soup.new_tag("a")
           new_link['href'] = url
           new_link.string = text
@@ -316,7 +316,7 @@ def create_html_pages():
 
         soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
-      f= open("docs/developers/amxm-2.0.0-to-airm-1.0.0/"+str(info_concept['Information Concept'])+".html","w+")
+      f= open("docs/developers/aixm-5.1.1-to-airm-1.0.0/"+str(info_concept['Information Concept'])+".html","w+")
       f.write(soup.prettify())
       f.close()
 

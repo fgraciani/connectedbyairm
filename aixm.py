@@ -66,7 +66,7 @@ class Aixm:
 
   def get_information_concepts(self):
     results_dict = []
-    amxm_df = self.amxm_mapping_dataframe.copy()
+    amxm_df = self.aixm_mapping_merged_dataframe.copy()
     amxm_df = amxm_df.drop_duplicates(subset='Information Concept', keep="last")
     amxm_df = amxm_df.drop(["Data Concept", "Basic Type"], axis=1)
     amxm_dict = amxm_df.to_dict('records')
@@ -77,18 +77,10 @@ class Aixm:
       results_dict.append({"Information Concept": info_concept, "Concept Definition": concept_def, "Concept Identifier": concept_id,
       "AIRM Concept Identifier": str(entry["AIRM Concept Identifier"]), "Semantic Correspondence": str(entry["Special Case"]), "Rationale": str(entry["Rationale"]), "Level of semantic correspondence": str(entry["Level of semantic correspondence"]), "Remarks": str(entry["Remarks"])})
     
-    amxm_df = self.amxm_mapping_enum_dataframe.copy()
-    amxm_df = amxm_df.drop_duplicates(subset='Information Concept', keep="last")
-    amxm_df = amxm_df.drop(["Data Concept", "Basic Type"], axis=1)
-    amxm_dict = amxm_df.to_dict('records')
-    for entry in amxm_dict:
-      results_dict.append({"Information Concept": entry["Information Concept"], "Concept Definition": entry["Concept Definition"], "Concept Identifier": entry["Concept Identifier"], "AIRM Concept Identifier": entry["AIRM Concept Identifier"], "Semantic Correspondence": entry["Special Case"], "Rationale": entry["Rationale"], "Level of semantic correspondence": entry["Level of semantic correspondence"], "Remarks": entry["Remarks"]})  
-
-    else:
-      return results_dict
+    return results_dict
 
   def get_traces_by_info_concept(self, info_concept):
-      amxm_df = self.amxm_mapping_dataframe.copy()
+      amxm_df = self.aixm_mapping_merged_dataframe.copy()
       
       filter = amxm_df["Information Concept"]==info_concept
       amxm_df.sort_values("Information Concept", inplace = True)
@@ -96,20 +88,8 @@ class Aixm:
       df_results = amxm_df.dropna(how='all')      
 
       if df_results.empty:
-        amxm_df = self.amxm_mapping_enum_dataframe.copy()
-      
-        filter = amxm_df["Information Concept"]==info_concept
-        amxm_df.sort_values("Information Concept", inplace = True)
-        amxm_df.where(filter, inplace = True) 
-        df_results = amxm_df.dropna(how='all')      
-
-        if df_results.empty:
-          
-          return None
-        else:
-          results_dict = df_results.to_dict('records')
-          return results_dict
-
+        return None
+        
       else:
         results_dict = df_results.to_dict('records')
         return results_dict
