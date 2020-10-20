@@ -21,7 +21,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("5: Create zip file from html/export...")
       print("6: Compare AMXM other XMs")
       print("7: Compare FIXM other XMs")
-      print("8: Create html pages from AMXM mapping")
+      print("8: Create index from AMXM mapping")
       print("9: Create html index from FIXM mapping")
       print("10: Create html pages from FIXM mapping")
       print("11: Create html index for AIRM Advanced Viewer")
@@ -70,7 +70,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           main()     
       elif choice == "8":
           print('\n')
-          print("Creating html pages from xls file...")
+          print("Creating html index from xls file...")
           amxm2html.create_html()
           main()        
       elif choice == "9":

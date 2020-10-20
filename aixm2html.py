@@ -93,7 +93,7 @@ def create_html():
     
     soup.find('tbody').insert(1,tr)
   
-  f= open("docs/developers/amxm-2.0.0-to-airm-1.0.0.html","w+")
+  f= open("docs/developers/aixm-2.0.0-to-airm-1.0.0.html","w+")
   f.write(soup.prettify())
   f.close() 
 
