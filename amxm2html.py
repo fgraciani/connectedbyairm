@@ -353,6 +353,8 @@ def create_html_pages():
         sc_table.insert(2,tbody)
         sc_div.insert(1,sc_table)
         property_div.insert(4,sc_div)
+
+        
         
 
         
@@ -376,6 +378,19 @@ def create_html_pages():
           p.string = str(trace["Remarks"])
           print('Remarks:'+str(trace["Remarks"]))
           property_div.insert(8,p)
+
+        top_link_p = soup.new_tag("p")
+        new_link = soup.new_tag("a")
+        new_link['href'] = "#top"
+        new_icon = soup.new_tag("i")
+        new_icon['class'] = "fa fa-arrow-circle-up"
+        new_icon["data-toggle"] = "tooltip"
+        new_icon["data-placement"] = "left"
+        new_icon["title"] = "Top of page"
+        new_link.insert(1,new_icon)
+        top_link_p.insert(1,new_link)
+        top_link_p['class'] =   "text-right"
+        property_div.insert(9,top_link_p)
 
         soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
