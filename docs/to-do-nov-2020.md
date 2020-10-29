@@ -15,11 +15,11 @@
 * Add license files to repo and update view links
 * Add introduction text
 
-### New AIRM Viewer [(Testing page)](https://fgraciani.github.io/connectedbyairm/developers/semantic-correspondences.html)
+### New AIRM Viewer [(Testing page)](https://fgraciani.github.io/connectedbyairm/advanced-viewer/1.0.0/logical-model.html)
 
 * replace current import module. we need an excel filem too many problems with the xmi
 * Sources to be imported.
-* Parent class (inheritance) to be imported 
+* Parent class (inheritance) to be imported
 * Create Conceptual/Contextual indexes and pages
 * insert semantic correspondence presence per class
 * ~~insert semantic correspondence presence per property~~
