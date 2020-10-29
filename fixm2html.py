@@ -183,16 +183,19 @@ def create_html_pages():
         
         if trace["Type"] != "":
           td_type = soup.new_tag("td")
-          parts = str(trace["Type"]).split(":")
-          clean_type = parts[-1]
-          url = clean_type+".html"
-          text = clean_type
-          print(text)
-          new_link = soup.new_tag("a")
-          new_link['href'] = url
-          new_link['target'] = "_blank"
-          new_link.string = text
-          td_type.insert(1,new_link)
+          if trace["Type"] != "enum value":
+            parts = str(trace["Type"]).split(":")
+            clean_type = parts[-1]
+            url = clean_type+".html"
+            text = clean_type
+            print(text)
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link['target'] = "_blank"
+            new_link.string = text
+            td_type.insert(1,new_link)
+          else:
+            td_type.string = str(trace["Type"])
           tr.insert(3,td_type)
         
         soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
@@ -221,16 +224,19 @@ def create_html_pages():
         p = soup.new_tag("p")
         p.string = "Type: "
         span = soup.new_tag("span")
-        parts = str(trace["Type"]).split(":")
-        clean_type = parts[-1]
-        url = clean_type+".html"
-        text = clean_type
-        print(text)
-        new_link = soup.new_tag("a")
-        new_link['href'] = url
-        new_link['target'] = "_blank"
-        new_link.string = text
-        span.insert(1,new_link)
+        if trace["Type"] != "enum value":
+            parts = str(trace["Type"]).split(":")
+            clean_type = parts[-1]
+            url = clean_type+".html"
+            text = clean_type
+            print(text)
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link['target'] = "_blank"
+            new_link.string = text
+            span.insert(1,new_link)
+        else:
+            span.string = str(trace["Type"])
         p.insert(2,span)
         property_div.insert(3,p)
 
