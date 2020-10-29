@@ -369,6 +369,9 @@ def create_html_pages():
         new_link['href'] = "#top"
         new_icon = soup.new_tag("i")
         new_icon['class'] = "fa fa-arrow-circle-up"
+        new_icon["data-toggle"] = "tooltip"
+        new_icon["data-placement"] = "left"
+        new_icon["title"] = "Top of page"
         new_link.insert(1,new_icon)
         top_link_p.insert(1,new_link)
         top_link_p['class'] =   "text-right"
