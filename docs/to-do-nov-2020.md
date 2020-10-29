@@ -4,6 +4,7 @@
 
 * fix #links are hidden under the navbar
 * ~~add thin navbar with where you are model~~
+* clean js errors
 
 ## Semantic Correspondences Page [(Testing page)](https://fgraciani.github.io/connectedbyairm/developers/semantic-correspondences.html)
 
