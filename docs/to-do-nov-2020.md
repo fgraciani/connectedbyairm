@@ -2,7 +2,8 @@
 
 ## General
 
-* fix #links are hidden under the navbar
+* fix #links are hidden under the navbar for internal links
+* fix #links are hidden under the navbar when accessing from external site
 * ~~add thin navbar with where you are model~~
 * clean js errors
 
