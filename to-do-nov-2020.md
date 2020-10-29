@@ -1,23 +1,30 @@
-Semantic correspondence explorer
+Viewers (Nov 2020)
 =======
 
 Task list
 -----------
+### Semantic Correspondences Page [(Testing page)](https://fgraciani.github.io/connectedbyairm/developers/semantic-correspondences.html)
+
+  * ~~Transform to table view~~
+  * Add excel files to repo and update download links
+  * Add license files to repo and update view links
+  * Add introduction text
+
 ### General
   * fix #links are hidden under the navbar
   * licenses
-  * add thin navbar with where you are model
+  * ~~add thin navbar with where you are model~~
 
 ### Advanced Viewer
   * replace current import module. we need an excel filem too many problems with the xmi
   * Sources to be imported.
   * Parent class (inheritance) to be imported 
-  * Create Conceptual/Contextul indexes and pages
+  * Create Conceptual/Contextual indexes and pages
   * insert semantic correspondence presence per class
   * ~~insert semantic correspondence presence per property~~
   * enum properties show missing data as type
   * remove links to models from presence in mappings
-  * change mappings to semantic correspondences
+  * ~~change mappings to semantic correspondences~~
 
 
 #### Wish list
