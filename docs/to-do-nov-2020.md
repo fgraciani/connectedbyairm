@@ -15,7 +15,7 @@
 
 ## Mapping Exporers
 
-### FIXM Mapping Explorer
+### FIXM Mapping Explorer [(Testing page)](https://fgraciani.github.io/connectedbyairm/developers/fixm-4.2.0-to-airm-1.0.0.html)
 
 * ~~Fix page title for index page~~
 * ~~Fix type links in index page. many link to non existing pages~~
@@ -26,13 +26,13 @@
 * improve or remove urn tooltip for sem correspondence
 * Fix breadcrumbs bar links
 
-### AMXM Mapping Explorer
+### AMXM Mapping Explorer [(Testing page)](https://fgraciani.github.io/connectedbyairm/developers/amxm-2.0.0-to-airm-1.0.0.html)
 
 * ~~fix definitions ("Definition:...")~~
 * ~~remove type from index (Types not provided in mapping...)~~
 * fix Semantic Correspondence display for changeRequest and outOfScope
 
-### AIXM Mapping Explorer
+### AIXM Mapping Explorer [(Testing page)](https://fgraciani.github.io/connectedbyairm/developers/aixm-5.1.1-to-airm-1.0.0.html)
 
 * ~~build~~
 
