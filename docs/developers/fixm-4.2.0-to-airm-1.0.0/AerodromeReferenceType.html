@@ -34,6 +34,11 @@
 
   gtag('config', 'UA-149524587-1');
   </script>
+  <script>
+   var shiftWindow = function() { scrollBy(0, -50) };
+   if (location.hash) shiftWindow();
+   window.addEventListener("hashchange", shiftWindow);
+ </script>
  </head>
  <body>
   <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
