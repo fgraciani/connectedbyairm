@@ -23,8 +23,8 @@
 * inject FIXM class definition. We need to import this from a new source.
 * expand/fix ids (discuss with Hubert) also in types
 * ~~remove empty fields from pages (only insert if not empty)~~
-* improve or remove urn tooltip for sem correspondence
-* Remove links for enum
+* ~~improve or remove urn tooltip for sem correspondence~~
+* ~~Remove links for enum~~
 
 ### AMXM Mapping Explorer [(Testing page)](https://fgraciani.github.io/connectedbyairm/developers/amxm-2.0.0-to-airm-1.0.0.html)
 
