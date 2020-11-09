@@ -54,21 +54,37 @@
 
 ### Terms
 
-* create index page
+* ~~create index page~~
+* fix page title
+* adjust ellipsis
+* margin top for link to supplements
 
 ### Terms (with Supplements)
 
-* create index page
-* create all pages
+* ~~create index page~~
+* fix initial order
+* fix page title
+* adjust ellipsis
+* margin top for link to supplements
+
+* ~~create all pages~~
+* fix page size (white space at the bottom)
+* fix badge size
+* too much white space?
 
 ### Abbreviations
 
 * ~~create index page~~
+* fix initial order
+* margin top for link to supplements
 
 ### Abbreviations (with Supplements)
 
 * ~~create index page~~
 * ~~create all pages~~
+* fix page size (white space at the bottom)
+* fix badge size
+* too much white space?
 
 ### Conceptual Model
 
