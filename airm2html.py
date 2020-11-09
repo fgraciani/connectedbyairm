@@ -161,12 +161,34 @@ def create_pages_cx_terms():
     soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
     soup.find(text="CONCEPT_DEFINITION").replace_with(str(record['definition']))
     
-    p = soup.new_tag("p")
-    p.string = "Source: "
-    span = soup.new_tag("span")
-    span.string = record["source"]
-    p.insert(2,span)
-    soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,p)
+    insert_index = 1
+    if record["source"] != "missing data":
+      p = soup.new_tag("p")
+      p.string = "Source: "
+      span = soup.new_tag("span")
+      span.string = record["source"]
+      p.insert(2,span)
+      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+      insert_index = insert_index+1
+
+    if record["synonyms"] != "missing data":
+      p = soup.new_tag("p")
+      p.string = "Synonyms: "
+      span = soup.new_tag("span")
+      span.string = record["synonyms"]
+      p.insert(2,span)
+      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+      insert_index = insert_index+1
+
+    if record["abbreviation"] != "missing data":
+      p = soup.new_tag("p")
+      p.string = "Abbreviations: "
+      span = soup.new_tag("span")
+      span.string = record["abbreviation"]
+      p.insert(2,span)
+      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+      insert_index = insert_index+1
+
     filename = str(record['class name'])+".html"
     filename = filename.replace("/", "-")
     filename = filename.replace("*", "-")
