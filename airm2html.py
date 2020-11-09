@@ -18,7 +18,7 @@ def create_index_cx_abbs_global():
   html = open("data/html/templates/viewer/1.0.0/contextual-model-abbreviations-template.html").read()
   soup = BeautifulSoup(html, "lxml")
   for record in airm_abbs:
-    if record["supplement"] == "missing data":
+    if record["supplement"] == "\t\t\t":
       tr = soup.new_tag("tr")
 
       td_ic_name = soup.new_tag("td")
