@@ -23,7 +23,13 @@ def create_index_cx_terms_global():
 
       td_ic_name = soup.new_tag("td")
       td_ic_name["data-order"] = record["class name"]
-      url = "contextual-model/"+record["class name"]+".html"
+      filename = str(record['class name'])+".html"
+      filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
+      url = "contextual-model/"+filename
       text = record["class name"]
       print(text)
       new_link = soup.new_tag("a")
@@ -60,6 +66,7 @@ def create_index_cx_terms_supp():
       td_ic_name["data-order"] = record["class name"]
       filename = str(record['class name'])+".html"
       filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
       filename = filename.replace(" ", "")
       filename = filename.replace("\t", "")
       filename = filename.replace("\n", "")
@@ -92,6 +99,7 @@ def create_index_cx_terms_supp():
       td_ic_name["data-order"] = record["class name"]
       filename = str(record['class name'])+".html"
       filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
       filename = filename.replace(" ", "")
       filename = filename.replace("\t", "")
       filename = filename.replace("\n", "")
@@ -154,13 +162,57 @@ def create_pages_cx_terms():
     soup.find(text="CONCEPT_DEFINITION").replace_with(str(record['definition']))
     
     p = soup.new_tag("p")
-    p.string = "Source: "
-    span = soup.new_tag("span")
-    span.string = record["source"]
-    p.insert(2,span)
-    soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,p)
+    insert_index = 1
+    if record["source"] != "missing data":
+      b = soup.new_tag("b")
+      b.string = "Source: "
+      p.insert(insert_index,b)
+      insert_index = insert_index+1
+
+      span = soup.new_tag("span")
+      span.string = record["source"]
+      p.insert(insert_index,span)
+      insert_index = insert_index+1
+
+      br = soup.new_tag("br")
+      p.insert(insert_index,br)
+      insert_index = insert_index+1
+
+    if record["synonyms"] != "missing data":
+      b = soup.new_tag("b")
+      b.string = "Synonyms: "
+      p.insert(insert_index,b)
+      insert_index = insert_index+1
+
+      span = soup.new_tag("span")
+      span.string = record["synonyms"]
+      p.insert(insert_index,span)
+      insert_index = insert_index+1
+
+      br = soup.new_tag("br")
+      p.insert(insert_index,br)
+      insert_index = insert_index+1
+
+    if record["abbreviation"] != "missing data":
+      b = soup.new_tag("b")
+      b.string = "Abbreviations: "
+      p.insert(insert_index,b)
+      insert_index = insert_index+1
+
+      span = soup.new_tag("span")
+      span.string = record["abbreviation"]
+      p.insert(insert_index,span)
+      insert_index = insert_index+1
+
+      br = soup.new_tag("br")
+      p.insert(insert_index,br)
+      insert_index = insert_index+1
+
+    soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+
     filename = str(record['class name'])+".html"
     filename = filename.replace("/", "-")
+    filename = filename.replace("*", "-")
     filename = filename.replace(" ", "")
     filename = filename.replace("\t", "")
     filename = filename.replace("\n", "")
@@ -189,7 +241,13 @@ def create_index_cx_abbs_global():
 
       td_ic_name = soup.new_tag("td")
       td_ic_name["data-order"] = record["class name"]
-      url = "contextual-model/"+record["class name"]+".html"
+      filename = str(record['class name'])+".html"
+      filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
+      url = "contextual-model/"+ filename
       text = record["class name"]
       print(text)
       new_link = soup.new_tag("a")
@@ -226,6 +284,7 @@ def create_index_cx_abbs_supp():
       td_ic_name["data-order"] = record["class name"]
       filename = str(record['class name'])+".html"
       filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
       filename = filename.replace(" ", "")
       filename = filename.replace("\t", "")
       filename = filename.replace("\n", "")
@@ -258,6 +317,7 @@ def create_index_cx_abbs_supp():
       td_ic_name["data-order"] = record["class name"]
       filename = str(record['class name'])+".html"
       filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
       filename = filename.replace(" ", "")
       filename = filename.replace("\t", "")
       filename = filename.replace("\n", "")
@@ -327,6 +387,7 @@ def create_pages_cx_abbs():
     soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,p)
     filename = str(record['class name'])+".html"
     filename = filename.replace("/", "-")
+    filename = filename.replace("*", "-")
     filename = filename.replace(" ", "")
     filename = filename.replace("\t", "")
     filename = filename.replace("\n", "")
