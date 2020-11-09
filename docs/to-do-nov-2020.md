@@ -63,12 +63,12 @@
 
 ### Abbreviations
 
-* create index page
+* ~~create index page~~
 
 ### Abbreviations (with Supplements)
 
-* create index page
-* create all pages
+* ~~create index page~~
+* ~~create all pages~~
 
 ### Conceptual Model
 
