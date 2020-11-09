@@ -116,6 +116,58 @@ def create_index_cx_terms_supp():
   f.write(soup.prettify())
   f.close() 
 
+def create_pages_cx_terms():
+  import airm100
+  airm = airm100.Airm()
+  airm_terms = airm.contextual_terms.to_dict('records')
+
+  for record in airm_terms:
+    
+    if record["supplement"] == "\t\t\t":
+      html = open("data/html/templates/viewer/1.0.0/contextual-model/contextual-model-term-template.html").read()
+      directory = "docs/viewer/1.0.0/contextual-model/"
+
+    elif record["supplement"] == "\t\t\tEuropean Supplement":
+      html = open("data/html/templates/viewer/1.0.0/contextual-model/european-supplement/contextual-model-term-template.html").read()
+      directory = "docs/viewer/1.0.0/contextual-model/european-supplement/"
+          
+    print(record['class name'])
+    soup = BeautifulSoup(html, "lxml") 
+
+    soup.title.string = str(record['class name'])+" - Contextual Model | AIRM.aero"
+    soup.find(text="CONCEPT_NAME_BC").replace_with(str(record['class name']))
+
+    h2 = soup.new_tag("h2")
+    h2.string = str(record['class name'])
+
+    span_supplement = soup.new_tag("spam")
+    if record["supplement"] == "\t\t\tEuropean Supplement":
+      span_supplement['class'] = "badge badge-secondary"
+      span_supplement.string = "European Supplement"
+    h2.insert(1,span_supplement)
+
+    soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+    code = soup.new_tag("code")
+    code.string = record['urn']
+    code["class"] = "text-secondary"
+    soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+    soup.find(text="CONCEPT_DEFINITION").replace_with(str(record['definition']))
+    
+    p = soup.new_tag("p")
+    p.string = "Source: "
+    span = soup.new_tag("span")
+    span.string = record["source"]
+    p.insert(2,span)
+    soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,p)
+    filename = str(record['class name'])+".html"
+    filename = filename.replace("/", "-")
+    filename = filename.replace(" ", "")
+    filename = filename.replace("\t", "")
+    filename = filename.replace("\n", "")
+    f= open(directory + filename,"w+")
+    f.write(soup.prettify())
+    f.close()
+
 def create_index_cx_abbs_global():
   # Create Index
   airm_cx_pages_directory = "docs/viewer/1.0.0/contextual-model"
