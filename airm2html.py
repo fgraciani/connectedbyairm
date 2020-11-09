@@ -44,6 +44,78 @@ def create_index_cx_terms_global():
   f.write(soup.prettify())
   f.close() 
 
+def create_index_cx_terms_supp():
+  import airm100
+  airm = airm100.Airm()
+  airm_terms = airm.contextual_terms.to_dict('records')
+  html = open("data/html/templates/viewer/1.0.0/contextual-model-terms-with-supplements-template.html").read()
+  soup = BeautifulSoup(html, "lxml")
+  for record in airm_terms:
+    if record["supplement"] == "\t\t\t":
+      tr = soup.new_tag("tr")
+      td_supplement = soup.new_tag("td")
+      tr.insert(1,td_supplement)
+
+      td_ic_name = soup.new_tag("td")
+      td_ic_name["data-order"] = record["class name"]
+      filename = str(record['class name'])+".html"
+      filename = filename.replace("/", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
+      url = "contextual-model/"+filename
+      text = record["class name"]
+      print(text)
+      new_link = soup.new_tag("a")
+      new_link['href'] = url
+      new_link['target'] = "_blank"
+      new_link.string = text
+      td_ic_name.insert(1,new_link)
+      tr.insert(2,td_ic_name)
+      
+      if record["definition"] != "":
+        td_def = soup.new_tag("td")
+        td_def.string = str(record["definition"])
+        tr.insert(3,td_def)
+     
+      soup.find('tbody').insert(1,tr)
+    elif record["supplement"] == "\t\t\tEuropean Supplement":
+      tr = soup.new_tag("tr")
+      td_supplement = soup.new_tag("td")
+      span_supplement = soup.new_tag("spam")
+      span_supplement['class'] = "badge badge-secondary"
+      span_supplement.string = "European Supplement"
+      td_supplement.insert(1,span_supplement)
+      tr.insert(1,td_supplement)
+      
+      td_ic_name = soup.new_tag("td")
+      td_ic_name["data-order"] = record["class name"]
+      filename = str(record['class name'])+".html"
+      filename = filename.replace("/", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
+      url = "contextual-model/european-supplement/"+filename
+      text = record["class name"]
+      print(text)
+      new_link = soup.new_tag("a")
+      new_link['href'] = url
+      new_link['target'] = "_blank"
+      new_link.string = text
+      td_ic_name.insert(1,new_link)
+      tr.insert(2,td_ic_name)
+      
+      if record["definition"] != "":
+        td_def = soup.new_tag("td")
+        td_def.string = str(record["definition"])
+        tr.insert(3,td_def)
+     
+      soup.find('tbody').insert(1,tr)
+
+  f= open("docs/viewer/1.0.0/contextual-model-terms-with-supplements.html","w+")
+  f.write(soup.prettify())
+  f.close() 
+
 def create_index_cx_abbs_global():
   # Create Index
   airm_cx_pages_directory = "docs/viewer/1.0.0/contextual-model"
