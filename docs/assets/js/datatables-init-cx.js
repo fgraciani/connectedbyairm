@@ -2,6 +2,7 @@
 		$('#example').DataTable({
 		"ordering": true,
 		"info":     true,
-		"autoWifth":true
+		"autoWifth":true,
+    "order": [[ 1, "asc" ]]
 		} );
 	} );
