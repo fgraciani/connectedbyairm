@@ -60,6 +60,9 @@ def create_index_cx_abbs_supp():
       td_ic_name["data-order"] = record["class name"]
       filename = str(record['class name'])+".html"
       filename = filename.replace("/", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
       url = "contextual-model/"+filename
       text = record["class name"]
       print(text)
@@ -89,6 +92,9 @@ def create_index_cx_abbs_supp():
       td_ic_name["data-order"] = record["class name"]
       filename = str(record['class name'])+".html"
       filename = filename.replace("/", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
       url = "contextual-model/european-supplement/"+filename
       text = record["class name"]
       print(text)
@@ -155,6 +161,9 @@ def create_pages_cx_abbs():
     soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,p)
     filename = str(record['class name'])+".html"
     filename = filename.replace("/", "-")
+    filename = filename.replace(" ", "")
+    filename = filename.replace("\t", "")
+    filename = filename.replace("\n", "")
     f= open(directory + filename,"w+")
     f.write(soup.prettify())
     f.close()
