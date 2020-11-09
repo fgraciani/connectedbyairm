@@ -52,14 +52,14 @@
 
 ## New AIRM Viewer
 
-### Terms
+### Terms [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/contextual-model-terms.html)
 
 * ~~create index page~~
 * fix page title
 * adjust ellipsis
 * margin top for link to supplements
 
-### Terms (with Supplements)
+### Terms (with Supplements) [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/contextual-model-terms-with-supplements.html)
 
 * ~~create index page~~
 * fix initial order
@@ -72,13 +72,13 @@
 * fix badge size
 * too much white space?
 
-### Abbreviations
+### Abbreviations [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/contextual-model-abbreviations.html)
 
 * ~~create index page~~
 * fix initial order
 * margin top for link to supplements
 
-### Abbreviations (with Supplements)
+### Abbreviations (with Supplements) [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/contextual-model-abbreviations-with-supplements.html)
 
 * ~~create index page~~
 * ~~create all pages~~
