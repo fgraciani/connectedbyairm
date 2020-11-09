@@ -58,7 +58,9 @@ def create_index_cx_abbs_supp():
 
       td_ic_name = soup.new_tag("td")
       td_ic_name["data-order"] = record["class name"]
-      url = "contextual-model/"+record["class name"]+".html"
+      filename = str(record['class name'])+".html"
+      filename = filename.replace("/", "-")
+      url = "contextual-model/"+filename
       text = record["class name"]
       print(text)
       new_link = soup.new_tag("a")
@@ -85,7 +87,9 @@ def create_index_cx_abbs_supp():
       
       td_ic_name = soup.new_tag("td")
       td_ic_name["data-order"] = record["class name"]
-      url = "contextual-model/european-supplement/"+record["class name"]+".html"
+      filename = str(record['class name'])+".html"
+      filename = filename.replace("/", "-")
+      url = "contextual-model/european-supplement/"+filename
       text = record["class name"]
       print(text)
       new_link = soup.new_tag("a")
@@ -118,7 +122,7 @@ def create_pages_cx_abbs():
 
     elif record["supplement"] == "\t\t\tEuropean Supplement":
       html = open("data/html/templates/viewer/1.0.0/contextual-model/european-supplement/contextual-model-abbreviation-template.html").read()
-      directory = "docs/viewer/1.0.0/contextual-model/european-supplement"
+      directory = "docs/viewer/1.0.0/contextual-model/european-supplement/"
     
     print(record['class name'])
     soup = BeautifulSoup(html, "lxml") 
@@ -145,8 +149,9 @@ def create_pages_cx_abbs():
     span.string = record["source"]
     p.insert(2,span)
     soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,p)
-
-    f= open(directory+str(record['class name'])+".html","w+")
+    filename = str(record['class name'])+".html"
+    filename = filename.replace("/", "-")
+    f= open(directory + filename,"w+")
     f.write(soup.prettify())
     f.close()
 
