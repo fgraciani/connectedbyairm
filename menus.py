@@ -32,6 +32,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("16: Create pages from AIXM mapping")
       print("17: VIEWER - CX - ABBREVIATIONS - Create index")
       print("18: VIEWER - CX - ABBREVIATIONS - Create pages")
+      print("19: VIEWER - CX - TERMS - Create index")
 
       choice = input ("Please make a choice: ")
 
@@ -136,10 +137,14 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           import airm2html
           airm2html.create_pages_cx_abbs()
           print("Done")
+          main()          
+      elif choice == "19":
+          print('\n')
+          print("VIEWER - CX - TERMS Creating index from xls file...")
+          import airm2html
+          airm2html.create_index_cx_terms_global()
+          print("Done")
           main()  
-
-
-          
       else:
           print("I don't understand your choice.")
           main()
