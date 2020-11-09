@@ -161,33 +161,54 @@ def create_pages_cx_terms():
     soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
     soup.find(text="CONCEPT_DEFINITION").replace_with(str(record['definition']))
     
+    p = soup.new_tag("p")
     insert_index = 1
     if record["source"] != "missing data":
-      p = soup.new_tag("p")
-      p.string = "Source: "
+      b = soup.new_tag("b")
+      b.string = "Source: "
+      p.insert(insert_index,b)
+      insert_index = insert_index+1
+
       span = soup.new_tag("span")
       span.string = record["source"]
-      p.insert(2,span)
-      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+      p.insert(insert_index,span)
+      insert_index = insert_index+1
+
+      br = soup.new_tag("br")
+      p.insert(insert_index,br)
       insert_index = insert_index+1
 
     if record["synonyms"] != "missing data":
-      p = soup.new_tag("p")
-      p.string = "Synonyms: "
+      b = soup.new_tag("b")
+      b.string = "Synonyms: "
+      p.insert(insert_index,b)
+      insert_index = insert_index+1
+
       span = soup.new_tag("span")
       span.string = record["synonyms"]
-      p.insert(2,span)
-      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+      p.insert(insert_index,span)
+      insert_index = insert_index+1
+
+      br = soup.new_tag("br")
+      p.insert(insert_index,br)
       insert_index = insert_index+1
 
     if record["abbreviation"] != "missing data":
-      p = soup.new_tag("p")
-      p.string = "Abbreviations: "
+      b = soup.new_tag("b")
+      b.string = "Abbreviations: "
+      p.insert(insert_index,b)
+      insert_index = insert_index+1
+
       span = soup.new_tag("span")
       span.string = record["abbreviation"]
-      p.insert(2,span)
-      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+      p.insert(insert_index,span)
       insert_index = insert_index+1
+
+      br = soup.new_tag("br")
+      p.insert(insert_index,br)
+      insert_index = insert_index+1
+
+    soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
 
     filename = str(record['class name'])+".html"
     filename = filename.replace("/", "-")
