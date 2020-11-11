@@ -239,9 +239,9 @@ def create_pages_cp_concepts():
           filename = filename.replace("\t", "")
           filename = filename.replace("\n", "")
           if scope == "global":
-            url = "conceptual-model/"+filename
+            url = filename
           elif scope == "European Supplement":
-            url = "conceptual-model/european-supplement/"+filename
+            url = "european-supplement/"+filename
           text = result["type"]
           print(text)
           new_link = soup.new_tag("a")
