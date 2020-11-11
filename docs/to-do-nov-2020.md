@@ -86,14 +86,15 @@
 * fix badge size
 * too much white space?
 
-### Conceptual Model
+### Conceptual Model [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/conceptual-model.html)
 
-* create index page
+* ~~create index page~~
 
-### Conceptual Model (with Supplements)
+### Conceptual Model (with Supplements) [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/conceptual-model-with-supplements.html)
 
-* create index page
-* create all pages
+* ~~create index page~~
+* ~~create all pages~~
+* fix related concept links for European Supplement concepts
 
 ### Logical Model
 
