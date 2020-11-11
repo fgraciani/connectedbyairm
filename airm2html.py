@@ -122,16 +122,19 @@ def create_pages_cp_concepts():
   import airm100
   airm = airm100.Airm()
   airm_conceps = airm.conceptual_concepts.to_dict('records')
+  scope = ""
 
   for record in airm_conceps:
     
     if record["supplement"] == "\t\t\t":
       html = open("data/html/templates/viewer/1.0.0/conceptual-model/conceptual-model-concept-template.html").read()
       directory = "docs/viewer/1.0.0/conceptual-model/"
+      scope = "global"
 
     elif record["supplement"] == "\t\t\tEuropean Supplement":
       html = open("data/html/templates/viewer/1.0.0/conceptual-model/european-supplement/conceptual-model-concept-template.html").read()
       directory = "docs/viewer/1.0.0/conceptual-model/european-supplement/"
+      scope = "European Supplement"
 
     if record["stereotype"] != "missing data":
       print(record['class name'])
@@ -202,6 +205,54 @@ def create_pages_cp_concepts():
         br = soup.new_tag("br")
         p.insert(insert_index,br)
         insert_index = insert_index+1
+      
+      # Insert related concepts
+      results = airm.get_concept_properties_by_parent(str(record['class name']), scope)
+      if results != None:
+        hr = soup.new_tag("hr")
+        p.insert(insert_index,hr)
+        insert_index = insert_index+1
+
+        b = soup.new_tag("b")
+        b.string = "Related: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+        for result in results:
+          print('\t'+result['property name'])
+          
+          span = soup.new_tag("span")
+          span.string = record["property name"]
+          p.insert(insert_index,span)
+          insert_index = insert_index+1
+
+          filename = str(record['class name'])+".html"
+          filename = filename.replace("/", "-")
+          filename = filename.replace("*", "-")
+          filename = filename.replace(" ", "")
+          filename = filename.replace("\t", "")
+          filename = filename.replace("\n", "")
+          if scope == "global":
+            url = "conceptual-model/"+filename
+          elif scope == "European Supplement":
+            url = "conceptual-model/european-supplement/"+filename
+          text = record["type"]
+          print(text)
+          new_link = soup.new_tag("a")
+          new_link['href'] = url
+          new_link.string = text
+          p.insert(insert_index,new_link)
+          insert_index = insert_index+1
+
+          br = soup.new_tag("br")
+          p.insert(insert_index,br)
+          insert_index = insert_index+1
+
+      
 
       soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
 
