@@ -28,20 +28,21 @@ class Airm:
     filter = concepts_df["class name"]==parent
     concepts_df.sort_values("class name", inplace = True)
     concepts_df.where(filter, inplace = True) 
-    df_results01 = concepts_df.dropna(how='all')    
+    df_results01 = concepts_df.copy()    
 
     if scope == "global":
-      scope_filter = "\t\t\t"
+      scope_filter = "\t"
     elif scope == "European Supplement":
-      scope_filter = "\t\t\tEuropean Supplement"
+      scope_filter = "\tEuropean Supplement"
+    
+    df_results01.fillna("missing data", inplace = True)
+    filter = df_results01["stereotype"]=="missing data"
+    df_results01.sort_values("stereotype", inplace = True)
+    df_results01.where(filter, inplace = True)
+    df_results02 = df_results01.copy()
 
-    filter = df_results01["supplement"]==scope_filter
-    df_results01.sort_values("supplement", inplace = True)
-    df_results01.where(filter, inplace = True) 
-    df_results02 = df_results01.dropna(how='all') 
-
-    filter = df_results02["stereotype"]==""
-    df_results02.sort_values("stereotype", inplace = True)
+    filter = df_results02["supplement"]==scope_filter
+    df_results02.sort_values("supplement", inplace = True)
     df_results02.where(filter, inplace = True) 
     df_results03 = df_results02.dropna(how='all') 
 

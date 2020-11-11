@@ -209,6 +209,8 @@ def create_pages_cp_concepts():
       # Insert related concepts
       results = airm.get_concept_properties_by_parent(str(record['class name']), scope)
       if results != None:
+        print("RESULTS for " + str(record['class name'])+ "SCOPE: "+scope)
+        print(results)
         hr = soup.new_tag("hr")
         p.insert(insert_index,hr)
         insert_index = insert_index+1
@@ -226,11 +228,11 @@ def create_pages_cp_concepts():
           print('\t'+result['property name'])
           
           span = soup.new_tag("span")
-          span.string = record["property name"]
+          span.string = result["property name"]
           p.insert(insert_index,span)
           insert_index = insert_index+1
 
-          filename = str(record['class name'])+".html"
+          filename = str(result['class name'])+".html"
           filename = filename.replace("/", "-")
           filename = filename.replace("*", "-")
           filename = filename.replace(" ", "")
@@ -240,7 +242,7 @@ def create_pages_cp_concepts():
             url = "conceptual-model/"+filename
           elif scope == "European Supplement":
             url = "conceptual-model/european-supplement/"+filename
-          text = record["type"]
+          text = result["type"]
           print(text)
           new_link = soup.new_tag("a")
           new_link['href'] = url
