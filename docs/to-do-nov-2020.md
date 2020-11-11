@@ -96,16 +96,16 @@
 * ~~create all pages~~
 * fix related concept links for European Supplement concepts
 
-### Logical Model
-
-* create index page
-
-### Logical Model (with Supplements) [(Testing page)](https://fgraciani.github.io/connectedbyairm/advanced-viewer/1.0.0/logical-model.html)
+### Logical Model [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/logical-model.html)
 
 * ~~create index page~~
-* ~~create all pages~~
 
-* replace current import module. we need an excel filem too many problems with the xmi
+### Logical Model (with Supplements) [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/logical-model-with-supplements.html)
+
+* ~~create index page~~
+* ~~replace current import module. we need an excel filem too many problems with the xmi~~
+
+* ~~create all pages~~[(Testing page)](https://fgraciani.github.io/connectedbyairm/advanced-viewer/1.0.0/logical-model.html)
 * Sources to be imported.
 * Parent class (inheritance) to be imported
 * insert semantic correspondence presence per class
