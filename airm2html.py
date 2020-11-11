@@ -80,7 +80,7 @@ def create_index_logical_supp():
   for record in airm_logical:
     path = "logical-model/"
     tr = soup.new_tag("tr")
-    
+
     td_supplement = soup.new_tag("td")
     if record["supplement"] == "\t\t\tEuropean Supplement" or record["supplement"] == "\tEuropean Supplement":
       span_supplement = soup.new_tag("spam")
@@ -99,7 +99,7 @@ def create_index_logical_supp():
       filename = filename.replace(" ", "")
       filename = filename.replace("\t", "")
       filename = filename.replace("\n", "")
-      url = "logical-model/"+filename
+      url = path+filename
       text = record["class name"]
       print(text)
       new_link = soup.new_tag("a")
