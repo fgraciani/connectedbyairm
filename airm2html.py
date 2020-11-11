@@ -118,6 +118,103 @@ def create_index_cp_supp():
   f.write(soup.prettify())
   f.close() 
 
+def create_pages_cp_concepts():
+  import airm100
+  airm = airm100.Airm()
+  airm_conceps = airm.conceptual_concepts.to_dict('records')
+
+  for record in airm_conceps:
+    
+    if record["supplement"] == "\t\t\t":
+      html = open("data/html/templates/viewer/1.0.0/conceptual-model/conceptual-model-concept-template.html").read()
+      directory = "docs/viewer/1.0.0/conceptual-model/"
+
+    elif record["supplement"] == "\t\t\tEuropean Supplement":
+      html = open("data/html/templates/viewer/1.0.0/conceptual-model/european-supplement/conceptual-model-concept-template.html").read()
+      directory = "docs/viewer/1.0.0/conceptual-model/european-supplement/"
+
+    if record["stereotype"] != "missing data":
+      print(record['class name'])
+      soup = BeautifulSoup(html, "lxml") 
+
+      soup.title.string = str(record['class name'])+" - Conceptual Model | AIRM.aero"
+      soup.find(text="CONCEPT_NAME_BC").replace_with(str(record['class name']))
+
+      h2 = soup.new_tag("h2")
+      h2.string = str(record['class name'])
+
+      span_supplement = soup.new_tag("spam")
+      if record["supplement"] == "\t\t\tEuropean Supplement":
+        span_supplement['class'] = "badge badge-secondary"
+        span_supplement.string = "European Supplement"
+      h2.insert(1,span_supplement)
+
+      soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+      code = soup.new_tag("code")
+      code.string = record['urn']
+      code["class"] = "text-secondary"
+      soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+      soup.find(text="CONCEPT_DEFINITION").replace_with(str(record['definition']))
+      
+      p = soup.new_tag("p")
+      insert_index = 1
+      if record["source"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Source: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["source"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+      if record["synonyms"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Synonyms: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["synonyms"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+      if record["abbreviation"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Abbreviations: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["abbreviation"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+
+      filename = str(record['class name'])+".html"
+      filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
+      f= open(directory + filename,"w+")
+      f.write(soup.prettify())
+      f.close()
+
 def create_index_cx_terms_global():
   # Create Index
   airm_cx_pages_directory = "docs/viewer/1.0.0/contextual-model"
