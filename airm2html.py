@@ -60,10 +60,14 @@ def create_index_logical_global():
         td_def.string = str(record["definition"])
         tr.insert(3,td_def)
       
-      if record["type"] != "":
+      if record["type"] != "missing data":
         td_def = soup.new_tag("td")
         td_def.string = str(record["type"])
-        tr.insert(3,td_def)
+        tr.insert(4,td_def)
+      else:
+        td_def = soup.new_tag("td")
+        td_def.string = "-"
+        tr.insert(4,td_def)
       
       soup.find('tbody').insert(1,tr)
   
@@ -139,9 +143,13 @@ def create_index_logical_supp():
       td_def.string = str(record["definition"])
       tr.insert(4,td_def)
     
-    if record["type"] != "":
+    if record["type"] != "missing data":
       td_def = soup.new_tag("td")
       td_def.string = str(record["type"])
+      tr.insert(5,td_def)
+    else:
+      td_def = soup.new_tag("td")
+      td_def.string = "-"
       tr.insert(5,td_def)
     
     soup.find('tbody').insert(1,tr)
