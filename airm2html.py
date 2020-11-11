@@ -71,6 +71,85 @@ def create_index_logical_global():
   f.write(soup.prettify())
   f.close() 
 
+def create_index_logical_supp():
+  import airm100
+  airm = airm100.Airm()
+  airm_logical = airm.logical_concepts.to_dict('records')
+  html = open("data/html/templates/viewer/1.0.0/logical-model-with-supplements-template.html").read()
+  soup = BeautifulSoup(html, "lxml")
+  for record in airm_logical:
+    path = "logical-model/"
+    tr = soup.new_tag("tr")
+    
+    td_supplement = soup.new_tag("td")
+    if record["supplement"] == "\t\t\tEuropean Supplement" or record["supplement"] == "\tEuropean Supplement":
+      span_supplement = soup.new_tag("spam")
+      span_supplement['class'] = "badge badge-secondary"
+      span_supplement.string = "European Supplement"
+      td_supplement.insert(1,span_supplement)
+      path = "logical-model/european-supplement/"
+    tr.insert(1,td_supplement)
+
+    td_ic_name = soup.new_tag("td")
+    td_ic_name["data-order"] = record["class name"]
+    if record["stereotype"] != "missing data": #The record is a class
+      filename = str(record['class name'])+".html"
+      filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
+      url = "logical-model/"+filename
+      text = record["class name"]
+      print(text)
+      new_link = soup.new_tag("a")
+      new_link['href'] = url
+      new_link['target'] = "_blank"
+      new_link.string = text
+      td_ic_name.insert(1,new_link)
+      tr.insert(2,td_ic_name)
+    else: #The record is a property
+      td_ic_name.string = record["class name"]
+      tr.insert(2,td_ic_name)
+    
+    td_dc_name = soup.new_tag("td")
+    td_dc_name["data-order"] = str(record["property name"])
+    if record["stereotype"] == "missing data": #The record is a property
+      filename = str(record['class name'])+".html#"+str(record['property name'])
+      filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
+      url = path+filename
+      text = str(record["property name"])
+      print(text)
+      new_link = soup.new_tag("a")
+      new_link['href'] = url
+      new_link['target'] = "_blank"
+      new_link.string = text
+      td_dc_name.insert(1,new_link)
+      tr.insert(3,td_dc_name)
+    else: #The record is a class
+      td_dc_name.string = "-"
+      tr.insert(3,td_dc_name)
+
+    if record["definition"] != "":
+      td_def = soup.new_tag("td")
+      td_def.string = str(record["definition"])
+      tr.insert(4,td_def)
+    
+    if record["type"] != "":
+      td_def = soup.new_tag("td")
+      td_def.string = str(record["type"])
+      tr.insert(5,td_def)
+    
+    soup.find('tbody').insert(1,tr)
+  
+  f= open("docs/viewer/1.0.0/logical-model-with-supplements.html","w+")
+  f.write(soup.prettify())
+  f.close() 
+
 def create_index_cp_global():
   import airm100
   airm = airm100.Airm()
