@@ -5,7 +5,7 @@
 		"autoWifth":true,
         columnDefs: [ {
 			targets: [ 3 ],
-			render: $.fn.dataTable.render.ellipsis(40,false,true)
+			render: $.fn.dataTable.render.ellipsis(15,false,true)
 		} ]
 		} );
 	} );
