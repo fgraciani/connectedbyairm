@@ -35,6 +35,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("19: VIEWER - CX - TERMS - Create index")
       print("20: VIEWER - CX - TERMS - Create pages")
       print("21: VIEWER - CP - Create index")
+      print("22: VIEWER - CP - Create pages")
 
       choice = input ("Please make a choice: ")
 
@@ -166,7 +167,14 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           print("VIEWER - CP (Supps) Creating index from xls file...")
           airm2html.create_index_cp_supp()
           print("Done")
-          main()     
+          main()            
+      elif choice == "22":
+          print('\n')
+          print("VIEWER - CP Creating pages from xls file...")
+          import airm2html
+          airm2html.create_pages_cp_concepts()
+          print("Done")
+          main()    
       else:
           print("I don't understand your choice.")
           main()
