@@ -163,9 +163,9 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           import airm2html
           airm2html.create_index_cp_global()
           print("Done")
-          # print("VIEWER - CX - TERMS (Supps) Creating index from xls file...")
-          # airm2html.create_index_cx_terms_supp()
-          # print("Done")
+          print("VIEWER - CP (Supps) Creating index from xls file...")
+          airm2html.create_index_cp_supp()
+          print("Done")
           main()     
       else:
           print("I don't understand your choice.")
