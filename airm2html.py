@@ -232,7 +232,7 @@ def create_pages_cp_concepts():
           p.insert(insert_index,span)
           insert_index = insert_index+1
 
-          filename = str(result['class name'])+".html"
+          filename = str(result['type'])+".html"
           filename = filename.replace("/", "-")
           filename = filename.replace("*", "-")
           filename = filename.replace(" ", "")
