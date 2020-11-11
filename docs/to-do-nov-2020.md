@@ -88,12 +88,13 @@
 
 ### Conceptual Model
 
-* create index page
+* ~~create index page~~
 
 ### Conceptual Model (with Supplements)
 
-* create index page
-* create all pages
+* ~~create index page~~
+* ~~create all pages~~
+* fix related concept links for European Supplement concepts
 
 ### Logical Model
 
