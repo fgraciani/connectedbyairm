@@ -5,7 +5,7 @@ class Airm:
   contextual_terms = pd.read_excel (r'data/xlsx/airm-1.0.0/cx_terms.xlsx', sheet_name='cx_terms')
   not_found_counter = 0
   conceptual_concepts = pd.read_excel (r'data/xlsx/airm-1.0.0/cp_all.xlsx', sheet_name='cp_all')
-  logical_concepts = pd.read_excel (r'data/xlsx/airm-1.0.0/logical_all.xlsx', sheet_name='cp_all')
+  logical_concepts = pd.read_excel (r'data/xlsx/airm-1.0.0/logical_all.xlsx', sheet_name='logical_all')
    
   def __init__(self):
     print("init")
