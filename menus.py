@@ -37,6 +37,7 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("21: VIEWER - CP - Create index")
       print("22: VIEWER - CP - Create pages")
       print("23: VIEWER - LOGICAL - Create index")
+      print("24: VIEWER - LOGICAL - Create pages")
 
       choice = input ("Please make a choice: ")
 
@@ -185,7 +186,14 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           print("VIEWER - LOGICAL (Supps) Creating index from xls file...")
           airm2html.create_index_logical_supp()
           print("Done")
-          main()  
+          main()             
+      elif choice == "24":
+          print('\n')
+          print("VIEWER - LOGICAL Creating pages from xls file...")
+          import airm2html
+          airm2html.create_pages_logical_concepts()
+          print("Done")
+          main()   
       else:
           print("I don't understand your choice.")
           main()

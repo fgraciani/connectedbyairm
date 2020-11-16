@@ -293,10 +293,10 @@ def create_pages_logical_concepts():
         insert_index = insert_index+1
 
         for result in results:
-          print('\t'+result['property name'])
+          print('\t'+str(result['property name']))
           
           span = soup.new_tag("span")
-          span.string = result["property name"]
+          span.string = str(result['property name'])
           p.insert(insert_index,span)
           insert_index = insert_index+1
 
