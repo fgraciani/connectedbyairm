@@ -158,6 +158,184 @@ def create_index_logical_supp():
   f.write(soup.prettify())
   f.close() 
 
+def create_pages_logical_concepts():
+  import airm100
+  airm = airm100.Airm()
+  airm_logical = airm.logical_concepts.to_dict('records')
+  scope = ""
+
+  for record in airm_logical:
+    
+    if record["supplement"] == "\t\t\t":
+      html = open("data/html/templates/viewer/1.0.0/logical-model/logical-model-concept-template.html").read()
+      directory = "docs/viewer/1.0.0/logical-model/"
+      scope = "global"
+
+    elif record["supplement"] == "\t\t\tEuropean Supplement":
+      html = open("data/html/templates/viewer/1.0.0/logical-model/european-supplement/logical-model-concept-template.html").read()
+      directory = "docs/viewer/1.0.0/logical-model/european-supplement/"
+      scope = "European Supplement"
+
+    if record["stereotype"] != "missing data":
+      print(record['class name'])
+      soup = BeautifulSoup(html, "lxml") 
+
+      soup.title.string = str(record['class name'])+" - Logical Model | AIRM.aero"
+      soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(record['class name']))
+
+      h2 = soup.new_tag("h2")
+      h2.string = str(record['class name'])
+
+      span_supplement = soup.new_tag("spam")
+      if record["supplement"] == "\t\t\tEuropean Supplement":
+        span_supplement['class'] = "badge badge-secondary"
+        span_supplement.string = "European Supplement"
+      h2.insert(1,span_supplement)
+
+      soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+      code = soup.new_tag("code")
+      code.string = record['urn']
+      code["class"] = "text-secondary"
+      soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+      soup.find(text="FIXM_CLASS_DEFINITION").replace_with(str(record['definition']))
+      
+      p = soup.new_tag("p")
+      insert_index = 1
+      if record["source"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Source: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["source"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+      if record["synonyms"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Synonyms: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["synonyms"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+      if record["abbreviation"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Abbreviations: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["abbreviation"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+      
+      if record["parent"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Parent concept: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        filename = str(record["parent"])+".html"
+        filename = filename.replace("/", "-")
+        filename = filename.replace("*", "-")
+        filename = filename.replace(" ", "")
+        filename = filename.replace("\t", "")
+        filename = filename.replace("\n", "")
+        if scope == "global":
+          url = filename
+        elif scope == "European Supplement":
+          url = "european-supplement/"+filename
+        text = record["parent"]
+        print(text)
+        new_link = soup.new_tag("a")
+        new_link['href'] = url
+        new_link.string = text
+        p.insert(insert_index,new_link)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+      
+      # Insert properties
+      results = airm.get_logical_properties_by_class(str(record['class name']), scope)
+      if results != None:
+        print("RESULTS for " + str(record['class name'])+ "SCOPE: "+scope)
+        print(results)
+        hr = soup.new_tag("hr")
+        p.insert(insert_index,hr)
+        insert_index = insert_index+1
+
+        b = soup.new_tag("b")
+        b.string = "Properties: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+        for result in results:
+          print('\t'+result['property name'])
+          
+          span = soup.new_tag("span")
+          span.string = result["property name"]
+          p.insert(insert_index,span)
+          insert_index = insert_index+1
+
+          filename = str(result['type'])+".html"
+          filename = filename.replace("/", "-")
+          filename = filename.replace("*", "-")
+          filename = filename.replace(" ", "")
+          filename = filename.replace("\t", "")
+          filename = filename.replace("\n", "")
+          if scope == "global":
+            url = filename
+          elif scope == "European Supplement":
+            url = "european-supplement/"+filename
+          text = result["type"]
+          print(text)
+          new_link = soup.new_tag("a")
+          new_link['href'] = url
+          new_link.string = text
+          p.insert(insert_index,new_link)
+          insert_index = insert_index+1
+
+          br = soup.new_tag("br")
+          p.insert(insert_index,br)
+          insert_index = insert_index+1
+
+      
+
+      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+
+      filename = str(record['class name'])+".html"
+      filename = filename.replace("/", "-")
+      filename = filename.replace("*", "-")
+      filename = filename.replace(" ", "")
+      filename = filename.replace("\t", "")
+      filename = filename.replace("\n", "")
+      f= open(directory + filename,"w+")
+      f.write(soup.prettify())
+      f.close()
+
 def create_index_cp_global():
   import airm100
   airm = airm100.Airm()
