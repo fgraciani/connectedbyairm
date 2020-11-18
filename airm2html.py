@@ -324,7 +324,7 @@ def create_pages_logical_concepts():
 
       
 
-      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+      soup.find(id="INFO_CONCEPT_OTHER").insert(insert_index,p)
 
       filename = str(record['class name'])+".html"
       filename = filename.replace("/", "-")
