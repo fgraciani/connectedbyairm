@@ -294,13 +294,72 @@ def create_pages_logical_concepts():
 
         for result in results:
           print('\t'+str(result['property name']))
-          
-          span = soup.new_tag("span")
-          span.string = str(result['property name'])
-          p.insert(insert_index,span)
-          insert_index = insert_index+1
 
-          filename = str(result['type'])+".html"
+          tr = soup.new_tag("tr")
+
+          if result["property name"] != "":
+            td_dc_name = soup.new_tag("td")
+            url = "#"+result["property name"]
+            text = result["property name"]
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link.string = text
+            td_dc_name.insert(1,new_link)
+            tr.insert(1,td_dc_name)
+          
+          if result["definition"] != "":
+            td_def = soup.new_tag("td")
+            td_def.string = str(result["definition"])
+            tr.insert(2,td_def)
+          
+          if result["type"] != "":
+            td_dc_type = soup.new_tag("td")
+            filename = str(result['type'])+".html"
+            filename = filename.replace("/", "-")
+            filename = filename.replace("*", "-")
+            filename = filename.replace(" ", "")
+            filename = filename.replace("\t", "")
+            filename = filename.replace("\n", "")
+            if scope == "global":
+              url = filename
+            elif scope == "European Supplement":
+              url = "european-supplement/"+filename
+            text = result["type"]
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link.string = text
+            td_dc_type.insert(1,new_link)
+            tr.insert(3,td_dc_type)
+          
+          soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
+        for trace in results:
+          property_div = soup.new_tag("div")
+          property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
+
+          h3 = soup.new_tag("h3")
+          h3.string = str(trace["property name"])
+          h3["id"] = str(trace["property name"])
+          h3["data-toggle"] = "tooltip"
+          h3["data-placement"] = "right"
+          h3["title"] = trace["urn"]
+          property_div.insert(0,h3)
+
+          code = soup.new_tag("code")
+          identifier = trace['urn']
+          code.string = identifier
+          code["class"] = "text-secondary"
+          property_div.insert(1,code)
+          
+          p = soup.new_tag("p")
+          p.string = str(trace["definition"])
+          br = soup.new_tag("br")
+          p.insert(2,br)
+          property_div.insert(2,p)
+          
+          p = soup.new_tag("p")
+          p.string = "type: "
+          span = soup.new_tag("span")
+          filename = str(trace['type'])+".html"
           filename = filename.replace("/", "-")
           filename = filename.replace("*", "-")
           filename = filename.replace(" ", "")
@@ -310,17 +369,147 @@ def create_pages_logical_concepts():
             url = filename
           elif scope == "European Supplement":
             url = "european-supplement/"+filename
-          text = result["type"]
-          print(text)
+          text = trace["type"]
           new_link = soup.new_tag("a")
           new_link['href'] = url
           new_link.string = text
-          p.insert(insert_index,new_link)
-          insert_index = insert_index+1
+          span.insert(1,new_link)
+          p.insert(2,span)
+          property_div.insert(3,p)
 
-          br = soup.new_tag("br")
-          p.insert(insert_index,br)
-          insert_index = insert_index+1
+          connections = airm.get_connections_by_urn(my_airm, trace['urn'])
+          if connections != None:
+            p = soup.new_tag("p")
+            button = soup.new_tag("button")
+            button["class"] = "btn btn-light"
+            button["type"] = "button"
+            button["data-toggle"] = "collapse"
+            button["data-target"] = "#"+str(trace["name"])+"collapse"
+            button["aria-expanded"] = "false"
+            button["aria-controls"] = "collapseExample"
+            button.string = "Show presence in semantic correspondences"
+            p.insert(1,button)
+            property_div.insert(4,p)
+
+            sc_div = soup.new_tag("div")
+            sc_div["class"] = "table-responsive collapse"
+            sc_div["id"] = str(trace["name"])+"collapse"
+            sc_table = soup.new_tag("table")
+            sc_table["class"] = "table"
+            sc_thead = soup.new_tag("thead")
+            tr = soup.new_tag("tr")
+            th = soup.new_tag("th")
+            th.string = "Model"
+            tr.insert(1,th)
+            th = soup.new_tag("th")
+            th.string = "Concept"
+            tr.insert(2,th)
+            sc_thead.insert(1,tr)
+            sc_table.insert(1,sc_thead)
+            tbody = soup.new_tag("tbody")
+            #for each insert row
+            #print('\t\tPresence in Mappings:')
+          
+            for entry in connections:
+              #print('\t\t\t'+line)
+              tr = soup.new_tag("tr")
+              if entry["model_name"] == "FIXM 4.2.0":
+                td = soup.new_tag("td")
+                url = "../../../developers/fixm-4.2.0-to-airm-1.0.0.html"
+                text = "FIXM 4.2.0"
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a.string = text
+                td.insert(1,a)
+                tr.insert(1,td)
+                td = soup.new_tag("td")
+                parts = str(entry["concept_id"]).split(":")
+                url = "../../../developers/fixm-4.2.0-to-airm-1.0.0/"+parts[1]+".html#"+entry["concept_name"]
+                text = entry["concept_name"]
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a["data-toggle"] = "tooltip"
+                a["data-placement"] = "left"
+                a["title"] = entry["concept_id"]
+                a.string = text
+                td.insert(1,a)
+                tr.insert(2,td)
+              elif entry["model_name"] == "AMXM 2.0.0":
+                td = soup.new_tag("td")
+                url = "../../../developers/amxm-2.0.0-to-airm-1.0.0.html"
+                text = "AMXM 2.0.0"
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a.string = text
+                td.insert(1,a)
+                tr.insert(1,td)
+                td = soup.new_tag("td")
+                if "." in str(entry["concept_id"]):
+                  parts = str(entry["concept_id"]).split(".")
+                  url = "../../../developers/amxm-2.0.0-to-airm-1.0.0/"+parts[-2]+".html#"+entry["concept_name"]
+                else:
+                  url = "../../../developers/amxm-2.0.0-to-airm-1.0.0/"+entry["concept_name"]+".html#"
+                text = entry["concept_name"]
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a["data-toggle"] = "tooltip"
+                a["data-placement"] = "left"
+                a["title"] = entry["concept_id"]
+                a.string = text
+                td.insert(1,a)
+                tr.insert(2,td)
+              elif entry["model_name"] == "AIXM 5.1.1":
+                td = soup.new_tag("td")
+                url = "../../../developers/aixm-5.1.1-to-airm-1.0.0.html"
+                text = "AIXM 5.1.1"
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a.string = text
+                td.insert(1,a)
+                tr.insert(1,td)
+                td = soup.new_tag("td")
+                if "." in str(entry["concept_id"]):
+                  parts = str(entry["concept_id"]).split(".")
+                  url = "../../../developers/aixm-5.1.1-to-airm-1.0.0/"+parts[-2]+".html#"+str(entry["concept_name"])
+                else:
+                  url = "../../../developers/aixm-5.1.1-to-airm-1.0.0/"+str(entry["concept_name"])+".html#"
+                text = str(entry["concept_name"])
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a["data-toggle"] = "tooltip"
+                a["data-placement"] = "left"
+                a["title"] = entry["concept_id"]
+                a.string = text
+                td.insert(1,a)
+                tr.insert(2,td)
+              tbody.insert(1,tr)
+
+            sc_table.insert(2,tbody)
+            sc_div.insert(1,sc_table)
+            property_div.insert(5,sc_div)
+
+          top_link_p = soup.new_tag("p")
+          new_link = soup.new_tag("a")
+          new_link['href'] = "#top"
+          new_icon = soup.new_tag("i")
+          new_icon['class'] = "fa fa-arrow-circle-up"
+          new_icon["data-toggle"] = "tooltip"
+          new_icon["data-placement"] = "left"
+          new_icon["title"] = "Top of page"
+          new_link.insert(1,new_icon)
+          top_link_p.insert(1,new_link)
+          top_link_p['class'] =   "text-right"
+          property_div.insert(6,top_link_p)
+
+          soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
+          
+          
 
       
 
