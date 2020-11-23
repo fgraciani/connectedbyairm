@@ -153,60 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              ICAO Doc 4444
-             </span>
-             <br/>
-             <b>
-              Abbreviations:
-             </b>
-             <span>
-              SID
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Procedure.html">
-              Procedure
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              isContingencyRoute
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              departureClearance
-             </span>
-             <a href="DepartureClearance.html">
-              DepartureClearance
-             </a>
-             <br/>
-             <span>
-              departure
-             </span>
-             <a href="DepartureOperations.html">
-              DepartureOperations
-             </a>
-             <br/>
-             <span>
-              designator
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#designatorcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -225,12 +174,249 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#isContingencyRoute">
+                 isContingencyRoute
+                </a>
+               </td>
+               <td>
+                Indication whether the standard instrument departure is a contingency route.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designator">
+                 designator
+                </a>
+               </td>
+               <td>
+                The designator of the SID.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#departure">
+                 departure
+                </a>
+               </td>
+               <td>
+                Operations for which the SID is used.
+               </td>
+               <td>
+                <a href="DepartureOperations.html">
+                 DepartureOperations
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#departureClearance">
+                 departureClearance
+                </a>
+               </td>
+               <td>
+                A departure clearance authorising a flight to fly the standard instrument departure.
+               </td>
+               <td>
+                <a href="DepartureClearance.html">
+                 DepartureClearance
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isContingencyRoute" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:StandardInstrumentDeparture@isContingencyRoute">
+              isContingencyRoute
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:StandardInstrumentDeparture@isContingencyRoute
+             </code>
+             <p>
+              Indication whether the standard instrument departure is a contingency route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isContingencyRoutecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isContingencyRoutecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/StandardInstrumentDeparture.html#contingencyRoute" target="_blank" title="StandardInstrumentDeparture.contingencyRoute">
+                   contingencyRoute
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="designator" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:StandardInstrumentDeparture@designator">
+              designator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:StandardInstrumentDeparture@designator
+             </code>
+             <p>
+              The designator of the SID.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="designatorcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/StandardInstrumentDeparture.html#designator" target="_blank" title="StandardInstrumentDeparture.designator">
+                   designator
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/SidStarReferenceType.html#designator" target="_blank" title="fb:SidStarReferenceType:designator">
+                   designator
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="departure" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:StandardInstrumentDeparture@departure">
+              departure
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:StandardInstrumentDeparture@departure
+             </code>
+             <p>
+              Operations for which the SID is used.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DepartureOperations.html">
+                DepartureOperations
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="departureClearance" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:StandardInstrumentDeparture@departureClearance">
+              departureClearance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:StandardInstrumentDeparture@departureClearance
+             </code>
+             <p>
+              A departure clearance authorising a flight to fly the standard instrument departure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DepartureClearance.html">
+                DepartureClearance
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

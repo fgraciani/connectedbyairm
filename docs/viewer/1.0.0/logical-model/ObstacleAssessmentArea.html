@@ -153,95 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="GeoTemporalEnabledEntity.html">
-              GeoTemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              aircraftCategory
-             </span>
-             <a href="AircraftCategory.html">
-              AircraftCategory
-             </a>
-             <br/>
-             <span>
-              surfaceZone
-             </span>
-             <a href="CodeObstructionIdSurfaceZoneType.html">
-              CodeObstructionIdSurfaceZoneType
-             </a>
-             <br/>
-             <span>
-              slopeLowerAltitude
-             </span>
-             <a href="ValVerticalDistanceType.html">
-              ValVerticalDistanceType
-             </a>
-             <br/>
-             <span>
-              slope
-             </span>
-             <a href="Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              sectionNumber
-             </span>
-             <a href="Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              safetyRegulation
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              gradientLowHigh
-             </span>
-             <a href="Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              assessedAltitude
-             </span>
-             <a href="ValVerticalDistanceType.html">
-              ValVerticalDistanceType
-             </a>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="CodeObstacleAssessmentSurfaceType.html">
-              CodeObstacleAssessmentSurfaceType
-             </a>
-             <br/>
-             <span>
-              significantObstacle
-             </span>
-             <a href="Obstruction.html">
-              Obstruction
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#significantObstaclecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -260,12 +174,747 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#aircraftCategory">
+                 aircraftCategory
+                </a>
+               </td>
+               <td>
+                Aircraft category for which the obstacle assessment area is evaluated.
+               </td>
+               <td>
+                <a href="AircraftCategory.html">
+                 AircraftCategory
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#significantObstacle">
+                 significantObstacle
+                </a>
+               </td>
+               <td>
+                The obstacle that controls the altitude definition of the assessment area would penetrate the 40:1 OCS.
+               </td>
+               <td>
+                <a href="Obstruction.html">
+                 Obstruction
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of area being assessed.
+               </td>
+               <td>
+                <a href="CodeObstacleAssessmentSurfaceType.html">
+                 CodeObstacleAssessmentSurfaceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#assessedAltitude">
+                 assessedAltitude
+                </a>
+               </td>
+               <td>
+                Highest of the minimum altitudes in controlling obstacles plus the altitude adjustments (operational factors).
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#gradientLowHigh">
+                 gradientLowHigh
+                </a>
+               </td>
+               <td>
+                Low to high gradient within the airspace.
+               </td>
+               <td>
+                <a href="Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#safetyRegulation">
+                 safetyRegulation
+                </a>
+               </td>
+               <td>
+                Identifier for the safety regulations in effect within the zone.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#sectionNumber">
+                 sectionNumber
+                </a>
+               </td>
+               <td>
+                A sequence number indicating a part of an assessment area.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#slope">
+                 slope
+                </a>
+               </td>
+               <td>
+                The slope value of the extent.
+               </td>
+               <td>
+                <a href="Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#slopeLowerAltitude">
+                 slopeLowerAltitude
+                </a>
+               </td>
+               <td>
+                The altitude at the bottom of the assessment area.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surfaceZone">
+                 surfaceZone
+                </a>
+               </td>
+               <td>
+                A description of the zones within obstruction identification surfaces (OIS).
+               </td>
+               <td>
+                <a href="CodeObstructionIdSurfaceZoneType.html">
+                 CodeObstructionIdSurfaceZoneType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aircraftCategory" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@aircraftCategory">
+              aircraftCategory
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@aircraftCategory
+             </code>
+             <p>
+              Aircraft category for which the obstacle assessment area is evaluated.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AircraftCategory.html">
+                AircraftCategory
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#aircraftCategorycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="aircraftCategorycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#aircraftCategory" target="_blank" title="ObstacleAssessmentArea.aircraftCategory">
+                   aircraftCategory
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="significantObstacle" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@significantObstacle">
+              significantObstacle
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@significantObstacle
+             </code>
+             <p>
+              The obstacle that controls the altitude definition of the assessment area would penetrate the 40:1 OCS.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Obstruction.html">
+                Obstruction
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="significantObstaclecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#significantObstacle" target="_blank" title="ObstacleAssessmentArea.significantObstacle">
+                   significantObstacle
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@type
+             </code>
+             <p>
+              The type of area being assessed.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeObstacleAssessmentSurfaceType.html">
+                CodeObstacleAssessmentSurfaceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#typecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="typecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#type" target="_blank" title="ObstacleAssessmentArea.type">
+                   type
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="assessedAltitude" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@assessedAltitude">
+              assessedAltitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@assessedAltitude
+             </code>
+             <p>
+              Highest of the minimum altitudes in controlling obstacles plus the altitude adjustments (operational factors).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#assessedAltitudecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="assessedAltitudecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#assessedAltitude" target="_blank" title="ObstacleAssessmentArea.assessedAltitude">
+                   assessedAltitude
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="gradientLowHigh" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@gradientLowHigh">
+              gradientLowHigh
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@gradientLowHigh
+             </code>
+             <p>
+              Low to high gradient within the airspace.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#gradientLowHighcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="gradientLowHighcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#gradientLowHigh" target="_blank" title="ObstacleAssessmentArea.gradientLowHigh">
+                   gradientLowHigh
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="safetyRegulation" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@safetyRegulation">
+              safetyRegulation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@safetyRegulation
+             </code>
+             <p>
+              Identifier for the safety regulations in effect within the zone.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#safetyRegulationcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="safetyRegulationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#safetyRegulation" target="_blank" title="ObstacleAssessmentArea.safetyRegulation">
+                   safetyRegulation
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="sectionNumber" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@sectionNumber">
+              sectionNumber
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@sectionNumber
+             </code>
+             <p>
+              A sequence number indicating a part of an assessment area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#sectionNumbercollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="sectionNumbercollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#sectionNumber" target="_blank" title="ObstacleAssessmentArea.sectionNumber">
+                   sectionNumber
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="slope" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@slope">
+              slope
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@slope
+             </code>
+             <p>
+              The slope value of the extent.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#slopecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="slopecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#slope" target="_blank" title="ObstacleAssessmentArea.slope">
+                   slope
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="slopeLowerAltitude" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@slopeLowerAltitude">
+              slopeLowerAltitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@slopeLowerAltitude
+             </code>
+             <p>
+              The altitude at the bottom of the assessment area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#slopeLowerAltitudecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="slopeLowerAltitudecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#slopeLowerAltitude" target="_blank" title="ObstacleAssessmentArea.slopeLowerAltitude">
+                   slopeLowerAltitude
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="surfaceZone" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@surfaceZone">
+              surfaceZone
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Obstacle:ObstacleAssessmentArea@surfaceZone
+             </code>
+             <p>
+              A description of the zones within obstruction identification surfaces (OIS).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeObstructionIdSurfaceZoneType.html">
+                CodeObstructionIdSurfaceZoneType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#surfaceZonecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="surfaceZonecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ObstacleAssessmentArea.html#surfaceZone" target="_blank" title="ObstacleAssessmentArea.surfaceZone">
+                   surfaceZone
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

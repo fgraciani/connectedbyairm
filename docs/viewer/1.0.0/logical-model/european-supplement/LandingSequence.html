@@ -161,95 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/Unit.html">
+               Unit
+              </a>
              </span>
-             <br/>
-             <b>
-              Synonyms:
-             </b>
-             <span>
-              ArrivalSequence
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              amanATSU
-             </span>
-             <a href="european-supplement/Unit.html">
-              Unit
-             </a>
-             <br/>
-             <span>
-              sequencedLanding
-             </span>
-             <a href="european-supplement/Landing.html">
-              Landing
-             </a>
-             <br/>
-             <span>
-              arrivalManagementStrategy
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              activeRunwayConfiguration
-             </span>
-             <a href="european-supplement/ActiveRunwayConfiguration.html">
-              ActiveRunwayConfiguration
-             </a>
-             <br/>
-             <span>
-              resultingAdvisory
-             </span>
-             <a href="european-supplement/ArrivalManagementAdvisory.html">
-              ArrivalManagementAdvisory
-             </a>
-             <br/>
-             <span>
-              horizonInUse
-             </span>
-             <a href="european-supplement/ArrivalManagementHorizon.html">
-              ArrivalManagementHorizon
-             </a>
-             <br/>
-             <span>
-              activeStrategy
-             </span>
-             <a href="european-supplement/ArrivalManagementStrategy.html">
-              ArrivalManagementStrategy
-             </a>
-             <br/>
-             <span>
-              managedRunway
-             </span>
-             <a href="european-supplement/RunwayDirection.html">
-              RunwayDirection
-             </a>
-             <br/>
-             <span>
-              responsibleATSU
-             </span>
-             <a href="european-supplement/Unit.html">
-              Unit
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -268,12 +185,373 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#amanATSU">
+                 amanATSU
+                </a>
+               </td>
+               <td>
+                The control centre providing the AMAN sequence.
+               </td>
+               <td>
+                <a href="european-supplement/Unit.html">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#responsibleATSU">
+                 responsibleATSU
+                </a>
+               </td>
+               <td>
+                The ATS unit managing the Landing Sequence. This is normally the Tower.
+               </td>
+               <td>
+                <a href="european-supplement/Unit.html">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#managedRunway">
+                 managedRunway
+                </a>
+               </td>
+               <td>
+                The runway the traffic into which is managed by the sequence.
+               </td>
+               <td>
+                <a href="european-supplement/RunwayDirection.html">
+                 RunwayDirection
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#activeStrategy">
+                 activeStrategy
+                </a>
+               </td>
+               <td>
+                The active arrival management strategy.
+               </td>
+               <td>
+                <a href="european-supplement/ArrivalManagementStrategy.html">
+                 ArrivalManagementStrategy
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#horizonInUse">
+                 horizonInUse
+                </a>
+               </td>
+               <td>
+                The horizon used to organise the sequence.
+               </td>
+               <td>
+                <a href="european-supplement/ArrivalManagementHorizon.html">
+                 ArrivalManagementHorizon
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#resultingAdvisory">
+                 resultingAdvisory
+                </a>
+               </td>
+               <td>
+                Advisory required to implement the sequence.
+               </td>
+               <td>
+                <a href="european-supplement/ArrivalManagementAdvisory.html">
+                 ArrivalManagementAdvisory
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#activeRunwayConfiguration">
+                 activeRunwayConfiguration
+                </a>
+               </td>
+               <td>
+                The runway configuration receiving the sequenced aircraft.
+               </td>
+               <td>
+                <a href="european-supplement/ActiveRunwayConfiguration.html">
+                 ActiveRunwayConfiguration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#arrivalManagementStrategy">
+                 arrivalManagementStrategy
+                </a>
+               </td>
+               <td>
+                The name of the set of operational rules and procedures underlying the AMAN tool optimisation algorithm. The strategy implements the trade-off between the goals of equity, high throughput, and trajectory efficiency which has agreed between the stakeholders.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#sequencedLanding">
+                 sequencedLanding
+                </a>
+               </td>
+               <td>
+                A landing organised into the sequence.
+               </td>
+               <td>
+                <a href="european-supplement/Landing.html">
+                 Landing
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="amanATSU" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@amanATSU">
+              amanATSU
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@amanATSU
+             </code>
+             <p>
+              The control centre providing the AMAN sequence.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Unit.html">
+                Unit
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="responsibleATSU" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@responsibleATSU">
+              responsibleATSU
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@responsibleATSU
+             </code>
+             <p>
+              The ATS unit managing the Landing Sequence. This is normally the Tower.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="managedRunway" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@managedRunway">
+              managedRunway
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@managedRunway
+             </code>
+             <p>
+              The runway the traffic into which is managed by the sequence.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/RunwayDirection.html">
+                RunwayDirection
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="activeStrategy" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@activeStrategy">
+              activeStrategy
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@activeStrategy
+             </code>
+             <p>
+              The active arrival management strategy.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ArrivalManagementStrategy.html">
+                ArrivalManagementStrategy
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="horizonInUse" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@horizonInUse">
+              horizonInUse
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@horizonInUse
+             </code>
+             <p>
+              The horizon used to organise the sequence.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ArrivalManagementHorizon.html">
+                ArrivalManagementHorizon
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="resultingAdvisory" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@resultingAdvisory">
+              resultingAdvisory
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@resultingAdvisory
+             </code>
+             <p>
+              Advisory required to implement the sequence.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ArrivalManagementAdvisory.html">
+                ArrivalManagementAdvisory
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="activeRunwayConfiguration" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@activeRunwayConfiguration">
+              activeRunwayConfiguration
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@activeRunwayConfiguration
+             </code>
+             <p>
+              The runway configuration receiving the sequenced aircraft.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ActiveRunwayConfiguration.html">
+                ActiveRunwayConfiguration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="arrivalManagementStrategy" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@arrivalManagementStrategy">
+              arrivalManagementStrategy
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@arrivalManagementStrategy
+             </code>
+             <p>
+              The name of the set of operational rules and procedures underlying the AMAN tool optimisation algorithm. The strategy implements the trade-off between the goals of equity, high throughput, and trajectory efficiency which has agreed between the stakeholders.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="sequencedLanding" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@sequencedLanding">
+              sequencedLanding
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:TrafficSynchronization:ArrivalManagement:LandingSequence@sequencedLanding
+             </code>
+             <p>
+              A landing organised into the sequence.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Landing.html">
+                Landing
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

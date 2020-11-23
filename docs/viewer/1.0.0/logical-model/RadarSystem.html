@@ -153,81 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL-FAA AIXM v.5.1
+              <a href="Runway.html">
+               Runway
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="GeoTemporalEnabledEntity.html">
-              GeoTemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="CodeRadarServiceType.html">
-              CodeRadarServiceType
-             </a>
-             <br/>
-             <span>
-              model
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              broadcastIdentifier
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              radarEquipment
-             </span>
-             <a href="RadarEquipment.html">
-              RadarEquipment
-             </a>
-             <br/>
-             <span>
-              office
-             </span>
-             <a href="Organisation.html">
-              Organisation
-             </a>
-             <br/>
-             <span>
-              aerodrome
-             </span>
-             <a href="Aerodrome.html">
-              Aerodrome
-             </a>
-             <br/>
-             <span>
-              isGeneralTerrainMonitor
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              servedRunway
-             </span>
-             <a href="Runway.html">
-              Runway
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -246,12 +177,563 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of service for the radar system.
+               </td>
+               <td>
+                <a href="CodeRadarServiceType.html">
+                 CodeRadarServiceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#servedRunway">
+                 servedRunway
+                </a>
+               </td>
+               <td>
+                Runway served by the radar system.
+               </td>
+               <td>
+                <a href="Runway.html">
+                 Runway
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isGeneralTerrainMonitor">
+                 isGeneralTerrainMonitor
+                </a>
+               </td>
+               <td>
+                Indication whether aircraft clearance above the highest terrain and obstacles in a general area is monitored.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodrome">
+                 aerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome on which the equipment is located.
+               </td>
+               <td>
+                <a href="Aerodrome.html">
+                 Aerodrome
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#office">
+                 office
+                </a>
+               </td>
+               <td>
+                The office responsible for the equipment.
+               </td>
+               <td>
+                <a href="Organisation.html">
+                 Organisation
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#radarEquipment">
+                 radarEquipment
+                </a>
+               </td>
+               <td>
+                The equipment that make up the component(s) of the radar system.
+               </td>
+               <td>
+                <a href="RadarEquipment.html">
+                 RadarEquipment
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#broadcastIdentifier">
+                 broadcastIdentifier
+                </a>
+               </td>
+               <td>
+                The identifier broadcasted for a secondary radar.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#model">
+                 model
+                </a>
+               </td>
+               <td>
+                The model of the equipment.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@type
+             </code>
+             <p>
+              The type of service for the radar system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeRadarServiceType.html">
+                CodeRadarServiceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#typecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="typecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RadarSystem.html#type" target="_blank" title="RadarSystem.type">
+                   type
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="servedRunway" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@servedRunway">
+              servedRunway
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@servedRunway
+             </code>
+             <p>
+              Runway served by the radar system.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isGeneralTerrainMonitor" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@isGeneralTerrainMonitor">
+              isGeneralTerrainMonitor
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@isGeneralTerrainMonitor
+             </code>
+             <p>
+              Indication whether aircraft clearance above the highest terrain and obstacles in a general area is monitored.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isGeneralTerrainMonitorcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isGeneralTerrainMonitorcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RadarSystem.html#generalTerrainMonitor" target="_blank" title="RadarSystem.generalTerrainMonitor">
+                   generalTerrainMonitor
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerodrome" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@aerodrome">
+              aerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@aerodrome
+             </code>
+             <p>
+              The aerodrome on which the equipment is located.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aerodrome.html">
+                Aerodrome
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#aerodromecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="aerodromecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RadarSystem.html#airportHeliport" target="_blank" title="RadarSystem.airportHeliport">
+                   airportHeliport
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="office" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@office">
+              office
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@office
+             </code>
+             <p>
+              The office responsible for the equipment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Organisation.html">
+                Organisation
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#officecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="officecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RadarSystem.html#office" target="_blank" title="RadarSystem.office">
+                   office
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="radarEquipment" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@radarEquipment">
+              radarEquipment
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@radarEquipment
+             </code>
+             <p>
+              The equipment that make up the component(s) of the radar system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RadarEquipment.html">
+                RadarEquipment
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#radarEquipmentcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="radarEquipmentcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RadarSystem.html#radarEquipment" target="_blank" title="RadarSystem.radarEquipment">
+                   radarEquipment
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="broadcastIdentifier" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@broadcastIdentifier">
+              broadcastIdentifier
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@broadcastIdentifier
+             </code>
+             <p>
+              The identifier broadcasted for a secondary radar.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#broadcastIdentifiercollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="broadcastIdentifiercollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RadarSystem.html#broadcastIdentifier" target="_blank" title="RadarSystem.broadcastIdentifier">
+                   broadcastIdentifier
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="model" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@model">
+              model
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:RadarSystem@model
+             </code>
+             <p>
+              The model of the equipment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#modelcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="modelcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RadarSystem.html#model" target="_blank" title="RadarSystem.model">
+                   model
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

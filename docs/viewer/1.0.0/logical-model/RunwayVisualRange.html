@@ -153,60 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              ICAO Annex 3
+              <a href="CodeRVRTendencyType.html">
+               CodeRVRTendencyType
+              </a>
              </span>
-             <br/>
-             <b>
-              Abbreviations:
-             </b>
-             <span>
-              RVR
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="GeoTemporalEnabledEntity.html">
-              GeoTemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              rvrValue
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              rvrValueInterpretation
-             </span>
-             <a href="CodeValueInterpretationType.html">
-              CodeValueInterpretationType
-             </a>
-             <br/>
-             <span>
-              associatedRunwayDirection
-             </span>
-             <a href="RunwayDirection.html">
-              RunwayDirection
-             </a>
-             <br/>
-             <span>
-              rvrTendency
-             </span>
-             <a href="CodeRVRTendencyType.html">
-              CodeRVRTendencyType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -225,12 +177,267 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#rvrValue">
+                 rvrValue
+                </a>
+               </td>
+               <td>
+                Value of the Runway Visual Range.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#rvrTendency">
+                 rvrTendency
+                </a>
+               </td>
+               <td>
+                When instrumented systems are used for the assessment of runway visual range, the variations in runway visual range during the 10-minute period immediately preceding the observation.
+               </td>
+               <td>
+                <a href="CodeRVRTendencyType.html">
+                 CodeRVRTendencyType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#associatedRunwayDirection">
+                 associatedRunwayDirection
+                </a>
+               </td>
+               <td>
+                The runway direction for which the RVR is specified.
+               </td>
+               <td>
+                <a href="RunwayDirection.html">
+                 RunwayDirection
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#rvrValueInterpretation">
+                 rvrValueInterpretation
+                </a>
+               </td>
+               <td>
+                The relational operator that can be used for interpreting the RVR value, for instance in order to express a mean RVR of at least 2000 meters (ABOVE 2000 meters).
+               </td>
+               <td>
+                <a href="CodeValueInterpretationType.html">
+                 CodeValueInterpretationType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="rvrValue" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:RunwayVisualRange@rvrValue">
+              rvrValue
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:RunwayVisualRange@rvrValue
+             </code>
+             <p>
+              Value of the Runway Visual Range.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#rvrValuecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="rvrValuecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Meteorology.html#runwayVisualRange" target="_blank" title="Meteorology.runwayVisualRange">
+                   runwayVisualRange
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="rvrTendency" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:RunwayVisualRange@rvrTendency">
+              rvrTendency
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:RunwayVisualRange@rvrTendency
+             </code>
+             <p>
+              When instrumented systems are used for the assessment of runway visual range, the variations in runway visual range during the 10-minute period immediately preceding the observation.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="associatedRunwayDirection" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:RunwayVisualRange@associatedRunwayDirection">
+              associatedRunwayDirection
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:RunwayVisualRange@associatedRunwayDirection
+             </code>
+             <p>
+              The runway direction for which the RVR is specified.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RunwayDirection.html">
+                RunwayDirection
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#associatedRunwayDirectioncollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="associatedRunwayDirectioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayVisualRange.html#associatedRunwayDirection" target="_blank" title="RunwayVisualRange.associatedRunwayDirection">
+                   associatedRunwayDirection
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="rvrValueInterpretation" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:RunwayVisualRange@rvrValueInterpretation">
+              rvrValueInterpretation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:RunwayVisualRange@rvrValueInterpretation
+             </code>
+             <p>
+              The relational operator that can be used for interpreting the RVR value, for instance in order to express a mean RVR of at least 2000 meters (ABOVE 2000 meters).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeValueInterpretationType.html">
+                CodeValueInterpretationType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#rvrValueInterpretationcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="rvrValueInterpretationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Meteorology.html#runwayVisualRangeInterpretation" target="_blank" title="Meteorology.runwayVisualRangeInterpretation">
+                   runwayVisualRangeInterpretation
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

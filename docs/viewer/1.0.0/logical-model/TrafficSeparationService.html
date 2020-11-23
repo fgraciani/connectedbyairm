@@ -153,53 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Service.html">
-              Service
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              isRadarAssisted
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isDataLinkEnabled
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              airTrafficServiceType
-             </span>
-             <a href="CodeAirTrafficServiceType.html">
-              CodeAirTrafficServiceType
-             </a>
-             <br/>
-             <span>
-              dataLinkChannel
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#dataLinkChannelcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -218,12 +174,315 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#isRadarAssisted">
+                 isRadarAssisted
+                </a>
+               </td>
+               <td>
+                Indication whether the service is provided with radar assistance.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dataLinkChannel">
+                 dataLinkChannel
+                </a>
+               </td>
+               <td>
+                The channel on which the data-link takes place, if applicable.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#airTrafficServiceType">
+                 airTrafficServiceType
+                </a>
+               </td>
+               <td>
+                The type of air traffic service provided.
+               </td>
+               <td>
+                <a href="CodeAirTrafficServiceType.html">
+                 CodeAirTrafficServiceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isDataLinkEnabled">
+                 isDataLinkEnabled
+                </a>
+               </td>
+               <td>
+                Indication whether Controller-Pilot Data-Link Communication (CPDLC) is available in support of the service.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isRadarAssisted" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:TrafficSeparationService@isRadarAssisted">
+              isRadarAssisted
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:TrafficSeparationService@isRadarAssisted
+             </code>
+             <p>
+              Indication whether the service is provided with radar assistance.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isRadarAssistedcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isRadarAssistedcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/TrafficSeparationService.html#radarAssisted" target="_blank" title="TrafficSeparationService.radarAssisted">
+                   radarAssisted
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="dataLinkChannel" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:TrafficSeparationService@dataLinkChannel">
+              dataLinkChannel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:TrafficSeparationService@dataLinkChannel
+             </code>
+             <p>
+              The channel on which the data-link takes place, if applicable.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="dataLinkChannelcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/TrafficSeparationService.html#dataLinkChannel" target="_blank" title="TrafficSeparationService.dataLinkChannel">
+                   dataLinkChannel
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="airTrafficServiceType" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:TrafficSeparationService@airTrafficServiceType">
+              airTrafficServiceType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:TrafficSeparationService@airTrafficServiceType
+             </code>
+             <p>
+              The type of air traffic service provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeAirTrafficServiceType.html">
+                CodeAirTrafficServiceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#airTrafficServiceTypecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="airTrafficServiceTypecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/GroundTrafficControlService.html#type" target="_blank" title="GroundTrafficControlService.type">
+                   type
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AirTrafficControlService.html#type" target="_blank" title="AirTrafficControlService.type">
+                   type
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isDataLinkEnabled" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:TrafficSeparationService@isDataLinkEnabled">
+              isDataLinkEnabled
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:TrafficSeparationService@isDataLinkEnabled
+             </code>
+             <p>
+              Indication whether Controller-Pilot Data-Link Communication (CPDLC) is available in support of the service.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isDataLinkEnabledcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isDataLinkEnabledcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/TrafficSeparationService.html#dataLinkEnabled" target="_blank" title="TrafficSeparationService.dataLinkEnabled">
+                   dataLinkEnabled
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

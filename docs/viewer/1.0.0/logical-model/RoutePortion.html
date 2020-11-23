@@ -153,74 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="GeoTemporalEnabledEntity.html">
-              GeoTemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              end
-             </span>
-             <a href="InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              referencedRoute
-             </span>
-             <a href="Route.html">
-              Route
-             </a>
-             <br/>
-             <span>
-              flightPlanningAndATFMservice
-             </span>
-             <a href="AirTrafficManagementService.html">
-              AirTrafficManagementService
-             </a>
-             <br/>
-             <span>
-              intermediatePoint
-             </span>
-             <a href="InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              distance
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              start
-             </span>
-             <a href="InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              changeOverPoint
-             </span>
-             <a href="InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#changeOverPointcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -239,12 +174,492 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#end">
+                 end
+                </a>
+               </td>
+               <td>
+                The ending significant point for the route portion.
+               </td>
+               <td>
+                <a href="InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#changeOverPoint">
+                 changeOverPoint
+                </a>
+               </td>
+               <td>
+                The change over point that applies to the route portion.
+               </td>
+               <td>
+                <a href="InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#start">
+                 start
+                </a>
+               </td>
+               <td>
+                The starting significant point for the route portion.
+               </td>
+               <td>
+                <a href="InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#distance">
+                 distance
+                </a>
+               </td>
+               <td>
+                The distance from the start of the route portion to the position where change over occurs.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#intermediatePoint">
+                 intermediatePoint
+                </a>
+               </td>
+               <td>
+                An intermediate significant point for the route portion.
+               </td>
+               <td>
+                <a href="InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightPlanningAndATFMservice">
+                 flightPlanningAndATFMservice
+                </a>
+               </td>
+               <td>
+                The flight planning and air traffic flow management service provided for the route portion.
+               </td>
+               <td>
+                <a href="AirTrafficManagementService.html">
+                 AirTrafficManagementService
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#referencedRoute">
+                 referencedRoute
+                </a>
+               </td>
+               <td>
+                The route referenced by the route portion.
+               </td>
+               <td>
+                <a href="Route.html">
+                 Route
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="end" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@end">
+              end
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@end
+             </code>
+             <p>
+              The ending significant point for the route portion.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#endcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="endcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RoutePortion.html#end" target="_blank" title="RoutePortion.end">
+                   end
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="changeOverPoint" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@changeOverPoint">
+              changeOverPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@changeOverPoint
+             </code>
+             <p>
+              The change over point that applies to the route portion.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="changeOverPointcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/missing data.html#" target="_blank" title="ChangeOverPoint">
+                   missing data
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="start" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@start">
+              start
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@start
+             </code>
+             <p>
+              The starting significant point for the route portion.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#startcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="startcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RoutePortion.html#start" target="_blank" title="RoutePortion.start">
+                   start
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="distance" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@distance">
+              distance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@distance
+             </code>
+             <p>
+              The distance from the start of the route portion to the position where change over occurs.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#distancecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="distancecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/ChangeOverPoint.html#distance" target="_blank" title="ChangeOverPoint.distance">
+                   distance
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="intermediatePoint" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@intermediatePoint">
+              intermediatePoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@intermediatePoint
+             </code>
+             <p>
+              An intermediate significant point for the route portion.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#intermediatePointcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="intermediatePointcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RoutePortion.html#intermediatePoint" target="_blank" title="RoutePortion.intermediatePoint">
+                   intermediatePoint
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="flightPlanningAndATFMservice" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@flightPlanningAndATFMservice">
+              flightPlanningAndATFMservice
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@flightPlanningAndATFMservice
+             </code>
+             <p>
+              The flight planning and air traffic flow management service provided for the route portion.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AirTrafficManagementService.html">
+                AirTrafficManagementService
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="referencedRoute" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@referencedRoute">
+              referencedRoute
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:RoutePortion@referencedRoute
+             </code>
+             <p>
+              The route referenced by the route portion.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Route.html">
+                Route
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#referencedRoutecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="referencedRoutecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RoutePortion.html#referencedRoute" target="_blank" title="RoutePortion.referencedRoute">
+                   referencedRoute
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

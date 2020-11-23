@@ -161,88 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL ATM Lexicon
+              <a href="european-supplement/AirspaceLayer.html">
+               AirspaceLayer
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="european-supplement/CodeReferenceLocationType.html">
-              CodeReferenceLocationType
-             </a>
-             <br/>
-             <span>
-              designator
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              aerodrome
-             </span>
-             <a href="european-supplement/Aerodrome.html">
-              Aerodrome
-             </a>
-             <br/>
-             <span>
-              associatedFlow
-             </span>
-             <a href="european-supplement/Flow.html">
-              Flow
-             </a>
-             <br/>
-             <span>
-              aerodromeSet
-             </span>
-             <a href="european-supplement/AerodromeSet.html">
-              AerodromeSet
-             </a>
-             <br/>
-             <span>
-              airspace
-             </span>
-             <a href="european-supplement/Airspace.html">
-              Airspace
-             </a>
-             <br/>
-             <span>
-              significantPoint
-             </span>
-             <a href="european-supplement/SignificantPoint.html">
-              SignificantPoint
-             </a>
-             <br/>
-             <span>
-              aerodromeTrafficType
-             </span>
-             <a href="european-supplement/CodeAerodromeTrafficType.html">
-              CodeAerodromeTrafficType
-             </a>
-             <br/>
-             <span>
-              levelRange
-             </span>
-             <a href="european-supplement/AirspaceLayer.html">
-              AirspaceLayer
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -261,12 +185,373 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                Type of the reference location.
+               </td>
+               <td>
+                <a href="european-supplement/CodeReferenceLocationType.html">
+                 CodeReferenceLocationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#levelRange">
+                 levelRange
+                </a>
+               </td>
+               <td>
+                Range of level further constraining the referenced point or airspace.
+               </td>
+               <td>
+                <a href="european-supplement/AirspaceLayer.html">
+                 AirspaceLayer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodromeTrafficType">
+                 aerodromeTrafficType
+                </a>
+               </td>
+               <td>
+                The type of air traffic to be considered in case of aerodrome or aerodrome set.
+               </td>
+               <td>
+                <a href="european-supplement/CodeAerodromeTrafficType.html">
+                 CodeAerodromeTrafficType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#significantPoint">
+                 significantPoint
+                </a>
+               </td>
+               <td>
+                The significant point used as reference location.
+               </td>
+               <td>
+                <a href="european-supplement/SignificantPoint.html">
+                 SignificantPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#airspace">
+                 airspace
+                </a>
+               </td>
+               <td>
+                The airspace used as reference location.
+               </td>
+               <td>
+                <a href="european-supplement/Airspace.html">
+                 Airspace
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodromeSet">
+                 aerodromeSet
+                </a>
+               </td>
+               <td>
+                The set of aerodromes used as reference location.
+               </td>
+               <td>
+                <a href="european-supplement/AerodromeSet.html">
+                 AerodromeSet
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#associatedFlow">
+                 associatedFlow
+                </a>
+               </td>
+               <td>
+                A flow associated to the reference location.
+               </td>
+               <td>
+                <a href="european-supplement/Flow.html">
+                 Flow
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodrome">
+                 aerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome used as reference location.
+               </td>
+               <td>
+                <a href="european-supplement/Aerodrome.html">
+                 Aerodrome
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designator">
+                 designator
+                </a>
+               </td>
+               <td>
+                Reference location designator as defined by the Network Manager.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@type
+             </code>
+             <p>
+              Type of the reference location.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeReferenceLocationType.html">
+                CodeReferenceLocationType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="levelRange" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@levelRange">
+              levelRange
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@levelRange
+             </code>
+             <p>
+              Range of level further constraining the referenced point or airspace.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerodromeTrafficType" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@aerodromeTrafficType">
+              aerodromeTrafficType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@aerodromeTrafficType
+             </code>
+             <p>
+              The type of air traffic to be considered in case of aerodrome or aerodrome set.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeAerodromeTrafficType.html">
+                CodeAerodromeTrafficType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="significantPoint" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@significantPoint">
+              significantPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@significantPoint
+             </code>
+             <p>
+              The significant point used as reference location.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/SignificantPoint.html">
+                SignificantPoint
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="airspace" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@airspace">
+              airspace
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@airspace
+             </code>
+             <p>
+              The airspace used as reference location.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Airspace.html">
+                Airspace
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerodromeSet" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@aerodromeSet">
+              aerodromeSet
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@aerodromeSet
+             </code>
+             <p>
+              The set of aerodromes used as reference location.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/AerodromeSet.html">
+                AerodromeSet
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="associatedFlow" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@associatedFlow">
+              associatedFlow
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@associatedFlow
+             </code>
+             <p>
+              A flow associated to the reference location.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Flow.html">
+                Flow
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerodrome" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@aerodrome">
+              aerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@aerodrome
+             </code>
+             <p>
+              The aerodrome used as reference location.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Aerodrome.html">
+                Aerodrome
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="designator" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@designator">
+              designator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ReferenceLocation@designator
+             </code>
+             <p>
+              Reference location designator as defined by the Network Manager.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

@@ -153,46 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Object.html">
-              Object
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              isPriorPermissionRequired
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              contact
-             </span>
-             <a href="ContactInformation.html">
-              ContactInformation
-             </a>
-             <br/>
-             <span>
-              routeElement
-             </span>
-             <a href="FlightRoutingElement.html">
-              FlightRoutingElement
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#routeElementcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -211,12 +174,229 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#isPriorPermissionRequired">
+                 isPriorPermissionRequired
+                </a>
+               </td>
+               <td>
+                Indication that a minimum lead time is required for contacting the relevant authority in order to get permission for using the routing.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#routeElement">
+                 routeElement
+                </a>
+               </td>
+               <td>
+                Routing element concerned by a specified flight restriction.
+               </td>
+               <td>
+                <a href="FlightRoutingElement.html">
+                 FlightRoutingElement
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#contact">
+                 contact
+                </a>
+               </td>
+               <td>
+                The contact information of the relevant authority which can grant the permission for using the routing.
+               </td>
+               <td>
+                <a href="ContactInformation.html">
+                 ContactInformation
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isPriorPermissionRequired" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightRestrictionRoute@isPriorPermissionRequired">
+              isPriorPermissionRequired
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightRestrictionRoute@isPriorPermissionRequired
+             </code>
+             <p>
+              Indication that a minimum lead time is required for contacting the relevant authority in order to get permission for using the routing.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isPriorPermissionRequiredcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isPriorPermissionRequiredcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightRestrictionRoute.html#priorPermission" target="_blank" title="FlightRestrictionRoute.priorPermission">
+                   priorPermission
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="routeElement" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightRestrictionRoute@routeElement">
+              routeElement
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightRestrictionRoute@routeElement
+             </code>
+             <p>
+              Routing element concerned by a specified flight restriction.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="FlightRoutingElement.html">
+                FlightRoutingElement
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="routeElementcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightRestrictionRoute.html#routeElement" target="_blank" title="FlightRestrictionRoute.routeElement">
+                   routeElement
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="contact" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightRestrictionRoute@contact">
+              contact
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightRestrictionRoute@contact
+             </code>
+             <p>
+              The contact information of the relevant authority which can grant the permission for using the routing.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ContactInformation.html">
+                ContactInformation
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#contactcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="contactcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightRestrictionRoute.html#contact" target="_blank" title="FlightRestrictionRoute.contact">
+                   contact
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

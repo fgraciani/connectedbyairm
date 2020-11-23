@@ -153,109 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Service.html">
-              Service
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              navaidBroadcast
-             </span>
-             <a href="VOR.html">
-              VOR
-             </a>
-             <br/>
-             <span>
-              isDataLink
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isRecorded
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isVoice
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="CodeServiceInformationType.html">
-              CodeServiceInformationType
-             </a>
-             <br/>
-             <span>
-              clientProcedure
-             </span>
-             <a href="Procedure.html">
-              Procedure
-             </a>
-             <br/>
-             <span>
-              directionFinder
-             </span>
-             <a href="DirectionFinder.html">
-              DirectionFinder
-             </a>
-             <br/>
-             <span>
-              clientAerodrome
-             </span>
-             <a href="Aerodrome.html">
-              Aerodrome
-             </a>
-             <br/>
-             <span>
-              clientRoute
-             </span>
-             <a href="RoutePortion.html">
-              RoutePortion
-             </a>
-             <br/>
-             <span>
-              clientHolding
-             </span>
-             <a href="HoldingProcedure.html">
-              HoldingProcedure
-             </a>
-             <br/>
-             <span>
-              clientAerialRefuelling
-             </span>
-             <a href="AerialRefuelling.html">
-              AerialRefuelling
-             </a>
-             <br/>
-             <span>
-              clientAirspace
-             </span>
-             <a href="Airspace.html">
-              Airspace
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clientAirspacecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -274,12 +174,862 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#navaidBroadcast">
+                 navaidBroadcast
+                </a>
+               </td>
+               <td>
+                The VOR on which the information service is broadcast.
+               </td>
+               <td>
+                <a href="VOR.html">
+                 VOR
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clientAirspace">
+                 clientAirspace
+                </a>
+               </td>
+               <td>
+                The airspace about which the information is provided.
+               </td>
+               <td>
+                <a href="Airspace.html">
+                 Airspace
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clientAerialRefuelling">
+                 clientAerialRefuelling
+                </a>
+               </td>
+               <td>
+                The aerial refuelling for which the information service is provided.
+               </td>
+               <td>
+                <a href="AerialRefuelling.html">
+                 AerialRefuelling
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clientHolding">
+                 clientHolding
+                </a>
+               </td>
+               <td>
+                The holding procedure for which the information is provided.
+               </td>
+               <td>
+                <a href="HoldingProcedure.html">
+                 HoldingProcedure
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clientRoute">
+                 clientRoute
+                </a>
+               </td>
+               <td>
+                The route portion for which the information is provided.
+               </td>
+               <td>
+                <a href="RoutePortion.html">
+                 RoutePortion
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clientAerodrome">
+                 clientAerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome for which the information service is provided.
+               </td>
+               <td>
+                <a href="Aerodrome.html">
+                 Aerodrome
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#directionFinder">
+                 directionFinder
+                </a>
+               </td>
+               <td>
+                The DirectionFinder associated with the InformationService
+               </td>
+               <td>
+                <a href="DirectionFinder.html">
+                 DirectionFinder
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clientProcedure">
+                 clientProcedure
+                </a>
+               </td>
+               <td>
+                The procedure for which the information is provided.
+               </td>
+               <td>
+                <a href="Procedure.html">
+                 Procedure
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of information service provided.
+               </td>
+               <td>
+                <a href="CodeServiceInformationType.html">
+                 CodeServiceInformationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isVoice">
+                 isVoice
+                </a>
+               </td>
+               <td>
+                Indication whether the service is provided as voice message.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isRecorded">
+                 isRecorded
+                </a>
+               </td>
+               <td>
+                Indication whether the information broadcast is recorded and played back rather than a live transmission.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isDataLink">
+                 isDataLink
+                </a>
+               </td>
+               <td>
+                Indication whether the service is available via data-link.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="navaidBroadcast" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@navaidBroadcast">
+              navaidBroadcast
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@navaidBroadcast
+             </code>
+             <p>
+              The VOR on which the information service is broadcast.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="VOR.html">
+                VOR
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#navaidBroadcastcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="navaidBroadcastcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#navaidBroadcast" target="_blank" title="InformationService.navaidBroadcast">
+                   navaidBroadcast
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clientAirspace" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientAirspace">
+              clientAirspace
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientAirspace
+             </code>
+             <p>
+              The airspace about which the information is provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Airspace.html">
+                Airspace
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="clientAirspacecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#clientAirspace" target="_blank" title="InformationService.clientAirspace">
+                   clientAirspace
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clientAerialRefuelling" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientAerialRefuelling">
+              clientAerialRefuelling
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientAerialRefuelling
+             </code>
+             <p>
+              The aerial refuelling for which the information service is provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AerialRefuelling.html">
+                AerialRefuelling
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clientAerialRefuellingcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="clientAerialRefuellingcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#clientAerialRefuelling" target="_blank" title="InformationService.clientAerialRefuelling">
+                   clientAerialRefuelling
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clientHolding" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientHolding">
+              clientHolding
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientHolding
+             </code>
+             <p>
+              The holding procedure for which the information is provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="HoldingProcedure.html">
+                HoldingProcedure
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clientHoldingcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="clientHoldingcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#clientHolding" target="_blank" title="InformationService.clientHolding">
+                   clientHolding
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clientRoute" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientRoute">
+              clientRoute
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientRoute
+             </code>
+             <p>
+              The route portion for which the information is provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RoutePortion.html">
+                RoutePortion
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clientRoutecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="clientRoutecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#clientRoute" target="_blank" title="InformationService.clientRoute">
+                   clientRoute
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clientAerodrome" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientAerodrome">
+              clientAerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientAerodrome
+             </code>
+             <p>
+              The aerodrome for which the information service is provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aerodrome.html">
+                Aerodrome
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clientAerodromecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="clientAerodromecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#clientAirport" target="_blank" title="InformationService.clientAirport">
+                   clientAirport
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="directionFinder" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@directionFinder">
+              directionFinder
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@directionFinder
+             </code>
+             <p>
+              The DirectionFinder associated with the InformationService
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DirectionFinder.html">
+                DirectionFinder
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clientProcedure" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientProcedure">
+              clientProcedure
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@clientProcedure
+             </code>
+             <p>
+              The procedure for which the information is provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Procedure.html">
+                Procedure
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clientProcedurecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="clientProcedurecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#clientProcedure" target="_blank" title="InformationService.clientProcedure">
+                   clientProcedure
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@type
+             </code>
+             <p>
+              The type of information service provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeServiceInformationType.html">
+                CodeServiceInformationType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#typecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="typecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#type" target="_blank" title="InformationService.type">
+                   type
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isVoice" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@isVoice">
+              isVoice
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@isVoice
+             </code>
+             <p>
+              Indication whether the service is provided as voice message.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isVoicecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isVoicecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#voice" target="_blank" title="InformationService.voice">
+                   voice
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isRecorded" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@isRecorded">
+              isRecorded
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@isRecorded
+             </code>
+             <p>
+              Indication whether the information broadcast is recorded and played back rather than a live transmission.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isRecordedcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isRecordedcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#recorded" target="_blank" title="InformationService.recorded">
+                   recorded
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isDataLink" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@isDataLink">
+              isDataLink
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:InformationService@isDataLink
+             </code>
+             <p>
+              Indication whether the service is available via data-link.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isDataLinkcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isDataLinkcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/InformationService.html#dataLink" target="_blank" title="InformationService.dataLink">
+                   dataLink
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

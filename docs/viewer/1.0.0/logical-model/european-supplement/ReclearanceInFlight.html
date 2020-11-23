@@ -161,53 +161,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              SESAR
-             </span>
-             <br/>
-             <b>
-              Abbreviations:
-             </b>
-             <span>
-              RIF
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              oceanicReclearanceReason
-             </span>
-             <a href="european-supplement/CodeOceanicReclearanceReasonType.html">
-              CodeOceanicReclearanceReasonType
-             </a>
-             <br/>
-             <span>
-              filedRevisedDestinationAerodrome
-             </span>
-             <a href="european-supplement/Aerodrome.html">
-              Aerodrome
-             </a>
-             <br/>
-             <span>
-              alternativeRoute
-             </span>
-             <a href="european-supplement/SignificantPoint.html">
-              SignificantPoint
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#alternativeRoutecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -226,12 +182,196 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#oceanicReclearanceReason">
+                 oceanicReclearanceReason
+                </a>
+               </td>
+               <td>
+                The reason of the re-clearance.
+               </td>
+               <td>
+                <a href="european-supplement/CodeOceanicReclearanceReasonType.html">
+                 CodeOceanicReclearanceReasonType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#alternativeRoute">
+                 alternativeRoute
+                </a>
+               </td>
+               <td>
+                The route details to the revised destination aerodrome for a procedure of reclearance in flight.
+               </td>
+               <td>
+                <a href="european-supplement/SignificantPoint.html">
+                 SignificantPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#filedRevisedDestinationAerodrome">
+                 filedRevisedDestinationAerodrome
+                </a>
+               </td>
+               <td>
+                The revised destination aerodrome for a procedure of re-clearance in flight.
+               </td>
+               <td>
+                <a href="european-supplement/Aerodrome.html">
+                 Aerodrome
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="oceanicReclearanceReason" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AirspaceUserOperations:ReclearanceInFlight@oceanicReclearanceReason">
+              oceanicReclearanceReason
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AirspaceUserOperations:ReclearanceInFlight@oceanicReclearanceReason
+             </code>
+             <p>
+              The reason of the re-clearance.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeOceanicReclearanceReasonType.html">
+                CodeOceanicReclearanceReasonType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="alternativeRoute" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AirspaceUserOperations:ReclearanceInFlight@alternativeRoute">
+              alternativeRoute
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AirspaceUserOperations:ReclearanceInFlight@alternativeRoute
+             </code>
+             <p>
+              The route details to the revised destination aerodrome for a procedure of reclearance in flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/SignificantPoint.html">
+                SignificantPoint
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="alternativeRoutecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/ReclearanceInFlightType.html#routeToRevisedDestination" target="_blank" title="fx:ReclearanceInFlightType:routeToRevisedDestination">
+                   routeToRevisedDestination
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="filedRevisedDestinationAerodrome" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AirspaceUserOperations:ReclearanceInFlight@filedRevisedDestinationAerodrome">
+              filedRevisedDestinationAerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AirspaceUserOperations:ReclearanceInFlight@filedRevisedDestinationAerodrome
+             </code>
+             <p>
+              The revised destination aerodrome for a procedure of re-clearance in flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Aerodrome.html">
+                Aerodrome
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#filedRevisedDestinationAerodromecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="filedRevisedDestinationAerodromecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/ReclearanceInFlightType.html#filedRevisedDestinationAerodrome" target="_blank" title="fx:ReclearanceInFlightType:filedRevisedDestinationAerodrome">
+                   filedRevisedDestinationAerodrome
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

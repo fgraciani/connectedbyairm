@@ -153,88 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              ICAOICAO Doc 9881
-             </span>
-             <br/>
-             <b>
-              Synonyms:
-             </b>
-             <span>
-              Intermediate Holding Position, TaxiHoldingPosition
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="GeoTemporalEnabledEntity.html">
-              GeoTemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              status
-             </span>
-             <a href="CodeStatusOperationsType.html">
-              CodeStatusOperationsType
-             </a>
-             <br/>
-             <span>
-              taxiwayHoldingPositionMarking
-             </span>
-             <a href="TaxiwayHoldingPositionMarking.html">
-              TaxiwayHoldingPositionMarking
-             </a>
-             <br/>
-             <span>
-              taxiwayElement
-             </span>
-             <a href="TaxiwayElement.html">
-              TaxiwayElement
-             </a>
-             <br/>
-             <span>
-              runwayElement
-             </span>
-             <a href="RunwayElement.html">
-              RunwayElement
-             </a>
-             <br/>
-             <span>
-              protectedRunway
-             </span>
-             <a href="Runway.html">
-              Runway
-             </a>
-             <br/>
-             <span>
-              associatedGuidanceLine
-             </span>
-             <a href="GuidanceLine.html">
-              GuidanceLine
-             </a>
-             <br/>
-             <span>
-              taxiHoldingPositionLightSystem
-             </span>
-             <a href="TaxiwayHoldingPositionLightSystem.html">
-              TaxiwayHoldingPositionLightSystem
-             </a>
-             <br/>
-             <span>
-              landingCategory
-             </span>
-             <a href="CodeInstrumentApproachCategoryType.html">
-              CodeInstrumentApproachCategoryType
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#landingCategorycollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -253,12 +174,491 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#status">
+                 status
+                </a>
+               </td>
+               <td>
+                An indication of the operational status of the taxi holding position.
+               </td>
+               <td>
+                <a href="CodeStatusOperationsType.html">
+                 CodeStatusOperationsType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#landingCategory">
+                 landingCategory
+                </a>
+               </td>
+               <td>
+                Type of landing operations for which that holding position is relevant.
+               </td>
+               <td>
+                <a href="CodeInstrumentApproachCategoryType.html">
+                 CodeInstrumentApproachCategoryType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiHoldingPositionLightSystem">
+                 taxiHoldingPositionLightSystem
+                </a>
+               </td>
+               <td>
+                The LightSystem provided for an TaxiHoldingPosition
+               </td>
+               <td>
+                <a href="TaxiwayHoldingPositionLightSystem.html">
+                 TaxiwayHoldingPositionLightSystem
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#associatedGuidanceLine">
+                 associatedGuidanceLine
+                </a>
+               </td>
+               <td>
+                The guidance line containing the taxi holding position.
+               </td>
+               <td>
+                <a href="GuidanceLine.html">
+                 GuidanceLine
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#protectedRunway">
+                 protectedRunway
+                </a>
+               </td>
+               <td>
+                Runway protected by the taxi holding position.
+               </td>
+               <td>
+                <a href="Runway.html">
+                 Runway
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runwayElement">
+                 runwayElement
+                </a>
+               </td>
+               <td>
+                A runway element associated with the taxiway holding position.
+               </td>
+               <td>
+                <a href="RunwayElement.html">
+                 RunwayElement
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiwayElement">
+                 taxiwayElement
+                </a>
+               </td>
+               <td>
+                A taxiway element associated with the taxiway holding position.
+               </td>
+               <td>
+                <a href="TaxiwayElement.html">
+                 TaxiwayElement
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiwayHoldingPositionMarking">
+                 taxiwayHoldingPositionMarking
+                </a>
+               </td>
+               <td>
+                The Marking marked on the TaxiHoldingPosition
+               </td>
+               <td>
+                <a href="TaxiwayHoldingPositionMarking.html">
+                 TaxiwayHoldingPositionMarking
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="status" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@status">
+              status
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@status
+             </code>
+             <p>
+              An indication of the operational status of the taxi holding position.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeStatusOperationsType.html">
+                CodeStatusOperationsType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#statuscollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="statuscollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/TaxiHoldingPosition.html#status" target="_blank" title="TaxiHoldingPosition.status">
+                   status
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="landingCategory" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@landingCategory">
+              landingCategory
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@landingCategory
+             </code>
+             <p>
+              Type of landing operations for which that holding position is relevant.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeInstrumentApproachCategoryType.html">
+                CodeInstrumentApproachCategoryType
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="landingCategorycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/TaxiHoldingPosition.html#landingCategory" target="_blank" title="TaxiHoldingPosition.landingCategory">
+                   landingCategory
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AsrnNode.html#catstop" target="_blank" title="AsrnNode.catstop">
+                   catstop
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/TaxiwayHoldingPosition.html#catstop" target="_blank" title="TaxiwayHoldingPosition.catstop">
+                   catstop
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiHoldingPositionLightSystem" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@taxiHoldingPositionLightSystem">
+              taxiHoldingPositionLightSystem
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@taxiHoldingPositionLightSystem
+             </code>
+             <p>
+              The LightSystem provided for an TaxiHoldingPosition
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="TaxiwayHoldingPositionLightSystem.html">
+                TaxiwayHoldingPositionLightSystem
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="associatedGuidanceLine" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@associatedGuidanceLine">
+              associatedGuidanceLine
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@associatedGuidanceLine
+             </code>
+             <p>
+              The guidance line containing the taxi holding position.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="GuidanceLine.html">
+                GuidanceLine
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#associatedGuidanceLinecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="associatedGuidanceLinecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/TaxiHoldingPosition.html#associatedGuidanceLine" target="_blank" title="TaxiHoldingPosition.associatedGuidanceLine">
+                   associatedGuidanceLine
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="protectedRunway" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@protectedRunway">
+              protectedRunway
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@protectedRunway
+             </code>
+             <p>
+              Runway protected by the taxi holding position.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Runway.html">
+                Runway
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#protectedRunwaycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="protectedRunwaycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/TaxiHoldingPosition.html#protectedRunway" target="_blank" title="TaxiHoldingPosition.protectedRunway">
+                   protectedRunway
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="runwayElement" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@runwayElement">
+              runwayElement
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@runwayElement
+             </code>
+             <p>
+              A runway element associated with the taxiway holding position.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RunwayElement.html">
+                RunwayElement
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiwayElement" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@taxiwayElement">
+              taxiwayElement
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@taxiwayElement
+             </code>
+             <p>
+              A taxiway element associated with the taxiway holding position.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="TaxiwayElement.html">
+                TaxiwayElement
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiwayHoldingPositionMarking" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@taxiwayHoldingPositionMarking">
+              taxiwayHoldingPositionMarking
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiwayHoldingPosition@taxiwayHoldingPositionMarking
+             </code>
+             <p>
+              The Marking marked on the TaxiHoldingPosition
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="TaxiwayHoldingPositionMarking.html">
+                TaxiwayHoldingPositionMarking
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

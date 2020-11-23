@@ -161,74 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/TrafficVolume.html">
+               TrafficVolume
+              </a>
              </span>
-             <br/>
-             <b>
-              Abbreviations:
-             </b>
-             <span>
-              OTMV
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              elapsed
-             </span>
-             <a href="european-supplement/TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              crossingOccurrences
-             </span>
-             <a href="european-supplement/Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              peakThreshold
-             </span>
-             <a href="european-supplement/Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              overloadDuration
-             </span>
-             <a href="european-supplement/TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              sustainedThreshold
-             </span>
-             <a href="european-supplement/Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              monitoredTFV
-             </span>
-             <a href="european-supplement/TrafficVolume.html">
-              TrafficVolume
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -247,12 +185,250 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#elapsed">
+                 elapsed
+                </a>
+               </td>
+               <td>
+                Duration of the time window on which the crossing occurrences are counted.
+               </td>
+               <td>
+                <a href="european-supplement/TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#monitoredTFV">
+                 monitoredTFV
+                </a>
+               </td>
+               <td>
+                The traffic volume for which the occupancy traffic monitoring value is defined.
+               </td>
+               <td>
+                <a href="european-supplement/TrafficVolume.html">
+                 TrafficVolume
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#sustainedThreshold">
+                 sustainedThreshold
+                </a>
+               </td>
+               <td>
+                Acceptable number of flights that could be handled by a sector under specific circumstance, in particular if the duration of the overload is not too long.
+               </td>
+               <td>
+                <a href="european-supplement/Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#overloadDuration">
+                 overloadDuration
+                </a>
+               </td>
+               <td>
+                Maximum duration beyond which a potential hotspot should be considered in case the occupancy count exceeds the sustain threshold.
+               </td>
+               <td>
+                <a href="european-supplement/TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#peakThreshold">
+                 peakThreshold
+                </a>
+               </td>
+               <td>
+                Maximum number of flight that could be handled by a sector.
+               </td>
+               <td>
+                <a href="european-supplement/Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#crossingOccurrences">
+                 crossingOccurrences
+                </a>
+               </td>
+               <td>
+                Number of crossing occurrences of the sustained threshold within elapsed, before the Occupancy Traffic Monitoring Value (OTMV) triggers an alert.
+               </td>
+               <td>
+                <a href="european-supplement/Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="elapsed" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@elapsed">
+              elapsed
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@elapsed
+             </code>
+             <p>
+              Duration of the time window on which the crossing occurrences are counted.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="monitoredTFV" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@monitoredTFV">
+              monitoredTFV
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@monitoredTFV
+             </code>
+             <p>
+              The traffic volume for which the occupancy traffic monitoring value is defined.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="sustainedThreshold" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@sustainedThreshold">
+              sustainedThreshold
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@sustainedThreshold
+             </code>
+             <p>
+              Acceptable number of flights that could be handled by a sector under specific circumstance, in particular if the duration of the overload is not too long.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="overloadDuration" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@overloadDuration">
+              overloadDuration
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@overloadDuration
+             </code>
+             <p>
+              Maximum duration beyond which a potential hotspot should be considered in case the occupancy count exceeds the sustain threshold.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="peakThreshold" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@peakThreshold">
+              peakThreshold
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@peakThreshold
+             </code>
+             <p>
+              Maximum number of flight that could be handled by a sector.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="crossingOccurrences" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@crossingOccurrences">
+              crossingOccurrences
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:OccupancyTrafficMonitoringValue@crossingOccurrences
+             </code>
+             <p>
+              Number of crossing occurrences of the sustained threshold within elapsed, before the Occupancy Traffic Monitoring Value (OTMV) triggers an alert.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

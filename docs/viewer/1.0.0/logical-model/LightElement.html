@@ -153,88 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Object.html">
-              Object
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              colour
-             </span>
-             <a href="CodeColourType.html">
-              CodeColourType
-             </a>
-             <br/>
-             <span>
-              position
-             </span>
-             <a href="ThreeDimensionalPointType.html">
-              ThreeDimensionalPointType
-             </a>
-             <br/>
-             <span>
-              fixtureType
-             </span>
-             <a href="CodeLightFixtureType.html">
-              CodeLightFixtureType
-             </a>
-             <br/>
-             <span>
-              intensityLevel
-             </span>
-             <a href="CodeLightIntensityType.html">
-              CodeLightIntensityType
-             </a>
-             <br/>
-             <span>
-              intensity
-             </span>
-             <a href="ValLightIntensityType.html">
-              ValLightIntensityType
-             </a>
-             <br/>
-             <span>
-              lightBulbType
-             </span>
-             <a href="CodeLightBulbType.html">
-              CodeLightBulbType
-             </a>
-             <br/>
-             <span>
-              lightMountingType
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="CodeLightSourceType.html">
-              CodeLightSourceType
-             </a>
-             <br/>
-             <span>
-              lightElementAvailability
-             </span>
-             <a href="LightStatus.html">
-              LightStatus
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#lightElementAvailabilitycollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -253,12 +174,586 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#colour">
+                 colour
+                </a>
+               </td>
+               <td>
+                An indication of the colour of the lights in a light element group.
+               </td>
+               <td>
+                <a href="CodeColourType.html">
+                 CodeColourType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lightElementAvailability">
+                 lightElementAvailability
+                </a>
+               </td>
+               <td>
+                The operational status of the light element.
+               </td>
+               <td>
+                <a href="LightStatus.html">
+                 LightStatus
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of light source.
+               </td>
+               <td>
+                <a href="CodeLightSourceType.html">
+                 CodeLightSourceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lightMountingType">
+                 lightMountingType
+                </a>
+               </td>
+               <td>
+                A code used to identify the relationship of a lighting fixture with respect to it's mounting surface.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lightBulbType">
+                 lightBulbType
+                </a>
+               </td>
+               <td>
+                The source type of the light.
+               </td>
+               <td>
+                <a href="CodeLightBulbType.html">
+                 CodeLightBulbType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#intensity">
+                 intensity
+                </a>
+               </td>
+               <td>
+                The intensity of the lights in a light element group.
+               </td>
+               <td>
+                <a href="ValLightIntensityType.html">
+                 ValLightIntensityType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#intensityLevel">
+                 intensityLevel
+                </a>
+               </td>
+               <td>
+                The relative intensity of the lights in a light element group.
+               </td>
+               <td>
+                <a href="CodeLightIntensityType.html">
+                 CodeLightIntensityType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#fixtureType">
+                 fixtureType
+                </a>
+               </td>
+               <td>
+                The type of lighting fixture.
+               </td>
+               <td>
+                <a href="CodeLightFixtureType.html">
+                 CodeLightFixtureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#position">
+                 position
+                </a>
+               </td>
+               <td>
+                The position of the light element.
+               </td>
+               <td>
+                <a href="ThreeDimensionalPointType.html">
+                 ThreeDimensionalPointType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="colour" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@colour">
+              colour
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@colour
+             </code>
+             <p>
+              An indication of the colour of the lights in a light element group.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeColourType.html">
+                CodeColourType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#colourcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="colourcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/LightElement.html#colour" target="_blank" title="LightElement.colour">
+                   colour
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="lightElementAvailability" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@lightElementAvailability">
+              lightElementAvailability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@lightElementAvailability
+             </code>
+             <p>
+              The operational status of the light element.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="LightStatus.html">
+                LightStatus
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="lightElementAvailabilitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/LightElement.html#availability" target="_blank" title="LightElement.availability">
+                   availability
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@type
+             </code>
+             <p>
+              The type of light source.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeLightSourceType.html">
+                CodeLightSourceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#typecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="typecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AerodromeSurfaceLighting.html#lstype" target="_blank" title="AerodromeSurfaceLighting.lstype">
+                   lstype
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/LightElement.html#type" target="_blank" title="LightElement.type">
+                   type
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="lightMountingType" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@lightMountingType">
+              lightMountingType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@lightMountingType
+             </code>
+             <p>
+              A code used to identify the relationship of a lighting fixture with respect to it's mounting surface.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="lightBulbType" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@lightBulbType">
+              lightBulbType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@lightBulbType
+             </code>
+             <p>
+              The source type of the light.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeLightBulbType.html">
+                CodeLightBulbType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="intensity" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@intensity">
+              intensity
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@intensity
+             </code>
+             <p>
+              The intensity of the lights in a light element group.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValLightIntensityType.html">
+                ValLightIntensityType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#intensitycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="intensitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/LightElement.html#intensity" target="_blank" title="LightElement.intensity">
+                   intensity
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="intensityLevel" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@intensityLevel">
+              intensityLevel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@intensityLevel
+             </code>
+             <p>
+              The relative intensity of the lights in a light element group.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeLightIntensityType.html">
+                CodeLightIntensityType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#intensityLevelcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="intensityLevelcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/LightElement.html#intensityLevel" target="_blank" title="LightElement.intensityLevel">
+                   intensityLevel
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="fixtureType" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@fixtureType">
+              fixtureType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@fixtureType
+             </code>
+             <p>
+              The type of lighting fixture.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeLightFixtureType.html">
+                CodeLightFixtureType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="position" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@position">
+              position
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geospatial:LightElement@position
+             </code>
+             <p>
+              The position of the light element.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ThreeDimensionalPointType.html">
+                ThreeDimensionalPointType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#positioncollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="positioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/LightElement.html#location" target="_blank" title="LightElement.location">
+                   location
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

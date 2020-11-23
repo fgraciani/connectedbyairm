@@ -153,67 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL-FAA AIXM v.5.1
+              <a href="InformationService.html">
+               InformationService
+              </a>
              </span>
-             <br/>
-             <b>
-              Synonyms:
-             </b>
-             <span>
-              VHF omnidirectional radio range
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="RadioNavigationAid.html">
-              RadioNavigationAid
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              declination
-             </span>
-             <a href="Angle.html">
-              Angle
-             </a>
-             <br/>
-             <span>
-              frequency
-             </span>
-             <a href="ValFrequencyType.html">
-              ValFrequencyType
-             </a>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="CodeVORType.html">
-              CodeVORType
-             </a>
-             <br/>
-             <span>
-              zeroBearingDirection
-             </span>
-             <a href="CodeNorthReferenceType.html">
-              CodeNorthReferenceType
-             </a>
-             <br/>
-             <span>
-              informationService
-             </span>
-             <a href="InformationService.html">
-              InformationService
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -232,12 +177,341 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#declination">
+                 declination
+                </a>
+               </td>
+               <td>
+                The angular difference between True North and the station declination.
+               </td>
+               <td>
+                <a href="Angle.html">
+                 Angle
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#informationService">
+                 informationService
+                </a>
+               </td>
+               <td>
+                The Information service which broadcasts on the VOR
+               </td>
+               <td>
+                <a href="InformationService.html">
+                 InformationService
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#zeroBearingDirection">
+                 zeroBearingDirection
+                </a>
+               </td>
+               <td>
+                A code indicating the direction of the 'zero bearing' provided by the station.
+               </td>
+               <td>
+                <a href="CodeNorthReferenceType.html">
+                 CodeNorthReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                A code indicating a type of VOR.
+               </td>
+               <td>
+                <a href="CodeVORType.html">
+                 CodeVORType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#frequency">
+                 frequency
+                </a>
+               </td>
+               <td>
+                The value of the frequency.
+               </td>
+               <td>
+                <a href="ValFrequencyType.html">
+                 ValFrequencyType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="declination" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@declination">
+              declination
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@declination
+             </code>
+             <p>
+              The angular difference between True North and the station declination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Angle.html">
+                Angle
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#declinationcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="declinationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/VOR.html#declination" target="_blank" title="VOR.declination">
+                   declination
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="informationService" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@informationService">
+              informationService
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@informationService
+             </code>
+             <p>
+              The Information service which broadcasts on the VOR
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="zeroBearingDirection" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@zeroBearingDirection">
+              zeroBearingDirection
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@zeroBearingDirection
+             </code>
+             <p>
+              A code indicating the direction of the 'zero bearing' provided by the station.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeNorthReferenceType.html">
+                CodeNorthReferenceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#zeroBearingDirectioncollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="zeroBearingDirectioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/VOR.html#zeroBearingDirection" target="_blank" title="VOR.zeroBearingDirection">
+                   zeroBearingDirection
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@type
+             </code>
+             <p>
+              A code indicating a type of VOR.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeVORType.html">
+                CodeVORType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#typecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="typecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/VOR.html#type" target="_blank" title="VOR.type">
+                   type
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="frequency" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@frequency">
+              frequency
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:VOR@frequency
+             </code>
+             <p>
+              The value of the frequency.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValFrequencyType.html">
+                ValFrequencyType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#frequencycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="frequencycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/VOR.html#frequency" target="_blank" title="VOR.frequency">
+                   frequency
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

@@ -153,67 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              ICAO Doc 4444
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Entity.html">
-              Entity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              mode
-             </span>
-             <a href="CodeSSRModeType.html">
-              CodeSSRModeType
-             </a>
-             <br/>
-             <span>
-              modeSType
-             </span>
-             <a href="CodeModeSType.html">
-              CodeModeSType
-             </a>
-             <br/>
-             <span>
-              status
-             </span>
-             <a href="CodeSSRCodeStatusType.html">
-              CodeSSRCodeStatusType
-             </a>
-             <br/>
-             <span>
-              codeCategory
-             </span>
-             <a href="CodeSSRCategoryType.html">
-              CodeSSRCategoryType
-             </a>
-             <br/>
-             <span>
-              modeSIdentifier
-             </span>
-             <a href="AircraftAddress.html">
-              AircraftAddress
-             </a>
-             <br/>
-             <span>
-              code
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#codecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -232,12 +174,286 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#mode">
+                 mode
+                </a>
+               </td>
+               <td>
+                The surveillance system used for the SSR code.
+               </td>
+               <td>
+                <a href="CodeSSRModeType.html">
+                 CodeSSRModeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#code">
+                 code
+                </a>
+               </td>
+               <td>
+                Four numerics giving the SSR code assigned to the aircraft by ATS.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#modeSIdentifier">
+                 modeSIdentifier
+                </a>
+               </td>
+               <td>
+                The ICAO aircraft address used in Mode S.
+               </td>
+               <td>
+                <a href="AircraftAddress.html">
+                 AircraftAddress
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#codeCategory">
+                 codeCategory
+                </a>
+               </td>
+               <td>
+                The category of code according to the type of flight.
+               </td>
+               <td>
+                <a href="CodeSSRCategoryType.html">
+                 CodeSSRCategoryType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#status">
+                 status
+                </a>
+               </td>
+               <td>
+                The status of the SSR code.
+               </td>
+               <td>
+                <a href="CodeSSRCodeStatusType.html">
+                 CodeSSRCodeStatusType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#modeSType">
+                 modeSType
+                </a>
+               </td>
+               <td>
+                Type of mode S
+               </td>
+               <td>
+                <a href="CodeModeSType.html">
+                 CodeModeSType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="mode" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@mode">
+              mode
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@mode
+             </code>
+             <p>
+              The surveillance system used for the SSR code.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeSSRModeType.html">
+                CodeSSRModeType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="code" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@code">
+              code
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@code
+             </code>
+             <p>
+              Four numerics giving the SSR code assigned to the aircraft by ATS.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="codecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/EnRouteType.html#currentModeACode" target="_blank" title="fx:EnRouteType:currentModeACode">
+                   currentModeACode
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="modeSIdentifier" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@modeSIdentifier">
+              modeSIdentifier
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@modeSIdentifier
+             </code>
+             <p>
+              The ICAO aircraft address used in Mode S.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AircraftAddress.html">
+                AircraftAddress
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="codeCategory" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@codeCategory">
+              codeCategory
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@codeCategory
+             </code>
+             <p>
+              The category of code according to the type of flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeSSRCategoryType.html">
+                CodeSSRCategoryType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="status" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@status">
+              status
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@status
+             </code>
+             <p>
+              The status of the SSR code.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeSSRCodeStatusType.html">
+                CodeSSRCodeStatusType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="modeSType" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@modeSType">
+              modeSType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightIdentifier:SSRCode@modeSType
+             </code>
+             <p>
+              Type of mode S
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeModeSType.html">
+                CodeModeSType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

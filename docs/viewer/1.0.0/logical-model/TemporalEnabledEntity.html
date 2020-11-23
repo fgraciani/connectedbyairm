@@ -153,81 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Entity.html">
-              Entity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              endEntityLifetime
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              startEntityLifetime
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              startValidity
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              source
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              timesheet
-             </span>
-             <a href="Timesheet.html">
-              Timesheet
-             </a>
-             <br/>
-             <span>
-              endValidity
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              interpretation
-             </span>
-             <a href="CodeValidityPeriodInterpretationType.html">
-              CodeValidityPeriodInterpretationType
-             </a>
-             <br/>
-             <span>
-              lastRevision
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#lastRevisioncollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -246,12 +174,590 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#endEntityLifetime">
+                 endEntityLifetime
+                </a>
+               </td>
+               <td>
+                End of life of the entity, indicating the date and time at which the entity ceases to exist
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lastRevision">
+                 lastRevision
+                </a>
+               </td>
+               <td>
+                Date and time when the data was last revised.
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#interpretation">
+                 interpretation
+                </a>
+               </td>
+               <td>
+                How the entity state is to be interpreted.
+               </td>
+               <td>
+                <a href="CodeValidityPeriodInterpretationType.html">
+                 CodeValidityPeriodInterpretationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endValidity">
+                 endValidity
+                </a>
+               </td>
+               <td>
+                Date and time at which the data contained in the entity state ceases to be effective
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timesheet">
+                 timesheet
+                </a>
+               </td>
+               <td>
+                A schedule concerning the entity.
+               </td>
+               <td>
+                <a href="Timesheet.html">
+                 Timesheet
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#source">
+                 source
+                </a>
+               </td>
+               <td>
+                Name of entity or organisation that supplied data.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startValidity">
+                 startValidity
+                </a>
+               </td>
+               <td>
+                Date and time at which the data contained in the entity state starts to be effective
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startEntityLifetime">
+                 startEntityLifetime
+                </a>
+               </td>
+               <td>
+                Start of life of the entity, indicating the date and time at which the entity starts to exist
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="endEntityLifetime" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@endEntityLifetime">
+              endEntityLifetime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@endEntityLifetime
+             </code>
+             <p>
+              End of life of the entity, indicating the date and time at which the entity ceases to exist
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#endEntityLifetimecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="endEntityLifetimecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AbstractFeature.html#endfeat" target="_blank" title="AbstractFeature.endfeat">
+                   endfeat
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/ConstructionArea.html#pendate" target="_blank" title="ConstructionArea.pendate">
+                   pendate
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="lastRevision" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@lastRevision">
+              lastRevision
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@lastRevision
+             </code>
+             <p>
+              Date and time when the data was last revised.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="lastRevisioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AbstractFeature.html#revdate" target="_blank" title="AbstractFeature.revdate">
+                   revdate
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="interpretation" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@interpretation">
+              interpretation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@interpretation
+             </code>
+             <p>
+              How the entity state is to be interpreted.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeValidityPeriodInterpretationType.html">
+                CodeValidityPeriodInterpretationType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#interpretationcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="interpretationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AbstractFeature.html#interp" target="_blank" title="AbstractFeature.interp">
+                   interp
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="endValidity" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@endValidity">
+              endValidity
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@endValidity
+             </code>
+             <p>
+              Date and time at which the data contained in the entity state ceases to be effective
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#endValiditycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="endValiditycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AbstractFeature.html#endvalid" target="_blank" title="AbstractFeature.endvalid">
+                   endvalid
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="timesheet" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@timesheet">
+              timesheet
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@timesheet
+             </code>
+             <p>
+              A schedule concerning the entity.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Timesheet.html">
+                Timesheet
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="source" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@source">
+              source
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@source
+             </code>
+             <p>
+              Name of entity or organisation that supplied data.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#sourcecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="sourcecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AbstractFeature.html#source" target="_blank" title="AbstractFeature.source">
+                   source
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="startValidity" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@startValidity">
+              startValidity
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@startValidity
+             </code>
+             <p>
+              Date and time at which the data contained in the entity state starts to be effective
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#startValiditycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="startValiditycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AbstractFeature.html#stvalid" target="_blank" title="AbstractFeature.stvalid">
+                   stvalid
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="startEntityLifetime" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@startEntityLifetime">
+              startEntityLifetime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:TemporalEnabledEntity@startEntityLifetime
+             </code>
+             <p>
+              Start of life of the entity, indicating the date and time at which the entity starts to exist
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#startEntityLifetimecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="startEntityLifetimecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/ConstructionArea.html#pstdate" target="_blank" title="ConstructionArea.pstdate">
+                   pstdate
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AbstractFeature.html#stfeat" target="_blank" title="AbstractFeature.stfeat">
+                   stfeat
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

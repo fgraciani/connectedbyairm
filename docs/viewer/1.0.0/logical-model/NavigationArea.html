@@ -153,67 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              sector
-             </span>
-             <a href="NavigationAreaSector.html">
-              NavigationAreaSector
-             </a>
-             <br/>
-             <span>
-              minimumCeiling
-             </span>
-             <a href="ValVerticalDistanceType.html">
-              ValVerticalDistanceType
-             </a>
-             <br/>
-             <span>
-              minimumVisibility
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              navigationAreaType
-             </span>
-             <a href="CodeNavigationAreaType.html">
-              CodeNavigationAreaType
-             </a>
-             <br/>
-             <span>
-              departure
-             </span>
-             <a href="StandardInstrumentDeparture.html">
-              StandardInstrumentDeparture
-             </a>
-             <br/>
-             <span>
-              centrePoint
-             </span>
-             <a href="InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#centrePointcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -232,12 +174,451 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#sector">
+                 sector
+                </a>
+               </td>
+               <td>
+                A subdivision of the navigation area designed to provide safety.
+               </td>
+               <td>
+                <a href="NavigationAreaSector.html">
+                 NavigationAreaSector
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#centrePoint">
+                 centrePoint
+                </a>
+               </td>
+               <td>
+                The significant point which the navigation area is based on.
+               </td>
+               <td>
+                <a href="InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#departure">
+                 departure
+                </a>
+               </td>
+               <td>
+                The SID that is protected by the navigation area.
+               </td>
+               <td>
+                <a href="StandardInstrumentDeparture.html">
+                 StandardInstrumentDeparture
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#navigationAreaType">
+                 navigationAreaType
+                </a>
+               </td>
+               <td>
+                The type of navigation area that is defined.
+               </td>
+               <td>
+                <a href="CodeNavigationAreaType.html">
+                 CodeNavigationAreaType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minimumVisibility">
+                 minimumVisibility
+                </a>
+               </td>
+               <td>
+                The minimum visibility needed when using the departure navigation area.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minimumCeiling">
+                 minimumCeiling
+                </a>
+               </td>
+               <td>
+                The minimum cloud base needed when using the departure navigation area.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="sector" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@sector">
+              sector
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@sector
+             </code>
+             <p>
+              A subdivision of the navigation area designed to provide safety.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="NavigationAreaSector.html">
+                NavigationAreaSector
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#sectorcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="sectorcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/NavigationArea.html#sector" target="_blank" title="NavigationArea.sector">
+                   sector
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="centrePoint" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@centrePoint">
+              centrePoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@centrePoint
+             </code>
+             <p>
+              The significant point which the navigation area is based on.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="centrePointcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/NavigationArea.html#centrePoint" target="_blank" title="NavigationArea.centrePoint">
+                   centrePoint
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="departure" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@departure">
+              departure
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@departure
+             </code>
+             <p>
+              The SID that is protected by the navigation area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="StandardInstrumentDeparture.html">
+                StandardInstrumentDeparture
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#departurecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="departurecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/NavigationArea.html#departure" target="_blank" title="NavigationArea.departure">
+                   departure
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="navigationAreaType" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@navigationAreaType">
+              navigationAreaType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@navigationAreaType
+             </code>
+             <p>
+              The type of navigation area that is defined.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeNavigationAreaType.html">
+                CodeNavigationAreaType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#navigationAreaTypecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="navigationAreaTypecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/NavigationArea.html#navigationAreaType" target="_blank" title="NavigationArea.navigationAreaType">
+                   navigationAreaType
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="minimumVisibility" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@minimumVisibility">
+              minimumVisibility
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@minimumVisibility
+             </code>
+             <p>
+              The minimum visibility needed when using the departure navigation area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#minimumVisibilitycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="minimumVisibilitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/NavigationArea.html#minimumVisibility" target="_blank" title="NavigationArea.minimumVisibility">
+                   minimumVisibility
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="minimumCeiling" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@minimumCeiling">
+              minimumCeiling
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Airspace:NavigationArea@minimumCeiling
+             </code>
+             <p>
+              The minimum cloud base needed when using the departure navigation area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#minimumCeilingcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="minimumCeilingcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/NavigationArea.html#minimumCeiling" target="_blank" title="NavigationArea.minimumCeiling">
+                   minimumCeiling
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

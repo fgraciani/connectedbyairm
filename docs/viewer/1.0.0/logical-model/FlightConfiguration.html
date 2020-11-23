@@ -153,95 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="Boolean.html">
+               Boolean
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="AircraftConfiguration.html">
-              AircraftConfiguration
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              isIDENTSwitchActive
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isPositionOffsetApplied
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isSpecificServiceCapability
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              barometricPressureSetting
-             </span>
-             <a href="ValPressureType.html">
-              ValPressureType
-             </a>
-             <br/>
-             <span>
-              auxiliaryPowerUnitFuelFlow
-             </span>
-             <a href="Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              aircraftMass
-             </span>
-             <a href="ValMassType.html">
-              ValMassType
-             </a>
-             <br/>
-             <span>
-              mainEnginesFuelFlow
-             </span>
-             <a href="Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              isTCASResolutionAdvisoryActive
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isReceivingATCServices
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isSingleAntenna
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -260,12 +177,447 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#isIDENTSwitchActive">
+                 isIDENTSwitchActive
+                </a>
+               </td>
+               <td>
+                Indication that the IDENT"-switch is active."
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isSingleAntenna">
+                 isSingleAntenna
+                </a>
+               </td>
+               <td>
+                Single Antenna = 0	Antenna Diversity = 1 	Single Antenna only
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isReceivingATCServices">
+                 isReceivingATCServices
+                </a>
+               </td>
+               <td>
+                Indication whether the aircraft is receiving ATC Services.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isTCASResolutionAdvisoryActive">
+                 isTCASResolutionAdvisoryActive
+                </a>
+               </td>
+               <td>
+                Flag indicating if TCAS Resolution Advisory is active =0	TCAS II or ACAS RA not active =1	TCAS RA active
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#mainEnginesFuelFlow">
+                 mainEnginesFuelFlow
+                </a>
+               </td>
+               <td>
+                The fuel flow for the main engines of an aircraft at a specific time during a flight in terms of amount per time unit.
+               </td>
+               <td>
+                <a href="Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraftMass">
+                 aircraftMass
+                </a>
+               </td>
+               <td>
+                The mass of the aircraft at a specific time during the flight.
+               </td>
+               <td>
+                <a href="ValMassType.html">
+                 ValMassType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#auxiliaryPowerUnitFuelFlow">
+                 auxiliaryPowerUnitFuelFlow
+                </a>
+               </td>
+               <td>
+                The fuel flow for the auxilliary power unit of aircraft at a specific time during a flight in terms of amount per time unit.
+               </td>
+               <td>
+                <a href="Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#barometricPressureSetting">
+                 barometricPressureSetting
+                </a>
+               </td>
+               <td>
+                The barometric pressure reading used to adjust a pressure altimeter for variations in existing atmospheric pressure or to the standard altimeter setting.
+               </td>
+               <td>
+                <a href="ValPressureType.html">
+                 ValPressureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isSpecificServiceCapability">
+                 isSpecificServiceCapability
+                </a>
+               </td>
+               <td>
+                Indication whether specific BDS-registers are used, without additional specifications.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isPositionOffsetApplied">
+                 isPositionOffsetApplied
+                </a>
+               </td>
+               <td>
+                Position Offset Applied = 0	Position transmitted is not ADS-B position reference point = 1	Position transmitted is the ADS-B position reference point
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isIDENTSwitchActive" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isIDENTSwitchActive">
+              isIDENTSwitchActive
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isIDENTSwitchActive
+             </code>
+             <p>
+              Indication that the IDENT"-switch is active."
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isSingleAntenna" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isSingleAntenna">
+              isSingleAntenna
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isSingleAntenna
+             </code>
+             <p>
+              Single Antenna = 0	Antenna Diversity = 1 	Single Antenna only
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isReceivingATCServices" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isReceivingATCServices">
+              isReceivingATCServices
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isReceivingATCServices
+             </code>
+             <p>
+              Indication whether the aircraft is receiving ATC Services.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isTCASResolutionAdvisoryActive" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isTCASResolutionAdvisoryActive">
+              isTCASResolutionAdvisoryActive
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isTCASResolutionAdvisoryActive
+             </code>
+             <p>
+              Flag indicating if TCAS Resolution Advisory is active =0	TCAS II or ACAS RA not active =1	TCAS RA active
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="mainEnginesFuelFlow" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@mainEnginesFuelFlow">
+              mainEnginesFuelFlow
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@mainEnginesFuelFlow
+             </code>
+             <p>
+              The fuel flow for the main engines of an aircraft at a specific time during a flight in terms of amount per time unit.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aircraftMass" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@aircraftMass">
+              aircraftMass
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@aircraftMass
+             </code>
+             <p>
+              The mass of the aircraft at a specific time during the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValMassType.html">
+                ValMassType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="auxiliaryPowerUnitFuelFlow" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@auxiliaryPowerUnitFuelFlow">
+              auxiliaryPowerUnitFuelFlow
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@auxiliaryPowerUnitFuelFlow
+             </code>
+             <p>
+              The fuel flow for the auxilliary power unit of aircraft at a specific time during a flight in terms of amount per time unit.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="barometricPressureSetting" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@barometricPressureSetting">
+              barometricPressureSetting
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@barometricPressureSetting
+             </code>
+             <p>
+              The barometric pressure reading used to adjust a pressure altimeter for variations in existing atmospheric pressure or to the standard altimeter setting.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValPressureType.html">
+                ValPressureType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#barometricPressureSettingcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="barometricPressureSettingcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/TrajectoryPoint4DType.html#altimeterSetting" target="_blank" title="fx:TrajectoryPoint4DType:altimeterSetting">
+                   altimeterSetting
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isSpecificServiceCapability" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isSpecificServiceCapability">
+              isSpecificServiceCapability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isSpecificServiceCapability
+             </code>
+             <p>
+              Indication whether specific BDS-registers are used, without additional specifications.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isPositionOffsetApplied" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isPositionOffsetApplied">
+              isPositionOffsetApplied
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightConfiguration@isPositionOffsetApplied
+             </code>
+             <p>
+              Position Offset Applied = 0	Position transmitted is not ADS-B position reference point = 1	Position transmitted is the ADS-B position reference point
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

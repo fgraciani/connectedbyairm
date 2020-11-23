@@ -153,130 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Object.html">
-              Object
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              day
-             </span>
-             <a href="CodeParticularDayType.html">
-              CodeParticularDayType
-             </a>
-             <br/>
-             <span>
-              startEventInterpretation
-             </span>
-             <a href="CodeTimeEventCombinationType.html">
-              CodeTimeEventCombinationType
-             </a>
-             <br/>
-             <span>
-              startEvent
-             </span>
-             <a href="CodeTimeEventType.html">
-              CodeTimeEventType
-             </a>
-             <br/>
-             <span>
-              startTime
-             </span>
-             <a href="ClockTime.html">
-              ClockTime
-             </a>
-             <br/>
-             <span>
-              isExcluded
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              startDate
-             </span>
-             <a href="Date.html">
-              Date
-             </a>
-             <br/>
-             <span>
-              dayTil
-             </span>
-             <a href="CodeParticularDayType.html">
-              CodeParticularDayType
-             </a>
-             <br/>
-             <span>
-              endDate
-             </span>
-             <a href="Date.html">
-              Date
-             </a>
-             <br/>
-             <span>
-              daylightSavingAdjust
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              endEvent
-             </span>
-             <a href="CodeTimeEventType.html">
-              CodeTimeEventType
-             </a>
-             <br/>
-             <span>
-              startTimeRelativeEvent
-             </span>
-             <a href="TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              endEventInterpretation
-             </span>
-             <a href="CodeTimeEventCombinationType.html">
-              CodeTimeEventCombinationType
-             </a>
-             <br/>
-             <span>
-              endTimeRelativeEvent
-             </span>
-             <a href="TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              endTime
-             </span>
-             <a href="ClockTime.html">
-              ClockTime
-             </a>
-             <br/>
-             <span>
-              timeReference
-             </span>
-             <a href="CodeTimeReferenceType.html">
-              CodeTimeReferenceType
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#timeReferencecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -295,12 +174,1117 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#day">
+                 day
+                </a>
+               </td>
+               <td>
+                An indicator of the day the timesheet is referring to.
+               </td>
+               <td>
+                <a href="CodeParticularDayType.html">
+                 CodeParticularDayType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timeReference">
+                 timeReference
+                </a>
+               </td>
+               <td>
+                An indicator of the time reference system or reference system offset for time values specified in the timesheet.
+               </td>
+               <td>
+                <a href="CodeTimeReferenceType.html">
+                 CodeTimeReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endTime">
+                 endTime
+                </a>
+               </td>
+               <td>
+                The time of the day when the period described in the timesheet ends.
+               </td>
+               <td>
+                <a href="ClockTime.html">
+                 ClockTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endTimeRelativeEvent">
+                 endTimeRelativeEvent
+                </a>
+               </td>
+               <td>
+                The number of minutes before or after the end event when the period described in the timesheet ends.
+               </td>
+               <td>
+                <a href="TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endEventInterpretation">
+                 endEventInterpretation
+                </a>
+               </td>
+               <td>
+                When both the 'EndTime' and 'EndEvent' values of the timesheet are not blank, this attribute explains how the combination of the two attributes should be interpreted, i.e. which of the two moments in time is the end of the period described by the timesheet.
+               </td>
+               <td>
+                <a href="CodeTimeEventCombinationType.html">
+                 CodeTimeEventCombinationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startTimeRelativeEvent">
+                 startTimeRelativeEvent
+                </a>
+               </td>
+               <td>
+                The number of minutes before or after the start event when the period described in the timesheet starts.
+               </td>
+               <td>
+                <a href="TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endEvent">
+                 endEvent
+                </a>
+               </td>
+               <td>
+                A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in the timesheet ends.
+               </td>
+               <td>
+                <a href="CodeTimeEventType.html">
+                 CodeTimeEventType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#daylightSavingAdjust">
+                 daylightSavingAdjust
+                </a>
+               </td>
+               <td>
+                Indicates that the startTime and endTime values of the timesheet have to be decreased by one hour when Daylight Saving is in force (summer time).
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endDate">
+                 endDate
+                </a>
+               </td>
+               <td>
+                The end date of the validity of the timesheet.
+               </td>
+               <td>
+                <a href="Date.html">
+                 Date
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dayTil">
+                 dayTil
+                </a>
+               </td>
+               <td>
+                An indicator of the days affected by the timesheet.
+               </td>
+               <td>
+                <a href="CodeParticularDayType.html">
+                 CodeParticularDayType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startDate">
+                 startDate
+                </a>
+               </td>
+               <td>
+                The start date of the validity of the timesheet.
+               </td>
+               <td>
+                <a href="Date.html">
+                 Date
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isExcluded">
+                 isExcluded
+                </a>
+               </td>
+               <td>
+                An indicator that the time block indicated by the timesheet is excluded (subtracted) from the total time interval(s) defined by one or more additional timesheet(s).
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startTime">
+                 startTime
+                </a>
+               </td>
+               <td>
+                The time of the day when the period described in the timesheet starts.
+               </td>
+               <td>
+                <a href="ClockTime.html">
+                 ClockTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startEvent">
+                 startEvent
+                </a>
+               </td>
+               <td>
+                A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in the timesheet starts.
+               </td>
+               <td>
+                <a href="CodeTimeEventType.html">
+                 CodeTimeEventType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startEventInterpretation">
+                 startEventInterpretation
+                </a>
+               </td>
+               <td>
+                When both the 'StartTime' and 'StartEvent' values of a timesheet are not blank, this explains how the combination of the two values should be interpreted, i.e. which of the two moments in time is the beginning of the period described by the timesheet.
+               </td>
+               <td>
+                <a href="CodeTimeEventCombinationType.html">
+                 CodeTimeEventCombinationType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="day" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@day">
+              day
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@day
+             </code>
+             <p>
+              An indicator of the day the timesheet is referring to.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeParticularDayType.html">
+                CodeParticularDayType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#daycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="daycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#day" target="_blank" title="Timesheet.day">
+                   day
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="timeReference" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@timeReference">
+              timeReference
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@timeReference
+             </code>
+             <p>
+              An indicator of the time reference system or reference system offset for time values specified in the timesheet.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeTimeReferenceType.html">
+                CodeTimeReferenceType
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="timeReferencecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#timeReference" target="_blank" title="Timesheet.timeReference">
+                   timeReference
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="endTime" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endTime">
+              endTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endTime
+             </code>
+             <p>
+              The time of the day when the period described in the timesheet ends.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ClockTime.html">
+                ClockTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#endTimecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="endTimecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#end(string) Time" target="_blank" title="Timesheet.endTime">
+                   end(string) Time
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="endTimeRelativeEvent" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endTimeRelativeEvent">
+              endTimeRelativeEvent
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endTimeRelativeEvent
+             </code>
+             <p>
+              The number of minutes before or after the end event when the period described in the timesheet ends.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#endTimeRelativeEventcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="endTimeRelativeEventcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#end(string) TimeRelativeEvent" target="_blank" title="Timesheet.endTimeRelativeEvent">
+                   end(string) TimeRelativeEvent
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="endEventInterpretation" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endEventInterpretation">
+              endEventInterpretation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endEventInterpretation
+             </code>
+             <p>
+              When both the 'EndTime' and 'EndEvent' values of the timesheet are not blank, this attribute explains how the combination of the two attributes should be interpreted, i.e. which of the two moments in time is the end of the period described by the timesheet.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeTimeEventCombinationType.html">
+                CodeTimeEventCombinationType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#endEventInterpretationcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="endEventInterpretationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#endEventInterpretation" target="_blank" title="Timesheet.endEventInterpretation">
+                   endEventInterpretation
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="startTimeRelativeEvent" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startTimeRelativeEvent">
+              startTimeRelativeEvent
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startTimeRelativeEvent
+             </code>
+             <p>
+              The number of minutes before or after the start event when the period described in the timesheet starts.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#startTimeRelativeEventcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="startTimeRelativeEventcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#start(string) TimeRelativeEvent" target="_blank" title="Timesheet.startTimeRelativeEvent">
+                   start(string) TimeRelativeEvent
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="endEvent" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endEvent">
+              endEvent
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endEvent
+             </code>
+             <p>
+              A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in the timesheet ends.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeTimeEventType.html">
+                CodeTimeEventType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#endEventcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="endEventcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#endEvent" target="_blank" title="Timesheet.endEvent">
+                   endEvent
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="daylightSavingAdjust" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@daylightSavingAdjust">
+              daylightSavingAdjust
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@daylightSavingAdjust
+             </code>
+             <p>
+              Indicates that the startTime and endTime values of the timesheet have to be decreased by one hour when Daylight Saving is in force (summer time).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#daylightSavingAdjustcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="daylightSavingAdjustcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#daylightSavingAdjust" target="_blank" title="Timesheet.daylightSavingAdjust">
+                   daylightSavingAdjust
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="endDate" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endDate">
+              endDate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@endDate
+             </code>
+             <p>
+              The end date of the validity of the timesheet.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Date.html">
+                Date
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#endDatecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="endDatecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#endDate" target="_blank" title="Timesheet.endDate">
+                   endDate
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="dayTil" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@dayTil">
+              dayTil
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@dayTil
+             </code>
+             <p>
+              An indicator of the days affected by the timesheet.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeParticularDayType.html">
+                CodeParticularDayType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#dayTilcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="dayTilcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#dayTil" target="_blank" title="Timesheet.dayTil">
+                   dayTil
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="startDate" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startDate">
+              startDate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startDate
+             </code>
+             <p>
+              The start date of the validity of the timesheet.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Date.html">
+                Date
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#startDatecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="startDatecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#startDate" target="_blank" title="Timesheet.startDate">
+                   startDate
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isExcluded" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@isExcluded">
+              isExcluded
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@isExcluded
+             </code>
+             <p>
+              An indicator that the time block indicated by the timesheet is excluded (subtracted) from the total time interval(s) defined by one or more additional timesheet(s).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isExcludedcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isExcludedcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#excluded" target="_blank" title="Timesheet.excluded">
+                   excluded
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="startTime" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startTime">
+              startTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startTime
+             </code>
+             <p>
+              The time of the day when the period described in the timesheet starts.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ClockTime.html">
+                ClockTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#startTimecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="startTimecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#start(string) Time" target="_blank" title="Timesheet.startTime">
+                   start(string) Time
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="startEvent" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startEvent">
+              startEvent
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startEvent
+             </code>
+             <p>
+              A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in the timesheet starts.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeTimeEventType.html">
+                CodeTimeEventType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#startEventcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="startEventcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#startEvent" target="_blank" title="Timesheet.startEvent">
+                   startEvent
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="startEventInterpretation" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startEventInterpretation">
+              startEventInterpretation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Abstract:Timesheet@startEventInterpretation
+             </code>
+             <p>
+              When both the 'StartTime' and 'StartEvent' values of a timesheet are not blank, this explains how the combination of the two values should be interpreted, i.e. which of the two moments in time is the beginning of the period described by the timesheet.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeTimeEventCombinationType.html">
+                CodeTimeEventCombinationType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#startEventInterpretationcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="startEventInterpretationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Timesheet.html#startEventInterpretation" target="_blank" title="Timesheet.startEventInterpretation">
+                   startEventInterpretation
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

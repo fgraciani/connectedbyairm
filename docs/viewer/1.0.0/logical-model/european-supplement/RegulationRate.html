@@ -161,46 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL ATM Lexicon
+              <a href="european-supplement/Integer.html">
+               Integer
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/ObjectWithSchedule.html">
-              ObjectWithSchedule
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              pendingRate
-             </span>
-             <a href="european-supplement/Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              normalRate
-             </span>
-             <a href="european-supplement/Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              equipmentRate
-             </span>
-             <a href="european-supplement/Integer.html">
-              Integer
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -219,12 +185,127 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#pendingRate">
+                 pendingRate
+                </a>
+               </td>
+               <td>
+                Number of remaining free slots per hour after the slot allocation process is calculated used for later filers or during the slot improvement process.
+               </td>
+               <td>
+                <a href="european-supplement/Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#equipmentRate">
+                 equipmentRate
+                </a>
+               </td>
+               <td>
+                Number of slots available for Microwave Landing System (MLS) equipped aircrafts per hour.
+               </td>
+               <td>
+                <a href="european-supplement/Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#normalRate">
+                 normalRate
+                </a>
+               </td>
+               <td>
+                Number of slots per hour to be allocated during the slot allocation process. In Microwave Landing System (MLS) operations, this rate corresponds to the slots available for non-MLS equipped aircrafts.
+               </td>
+               <td>
+                <a href="european-supplement/Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="pendingRate" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:RegulationRate@pendingRate">
+              pendingRate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:RegulationRate@pendingRate
+             </code>
+             <p>
+              Number of remaining free slots per hour after the slot allocation process is calculated used for later filers or during the slot improvement process.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="equipmentRate" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:RegulationRate@equipmentRate">
+              equipmentRate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:RegulationRate@equipmentRate
+             </code>
+             <p>
+              Number of slots available for Microwave Landing System (MLS) equipped aircrafts per hour.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="normalRate" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:RegulationRate@normalRate">
+              normalRate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:RegulationRate@normalRate
+             </code>
+             <p>
+              Number of slots per hour to be allocated during the slot allocation process. In Microwave Landing System (MLS) operations, this rate corresponds to the slots available for non-MLS equipped aircrafts.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

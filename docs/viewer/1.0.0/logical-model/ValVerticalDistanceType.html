@@ -153,46 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              heightReference
-             </span>
-             <a href="CodeHeightReferenceType.html">
-              CodeHeightReferenceType
-             </a>
-             <br/>
-             <span>
-              specialHeightValue
-             </span>
-             <a href="CodeSpecialHeightValueType.html">
-              CodeSpecialHeightValueType
-             </a>
-             <br/>
-             <span>
-              verticalReference
-             </span>
-             <a href="CodeVerticalReferenceType.html">
-              CodeVerticalReferenceType
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#verticalReferencecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -211,12 +174,532 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#heightReference">
+                 heightReference
+                </a>
+               </td>
+               <td>
+                The reference surface for a height value.
+               </td>
+               <td>
+                <a href="CodeHeightReferenceType.html">
+                 CodeHeightReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalReference">
+                 verticalReference
+                </a>
+               </td>
+               <td>
+                The reference surface used for determining the value of the vertical distance.
+               </td>
+               <td>
+                <a href="CodeVerticalReferenceType.html">
+                 CodeVerticalReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#specialHeightValue">
+                 specialHeightValue
+                </a>
+               </td>
+               <td>
+                ATM specific height type
+               </td>
+               <td>
+                <a href="CodeSpecialHeightValueType.html">
+                 CodeSpecialHeightValueType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="heightReference" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:MeasureTypes:ValVerticalDistanceType@heightReference">
+              heightReference
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:MeasureTypes:ValVerticalDistanceType@heightReference
+             </code>
+             <p>
+              The reference surface for a height value.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeHeightReferenceType.html">
+                CodeHeightReferenceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#heightReferencecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="heightReferencecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/HeightType.html#ref" target="_blank" title="fb:HeightType:ref">
+                   ref
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="verticalReference" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:MeasureTypes:ValVerticalDistanceType@verticalReference">
+              verticalReference
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:MeasureTypes:ValVerticalDistanceType@verticalReference
+             </code>
+             <p>
+              The reference surface used for determining the value of the vertical distance.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeVerticalReferenceType.html">
+                CodeVerticalReferenceType
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="verticalReferencecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/DepartureArrivalCondition.html#maximumCrossingAtEndReference" target="_blank" title="DepartureArrivalCondition.maximumCrossingAtEndReference">
+                   maximumCrossingAtEndReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CircleSector.html#lowerLimitReference" target="_blank" title="CircleSector.lowerLimitReference">
+                   lowerLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RouteSegment.html#lowerLimitReference" target="_blank" title="RouteSegment.lowerLimitReference">
+                   lowerLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CircleSector.html#upperLimitReference" target="_blank" title="CircleSector.upperLimitReference">
+                   upperLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/HoldingAssessment.html#lowerLimitReference" target="_blank" title="HoldingAssessment.lowerLimitReference">
+                   lowerLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightRestrictionLevel.html#lowerLevelReference" target="_blank" title="FlightRestrictionLevel.lowerLevelReference">
+                   lowerLevelReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/DepartureArrivalCondition.html#minimumCrossingAtEndReference" target="_blank" title="DepartureArrivalCondition.minimumCrossingAtEndReference">
+                   minimumCrossingAtEndReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/HoldingPattern.html#lowerLimitReference" target="_blank" title="HoldingPattern.lowerLimitReference">
+                   lowerLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/HoldingPattern.html#upperLimitReference" target="_blank" title="HoldingPattern.upperLimitReference">
+                   upperLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/HoldingUse.html#instructionAltitudeReference" target="_blank" title="HoldingUse.instructionAltitudeReference">
+                   instructionAltitudeReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#altitudeReference" target="_blank" title="Minima.altitudeReference">
+                   altitudeReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#heightReference" target="_blank" title="Minima.heightReference">
+                   heightReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/NavigationSystemCheckpoint.html#lowerLimitReference" target="_blank" title="NavigationSystemCheckpoint.lowerLimitReference">
+                   lowerLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/NavigationSystemCheckpoint.html#upperLimitReference" target="_blank" title="NavigationSystemCheckpoint.upperLimitReference">
+                   upperLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AirspaceVolume.html#upperLimitReference" target="_blank" title="AirspaceVolume.upperLimitReference">
+                   upperLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AirspaceVolume.html#minimumLimitReference" target="_blank" title="AirspaceVolume.minimumLimitReference">
+                   minimumLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AirspaceVolume.html#maximumLimitReference" target="_blank" title="AirspaceVolume.maximumLimitReference">
+                   maximumLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AirspaceLayer.html#upperLimitReference" target="_blank" title="AirspaceLayer.upperLimitReference">
+                   upperLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AirspaceLayer.html#lowerLimitReference" target="_blank" title="AirspaceLayer.lowerLimitReference">
+                   lowerLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/UnplannedHolding.html#altitudeReference" target="_blank" title="UnplannedHolding.altitudeReference">
+                   altitudeReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RouteSegment.html#minimumCrossingAtEndReference" target="_blank" title="RouteSegment.minimumCrossingAtEndReference">
+                   minimumCrossingAtEndReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/HoldingAssessment.html#upperLimitReference" target="_blank" title="HoldingAssessment.upperLimitReference">
+                   upperLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RouteSegment.html#maximumCrossingAtEndReference" target="_blank" title="RouteSegment.maximumCrossingAtEndReference">
+                   maximumCrossingAtEndReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightRestrictionLevel.html#upperLevelReference" target="_blank" title="FlightRestrictionLevel.upperLevelReference">
+                   upperLevelReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SegmentLeg.html#upperLimitReference" target="_blank" title="SegmentLeg.upperLimitReference">
+                   upperLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuellingAnchor.html#refuellingBaseLevelReference" target="_blank" title="AerialRefuellingAnchor.refuellingBaseLevelReference">
+                   refuellingBaseLevelReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RouteSegment.html#upperLimitReference" target="_blank" title="RouteSegment.upperLimitReference">
+                   upperLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SegmentLeg.html#lowerLimitReference" target="_blank" title="SegmentLeg.lowerLimitReference">
+                   lowerLimitReference
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SegmentLeg.html#altitudeOverrideReference" target="_blank" title="SegmentLeg.altitudeOverrideReference">
+                   altitudeOverrideReference
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="specialHeightValue" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:MeasureTypes:ValVerticalDistanceType@specialHeightValue">
+              specialHeightValue
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:MeasureTypes:ValVerticalDistanceType@specialHeightValue
+             </code>
+             <p>
+              ATM specific height type
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeSpecialHeightValueType.html">
+                CodeSpecialHeightValueType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

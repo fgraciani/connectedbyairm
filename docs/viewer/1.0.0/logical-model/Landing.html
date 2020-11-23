@@ -153,53 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="ArrivalOperations.html">
+               ArrivalOperations
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              preferredLandingRunwayDirection
-             </span>
-             <a href="RunwayDirection.html">
-              RunwayDirection
-             </a>
-             <br/>
-             <span>
-              landingTolerance
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              time
-             </span>
-             <a href="DateTimeWithPlanningType.html">
-              DateTimeWithPlanningType
-             </a>
-             <br/>
-             <span>
-              arrival
-             </span>
-             <a href="ArrivalOperations.html">
-              ArrivalOperations
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -218,12 +177,201 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#preferredLandingRunwayDirection">
+                 preferredLandingRunwayDirection
+                </a>
+               </td>
+               <td>
+                For Air Ground cooperative air traffic services and especially for Pilot Preferences Downlink services, this data is part of the Aircrew's preferences on the way the flight is to be conducted for various operational reasons.  In order to elaborate pertinent control strategies, Controllers need to be aware of these preferences.
+               </td>
+               <td>
+                <a href="RunwayDirection.html">
+                 RunwayDirection
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#arrival">
+                 arrival
+                </a>
+               </td>
+               <td>
+                Operations during which the landing takes place.
+               </td>
+               <td>
+                <a href="ArrivalOperations.html">
+                 ArrivalOperations
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#time">
+                 time
+                </a>
+               </td>
+               <td>
+                Time at which an aircraft touches down.
+               </td>
+               <td>
+                <a href="DateTimeWithPlanningType.html">
+                 DateTimeWithPlanningType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#landingTolerance">
+                 landingTolerance
+                </a>
+               </td>
+               <td>
+                The tolerance with which the Target Landing time is required to be achieved by the Aircraft.
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="preferredLandingRunwayDirection" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:Landing@preferredLandingRunwayDirection">
+              preferredLandingRunwayDirection
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:Landing@preferredLandingRunwayDirection
+             </code>
+             <p>
+              For Air Ground cooperative air traffic services and especially for Pilot Preferences Downlink services, this data is part of the Aircrew's preferences on the way the flight is to be conducted for various operational reasons.  In order to elaborate pertinent control strategies, Controllers need to be aware of these preferences.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RunwayDirection.html">
+                RunwayDirection
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="arrival" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:Landing@arrival">
+              arrival
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:Landing@arrival
+             </code>
+             <p>
+              Operations during which the landing takes place.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="time" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:Landing@time">
+              time
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:Landing@time
+             </code>
+             <p>
+              Time at which an aircraft touches down.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTimeWithPlanningType.html">
+                DateTimeWithPlanningType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#timecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="timecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/ArrivalType.html#actualTimeOfArrival" target="_blank" title="fx:ArrivalType:actualTimeOfArrival">
+                   actualTimeOfArrival
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="landingTolerance" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:Landing@landingTolerance">
+              landingTolerance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:Landing@landingTolerance
+             </code>
+             <p>
+              The tolerance with which the Target Landing time is required to be achieved by the Aircraft.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

@@ -161,53 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL ATM Lexicon
+              <a href="european-supplement/ValSpeedType.html">
+               ValSpeedType
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/Object.html">
-              Object
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              maxCruiseLevel
-             </span>
-             <a href="european-supplement/Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              minApproachSpeed
-             </span>
-             <a href="european-supplement/ValSpeedType.html">
-              ValSpeedType
-             </a>
-             <br/>
-             <span>
-              operationalSpeedRange
-             </span>
-             <a href="european-supplement/SpeedRangeType.html">
-              SpeedRangeType
-             </a>
-             <br/>
-             <span>
-              minManoeuvreSpeed
-             </span>
-             <a href="european-supplement/ValSpeedType.html">
-              ValSpeedType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -226,12 +185,168 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#maxCruiseLevel">
+                 maxCruiseLevel
+                </a>
+               </td>
+               <td>
+                The max_cruise_level is specific to this aircraft. It gives the flight envelope. It will be used by TP to correct the offline speed rules, etc. (could be in Aircraft or ground Trajectory)
+               </td>
+               <td>
+                <a href="european-supplement/Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minManoeuvreSpeed">
+                 minManoeuvreSpeed
+                </a>
+               </td>
+               <td>
+                The aircraft operator gives operational limitations to the ATSU for minimum manoeuvre speed. It is provided prior to flight activation in the ATSU.
+               </td>
+               <td>
+                <a href="european-supplement/ValSpeedType.html">
+                 ValSpeedType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#operationalSpeedRange">
+                 operationalSpeedRange
+                </a>
+               </td>
+               <td>
+                The operational speed range of the aircraft.
+               </td>
+               <td>
+                <a href="european-supplement/SpeedRangeType.html">
+                 SpeedRangeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minApproachSpeed">
+                 minApproachSpeed
+                </a>
+               </td>
+               <td>
+                The aircraft operator gives operational limitations to the ATSU for minimum approach speed. It is provided prior to flight activation in the ATSU.
+               </td>
+               <td>
+                <a href="european-supplement/ValSpeedType.html">
+                 ValSpeedType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="maxCruiseLevel" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightEnvelope@maxCruiseLevel">
+              maxCruiseLevel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightEnvelope@maxCruiseLevel
+             </code>
+             <p>
+              The max_cruise_level is specific to this aircraft. It gives the flight envelope. It will be used by TP to correct the offline speed rules, etc. (could be in Aircraft or ground Trajectory)
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="minManoeuvreSpeed" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightEnvelope@minManoeuvreSpeed">
+              minManoeuvreSpeed
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightEnvelope@minManoeuvreSpeed
+             </code>
+             <p>
+              The aircraft operator gives operational limitations to the ATSU for minimum manoeuvre speed. It is provided prior to flight activation in the ATSU.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="operationalSpeedRange" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightEnvelope@operationalSpeedRange">
+              operationalSpeedRange
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightEnvelope@operationalSpeedRange
+             </code>
+             <p>
+              The operational speed range of the aircraft.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/SpeedRangeType.html">
+                SpeedRangeType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="minApproachSpeed" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightEnvelope@minApproachSpeed">
+              minApproachSpeed
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Aircraft:FlightEnvelope@minApproachSpeed
+             </code>
+             <p>
+              The aircraft operator gives operational limitations to the ATSU for minimum approach speed. It is provided prior to flight activation in the ATSU.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ValSpeedType.html">
+                ValSpeedType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

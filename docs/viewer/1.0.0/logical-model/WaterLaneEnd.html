@@ -153,95 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              FAA (Federal Aviation Administration)
+              <a href="CodeCompassPointType.html">
+               CodeCompassPointType
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="GeoTemporalEnabledEntity.html">
-              GeoTemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              depth
-             </span>
-             <a href="ValVerticalDistanceType.html">
-              ValVerticalDistanceType
-             </a>
-             <br/>
-             <span>
-              primaryWaterCentroidLocation
-             </span>
-             <a href="Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              width
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              isStandardAirMarkerUsed
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              name
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              markingBuoy
-             </span>
-             <a href="MarkingBuoy.html">
-              MarkingBuoy
-             </a>
-             <br/>
-             <span>
-              length
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              approachGuidance
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              airMarkerColour
-             </span>
-             <a href="CodeColourType.html">
-              CodeColourType
-             </a>
-             <br/>
-             <span>
-              cardinalDirection
-             </span>
-             <a href="CodeCompassPointType.html">
-              CodeCompassPointType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -260,12 +177,414 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#depth">
+                 depth
+                </a>
+               </td>
+               <td>
+                The depth of the primary water lane with respect to mean lowest low tide.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cardinalDirection">
+                 cardinalDirection
+                </a>
+               </td>
+               <td>
+                Code indicating the cardinal compass location of the turning basin from centroid of the WaterLaneEnd.
+               </td>
+               <td>
+                <a href="CodeCompassPointType.html">
+                 CodeCompassPointType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#airMarkerColour">
+                 airMarkerColour
+                </a>
+               </td>
+               <td>
+                The color of the air marker at the location (if any).
+               </td>
+               <td>
+                <a href="CodeColourType.html">
+                 CodeColourType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#approachGuidance">
+                 approachGuidance
+                </a>
+               </td>
+               <td>
+                Identifies the type of approach guidance in use or planned for the Water Lane End.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#length">
+                 length
+                </a>
+               </td>
+               <td>
+                The overall length of the primary water lane.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#markingBuoy">
+                 markingBuoy
+                </a>
+               </td>
+               <td>
+                A buoy used to mark the water lane end.
+               </td>
+               <td>
+                <a href="MarkingBuoy.html">
+                 MarkingBuoy
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#name">
+                 name
+                </a>
+               </td>
+               <td>
+                Name given to the water lane end.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isStandardAirMarkerUsed">
+                 isStandardAirMarkerUsed
+                </a>
+               </td>
+               <td>
+                Indicates that a Standard Air Maker is used at the location. The anchor symbol, similar to the designator found on aeronautical charts, is the Standard Air Marker used to designate a seaplane base. The symbol is often painted on roofs or other flat surfaces that are easily visible from the air.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#width">
+                 width
+                </a>
+               </td>
+               <td>
+                The overall width of the primary water lane.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#primaryWaterCentroidLocation">
+                 primaryWaterCentroidLocation
+                </a>
+               </td>
+               <td>
+                The geographic location of the primary water centroid, used to determine the primary and alternate water lanes within the water operating area.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="depth" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@depth">
+              depth
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@depth
+             </code>
+             <p>
+              The depth of the primary water lane with respect to mean lowest low tide.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="cardinalDirection" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@cardinalDirection">
+              cardinalDirection
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@cardinalDirection
+             </code>
+             <p>
+              Code indicating the cardinal compass location of the turning basin from centroid of the WaterLaneEnd.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="airMarkerColour" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@airMarkerColour">
+              airMarkerColour
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@airMarkerColour
+             </code>
+             <p>
+              The color of the air marker at the location (if any).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeColourType.html">
+                CodeColourType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="approachGuidance" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@approachGuidance">
+              approachGuidance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@approachGuidance
+             </code>
+             <p>
+              Identifies the type of approach guidance in use or planned for the Water Lane End.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="length" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@length">
+              length
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@length
+             </code>
+             <p>
+              The overall length of the primary water lane.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="markingBuoy" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@markingBuoy">
+              markingBuoy
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@markingBuoy
+             </code>
+             <p>
+              A buoy used to mark the water lane end.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="MarkingBuoy.html">
+                MarkingBuoy
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="name" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@name">
+              name
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@name
+             </code>
+             <p>
+              Name given to the water lane end.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isStandardAirMarkerUsed" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@isStandardAirMarkerUsed">
+              isStandardAirMarkerUsed
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@isStandardAirMarkerUsed
+             </code>
+             <p>
+              Indicates that a Standard Air Maker is used at the location. The anchor symbol, similar to the designator found on aeronautical charts, is the Standard Air Marker used to designate a seaplane base. The symbol is often painted on roofs or other flat surfaces that are easily visible from the air.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="width" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@width">
+              width
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@width
+             </code>
+             <p>
+              The overall width of the primary water lane.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="primaryWaterCentroidLocation" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@primaryWaterCentroidLocation">
+              primaryWaterCentroidLocation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:WaterLaneEnd@primaryWaterCentroidLocation
+             </code>
+             <p>
+              The geographic location of the primary water centroid, used to determine the primary and alternate water lanes within the water operating area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

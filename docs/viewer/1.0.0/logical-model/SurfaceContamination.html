@@ -153,130 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              hasObscuredLights
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              frictionDevice
-             </span>
-             <a href="CodeFrictionDeviceType.html">
-              CodeFrictionDeviceType
-             </a>
-             <br/>
-             <span>
-              frictionEstimation
-             </span>
-             <a href="CodeFrictionEstimateType.html">
-              CodeFrictionEstimateType
-             </a>
-             <br/>
-             <span>
-              isExtremeDesposit
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              frictionCoefficient
-             </span>
-             <a href="Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              depth
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              isEstimatedSurfaceFrictionUnreliable
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              proportion
-             </span>
-             <a href="Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              criticalRidge
-             </span>
-             <a href="Ridge.html">
-              Ridge
-             </a>
-             <br/>
-             <span>
-              furtherClearanceTime
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              wasCleared
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isFurtherTotalClearanceExpected
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              observationTime
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              nextObservationTime
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              layer
-             </span>
-             <a href="SurfaceContaminationLayer.html">
-              SurfaceContaminationLayer
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#layercollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -295,12 +174,1018 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#hasObscuredLights">
+                 hasObscuredLights
+                </a>
+               </td>
+               <td>
+                Indicates that the surface lights are obscured by surface contamination.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#layer">
+                 layer
+                </a>
+               </td>
+               <td>
+                A layer of contaminant.
+               </td>
+               <td>
+                <a href="SurfaceContaminationLayer.html">
+                 SurfaceContaminationLayer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#nextObservationTime">
+                 nextObservationTime
+                </a>
+               </td>
+               <td>
+                The date and time of the next intended measurement of conditions on an aerodrome surface.
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#observationTime">
+                 observationTime
+                </a>
+               </td>
+               <td>
+                The date and time of surface contamination measurement completion.
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isFurtherTotalClearanceExpected">
+                 isFurtherTotalClearanceExpected
+                </a>
+               </td>
+               <td>
+                Indicates that further total clearance of an aerodrome surface with contamination is expected.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#wasCleared">
+                 wasCleared
+                </a>
+               </td>
+               <td>
+                Indication that the surface was cleared.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#furtherClearanceTime">
+                 furtherClearanceTime
+                </a>
+               </td>
+               <td>
+                The time when it is expected to complete further clearance of an aerodrome surface with contamination.
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#criticalRidge">
+                 criticalRidge
+                </a>
+               </td>
+               <td>
+                A ridge or bank of contaminant that might affect operations.
+               </td>
+               <td>
+                <a href="Ridge.html">
+                 Ridge
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#proportion">
+                 proportion
+                </a>
+               </td>
+               <td>
+                The percentage of the contaminated area of the overall extent of the surface.
+               </td>
+               <td>
+                <a href="Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isEstimatedSurfaceFrictionUnreliable">
+                 isEstimatedSurfaceFrictionUnreliable
+                </a>
+               </td>
+               <td>
+                Indication that the estimated surface friction is unreliable and is not reported.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#depth">
+                 depth
+                </a>
+               </td>
+               <td>
+                The depth of the contamination on the surface.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#frictionCoefficient">
+                 frictionCoefficient
+                </a>
+               </td>
+               <td>
+                The average ratio of the weight of an object being moved along an aerodrome surface with contamination and the force that maintains contact between the object and that surface.
+               </td>
+               <td>
+                <a href="Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isExtremeDesposit">
+                 isExtremeDesposit
+                </a>
+               </td>
+               <td>
+                Indication that the surface contamination has extreme consequences.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#frictionEstimation">
+                 frictionEstimation
+                </a>
+               </td>
+               <td>
+                A qualitative estimate of the friction on an aerodrome surface with contamination.
+               </td>
+               <td>
+                <a href="CodeFrictionEstimateType.html">
+                 CodeFrictionEstimateType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#frictionDevice">
+                 frictionDevice
+                </a>
+               </td>
+               <td>
+                The type of equipment used to determine the friction coefficient of an aerodrome surface with contamination.
+               </td>
+               <td>
+                <a href="CodeFrictionDeviceType.html">
+                 CodeFrictionDeviceType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="hasObscuredLights" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@hasObscuredLights">
+              hasObscuredLights
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@hasObscuredLights
+             </code>
+             <p>
+              Indicates that the surface lights are obscured by surface contamination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#hasObscuredLightscollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="hasObscuredLightscollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#obscuredLights" target="_blank" title="SurfaceContamination.obscuredLights">
+                   obscuredLights
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="layer" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@layer">
+              layer
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@layer
+             </code>
+             <p>
+              A layer of contaminant.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="SurfaceContaminationLayer.html">
+                SurfaceContaminationLayer
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="layercollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#layer" target="_blank" title="SurfaceContamination.layer">
+                   layer
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="nextObservationTime" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@nextObservationTime">
+              nextObservationTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@nextObservationTime
+             </code>
+             <p>
+              The date and time of the next intended measurement of conditions on an aerodrome surface.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#nextObservationTimecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="nextObservationTimecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#nextObservation(string) Time" target="_blank" title="SurfaceContamination.nextObservationTime">
+                   nextObservation(string) Time
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="observationTime" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@observationTime">
+              observationTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@observationTime
+             </code>
+             <p>
+              The date and time of surface contamination measurement completion.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#observationTimecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="observationTimecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#observation(string) Time" target="_blank" title="SurfaceContamination.observationTime">
+                   observation(string) Time
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isFurtherTotalClearanceExpected" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@isFurtherTotalClearanceExpected">
+              isFurtherTotalClearanceExpected
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@isFurtherTotalClearanceExpected
+             </code>
+             <p>
+              Indicates that further total clearance of an aerodrome surface with contamination is expected.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isFurtherTotalClearanceExpectedcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isFurtherTotalClearanceExpectedcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#furtherTotalClearance" target="_blank" title="SurfaceContamination.furtherTotalClearance">
+                   furtherTotalClearance
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="wasCleared" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@wasCleared">
+              wasCleared
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@wasCleared
+             </code>
+             <p>
+              Indication that the surface was cleared.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="furtherClearanceTime" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@furtherClearanceTime">
+              furtherClearanceTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@furtherClearanceTime
+             </code>
+             <p>
+              The time when it is expected to complete further clearance of an aerodrome surface with contamination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#furtherClearanceTimecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="furtherClearanceTimecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#furtherClearance(string) Time" target="_blank" title="SurfaceContamination.furtherClearanceTime">
+                   furtherClearance(string) Time
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="criticalRidge" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@criticalRidge">
+              criticalRidge
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@criticalRidge
+             </code>
+             <p>
+              A ridge or bank of contaminant that might affect operations.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Ridge.html">
+                Ridge
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#criticalRidgecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="criticalRidgecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#criticalRidge" target="_blank" title="SurfaceContamination.criticalRidge">
+                   criticalRidge
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="proportion" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@proportion">
+              proportion
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@proportion
+             </code>
+             <p>
+              The percentage of the contaminated area of the overall extent of the surface.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#proportioncollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="proportioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#proportion" target="_blank" title="SurfaceContamination.proportion">
+                   proportion
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isEstimatedSurfaceFrictionUnreliable" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@isEstimatedSurfaceFrictionUnreliable">
+              isEstimatedSurfaceFrictionUnreliable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@isEstimatedSurfaceFrictionUnreliable
+             </code>
+             <p>
+              Indication that the estimated surface friction is unreliable and is not reported.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="depth" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@depth">
+              depth
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@depth
+             </code>
+             <p>
+              The depth of the contamination on the surface.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#depthcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="depthcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#depth" target="_blank" title="SurfaceContamination.depth">
+                   depth
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="frictionCoefficient" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@frictionCoefficient">
+              frictionCoefficient
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@frictionCoefficient
+             </code>
+             <p>
+              The average ratio of the weight of an object being moved along an aerodrome surface with contamination and the force that maintains contact between the object and that surface.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#frictionCoefficientcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="frictionCoefficientcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#frictionCoefficient" target="_blank" title="SurfaceContamination.frictionCoefficient">
+                   frictionCoefficient
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isExtremeDesposit" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@isExtremeDesposit">
+              isExtremeDesposit
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@isExtremeDesposit
+             </code>
+             <p>
+              Indication that the surface contamination has extreme consequences.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="frictionEstimation" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@frictionEstimation">
+              frictionEstimation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@frictionEstimation
+             </code>
+             <p>
+              A qualitative estimate of the friction on an aerodrome surface with contamination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeFrictionEstimateType.html">
+                CodeFrictionEstimateType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#frictionEstimationcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="frictionEstimationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#frictionEstimation" target="_blank" title="SurfaceContamination.frictionEstimation">
+                   frictionEstimation
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="frictionDevice" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@frictionDevice">
+              frictionDevice
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:SurfaceContamination@frictionDevice
+             </code>
+             <p>
+              The type of equipment used to determine the friction coefficient of an aerodrome surface with contamination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeFrictionDeviceType.html">
+                CodeFrictionDeviceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#frictionDevicecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="frictionDevicecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SurfaceContamination.html#frictionDevice" target="_blank" title="SurfaceContamination.frictionDevice">
+                   frictionDevice
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

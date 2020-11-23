@@ -153,88 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL-FAA WXXM v.1.1
+              <a href="CodeWeatherConditionType.html">
+               CodeWeatherConditionType
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              hasNoSignificantWeather
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              changeIndicator
-             </span>
-             <a href="CodeChangeIndicatorType.html">
-              CodeChangeIndicatorType
-             </a>
-             <br/>
-             <span>
-              confidence
-             </span>
-             <a href="Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              weatherInformationSource
-             </span>
-             <a href="WeatherInformationSource.html">
-              WeatherInformationSource
-             </a>
-             <br/>
-             <span>
-              phenomenon
-             </span>
-             <a href="WeatherPhenomenon.html">
-              WeatherPhenomenon
-             </a>
-             <br/>
-             <span>
-              contour
-             </span>
-             <a href="Contour.html">
-              Contour
-             </a>
-             <br/>
-             <span>
-              probability
-             </span>
-             <a href="Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              analysisTime
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="CodeWeatherConditionType.html">
-              CodeWeatherConditionType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -253,12 +177,373 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#hasNoSignificantWeather">
+                 hasNoSignificantWeather
+                </a>
+               </td>
+               <td>
+                Indication that no specified en-route weather phenomena which may affect the safety of aircraft operations is occurring or expected to occur.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of weather condition being reported.
+               </td>
+               <td>
+                <a href="CodeWeatherConditionType.html">
+                 CodeWeatherConditionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#analysisTime">
+                 analysisTime
+                </a>
+               </td>
+               <td>
+                The time at which the forecast or observation process starts.
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#probability">
+                 probability
+                </a>
+               </td>
+               <td>
+                Relative likelihood of a forecast expressed as a percentage.
+               </td>
+               <td>
+                <a href="Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#contour">
+                 contour
+                </a>
+               </td>
+               <td>
+                A contour used to outline a particular weather situation within the forecast or observation.
+               </td>
+               <td>
+                <a href="Contour.html">
+                 Contour
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#phenomenon">
+                 phenomenon
+                </a>
+               </td>
+               <td>
+                The phenomenon of relevance for the weather condition.
+               </td>
+               <td>
+                <a href="WeatherPhenomenon.html">
+                 WeatherPhenomenon
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#weatherInformationSource">
+                 weatherInformationSource
+                </a>
+               </td>
+               <td>
+                The weather information source.
+               </td>
+               <td>
+                <a href="WeatherInformationSource.html">
+                 WeatherInformationSource
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#confidence">
+                 confidence
+                </a>
+               </td>
+               <td>
+                Quality of trusting for a forecast expressed as a percentage.
+               </td>
+               <td>
+                <a href="Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#changeIndicator">
+                 changeIndicator
+                </a>
+               </td>
+               <td>
+                Indication about the type of meteorological conditions changes.
+               </td>
+               <td>
+                <a href="CodeChangeIndicatorType.html">
+                 CodeChangeIndicatorType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="hasNoSignificantWeather" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@hasNoSignificantWeather">
+              hasNoSignificantWeather
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@hasNoSignificantWeather
+             </code>
+             <p>
+              Indication that no specified en-route weather phenomena which may affect the safety of aircraft operations is occurring or expected to occur.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@type
+             </code>
+             <p>
+              The type of weather condition being reported.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="analysisTime" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@analysisTime">
+              analysisTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@analysisTime
+             </code>
+             <p>
+              The time at which the forecast or observation process starts.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="probability" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@probability">
+              probability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@probability
+             </code>
+             <p>
+              Relative likelihood of a forecast expressed as a percentage.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="contour" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@contour">
+              contour
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@contour
+             </code>
+             <p>
+              A contour used to outline a particular weather situation within the forecast or observation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Contour.html">
+                Contour
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="phenomenon" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@phenomenon">
+              phenomenon
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@phenomenon
+             </code>
+             <p>
+              The phenomenon of relevance for the weather condition.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="WeatherPhenomenon.html">
+                WeatherPhenomenon
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="weatherInformationSource" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@weatherInformationSource">
+              weatherInformationSource
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@weatherInformationSource
+             </code>
+             <p>
+              The weather information source.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="WeatherInformationSource.html">
+                WeatherInformationSource
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="confidence" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@confidence">
+              confidence
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@confidence
+             </code>
+             <p>
+              Quality of trusting for a forecast expressed as a percentage.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="changeIndicator" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@changeIndicator">
+              changeIndicator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherCondition@changeIndicator
+             </code>
+             <p>
+              Indication about the type of meteorological conditions changes.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeChangeIndicatorType.html">
+                CodeChangeIndicatorType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

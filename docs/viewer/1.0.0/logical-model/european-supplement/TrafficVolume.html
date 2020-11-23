@@ -161,102 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL ATM Lexicon
+              <a href="european-supplement/CharacterString.html">
+               CharacterString
+              </a>
              </span>
-             <br/>
-             <b>
-              Abbreviations:
-             </b>
-             <span>
-              TFV
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              linkedFlow
-             </span>
-             <a href="european-supplement/Flow.html">
-              Flow
-             </a>
-             <br/>
-             <span>
-              hotspot
-             </span>
-             <a href="european-supplement/ATFMHotspot.html">
-              ATFMHotspot
-             </a>
-             <br/>
-             <span>
-              capacity
-             </span>
-             <a href="european-supplement/Capacity.html">
-              Capacity
-             </a>
-             <br/>
-             <span>
-              otmv
-             </span>
-             <a href="european-supplement/OccupancyTrafficMonitoringValue.html">
-              OccupancyTrafficMonitoringValue
-             </a>
-             <br/>
-             <span>
-              referenceLocation
-             </span>
-             <a href="european-supplement/ReferenceLocation.html">
-              ReferenceLocation
-             </a>
-             <br/>
-             <span>
-              filteredFlight
-             </span>
-             <a href="european-supplement/Flight.html">
-              Flight
-             </a>
-             <br/>
-             <span>
-              activation
-             </span>
-             <a href="european-supplement/TrafficVolumeActivation.html">
-              TrafficVolumeActivation
-             </a>
-             <br/>
-             <span>
-              tfvSet
-             </span>
-             <a href="european-supplement/TrafficVolumeSet.html">
-              TrafficVolumeSet
-             </a>
-             <br/>
-             <span>
-              isMonitorable
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              designator
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -275,12 +185,414 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#linkedFlow">
+                 linkedFlow
+                </a>
+               </td>
+               <td>
+                A flow which is lined to the traffic volume.
+               </td>
+               <td>
+                <a href="european-supplement/Flow.html">
+                 Flow
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designator">
+                 designator
+                </a>
+               </td>
+               <td>
+                Designator of the traffic volume as defined by the Network Manager.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isMonitorable">
+                 isMonitorable
+                </a>
+               </td>
+               <td>
+                Indicates whether the Traffic Volume shall be monitored (i.e. when the sector is active in a sector configuration).
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#tfvSet">
+                 tfvSet
+                </a>
+               </td>
+               <td>
+                Traffic volume set to which the traffic volume belongs.
+               </td>
+               <td>
+                <a href="european-supplement/TrafficVolumeSet.html">
+                 TrafficVolumeSet
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#activation">
+                 activation
+                </a>
+               </td>
+               <td>
+                The times during which the traffic volume is active.
+               </td>
+               <td>
+                <a href="european-supplement/TrafficVolumeActivation.html">
+                 TrafficVolumeActivation
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#filteredFlight">
+                 filteredFlight
+                </a>
+               </td>
+               <td>
+                Flight that satisfies the criteria of the traffic volume.
+               </td>
+               <td>
+                <a href="european-supplement/Flight.html">
+                 Flight
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#referenceLocation">
+                 referenceLocation
+                </a>
+               </td>
+               <td>
+                Location where the traffic volume is situated.
+               </td>
+               <td>
+                <a href="european-supplement/ReferenceLocation.html">
+                 ReferenceLocation
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#otmv">
+                 otmv
+                </a>
+               </td>
+               <td>
+                The occupancy traffic monitoring value of the traffic volume.
+               </td>
+               <td>
+                <a href="european-supplement/OccupancyTrafficMonitoringValue.html">
+                 OccupancyTrafficMonitoringValue
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#capacity">
+                 capacity
+                </a>
+               </td>
+               <td>
+                The capacity of the traffic volume.
+               </td>
+               <td>
+                <a href="european-supplement/Capacity.html">
+                 Capacity
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#hotspot">
+                 hotspot
+                </a>
+               </td>
+               <td>
+                ATFM hotspot related to the traffic volume.
+               </td>
+               <td>
+                <a href="european-supplement/ATFMHotspot.html">
+                 ATFMHotspot
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="linkedFlow" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@linkedFlow">
+              linkedFlow
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@linkedFlow
+             </code>
+             <p>
+              A flow which is lined to the traffic volume.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Flow.html">
+                Flow
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="designator" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@designator">
+              designator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@designator
+             </code>
+             <p>
+              Designator of the traffic volume as defined by the Network Manager.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isMonitorable" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@isMonitorable">
+              isMonitorable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@isMonitorable
+             </code>
+             <p>
+              Indicates whether the Traffic Volume shall be monitored (i.e. when the sector is active in a sector configuration).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="tfvSet" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@tfvSet">
+              tfvSet
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@tfvSet
+             </code>
+             <p>
+              Traffic volume set to which the traffic volume belongs.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TrafficVolumeSet.html">
+                TrafficVolumeSet
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="activation" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@activation">
+              activation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@activation
+             </code>
+             <p>
+              The times during which the traffic volume is active.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TrafficVolumeActivation.html">
+                TrafficVolumeActivation
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="filteredFlight" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@filteredFlight">
+              filteredFlight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@filteredFlight
+             </code>
+             <p>
+              Flight that satisfies the criteria of the traffic volume.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Flight.html">
+                Flight
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="referenceLocation" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@referenceLocation">
+              referenceLocation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@referenceLocation
+             </code>
+             <p>
+              Location where the traffic volume is situated.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ReferenceLocation.html">
+                ReferenceLocation
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="otmv" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@otmv">
+              otmv
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@otmv
+             </code>
+             <p>
+              The occupancy traffic monitoring value of the traffic volume.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/OccupancyTrafficMonitoringValue.html">
+                OccupancyTrafficMonitoringValue
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="capacity" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@capacity">
+              capacity
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@capacity
+             </code>
+             <p>
+              The capacity of the traffic volume.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Capacity.html">
+                Capacity
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="hotspot" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@hotspot">
+              hotspot
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:TrafficVolume@hotspot
+             </code>
+             <p>
+              ATFM hotspot related to the traffic volume.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ATFMHotspot.html">
+                ATFMHotspot
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

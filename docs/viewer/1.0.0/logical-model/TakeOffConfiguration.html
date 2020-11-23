@@ -153,102 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="CrewMember.html">
+               CrewMember
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="FlightConfiguration.html">
-              FlightConfiguration
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              estimatedTakeOffWeight
-             </span>
-             <a href="ValWeightType.html">
-              ValWeightType
-             </a>
-             <br/>
-             <span>
-              personsOnBoard
-             </span>
-             <a href="Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              isPassenger
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isCargo
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              cargoWeight
-             </span>
-             <a href="ValMassType.html">
-              ValMassType
-             </a>
-             <br/>
-             <span>
-              numberOfPassengers
-             </span>
-             <a href="Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              takeOffWeight
-             </span>
-             <a href="ValMassType.html">
-              ValMassType
-             </a>
-             <br/>
-             <span>
-              flight
-             </span>
-             <a href="Flight.html">
-              Flight
-             </a>
-             <br/>
-             <span>
-              constraint
-             </span>
-             <a href="OperatorConfiguration.html">
-              OperatorConfiguration
-             </a>
-             <br/>
-             <span>
-              numberOfTrafficUnits
-             </span>
-             <a href="Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              crewMember
-             </span>
-             <a href="CrewMember.html">
-              CrewMember
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -267,12 +177,521 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#estimatedTakeOffWeight">
+                 estimatedTakeOffWeight
+                </a>
+               </td>
+               <td>
+                The weight of the aircraft at the beginning of the take-off phase.
+               </td>
+               <td>
+                <a href="ValWeightType.html">
+                 ValWeightType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#crewMember">
+                 crewMember
+                </a>
+               </td>
+               <td>
+                Crew member onboard the aircraft.
+               </td>
+               <td>
+                <a href="CrewMember.html">
+                 CrewMember
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#numberOfTrafficUnits">
+                 numberOfTrafficUnits
+                </a>
+               </td>
+               <td>
+                Number of traffic units for the flight. One traffic unit is equivalent to one passenger or 100Kg air freight or 10 kg air mail.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#constraint">
+                 constraint
+                </a>
+               </td>
+               <td>
+                A constraint on the flight configuration caused by the operator's configuration.
+               </td>
+               <td>
+                <a href="OperatorConfiguration.html">
+                 OperatorConfiguration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flight">
+                 flight
+                </a>
+               </td>
+               <td>
+                The flight for which the configuration applies.
+               </td>
+               <td>
+                <a href="Flight.html">
+                 Flight
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#takeOffWeight">
+                 takeOffWeight
+                </a>
+               </td>
+               <td>
+                The weight of the aircraft at the beginning of the take-off phase.
+               </td>
+               <td>
+                <a href="ValMassType.html">
+                 ValMassType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#numberOfPassengers">
+                 numberOfPassengers
+                </a>
+               </td>
+               <td>
+                The number of passenger for the flight.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cargoWeight">
+                 cargoWeight
+                </a>
+               </td>
+               <td>
+                The weight of the cargo of the flight.
+               </td>
+               <td>
+                <a href="ValMassType.html">
+                 ValMassType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isCargo">
+                 isCargo
+                </a>
+               </td>
+               <td>
+                Whether the aircraft has cargo onboard at take-off.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isPassenger">
+                 isPassenger
+                </a>
+               </td>
+               <td>
+                Whether the aircraft has passengers onboard at take-off.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#personsOnBoard">
+                 personsOnBoard
+                </a>
+               </td>
+               <td>
+                The total number of persons (passengers and crew) on board.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="estimatedTakeOffWeight" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@estimatedTakeOffWeight">
+              estimatedTakeOffWeight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@estimatedTakeOffWeight
+             </code>
+             <p>
+              The weight of the aircraft at the beginning of the take-off phase.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValWeightType.html">
+                ValWeightType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="crewMember" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@crewMember">
+              crewMember
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@crewMember
+             </code>
+             <p>
+              Crew member onboard the aircraft.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="numberOfTrafficUnits" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@numberOfTrafficUnits">
+              numberOfTrafficUnits
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@numberOfTrafficUnits
+             </code>
+             <p>
+              Number of traffic units for the flight. One traffic unit is equivalent to one passenger or 100Kg air freight or 10 kg air mail.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="constraint" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@constraint">
+              constraint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@constraint
+             </code>
+             <p>
+              A constraint on the flight configuration caused by the operator's configuration.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="OperatorConfiguration.html">
+                OperatorConfiguration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="flight" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@flight">
+              flight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@flight
+             </code>
+             <p>
+              The flight for which the configuration applies.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Flight.html">
+                Flight
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="takeOffWeight" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@takeOffWeight">
+              takeOffWeight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@takeOffWeight
+             </code>
+             <p>
+              The weight of the aircraft at the beginning of the take-off phase.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValMassType.html">
+                ValMassType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#takeOffWeightcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="takeOffWeightcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/RouteTrajectoryGroupType.html#takeoffMass" target="_blank" title="fx:RouteTrajectoryGroupType:takeoffMass">
+                   takeoffMass
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="numberOfPassengers" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@numberOfPassengers">
+              numberOfPassengers
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@numberOfPassengers
+             </code>
+             <p>
+              The number of passenger for the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="cargoWeight" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@cargoWeight">
+              cargoWeight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@cargoWeight
+             </code>
+             <p>
+              The weight of the cargo of the flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValMassType.html">
+                ValMassType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isCargo" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@isCargo">
+              isCargo
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@isCargo
+             </code>
+             <p>
+              Whether the aircraft has cargo onboard at take-off.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isPassenger" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@isPassenger">
+              isPassenger
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@isPassenger
+             </code>
+             <p>
+              Whether the aircraft has passengers onboard at take-off.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="personsOnBoard" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@personsOnBoard">
+              personsOnBoard
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:TakeOffConfiguration@personsOnBoard
+             </code>
+             <p>
+              The total number of persons (passengers and crew) on board.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#personsOnBoardcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="personsOnBoardcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/SupplementaryDataType.html#personsOnBoard" target="_blank" title="fx:SupplementaryDataType:personsOnBoard">
+                   personsOnBoard
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

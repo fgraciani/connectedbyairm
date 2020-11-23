@@ -414,7 +414,7 @@ def create_pages_logical_concepts():
             for entry in connections:
               #print('\t\t\t'+line)
               tr = soup.new_tag("tr")
-              if entry["model_name"] == "FIXM 4.2.0":
+              if entry["model_name"] == "FIXM 4.2.0" and entry["concept_name"] != 'missing data':
                 td = soup.new_tag("td")
                 url = "../../../developers/fixm-4.2.0-to-airm-1.0.0.html"
                 text = "FIXM 4.2.0"
@@ -426,6 +426,8 @@ def create_pages_logical_concepts():
                 tr.insert(1,td)
                 td = soup.new_tag("td")
                 parts = str(entry["concept_id"]).split(":")
+                print("PARTS:")
+                print(parts)
                 url = "../../../developers/fixm-4.2.0-to-airm-1.0.0/"+parts[1]+".html#"+entry["concept_name"]
                 text = entry["concept_name"]
                 a = soup.new_tag("a")

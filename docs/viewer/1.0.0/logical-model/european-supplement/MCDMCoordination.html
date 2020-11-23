@@ -161,123 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/Boolean.html">
+               Boolean
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              coordinationStatus
-             </span>
-             <a href="european-supplement/CodeMCDMCoordinationStatusType.html">
-              CodeMCDMCoordinationStatusType
-             </a>
-             <br/>
-             <span>
-              timeToCoordinate
-             </span>
-             <a href="european-supplement/DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              timeToImplement
-             </span>
-             <a href="european-supplement/DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              timeToStartImplementation
-             </span>
-             <a href="european-supplement/DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              actedUponFlight
-             </span>
-             <a href="european-supplement/Flight.html">
-              Flight
-             </a>
-             <br/>
-             <span>
-              actor
-             </span>
-             <a href="european-supplement/MCDMCoordinationActor.html">
-              MCDMCoordinationActor
-             </a>
-             <br/>
-             <span>
-              initiator
-             </span>
-             <a href="european-supplement/Unit.html">
-              Unit
-             </a>
-             <br/>
-             <span>
-              involvedUserCategory
-             </span>
-             <a href="european-supplement/MCDMCoordinationUserCategoryInvolvement.html">
-              MCDMCoordinationUserCategoryInvolvement
-             </a>
-             <br/>
-             <span>
-              coordinatedMeasure
-             </span>
-             <a href="european-supplement/ATFMMeasure.html">
-              ATFMMeasure
-             </a>
-             <br/>
-             <span>
-              isInitiatorImplementer
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              sourceHotspot
-             </span>
-             <a href="european-supplement/ATFMHotspot.html">
-              ATFMHotspot
-             </a>
-             <br/>
-             <span>
-              actionOnFlight
-             </span>
-             <a href="european-supplement/MCDMCoordination.html">
-              MCDMCoordination
-             </a>
-             <br/>
-             <span>
-              coordinationLevel
-             </span>
-             <a href="european-supplement/CodeMCDMCoordinationLevelType.html">
-              CodeMCDMCoordinationLevelType
-             </a>
-             <br/>
-             <span>
-              hasLocalImpactOnly
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -296,12 +185,578 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#coordinationStatus">
+                 coordinationStatus
+                </a>
+               </td>
+               <td>
+                The status of the MCDM coordination.
+               </td>
+               <td>
+                <a href="european-supplement/CodeMCDMCoordinationStatusType.html">
+                 CodeMCDMCoordinationStatusType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#hasLocalImpactOnly">
+                 hasLocalImpactOnly
+                </a>
+               </td>
+               <td>
+                Indication whether the MCDMCoordination has local impact only and therefore involves only adjacent (upstream/downstream) FMPs instead of all FMPs along the flight path.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#coordinationLevel">
+                 coordinationLevel
+                </a>
+               </td>
+               <td>
+                The level at which the coordination is being done.
+               </td>
+               <td>
+                <a href="european-supplement/CodeMCDMCoordinationLevelType.html">
+                 CodeMCDMCoordinationLevelType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#actionOnFlight">
+                 actionOnFlight
+                </a>
+               </td>
+               <td>
+                Coordination at the level of a flight within the coordination at measure level.
+               </td>
+               <td>
+                <a href="european-supplement/MCDMCoordination.html">
+                 MCDMCoordination
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#sourceHotspot">
+                 sourceHotspot
+                </a>
+               </td>
+               <td>
+                ATFM hotspot at the origin of the MCDM coordination.
+               </td>
+               <td>
+                <a href="european-supplement/ATFMHotspot.html">
+                 ATFMHotspot
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isInitiatorImplementer">
+                 isInitiatorImplementer
+                </a>
+               </td>
+               <td>
+                Indication whether the initiator of the coordination is the implementer.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#coordinatedMeasure">
+                 coordinatedMeasure
+                </a>
+               </td>
+               <td>
+                ATFM measure in the context of which the coordination is done.
+               </td>
+               <td>
+                <a href="european-supplement/ATFMMeasure.html">
+                 ATFMMeasure
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#involvedUserCategory">
+                 involvedUserCategory
+                </a>
+               </td>
+               <td>
+                A category of users involved in a coordination for an ATFM measure.
+               </td>
+               <td>
+                <a href="european-supplement/MCDMCoordinationUserCategoryInvolvement.html">
+                 MCDMCoordinationUserCategoryInvolvement
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#initiator">
+                 initiator
+                </a>
+               </td>
+               <td>
+                The initiator of the MCDM coordination
+               </td>
+               <td>
+                <a href="european-supplement/Unit.html">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#actor">
+                 actor
+                </a>
+               </td>
+               <td>
+                A role that a user plays within the MCDM topic.
+               </td>
+               <td>
+                <a href="european-supplement/MCDMCoordinationActor.html">
+                 MCDMCoordinationActor
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#actedUponFlight">
+                 actedUponFlight
+                </a>
+               </td>
+               <td>
+                Flight being acted upon by the MCDM coordination at flight level.
+               </td>
+               <td>
+                <a href="european-supplement/Flight.html">
+                 Flight
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timeToStartImplementation">
+                 timeToStartImplementation
+                </a>
+               </td>
+               <td>
+                The deadline to start the implementation activities.
+               </td>
+               <td>
+                <a href="european-supplement/DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timeToImplement">
+                 timeToImplement
+                </a>
+               </td>
+               <td>
+                The deadline to finish the implementation activities.
+               </td>
+               <td>
+                <a href="european-supplement/DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timeToCoordinate">
+                 timeToCoordinate
+                </a>
+               </td>
+               <td>
+                The deadline to finish the coordination activities.
+               </td>
+               <td>
+                <a href="european-supplement/DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="coordinationStatus" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@coordinationStatus">
+              coordinationStatus
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@coordinationStatus
+             </code>
+             <p>
+              The status of the MCDM coordination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeMCDMCoordinationStatusType.html">
+                CodeMCDMCoordinationStatusType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="hasLocalImpactOnly" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@hasLocalImpactOnly">
+              hasLocalImpactOnly
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@hasLocalImpactOnly
+             </code>
+             <p>
+              Indication whether the MCDMCoordination has local impact only and therefore involves only adjacent (upstream/downstream) FMPs instead of all FMPs along the flight path.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="coordinationLevel" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@coordinationLevel">
+              coordinationLevel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@coordinationLevel
+             </code>
+             <p>
+              The level at which the coordination is being done.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeMCDMCoordinationLevelType.html">
+                CodeMCDMCoordinationLevelType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="actionOnFlight" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@actionOnFlight">
+              actionOnFlight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@actionOnFlight
+             </code>
+             <p>
+              Coordination at the level of a flight within the coordination at measure level.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/MCDMCoordination.html">
+                MCDMCoordination
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="sourceHotspot" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@sourceHotspot">
+              sourceHotspot
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@sourceHotspot
+             </code>
+             <p>
+              ATFM hotspot at the origin of the MCDM coordination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ATFMHotspot.html">
+                ATFMHotspot
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isInitiatorImplementer" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@isInitiatorImplementer">
+              isInitiatorImplementer
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@isInitiatorImplementer
+             </code>
+             <p>
+              Indication whether the initiator of the coordination is the implementer.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="coordinatedMeasure" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@coordinatedMeasure">
+              coordinatedMeasure
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@coordinatedMeasure
+             </code>
+             <p>
+              ATFM measure in the context of which the coordination is done.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ATFMMeasure.html">
+                ATFMMeasure
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="involvedUserCategory" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@involvedUserCategory">
+              involvedUserCategory
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@involvedUserCategory
+             </code>
+             <p>
+              A category of users involved in a coordination for an ATFM measure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/MCDMCoordinationUserCategoryInvolvement.html">
+                MCDMCoordinationUserCategoryInvolvement
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="initiator" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@initiator">
+              initiator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@initiator
+             </code>
+             <p>
+              The initiator of the MCDM coordination
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Unit.html">
+                Unit
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="actor" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@actor">
+              actor
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@actor
+             </code>
+             <p>
+              A role that a user plays within the MCDM topic.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/MCDMCoordinationActor.html">
+                MCDMCoordinationActor
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="actedUponFlight" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@actedUponFlight">
+              actedUponFlight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@actedUponFlight
+             </code>
+             <p>
+              Flight being acted upon by the MCDM coordination at flight level.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Flight.html">
+                Flight
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="timeToStartImplementation" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@timeToStartImplementation">
+              timeToStartImplementation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@timeToStartImplementation
+             </code>
+             <p>
+              The deadline to start the implementation activities.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="timeToImplement" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@timeToImplement">
+              timeToImplement
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@timeToImplement
+             </code>
+             <p>
+              The deadline to finish the implementation activities.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="timeToCoordinate" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@timeToCoordinate">
+              timeToCoordinate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination@timeToCoordinate
+             </code>
+             <p>
+              The deadline to finish the coordination activities.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

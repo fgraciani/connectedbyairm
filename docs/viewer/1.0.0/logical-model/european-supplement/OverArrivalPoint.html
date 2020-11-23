@@ -161,88 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/InfrastructurePoint.html">
+               InfrastructurePoint
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/OverPoint.html">
-              OverPoint
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              horizonPoint
-             </span>
-             <a href="european-supplement/InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              landingThresholdPoint
-             </span>
-             <a href="european-supplement/InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              finalApproachFix
-             </span>
-             <a href="european-supplement/InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              initialApproachFix
-             </span>
-             <a href="european-supplement/InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              meteringFix
-             </span>
-             <a href="european-supplement/InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              arrivalManagementHorizon
-             </span>
-             <a href="european-supplement/ArrivalManagementHorizon.html">
-              ArrivalManagementHorizon
-             </a>
-             <br/>
-             <span>
-              cta
-             </span>
-             <a href="european-supplement/ControlledTimeOver.html">
-              ControlledTimeOver
-             </a>
-             <br/>
-             <span>
-              holdingExitPoint
-             </span>
-             <a href="european-supplement/InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              initialMeteringFix
-             </span>
-             <a href="european-supplement/InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -261,12 +185,373 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#horizonPoint">
+                 horizonPoint
+                </a>
+               </td>
+               <td>
+                The point of the arrival management horizon used by the flight. This applies in particular where the horizon is defined by airspace boundaries.
+               </td>
+               <td>
+                <a href="european-supplement/InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#initialMeteringFix">
+                 initialMeteringFix
+                </a>
+               </td>
+               <td>
+                A point on a route at which flights can be pre-sequenced for an arrival-managed airport.
+               </td>
+               <td>
+                <a href="european-supplement/InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#holdingExitPoint">
+                 holdingExitPoint
+                </a>
+               </td>
+               <td>
+                Published holding fix overflown to exit stack and begin approach.
+               </td>
+               <td>
+                <a href="european-supplement/InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cta">
+                 cta
+                </a>
+               </td>
+               <td>
+                The CTA constraint associated with the over arrival point event.
+               </td>
+               <td>
+                <a href="european-supplement/ControlledTimeOver.html">
+                 ControlledTimeOver
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#arrivalManagementHorizon">
+                 arrivalManagementHorizon
+                </a>
+               </td>
+               <td>
+                The arrival management horizon in effect for this flight. This applies in particular when the horizon is defined in terms of time of flight, so that the point in question is defined implicitly.
+               </td>
+               <td>
+                <a href="european-supplement/ArrivalManagementHorizon.html">
+                 ArrivalManagementHorizon
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#meteringFix">
+                 meteringFix
+                </a>
+               </td>
+               <td>
+                A reference point over which traffic is metered, i.e measured and/or spaced in time.
+               </td>
+               <td>
+                <a href="european-supplement/InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#initialApproachFix">
+                 initialApproachFix
+                </a>
+               </td>
+               <td>
+                A fix that marks the beginning of the initial segment and the end of the arrival segment, if applicable. In RNAV applications this fix is normally defined by a fly-by waypoint.
+               </td>
+               <td>
+                <a href="european-supplement/InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#finalApproachFix">
+                 finalApproachFix
+                </a>
+               </td>
+               <td>
+                That fix or point of an instrument approach procedure where the final approach segment commences.
+               </td>
+               <td>
+                <a href="european-supplement/InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#landingThresholdPoint">
+                 landingThresholdPoint
+                </a>
+               </td>
+               <td>
+                The LTP is a point over which the glide path passes at a relative height specified by the reference datum height. It is defined by the WGS-84 latitude, longitude and ellipsoid height. The LTP is normally located at the intersection of the runway centreline and threshold.
+               </td>
+               <td>
+                <a href="european-supplement/InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="horizonPoint" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@horizonPoint">
+              horizonPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@horizonPoint
+             </code>
+             <p>
+              The point of the arrival management horizon used by the flight. This applies in particular where the horizon is defined by airspace boundaries.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="initialMeteringFix" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@initialMeteringFix">
+              initialMeteringFix
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@initialMeteringFix
+             </code>
+             <p>
+              A point on a route at which flights can be pre-sequenced for an arrival-managed airport.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="holdingExitPoint" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@holdingExitPoint">
+              holdingExitPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@holdingExitPoint
+             </code>
+             <p>
+              Published holding fix overflown to exit stack and begin approach.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="cta" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@cta">
+              cta
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@cta
+             </code>
+             <p>
+              The CTA constraint associated with the over arrival point event.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ControlledTimeOver.html">
+                ControlledTimeOver
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="arrivalManagementHorizon" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@arrivalManagementHorizon">
+              arrivalManagementHorizon
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@arrivalManagementHorizon
+             </code>
+             <p>
+              The arrival management horizon in effect for this flight. This applies in particular when the horizon is defined in terms of time of flight, so that the point in question is defined implicitly.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ArrivalManagementHorizon.html">
+                ArrivalManagementHorizon
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="meteringFix" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@meteringFix">
+              meteringFix
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@meteringFix
+             </code>
+             <p>
+              A reference point over which traffic is metered, i.e measured and/or spaced in time.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="initialApproachFix" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@initialApproachFix">
+              initialApproachFix
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@initialApproachFix
+             </code>
+             <p>
+              A fix that marks the beginning of the initial segment and the end of the arrival segment, if applicable. In RNAV applications this fix is normally defined by a fly-by waypoint.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="finalApproachFix" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@finalApproachFix">
+              finalApproachFix
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@finalApproachFix
+             </code>
+             <p>
+              That fix or point of an instrument approach procedure where the final approach segment commences.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="landingThresholdPoint" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@landingThresholdPoint">
+              landingThresholdPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:OverArrivalPoint@landingThresholdPoint
+             </code>
+             <p>
+              The LTP is a point over which the glide path passes at a relative height specified by the reference datum height. It is defined by the WGS-84 latitude, longitude and ellipsoid height. The LTP is normally located at the intersection of the runway centreline and threshold.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

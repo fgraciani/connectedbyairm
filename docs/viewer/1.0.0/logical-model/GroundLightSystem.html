@@ -153,109 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL-FAA AIXM v.5.1
+              <a href="ValDistanceType.html">
+               ValDistanceType
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              owner
-             </span>
-             <a href="Organisation.html">
-              Organisation
-             </a>
-             <br/>
-             <span>
-              availability
-             </span>
-             <a href="LightStatus.html">
-              LightStatus
-             </a>
-             <br/>
-             <span>
-              usage
-             </span>
-             <a href="CodeEntityUsageType.html">
-              CodeEntityUsageType
-             </a>
-             <br/>
-             <span>
-              aerodrome
-             </span>
-             <a href="Aerodrome.html">
-              Aerodrome
-             </a>
-             <br/>
-             <span>
-              supportingStructure
-             </span>
-             <a href="VerticalStructure.html">
-              VerticalStructure
-             </a>
-             <br/>
-             <span>
-              distanceToRunwayThreshold
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              element
-             </span>
-             <a href="LightElement.html">
-              LightElement
-             </a>
-             <br/>
-             <span>
-              intensityLevel
-             </span>
-             <a href="CodeLightIntensityType.html">
-              CodeLightIntensityType
-             </a>
-             <br/>
-             <span>
-              pilotControlledLighting
-             </span>
-             <a href="PilotControlledLighting.html">
-              PilotControlledLighting
-             </a>
-             <br/>
-             <span>
-              isEmergencyLightingAvailable
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              colour
-             </span>
-             <a href="CodeColourType.html">
-              CodeColourType
-             </a>
-             <br/>
-             <span>
-              length
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -274,12 +177,673 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#owner">
+                 owner
+                </a>
+               </td>
+               <td>
+                The organisation that owns the ground light system.
+               </td>
+               <td>
+                <a href="Organisation.html">
+                 Organisation
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#length">
+                 length
+                </a>
+               </td>
+               <td>
+                The length of the lighting system.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#colour">
+                 colour
+                </a>
+               </td>
+               <td>
+                An indication of the global colour of the ground lighting system.
+               </td>
+               <td>
+                <a href="CodeColourType.html">
+                 CodeColourType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isEmergencyLightingAvailable">
+                 isEmergencyLightingAvailable
+                </a>
+               </td>
+               <td>
+                The availability of a back-up lighting system to be used in case of failure of the main lighting system.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#pilotControlledLighting">
+                 pilotControlledLighting
+                </a>
+               </td>
+               <td>
+                The PilotControlledLighting service which activates the GroundLightSystem
+               </td>
+               <td>
+                <a href="PilotControlledLighting.html">
+                 PilotControlledLighting
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#intensityLevel">
+                 intensityLevel
+                </a>
+               </td>
+               <td>
+                An indication of the relative intensity of the ground lighting system.
+               </td>
+               <td>
+                <a href="CodeLightIntensityType.html">
+                 CodeLightIntensityType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#element">
+                 element
+                </a>
+               </td>
+               <td>
+                A component of the ground light system.
+               </td>
+               <td>
+                <a href="LightElement.html">
+                 LightElement
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#distanceToRunwayThreshold">
+                 distanceToRunwayThreshold
+                </a>
+               </td>
+               <td>
+                The distance measurement of an identified light system point to the associated runway threshold.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#supportingStructure">
+                 supportingStructure
+                </a>
+               </td>
+               <td>
+                The VerticalStructure which supports the GroundLightSystem
+               </td>
+               <td>
+                <a href="VerticalStructure.html">
+                 VerticalStructure
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodrome">
+                 aerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome at which the ground light system is located.
+               </td>
+               <td>
+                <a href="Aerodrome.html">
+                 Aerodrome
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#usage">
+                 usage
+                </a>
+               </td>
+               <td>
+                A code indicating the usage of an entity.
+               </td>
+               <td>
+                <a href="CodeEntityUsageType.html">
+                 CodeEntityUsageType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#availability">
+                 availability
+                </a>
+               </td>
+               <td>
+                The operational status of the ground light system.
+               </td>
+               <td>
+                <a href="LightStatus.html">
+                 LightStatus
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="owner" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@owner">
+              owner
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@owner
+             </code>
+             <p>
+              The organisation that owns the ground light system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Organisation.html">
+                Organisation
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="length" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@length">
+              length
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@length
+             </code>
+             <p>
+              The length of the lighting system.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="colour" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@colour">
+              colour
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@colour
+             </code>
+             <p>
+              An indication of the global colour of the ground lighting system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeColourType.html">
+                CodeColourType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#colourcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="colourcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/GroundLightSystem.html#colour" target="_blank" title="GroundLightSystem.colour">
+                   colour
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AerodromeSurfaceLighting.html#color" target="_blank" title="AerodromeSurfaceLighting.color">
+                   color
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isEmergencyLightingAvailable" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@isEmergencyLightingAvailable">
+              isEmergencyLightingAvailable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@isEmergencyLightingAvailable
+             </code>
+             <p>
+              The availability of a back-up lighting system to be used in case of failure of the main lighting system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isEmergencyLightingAvailablecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isEmergencyLightingAvailablecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/GroundLightSystem.html#emergencyLighting" target="_blank" title="GroundLightSystem.emergencyLighting">
+                   emergencyLighting
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="pilotControlledLighting" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@pilotControlledLighting">
+              pilotControlledLighting
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@pilotControlledLighting
+             </code>
+             <p>
+              The PilotControlledLighting service which activates the GroundLightSystem
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="PilotControlledLighting.html">
+                PilotControlledLighting
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="intensityLevel" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@intensityLevel">
+              intensityLevel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@intensityLevel
+             </code>
+             <p>
+              An indication of the relative intensity of the ground lighting system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeLightIntensityType.html">
+                CodeLightIntensityType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#intensityLevelcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="intensityLevelcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/GroundLightSystem.html#intensityLevel" target="_blank" title="GroundLightSystem.intensityLevel">
+                   intensityLevel
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="element" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@element">
+              element
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@element
+             </code>
+             <p>
+              A component of the ground light system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="LightElement.html">
+                LightElement
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#elementcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="elementcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/GroundLightSystem.html#element" target="_blank" title="GroundLightSystem.element">
+                   element
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="distanceToRunwayThreshold" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@distanceToRunwayThreshold">
+              distanceToRunwayThreshold
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@distanceToRunwayThreshold
+             </code>
+             <p>
+              The distance measurement of an identified light system point to the associated runway threshold.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="supportingStructure" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@supportingStructure">
+              supportingStructure
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@supportingStructure
+             </code>
+             <p>
+              The VerticalStructure which supports the GroundLightSystem
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="VerticalStructure.html">
+                VerticalStructure
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerodrome" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@aerodrome">
+              aerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@aerodrome
+             </code>
+             <p>
+              The aerodrome at which the ground light system is located.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aerodrome.html">
+                Aerodrome
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="usage" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@usage">
+              usage
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@usage
+             </code>
+             <p>
+              A code indicating the usage of an entity.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeEntityUsageType.html">
+                CodeEntityUsageType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="availability" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@availability">
+              availability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:GroundLightSystem@availability
+             </code>
+             <p>
+              The operational status of the ground light system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="LightStatus.html">
+                LightStatus
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#availabilitycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="availabilitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/GroundLightSystem.html#availability" target="_blank" title="GroundLightSystem.availability">
+                   availability
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

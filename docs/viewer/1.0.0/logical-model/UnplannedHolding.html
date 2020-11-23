@@ -153,53 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              unplannedHolding
-             </span>
-             <a href="CodeApprovalType.html">
-              CodeApprovalType
-             </a>
-             <br/>
-             <span>
-              isCompletelyWithinControlledAirspace
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              holdingFix
-             </span>
-             <a href="InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              authorizedAltitude
-             </span>
-             <a href="ValVerticalDistanceType.html">
-              ValVerticalDistanceType
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#authorizedAltitudecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -218,12 +174,303 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#unplannedHolding">
+                 unplannedHolding
+                </a>
+               </td>
+               <td>
+                Indication whether the holding pattern is used as an unplanned holding.
+               </td>
+               <td>
+                <a href="CodeApprovalType.html">
+                 CodeApprovalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#authorizedAltitude">
+                 authorizedAltitude
+                </a>
+               </td>
+               <td>
+                Approved altitude based on unplanned holding assessment.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#holdingFix">
+                 holdingFix
+                </a>
+               </td>
+               <td>
+                Point used to evaluate safe holding.
+               </td>
+               <td>
+                <a href="InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isCompletelyWithinControlledAirspace">
+                 isCompletelyWithinControlledAirspace
+                </a>
+               </td>
+               <td>
+                Indication whether the unplanned holding is completely contained within controlled airspace.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="unplannedHolding" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:UnplannedHolding@unplannedHolding">
+              unplannedHolding
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:UnplannedHolding@unplannedHolding
+             </code>
+             <p>
+              Indication whether the holding pattern is used as an unplanned holding.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeApprovalType.html">
+                CodeApprovalType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#unplannedHoldingcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="unplannedHoldingcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/UnplannedHolding.html#unplannedHolding" target="_blank" title="UnplannedHolding.unplannedHolding">
+                   unplannedHolding
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="authorizedAltitude" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:UnplannedHolding@authorizedAltitude">
+              authorizedAltitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:UnplannedHolding@authorizedAltitude
+             </code>
+             <p>
+              Approved altitude based on unplanned holding assessment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="authorizedAltitudecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/UnplannedHolding.html#authorizedAltitude" target="_blank" title="UnplannedHolding.authorizedAltitude">
+                   authorizedAltitude
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="holdingFix" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:UnplannedHolding@holdingFix">
+              holdingFix
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:UnplannedHolding@holdingFix
+             </code>
+             <p>
+              Point used to evaluate safe holding.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#holdingFixcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="holdingFixcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/UnplannedHolding.html#holdingPoint" target="_blank" title="UnplannedHolding.holdingPoint">
+                   holdingPoint
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isCompletelyWithinControlledAirspace" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:UnplannedHolding@isCompletelyWithinControlledAirspace">
+              isCompletelyWithinControlledAirspace
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:UnplannedHolding@isCompletelyWithinControlledAirspace
+             </code>
+             <p>
+              Indication whether the unplanned holding is completely contained within controlled airspace.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isCompletelyWithinControlledAirspacecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isCompletelyWithinControlledAirspacecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/UnplannedHolding.html#controlledAirspace" target="_blank" title="UnplannedHolding.controlledAirspace">
+                   controlledAirspace
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

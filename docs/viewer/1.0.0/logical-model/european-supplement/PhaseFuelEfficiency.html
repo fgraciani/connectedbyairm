@@ -161,81 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/CodeFlightPhaseType.html">
+               CodeFlightPhaseType
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              averageFuelBurn
-             </span>
-             <a href="european-supplement/ValMassType.html">
-              ValMassType
-             </a>
-             <br/>
-             <span>
-              airspace
-             </span>
-             <a href="european-supplement/Airspace.html">
-              Airspace
-             </a>
-             <br/>
-             <span>
-              fuelEfficiency
-             </span>
-             <a href="european-supplement/Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              amountOfFuelBurn
-             </span>
-             <a href="european-supplement/ValMassType.html">
-              ValMassType
-             </a>
-             <br/>
-             <span>
-              baselineAverageFuelBurn
-             </span>
-             <a href="european-supplement/ValMassType.html">
-              ValMassType
-             </a>
-             <br/>
-             <span>
-              timeframe
-             </span>
-             <a href="european-supplement/TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              numberOfMovements
-             </span>
-             <a href="european-supplement/Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              phase
-             </span>
-             <a href="european-supplement/CodeFlightPhaseType.html">
-              CodeFlightPhaseType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -254,12 +185,332 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#averageFuelBurn">
+                 averageFuelBurn
+                </a>
+               </td>
+               <td>
+                The average fuel burn per flight for the phase within a specific timeframe. Is derived from the number of movements and amount of fuel burn for the phase within the specific time frame.
+               </td>
+               <td>
+                <a href="european-supplement/ValMassType.html">
+                 ValMassType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#phase">
+                 phase
+                </a>
+               </td>
+               <td>
+                The phase of flight.
+               </td>
+               <td>
+                <a href="european-supplement/CodeFlightPhaseType.html">
+                 CodeFlightPhaseType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#numberOfMovements">
+                 numberOfMovements
+                </a>
+               </td>
+               <td>
+                The number of movements in this phase within a specific timeframe.
+               </td>
+               <td>
+                <a href="european-supplement/Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timeframe">
+                 timeframe
+                </a>
+               </td>
+               <td>
+                The timeframe used in establishing the phase fuel efficiency.
+               </td>
+               <td>
+                <a href="european-supplement/TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#baselineAverageFuelBurn">
+                 baselineAverageFuelBurn
+                </a>
+               </td>
+               <td>
+                The baseline average fuel burn for the phase within the time frame.
+               </td>
+               <td>
+                <a href="european-supplement/ValMassType.html">
+                 ValMassType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#amountOfFuelBurn">
+                 amountOfFuelBurn
+                </a>
+               </td>
+               <td>
+                Amount of fuel burn in phase within specific timeframe.
+               </td>
+               <td>
+                <a href="european-supplement/ValMassType.html">
+                 ValMassType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#fuelEfficiency">
+                 fuelEfficiency
+                </a>
+               </td>
+               <td>
+                The fuel efficiency calculated based on baseline and current average fuel burn for phase. Expressed in percent.
+               </td>
+               <td>
+                <a href="european-supplement/Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#airspace">
+                 airspace
+                </a>
+               </td>
+               <td>
+                Relates Airspace with PhaseFuelEfficiency for allocation of fuel efficiency related aspects for airspace.
+               </td>
+               <td>
+                <a href="european-supplement/Airspace.html">
+                 Airspace
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="averageFuelBurn" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@averageFuelBurn">
+              averageFuelBurn
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@averageFuelBurn
+             </code>
+             <p>
+              The average fuel burn per flight for the phase within a specific timeframe. Is derived from the number of movements and amount of fuel burn for the phase within the specific time frame.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ValMassType.html">
+                ValMassType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="phase" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@phase">
+              phase
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@phase
+             </code>
+             <p>
+              The phase of flight.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="numberOfMovements" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@numberOfMovements">
+              numberOfMovements
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@numberOfMovements
+             </code>
+             <p>
+              The number of movements in this phase within a specific timeframe.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="timeframe" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@timeframe">
+              timeframe
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@timeframe
+             </code>
+             <p>
+              The timeframe used in establishing the phase fuel efficiency.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="baselineAverageFuelBurn" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@baselineAverageFuelBurn">
+              baselineAverageFuelBurn
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@baselineAverageFuelBurn
+             </code>
+             <p>
+              The baseline average fuel burn for the phase within the time frame.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ValMassType.html">
+                ValMassType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="amountOfFuelBurn" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@amountOfFuelBurn">
+              amountOfFuelBurn
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@amountOfFuelBurn
+             </code>
+             <p>
+              Amount of fuel burn in phase within specific timeframe.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ValMassType.html">
+                ValMassType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="fuelEfficiency" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@fuelEfficiency">
+              fuelEfficiency
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@fuelEfficiency
+             </code>
+             <p>
+              The fuel efficiency calculated based on baseline and current average fuel burn for phase. Expressed in percent.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="airspace" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@airspace">
+              airspace
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@airspace
+             </code>
+             <p>
+              Relates Airspace with PhaseFuelEfficiency for allocation of fuel efficiency related aspects for airspace.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Airspace.html">
+                Airspace
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

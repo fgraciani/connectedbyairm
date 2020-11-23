@@ -153,123 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="ValDistanceType.html">
+               ValDistanceType
+              </a>
              </span>
-             <br/>
-             <b>
-              Synonyms:
-             </b>
-             <span>
-              Point4DType
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="GM_Point.html">
-              GM_Point
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              horizontalAccuracy
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              verticalResolution
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              verticalConfidenceLevel
-             </span>
-             <a href="Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              verticalAccuracy
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              time
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              temporalAccuracy
-             </span>
-             <a href="ClockTime.html">
-              ClockTime
-             </a>
-             <br/>
-             <span>
-              verticalDatum
-             </span>
-             <a href="CodeVerticalDatumType.html">
-              CodeVerticalDatumType
-             </a>
-             <br/>
-             <span>
-              geoidUndulation
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              horizontalConfidenceLevel
-             </span>
-             <a href="Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              height
-             </span>
-             <a href="ValVerticalDistanceType.html">
-              ValVerticalDistanceType
-             </a>
-             <br/>
-             <span>
-              elevation
-             </span>
-             <a href="ValAltitudeType.html">
-              ValAltitudeType
-             </a>
-             <br/>
-             <span>
-              altitude
-             </span>
-             <a href="ValAltitudeType.html">
-              ValAltitudeType
-             </a>
-             <br/>
-             <span>
-              horizontalResolution
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -288,12 +177,570 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#horizontalAccuracy">
+                 horizontalAccuracy
+                </a>
+               </td>
+               <td>
+                The difference between the recorded horizontal coordinates of an entity and its true position referenced to the same geodetic datum expressed as a circular error at 95 percent probability.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#horizontalResolution">
+                 horizontalResolution
+                </a>
+               </td>
+               <td>
+                A distance corresponding to the number of units or digits to which a measured or calculated value is expressed and used.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altitude">
+                 altitude
+                </a>
+               </td>
+               <td>
+                The vertical distance of a level, a point or an object considered as a point, measured from mean sea level (MSL).
+               </td>
+               <td>
+                <a href="ValAltitudeType.html">
+                 ValAltitudeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#elevation">
+                 elevation
+                </a>
+               </td>
+               <td>
+                The vertical distance of a point or a level, on or affixed to the surface of the earth, measured from mean sea level.
+               </td>
+               <td>
+                <a href="ValAltitudeType.html">
+                 ValAltitudeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#height">
+                 height
+                </a>
+               </td>
+               <td>
+                The vertical distance of a level, a point or an object considered as a point, measured from a specified datum.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#horizontalConfidenceLevel">
+                 horizontalConfidenceLevel
+                </a>
+               </td>
+               <td>
+                A statistical measure of the estimated confidence with which the data captured met its required accuracy. A required confidence level of 90% indicates that 90% of the measured point(s) should meet their respective accuracy requirements.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#geoidUndulation">
+                 geoidUndulation
+                </a>
+               </td>
+               <td>
+                The distance of the geoid above (positive) or below (negative) the mathematical reference ellipsoid at the location of the point.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalDatum">
+                 verticalDatum
+                </a>
+               </td>
+               <td>
+                The set of reference points or a mathematical model of the Earth's surface (a datum) against which vertical position measurements are made as basis for measuring elevations.
+               </td>
+               <td>
+                <a href="CodeVerticalDatumType.html">
+                 CodeVerticalDatumType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#temporalAccuracy">
+                 temporalAccuracy
+                </a>
+               </td>
+               <td>
+                The difference between the recorded time of an entity and its true time.
+               </td>
+               <td>
+                <a href="ClockTime.html">
+                 ClockTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#time">
+                 time
+                </a>
+               </td>
+               <td>
+                The time corresponding to the point.
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalAccuracy">
+                 verticalAccuracy
+                </a>
+               </td>
+               <td>
+                The difference between the recorded elevation of an entity and its true elevation referenced to the same vertical datum expressed as a linear error at 95 percent probability.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalConfidenceLevel">
+                 verticalConfidenceLevel
+                </a>
+               </td>
+               <td>
+                A statistical measure of the estimated confidence with which the data captured met its required accuracy. A required confidence level of 90% indicates that 90% of the measured point(s) should meet their respective accuracy requirements.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalResolution">
+                 verticalResolution
+                </a>
+               </td>
+               <td>
+                A distance corresponding to the number of units or digits to which a measured or calculated value is expressed and used.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="horizontalAccuracy" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@horizontalAccuracy">
+              horizontalAccuracy
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@horizontalAccuracy
+             </code>
+             <p>
+              The difference between the recorded horizontal coordinates of an entity and its true position referenced to the same geodetic datum expressed as a circular error at 95 percent probability.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="horizontalResolution" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@horizontalResolution">
+              horizontalResolution
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@horizontalResolution
+             </code>
+             <p>
+              A distance corresponding to the number of units or digits to which a measured or calculated value is expressed and used.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="altitude" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@altitude">
+              altitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@altitude
+             </code>
+             <p>
+              The vertical distance of a level, a point or an object considered as a point, measured from mean sea level (MSL).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValAltitudeType.html">
+                ValAltitudeType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="elevation" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@elevation">
+              elevation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@elevation
+             </code>
+             <p>
+              The vertical distance of a point or a level, on or affixed to the surface of the earth, measured from mean sea level.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValAltitudeType.html">
+                ValAltitudeType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="height" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@height">
+              height
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@height
+             </code>
+             <p>
+              The vertical distance of a level, a point or an object considered as a point, measured from a specified datum.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="horizontalConfidenceLevel" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@horizontalConfidenceLevel">
+              horizontalConfidenceLevel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@horizontalConfidenceLevel
+             </code>
+             <p>
+              A statistical measure of the estimated confidence with which the data captured met its required accuracy. A required confidence level of 90% indicates that 90% of the measured point(s) should meet their respective accuracy requirements.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="geoidUndulation" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@geoidUndulation">
+              geoidUndulation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@geoidUndulation
+             </code>
+             <p>
+              The distance of the geoid above (positive) or below (negative) the mathematical reference ellipsoid at the location of the point.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="verticalDatum" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@verticalDatum">
+              verticalDatum
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@verticalDatum
+             </code>
+             <p>
+              The set of reference points or a mathematical model of the Earth's surface (a datum) against which vertical position measurements are made as basis for measuring elevations.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeVerticalDatumType.html">
+                CodeVerticalDatumType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="temporalAccuracy" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@temporalAccuracy">
+              temporalAccuracy
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@temporalAccuracy
+             </code>
+             <p>
+              The difference between the recorded time of an entity and its true time.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ClockTime.html">
+                ClockTime
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="time" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@time">
+              time
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@time
+             </code>
+             <p>
+              The time corresponding to the point.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#timecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="timecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/Point4DTimeChoiceType.html#absoluteTime" target="_blank" title="fx:Point4DTimeChoiceType:absoluteTime">
+                   absoluteTime
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="verticalAccuracy" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@verticalAccuracy">
+              verticalAccuracy
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@verticalAccuracy
+             </code>
+             <p>
+              The difference between the recorded elevation of an entity and its true elevation referenced to the same vertical datum expressed as a linear error at 95 percent probability.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="verticalConfidenceLevel" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@verticalConfidenceLevel">
+              verticalConfidenceLevel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@verticalConfidenceLevel
+             </code>
+             <p>
+              A statistical measure of the estimated confidence with which the data captured met its required accuracy. A required confidence level of 90% indicates that 90% of the measured point(s) should meet their respective accuracy requirements.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="verticalResolution" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@verticalResolution">
+              verticalResolution
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:GeometryTypes:FourDimensionalPointType@verticalResolution
+             </code>
+             <p>
+              A distance corresponding to the number of units or digits to which a measured or calculated value is expressed and used.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

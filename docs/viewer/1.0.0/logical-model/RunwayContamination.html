@@ -153,95 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="SurfaceContamination.html">
-              SurfaceContamination
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              isTaxiwayAvailable
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              furtherClearanceLength
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              clearedSide
-             </span>
-             <a href="CodeRelativePositionType.html">
-              CodeRelativePositionType
-             </a>
-             <br/>
-             <span>
-              clearedWidth
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              furtherClearanceWidth
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              clearedLengthBegin
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              clearedLength
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              contaminatedRunway
-             </span>
-             <a href="Runway.html">
-              Runway
-             </a>
-             <br/>
-             <span>
-              obscuredLightsSide
-             </span>
-             <a href="CodeRelativePositionType.html">
-              CodeRelativePositionType
-             </a>
-             <br/>
-             <span>
-              isApronAvailable
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isApronAvailablecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -260,12 +174,714 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#isTaxiwayAvailable">
+                 isTaxiwayAvailable
+                </a>
+               </td>
+               <td>
+                An indication that there are cleared taxiways available serving that runway.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isApronAvailable">
+                 isApronAvailable
+                </a>
+               </td>
+               <td>
+                An indication that there are cleared aprons available serving a runway.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#obscuredLightsSide">
+                 obscuredLightsSide
+                </a>
+               </td>
+               <td>
+                Indicates the side of the runway on which the lights are obscured by contamination.
+               </td>
+               <td>
+                <a href="CodeRelativePositionType.html">
+                 CodeRelativePositionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#contaminatedRunway">
+                 contaminatedRunway
+                </a>
+               </td>
+               <td>
+                The contaminated runway.
+               </td>
+               <td>
+                <a href="Runway.html">
+                 Runway
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clearedLength">
+                 clearedLength
+                </a>
+               </td>
+               <td>
+                Length of runway cleared of contamination, if less than the total length of the runway.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clearedLengthBegin">
+                 clearedLengthBegin
+                </a>
+               </td>
+               <td>
+                The distance from the threshold of the runway direction having the lowest designator number to the point where the cleared portion starts, in case of partial clearance.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#furtherClearanceWidth">
+                 furtherClearanceWidth
+                </a>
+               </td>
+               <td>
+                Width of runway that is expected to be cleared of contamination, if less than the total width.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clearedWidth">
+                 clearedWidth
+                </a>
+               </td>
+               <td>
+                Width of runway cleared of contamination, if less than the total width.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#clearedSide">
+                 clearedSide
+                </a>
+               </td>
+               <td>
+                Indicates that the cleared width is offset left or right of a runway centre line.
+               </td>
+               <td>
+                <a href="CodeRelativePositionType.html">
+                 CodeRelativePositionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#furtherClearanceLength">
+                 furtherClearanceLength
+                </a>
+               </td>
+               <td>
+                Length of runway that is expected to be cleared of contamination, if less than the total length.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isTaxiwayAvailable" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@isTaxiwayAvailable">
+              isTaxiwayAvailable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@isTaxiwayAvailable
+             </code>
+             <p>
+              An indication that there are cleared taxiways available serving that runway.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isTaxiwayAvailablecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isTaxiwayAvailablecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayContamination.html#taxiwayAvailable" target="_blank" title="RunwayContamination.taxiwayAvailable">
+                   taxiwayAvailable
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isApronAvailable" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@isApronAvailable">
+              isApronAvailable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@isApronAvailable
+             </code>
+             <p>
+              An indication that there are cleared aprons available serving a runway.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="isApronAvailablecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayContamination.html#apronAvailable" target="_blank" title="RunwayContamination.apronAvailable">
+                   apronAvailable
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="obscuredLightsSide" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@obscuredLightsSide">
+              obscuredLightsSide
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@obscuredLightsSide
+             </code>
+             <p>
+              Indicates the side of the runway on which the lights are obscured by contamination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeRelativePositionType.html">
+                CodeRelativePositionType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#obscuredLightsSidecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="obscuredLightsSidecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayContamination.html#obscuredLightsSide" target="_blank" title="RunwayContamination.obscuredLightsSide">
+                   obscuredLightsSide
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="contaminatedRunway" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@contaminatedRunway">
+              contaminatedRunway
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@contaminatedRunway
+             </code>
+             <p>
+              The contaminated runway.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Runway.html">
+                Runway
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clearedLength" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@clearedLength">
+              clearedLength
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@clearedLength
+             </code>
+             <p>
+              Length of runway cleared of contamination, if less than the total length of the runway.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clearedLengthcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="clearedLengthcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayContamination.html#clearedLength" target="_blank" title="RunwayContamination.clearedLength">
+                   clearedLength
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clearedLengthBegin" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@clearedLengthBegin">
+              clearedLengthBegin
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@clearedLengthBegin
+             </code>
+             <p>
+              The distance from the threshold of the runway direction having the lowest designator number to the point where the cleared portion starts, in case of partial clearance.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clearedLengthBegincollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="clearedLengthBegincollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayContamination.html#clearedLengthBegin" target="_blank" title="RunwayContamination.clearedLengthBegin">
+                   clearedLengthBegin
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="furtherClearanceWidth" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@furtherClearanceWidth">
+              furtherClearanceWidth
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@furtherClearanceWidth
+             </code>
+             <p>
+              Width of runway that is expected to be cleared of contamination, if less than the total width.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#furtherClearanceWidthcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="furtherClearanceWidthcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayContamination.html#furtherClearanceWidth" target="_blank" title="RunwayContamination.furtherClearanceWidth">
+                   furtherClearanceWidth
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clearedWidth" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@clearedWidth">
+              clearedWidth
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@clearedWidth
+             </code>
+             <p>
+              Width of runway cleared of contamination, if less than the total width.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clearedWidthcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="clearedWidthcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayContamination.html#clearedWidth" target="_blank" title="RunwayContamination.clearedWidth">
+                   clearedWidth
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="clearedSide" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@clearedSide">
+              clearedSide
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@clearedSide
+             </code>
+             <p>
+              Indicates that the cleared width is offset left or right of a runway centre line.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeRelativePositionType.html">
+                CodeRelativePositionType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#clearedSidecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="clearedSidecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayContamination.html#clearedSide" target="_blank" title="RunwayContamination.clearedSide">
+                   clearedSide
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="furtherClearanceLength" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@furtherClearanceLength">
+              furtherClearanceLength
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:SurfaceContamination:RunwayContamination@furtherClearanceLength
+             </code>
+             <p>
+              Length of runway that is expected to be cleared of contamination, if less than the total length.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#furtherClearanceLengthcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="furtherClearanceLengthcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/RunwayContamination.html#furtherClearanceLength" target="_blank" title="RunwayContamination.furtherClearanceLength">
+                   furtherClearanceLength
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

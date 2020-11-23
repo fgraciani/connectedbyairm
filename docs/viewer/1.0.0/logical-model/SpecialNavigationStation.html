@@ -153,81 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Synonyms:
-             </b>
-             <span>
-              Special Navigation System Station
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="GeoTemporalEnabledEntity.html">
-              GeoTemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              name
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="CodeSpecialNavigationStationType.html">
-              CodeSpecialNavigationStationType
-             </a>
-             <br/>
-             <span>
-              availability
-             </span>
-             <a href="SpecialNavigationStationStatus.html">
-              SpecialNavigationStationStatus
-             </a>
-             <br/>
-             <span>
-              systemChain
-             </span>
-             <a href="SpecialNavigationSystem.html">
-              SpecialNavigationSystem
-             </a>
-             <br/>
-             <span>
-              responsibleOrganisation
-             </span>
-             <a href="Organisation.html">
-              Organisation
-             </a>
-             <br/>
-             <span>
-              emission
-             </span>
-             <a href="CodeRadioEmissionType.html">
-              CodeRadioEmissionType
-             </a>
-             <br/>
-             <span>
-              frequency
-             </span>
-             <a href="ValFrequencyType.html">
-              ValFrequencyType
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#frequencycollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -246,12 +174,525 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#name">
+                 name
+                </a>
+               </td>
+               <td>
+                The textual name of the station.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#frequency">
+                 frequency
+                </a>
+               </td>
+               <td>
+                The value of the emission frequency.
+               </td>
+               <td>
+                <a href="ValFrequencyType.html">
+                 ValFrequencyType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#emission">
+                 emission
+                </a>
+               </td>
+               <td>
+                A code indicating the type of emission, as defined at the 1979 ITU World Administrative Radio Conference.
+               </td>
+               <td>
+                <a href="CodeRadioEmissionType.html">
+                 CodeRadioEmissionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#responsibleOrganisation">
+                 responsibleOrganisation
+                </a>
+               </td>
+               <td>
+                The organisation responsible for the station.
+               </td>
+               <td>
+                <a href="Organisation.html">
+                 Organisation
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#systemChain">
+                 systemChain
+                </a>
+               </td>
+               <td>
+                A special navigation system chain to which the station belongs.
+               </td>
+               <td>
+                <a href="SpecialNavigationSystem.html">
+                 SpecialNavigationSystem
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#availability">
+                 availability
+                </a>
+               </td>
+               <td>
+                The operational status of the special navigation station.
+               </td>
+               <td>
+                <a href="SpecialNavigationStationStatus.html">
+                 SpecialNavigationStationStatus
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                A code indicating the type of service within the chain.
+               </td>
+               <td>
+                <a href="CodeSpecialNavigationStationType.html">
+                 CodeSpecialNavigationStationType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="name" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@name">
+              name
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@name
+             </code>
+             <p>
+              The textual name of the station.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#namecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="namecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SpecialNavigationStation.html#name" target="_blank" title="SpecialNavigationStation.name">
+                   name
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="frequency" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@frequency">
+              frequency
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@frequency
+             </code>
+             <p>
+              The value of the emission frequency.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValFrequencyType.html">
+                ValFrequencyType
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="frequencycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SpecialNavigationStation.html#frequency" target="_blank" title="SpecialNavigationStation.frequency">
+                   frequency
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="emission" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@emission">
+              emission
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@emission
+             </code>
+             <p>
+              A code indicating the type of emission, as defined at the 1979 ITU World Administrative Radio Conference.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeRadioEmissionType.html">
+                CodeRadioEmissionType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#emissioncollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="emissioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SpecialNavigationStation.html#emission" target="_blank" title="SpecialNavigationStation.emission">
+                   emission
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="responsibleOrganisation" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@responsibleOrganisation">
+              responsibleOrganisation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@responsibleOrganisation
+             </code>
+             <p>
+              The organisation responsible for the station.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Organisation.html">
+                Organisation
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#responsibleOrganisationcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="responsibleOrganisationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SpecialNavigationStation.html#responsibleOrganisation" target="_blank" title="SpecialNavigationStation.responsibleOrganisation">
+                   responsibleOrganisation
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="systemChain" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@systemChain">
+              systemChain
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@systemChain
+             </code>
+             <p>
+              A special navigation system chain to which the station belongs.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="SpecialNavigationSystem.html">
+                SpecialNavigationSystem
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#systemChaincollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="systemChaincollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SpecialNavigationStation.html#systemChain" target="_blank" title="SpecialNavigationStation.systemChain">
+                   systemChain
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="availability" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@availability">
+              availability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@availability
+             </code>
+             <p>
+              The operational status of the special navigation station.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="SpecialNavigationStationStatus.html">
+                SpecialNavigationStationStatus
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#availabilitycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="availabilitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SpecialNavigationStation.html#availability" target="_blank" title="SpecialNavigationStation.availability">
+                   availability
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:SpecialNavigationStation@type
+             </code>
+             <p>
+              A code indicating the type of service within the chain.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeSpecialNavigationStationType.html">
+                CodeSpecialNavigationStationType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#typecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="typecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/SpecialNavigationStation.html#type" target="_blank" title="SpecialNavigationStation.type">
+                   type
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

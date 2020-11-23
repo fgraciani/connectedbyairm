@@ -153,46 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Synonyms:
-             </b>
-             <span>
-              UHF Tactical Air Navigation Aid
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="RadioNavigationAid.html">
-              RadioNavigationAid
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              channel
-             </span>
-             <a href="CodeTACANChannelType.html">
-              CodeTACANChannelType
-             </a>
-             <br/>
-             <span>
-              declination
-             </span>
-             <a href="Angle.html">
-              Angle
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#declinationcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -211,12 +174,155 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#channel">
+                 channel
+                </a>
+               </td>
+               <td>
+                A code indicating the channel of the TACAN system.
+               </td>
+               <td>
+                <a href="CodeTACANChannelType.html">
+                 CodeTACANChannelType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#declination">
+                 declination
+                </a>
+               </td>
+               <td>
+                The angular difference between the direction of the 'zero bearing' indicated by the station and the direction of the True North.
+               </td>
+               <td>
+                <a href="Angle.html">
+                 Angle
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="channel" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:TACAN@channel">
+              channel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:TACAN@channel
+             </code>
+             <p>
+              A code indicating the channel of the TACAN system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeTACANChannelType.html">
+                CodeTACANChannelType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#channelcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="channelcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/TACAN.html#channel" target="_blank" title="TACAN.channel">
+                   channel
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="declination" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:TACAN@declination">
+              declination
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:NavigationInfrastructure:TACAN@declination
+             </code>
+             <p>
+              The angular difference between the direction of the 'zero bearing' indicated by the station and the direction of the True North.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Angle.html">
+                Angle
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="declinationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/TACAN.html#declination" target="_blank" title="TACAN.declination">
+                   declination
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

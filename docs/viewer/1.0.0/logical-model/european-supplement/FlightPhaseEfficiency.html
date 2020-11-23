@@ -161,60 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/CodeEngineOperationModeType.html">
+               CodeEngineOperationModeType
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              auxiliaryPowerUnitFuelBurn
-             </span>
-             <a href="european-supplement/Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              operationalConceptParameters
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              phaseAggregations
-             </span>
-             <a href="european-supplement/PhaseFuelEfficiency.html">
-              PhaseFuelEfficiency
-             </a>
-             <br/>
-             <span>
-              mainEnginesFuelBurn
-             </span>
-             <a href="european-supplement/Decimal.html">
-              Decimal
-             </a>
-             <br/>
-             <span>
-              engineRegime
-             </span>
-             <a href="european-supplement/CodeEngineOperationModeType.html">
-              CodeEngineOperationModeType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -233,12 +185,209 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#auxiliaryPowerUnitFuelBurn">
+                 auxiliaryPowerUnitFuelBurn
+                </a>
+               </td>
+               <td>
+                The amount of auxiliary power unit fuel burn during the flight phase.
+               </td>
+               <td>
+                <a href="european-supplement/Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#engineRegime">
+                 engineRegime
+                </a>
+               </td>
+               <td>
+                The engine regime for a specific aircraft type in a specific flight phase.
+               </td>
+               <td>
+                <a href="european-supplement/CodeEngineOperationModeType.html">
+                 CodeEngineOperationModeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#mainEnginesFuelBurn">
+                 mainEnginesFuelBurn
+                </a>
+               </td>
+               <td>
+                The amount of main engines fuel burn during phase of flight.
+               </td>
+               <td>
+                <a href="european-supplement/Decimal.html">
+                 Decimal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#phaseAggregations">
+                 phaseAggregations
+                </a>
+               </td>
+               <td>
+                Relates PhaseFuelEfficieny with instances of PhaseOfFlight that shares the same phase of flights within same area.
+               </td>
+               <td>
+                <a href="european-supplement/PhaseFuelEfficiency.html">
+                 PhaseFuelEfficiency
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#operationalConceptParameters">
+                 operationalConceptParameters
+                </a>
+               </td>
+               <td>
+                Operational concept parameters (e.g. ATC procedure) are affecting the aspects of the flight related to environment.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="auxiliaryPowerUnitFuelBurn" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@auxiliaryPowerUnitFuelBurn">
+              auxiliaryPowerUnitFuelBurn
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@auxiliaryPowerUnitFuelBurn
+             </code>
+             <p>
+              The amount of auxiliary power unit fuel burn during the flight phase.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="engineRegime" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@engineRegime">
+              engineRegime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@engineRegime
+             </code>
+             <p>
+              The engine regime for a specific aircraft type in a specific flight phase.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="mainEnginesFuelBurn" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@mainEnginesFuelBurn">
+              mainEnginesFuelBurn
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@mainEnginesFuelBurn
+             </code>
+             <p>
+              The amount of main engines fuel burn during phase of flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Decimal.html">
+                Decimal
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="phaseAggregations" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@phaseAggregations">
+              phaseAggregations
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@phaseAggregations
+             </code>
+             <p>
+              Relates PhaseFuelEfficieny with instances of PhaseOfFlight that shares the same phase of flights within same area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/PhaseFuelEfficiency.html">
+                PhaseFuelEfficiency
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="operationalConceptParameters" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@operationalConceptParameters">
+              operationalConceptParameters
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:FlightPhaseEfficiency@operationalConceptParameters
+             </code>
+             <p>
+              Operational concept parameters (e.g. ATC procedure) are affecting the aspects of the flight related to environment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

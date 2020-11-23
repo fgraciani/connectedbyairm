@@ -153,53 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              SESAR
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Object.html">
-              Object
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              fleetAircraft
-             </span>
-             <a href="Aircraft.html">
-              Aircraft
-             </a>
-             <br/>
-             <span>
-              aircraftType
-             </span>
-             <a href="AircraftType.html">
-              AircraftType
-             </a>
-             <br/>
-             <span>
-              owner
-             </span>
-             <a href="Unit.html">
-              Unit
-             </a>
-             <br/>
-             <span>
-              numberOfAircraft
-             </span>
-             <a href="Integer.html">
-              Integer
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#numberOfAircraftcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -218,12 +174,204 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#fleetAircraft">
+                 fleetAircraft
+                </a>
+               </td>
+               <td>
+                The aircraft in the formation component
+               </td>
+               <td>
+                <a href="Aircraft.html">
+                 Aircraft
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#numberOfAircraft">
+                 numberOfAircraft
+                </a>
+               </td>
+               <td>
+                Number of aircraft with the same aircraft type in the fleet of one unit
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#owner">
+                 owner
+                </a>
+               </td>
+               <td>
+                The Unit that owns the fleet.
+               </td>
+               <td>
+                <a href="Unit.html">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraftType">
+                 aircraftType
+                </a>
+               </td>
+               <td>
+                The aircraft type that is common to the machines belonging to the military fleet.
+               </td>
+               <td>
+                <a href="AircraftType.html">
+                 AircraftType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="fleetAircraft" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FormationComponent@fleetAircraft">
+              fleetAircraft
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FormationComponent@fleetAircraft
+             </code>
+             <p>
+              The aircraft in the formation component
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aircraft.html">
+                Aircraft
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="numberOfAircraft" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FormationComponent@numberOfAircraft">
+              numberOfAircraft
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FormationComponent@numberOfAircraft
+             </code>
+             <p>
+              Number of aircraft with the same aircraft type in the fleet of one unit
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="numberOfAircraftcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/AircraftTypeType.html#numberOfAircraft" target="_blank" title="fx:AircraftTypeType:numberOfAircraft">
+                   numberOfAircraft
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="owner" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FormationComponent@owner">
+              owner
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FormationComponent@owner
+             </code>
+             <p>
+              The Unit that owns the fleet.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Unit.html">
+                Unit
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aircraftType" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FormationComponent@aircraftType">
+              aircraftType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FormationComponent@aircraftType
+             </code>
+             <p>
+              The aircraft type that is common to the machines belonging to the military fleet.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AircraftType.html">
+                AircraftType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

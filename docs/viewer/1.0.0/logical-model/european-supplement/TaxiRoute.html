@@ -161,130 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              FOIPS
+              <a href="european-supplement/TM_Duration.html">
+               TM_Duration
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="european-supplement/CodeTypeOfTaxiRouteType.html">
-              CodeTypeOfTaxiRouteType
-             </a>
-             <br/>
-             <span>
-              guidanceLine
-             </span>
-             <a href="european-supplement/GuidanceLine.html">
-              GuidanceLine
-             </a>
-             <br/>
-             <span>
-              taxiwayConfiguration
-             </span>
-             <a href="european-supplement/TaxiwayConfiguration.html">
-              TaxiwayConfiguration
-             </a>
-             <br/>
-             <span>
-              runwayConfiguration
-             </span>
-             <a href="european-supplement/RunwayConfiguration.html">
-              RunwayConfiguration
-             </a>
-             <br/>
-             <span>
-              startPosition
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              taxiway
-             </span>
-             <a href="european-supplement/Taxiway.html">
-              Taxiway
-             </a>
-             <br/>
-             <span>
-              runwayDirection
-             </span>
-             <a href="european-supplement/RunwayDirection.html">
-              RunwayDirection
-             </a>
-             <br/>
-             <span>
-              taxiRouteConstraint
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              status
-             </span>
-             <a href="european-supplement/CodeTaxiRouteStatusType.html">
-              CodeTaxiRouteStatusType
-             </a>
-             <br/>
-             <span>
-              mode
-             </span>
-             <a href="european-supplement/CodeTaxiRouteModeType.html">
-              CodeTaxiRouteModeType
-             </a>
-             <br/>
-             <span>
-              isAllowed
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              intendedPosition
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              taxiRouteProcedure
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              trafficSituation
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              taxiTime
-             </span>
-             <a href="european-supplement/TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -303,12 +185,619 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of movement (Taxi-in or Taxi-out) allowed along the TaxiRoute. A TaxiRoute connects a Stand and a Runway either to go IN the Runway or to go OUT from the Runway.
+               </td>
+               <td>
+                <a href="european-supplement/CodeTypeOfTaxiRouteType.html">
+                 CodeTypeOfTaxiRouteType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiTime">
+                 taxiTime
+                </a>
+               </td>
+               <td>
+                The taxi time for the taxi route.
+               </td>
+               <td>
+                <a href="european-supplement/TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#trafficSituation">
+                 trafficSituation
+                </a>
+               </td>
+               <td>
+                The traffic situation.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiRouteProcedure">
+                 taxiRouteProcedure
+                </a>
+               </td>
+               <td>
+                The procedures applicable to the taxi route.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#intendedPosition">
+                 intendedPosition
+                </a>
+               </td>
+               <td>
+                The intended position at the end of the taxi route.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isAllowed">
+                 isAllowed
+                </a>
+               </td>
+               <td>
+                Indication whether the usage of the taxi route is allowed or prohibited, depending on runway configuration.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#mode">
+                 mode
+                </a>
+               </td>
+               <td>
+                The taxi route mode.
+               </td>
+               <td>
+                <a href="european-supplement/CodeTaxiRouteModeType.html">
+                 CodeTaxiRouteModeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#status">
+                 status
+                </a>
+               </td>
+               <td>
+                Indication whether the taxi route is the planned one or the cleared one, which may be a deviation of it.
+               </td>
+               <td>
+                <a href="european-supplement/CodeTaxiRouteStatusType.html">
+                 CodeTaxiRouteStatusType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiRouteConstraint">
+                 taxiRouteConstraint
+                </a>
+               </td>
+               <td>
+                A limitation applied to the taxi route.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runwayDirection">
+                 runwayDirection
+                </a>
+               </td>
+               <td>
+                A runway direction served by the taxi route.
+               </td>
+               <td>
+                <a href="european-supplement/RunwayDirection.html">
+                 RunwayDirection
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiway">
+                 taxiway
+                </a>
+               </td>
+               <td>
+                A taxiway composing the taxi route.
+               </td>
+               <td>
+                <a href="european-supplement/Taxiway.html">
+                 Taxiway
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startPosition">
+                 startPosition
+                </a>
+               </td>
+               <td>
+                The start of the taxi route.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runwayConfiguration">
+                 runwayConfiguration
+                </a>
+               </td>
+               <td>
+                The runway configuration for which the taxi route is established.
+               </td>
+               <td>
+                <a href="european-supplement/RunwayConfiguration.html">
+                 RunwayConfiguration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiwayConfiguration">
+                 taxiwayConfiguration
+                </a>
+               </td>
+               <td>
+                The taxiway configuration for which the taxi route is established.
+               </td>
+               <td>
+                <a href="european-supplement/TaxiwayConfiguration.html">
+                 TaxiwayConfiguration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#guidanceLine">
+                 guidanceLine
+                </a>
+               </td>
+               <td>
+                A guidance line on the taxi route.
+               </td>
+               <td>
+                <a href="european-supplement/GuidanceLine.html">
+                 GuidanceLine
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@type
+             </code>
+             <p>
+              The type of movement (Taxi-in or Taxi-out) allowed along the TaxiRoute. A TaxiRoute connects a Stand and a Runway either to go IN the Runway or to go OUT from the Runway.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeTypeOfTaxiRouteType.html">
+                CodeTypeOfTaxiRouteType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiTime" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiTime">
+              taxiTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiTime
+             </code>
+             <p>
+              The taxi time for the taxi route.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="trafficSituation" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@trafficSituation">
+              trafficSituation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@trafficSituation
+             </code>
+             <p>
+              The traffic situation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiRouteProcedure" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiRouteProcedure">
+              taxiRouteProcedure
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiRouteProcedure
+             </code>
+             <p>
+              The procedures applicable to the taxi route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="intendedPosition" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@intendedPosition">
+              intendedPosition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@intendedPosition
+             </code>
+             <p>
+              The intended position at the end of the taxi route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isAllowed" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@isAllowed">
+              isAllowed
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@isAllowed
+             </code>
+             <p>
+              Indication whether the usage of the taxi route is allowed or prohibited, depending on runway configuration.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="mode" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@mode">
+              mode
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@mode
+             </code>
+             <p>
+              The taxi route mode.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeTaxiRouteModeType.html">
+                CodeTaxiRouteModeType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="status" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@status">
+              status
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@status
+             </code>
+             <p>
+              Indication whether the taxi route is the planned one or the cleared one, which may be a deviation of it.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeTaxiRouteStatusType.html">
+                CodeTaxiRouteStatusType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiRouteConstraint" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiRouteConstraint">
+              taxiRouteConstraint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiRouteConstraint
+             </code>
+             <p>
+              A limitation applied to the taxi route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="runwayDirection" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@runwayDirection">
+              runwayDirection
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@runwayDirection
+             </code>
+             <p>
+              A runway direction served by the taxi route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/RunwayDirection.html">
+                RunwayDirection
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiway" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiway">
+              taxiway
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiway
+             </code>
+             <p>
+              A taxiway composing the taxi route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Taxiway.html">
+                Taxiway
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="startPosition" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@startPosition">
+              startPosition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@startPosition
+             </code>
+             <p>
+              The start of the taxi route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="runwayConfiguration" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@runwayConfiguration">
+              runwayConfiguration
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@runwayConfiguration
+             </code>
+             <p>
+              The runway configuration for which the taxi route is established.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/RunwayConfiguration.html">
+                RunwayConfiguration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiwayConfiguration" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiwayConfiguration">
+              taxiwayConfiguration
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@taxiwayConfiguration
+             </code>
+             <p>
+              The taxiway configuration for which the taxi route is established.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TaxiwayConfiguration.html">
+                TaxiwayConfiguration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="guidanceLine" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@guidanceLine">
+              guidanceLine
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:TaxiRoute@guidanceLine
+             </code>
+             <p>
+              A guidance line on the taxi route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/GuidanceLine.html">
+                GuidanceLine
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>
