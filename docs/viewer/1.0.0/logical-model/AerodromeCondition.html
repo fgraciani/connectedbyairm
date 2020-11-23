@@ -153,81 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL-FAA WXXM v.1.1
+              <a href="Boolean.html">
+               Boolean
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="AviationCondition.html">
-              AviationCondition
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              aerodrome
-             </span>
-             <a href="Aerodrome.html">
-              Aerodrome
-             </a>
-             <br/>
-             <span>
-              cloudCondition
-             </span>
-             <a href="Cloud.html">
-              Cloud
-             </a>
-             <br/>
-             <span>
-              aerodromeLargeLakeState
-             </span>
-             <a href="LargeLakeCondition.html">
-              LargeLakeCondition
-             </a>
-             <br/>
-             <span>
-              aerodromeSeaState
-             </span>
-             <a href="SeaCondition.html">
-              SeaCondition
-             </a>
-             <br/>
-             <span>
-              gustFrontIntersectionTime
-             </span>
-             <a href="TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              qnh
-             </span>
-             <a href="ValPressureType.html">
-              ValPressureType
-             </a>
-             <br/>
-             <span>
-              qfe
-             </span>
-             <a href="ValPressureType.html">
-              ValPressureType
-             </a>
-             <br/>
-             <span>
-              cavok
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -246,12 +177,332 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#aerodrome">
+                 aerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome which is subject to observation or forecast.
+               </td>
+               <td>
+                <a href="Aerodrome.html">
+                 Aerodrome
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cavok">
+                 cavok
+                </a>
+               </td>
+               <td>
+                Visibility, cloud and present weather better than prescribed values or conditions.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#qfe">
+                 qfe
+                </a>
+               </td>
+               <td>
+                Atmospheric pressure at aerodrome elevation. A pressure type altimeter calibrated in accordance with the Standard Atmosphere, when set to a QFE altimeter setting using this particular pressure value, will indicate the height above the aerodrome environment.
+               </td>
+               <td>
+                <a href="ValPressureType.html">
+                 ValPressureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#qnh">
+                 qnh
+                </a>
+               </td>
+               <td>
+                Q Code corresponding to the derived atmospheric pressure at Mean Sea Level, based on the atmospheric pressure at the reference point converted using the characteristics of the ICAO Standard Atmosphere.
+               </td>
+               <td>
+                <a href="ValPressureType.html">
+                 ValPressureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#gustFrontIntersectionTime">
+                 gustFrontIntersectionTime
+                </a>
+               </td>
+               <td>
+                Estimated time when the gust front will intersect with the Aerodrome.
+               </td>
+               <td>
+                <a href="TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodromeSeaState">
+                 aerodromeSeaState
+                </a>
+               </td>
+               <td>
+                Sea state conditions typically reported together at an aerodrome.
+               </td>
+               <td>
+                <a href="SeaCondition.html">
+                 SeaCondition
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodromeLargeLakeState">
+                 aerodromeLargeLakeState
+                </a>
+               </td>
+               <td>
+                Sea large lake conditions typically reported together at an aerodrome.
+               </td>
+               <td>
+                <a href="LargeLakeCondition.html">
+                 LargeLakeCondition
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloudCondition">
+                 cloudCondition
+                </a>
+               </td>
+               <td>
+                The cloud conditions at the aerodrome.
+               </td>
+               <td>
+                <a href="Cloud.html">
+                 Cloud
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerodrome" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@aerodrome">
+              aerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@aerodrome
+             </code>
+             <p>
+              The aerodrome which is subject to observation or forecast.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aerodrome.html">
+                Aerodrome
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="cavok" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@cavok">
+              cavok
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@cavok
+             </code>
+             <p>
+              Visibility, cloud and present weather better than prescribed values or conditions.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="qfe" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@qfe">
+              qfe
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@qfe
+             </code>
+             <p>
+              Atmospheric pressure at aerodrome elevation. A pressure type altimeter calibrated in accordance with the Standard Atmosphere, when set to a QFE altimeter setting using this particular pressure value, will indicate the height above the aerodrome environment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValPressureType.html">
+                ValPressureType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="qnh" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@qnh">
+              qnh
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@qnh
+             </code>
+             <p>
+              Q Code corresponding to the derived atmospheric pressure at Mean Sea Level, based on the atmospheric pressure at the reference point converted using the characteristics of the ICAO Standard Atmosphere.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValPressureType.html">
+                ValPressureType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="gustFrontIntersectionTime" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@gustFrontIntersectionTime">
+              gustFrontIntersectionTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@gustFrontIntersectionTime
+             </code>
+             <p>
+              Estimated time when the gust front will intersect with the Aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerodromeSeaState" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@aerodromeSeaState">
+              aerodromeSeaState
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@aerodromeSeaState
+             </code>
+             <p>
+              Sea state conditions typically reported together at an aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="SeaCondition.html">
+                SeaCondition
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerodromeLargeLakeState" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@aerodromeLargeLakeState">
+              aerodromeLargeLakeState
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@aerodromeLargeLakeState
+             </code>
+             <p>
+              Sea large lake conditions typically reported together at an aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="LargeLakeCondition.html">
+                LargeLakeCondition
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="cloudCondition" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@cloudCondition">
+              cloudCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition@cloudCondition
+             </code>
+             <p>
+              The cloud conditions at the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Cloud.html">
+                Cloud
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

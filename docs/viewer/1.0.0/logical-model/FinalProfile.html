@@ -153,46 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="Object.html">
-              Object
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              distance
-             </span>
-             <a href="ApproachDistanceTable.html">
-              ApproachDistanceTable
-             </a>
-             <br/>
-             <span>
-              altitude
-             </span>
-             <a href="ApproachAltitudeTable.html">
-              ApproachAltitudeTable
-             </a>
-             <br/>
-             <span>
-              timing
-             </span>
-             <a href="ApproachTimingTable.html">
-              ApproachTimingTable
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#timingcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -211,12 +174,229 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#distance">
+                 distance
+                </a>
+               </td>
+               <td>
+                A declared distance defined for a final segment.
+               </td>
+               <td>
+                <a href="ApproachDistanceTable.html">
+                 ApproachDistanceTable
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timing">
+                 timing
+                </a>
+               </td>
+               <td>
+                A declared time defined for a final segment.
+               </td>
+               <td>
+                <a href="ApproachTimingTable.html">
+                 ApproachTimingTable
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altitude">
+                 altitude
+                </a>
+               </td>
+               <td>
+                A declared altitude defined for a final segment.
+               </td>
+               <td>
+                <a href="ApproachAltitudeTable.html">
+                 ApproachAltitudeTable
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="distance" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalProfile@distance">
+              distance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalProfile@distance
+             </code>
+             <p>
+              A declared distance defined for a final segment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApproachDistanceTable.html">
+                ApproachDistanceTable
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#distancecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="distancecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FinalProfile.html#distance" target="_blank" title="FinalProfile.distance">
+                   distance
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="timing" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalProfile@timing">
+              timing
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalProfile@timing
+             </code>
+             <p>
+              A declared time defined for a final segment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApproachTimingTable.html">
+                ApproachTimingTable
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="timingcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FinalProfile.html#timing" target="_blank" title="FinalProfile.timing">
+                   timing
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="altitude" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalProfile@altitude">
+              altitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalProfile@altitude
+             </code>
+             <p>
+              A declared altitude defined for a final segment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApproachAltitudeTable.html">
+                ApproachAltitudeTable
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#altitudecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="altitudecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FinalProfile.html#altitude" target="_blank" title="FinalProfile.altitude">
+                   altitude
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

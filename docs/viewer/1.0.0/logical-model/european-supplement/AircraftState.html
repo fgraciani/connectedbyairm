@@ -161,60 +161,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL ASTERIX
-             </span>
-             <br/>
-             <b>
-              Synonyms:
-             </b>
-             <span>
-              StateVector, AircraftStateVector
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/Supplements:AircraftState.html">
-              Supplements: AircraftState
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              aircraftAcceleration
-             </span>
-             <a href="european-supplement/AircraftAcceleration.html">
-              AircraftAcceleration
-             </a>
-             <br/>
-             <span>
-              aircraftDirection
-             </span>
-             <a href="european-supplement/AircraftDirection.html">
-              AircraftDirection
-             </a>
-             <br/>
-             <span>
-              flightPhase
-             </span>
-             <a href="european-supplement/FlightPhase.html">
-              FlightPhase
-             </a>
-             <br/>
-             <span>
-              aircraftAltitude
-             </span>
-             <a href="european-supplement/AircraftAltitude.html">
-              AircraftAltitude
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#aircraftAltitudecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -233,12 +182,216 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#aircraftAcceleration">
+                 aircraftAcceleration
+                </a>
+               </td>
+               <td>
+                The acceleration of the aircraft at the trajectory point.
+               </td>
+               <td>
+                <a href="european-supplement/AircraftAcceleration.html">
+                 AircraftAcceleration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraftAltitude">
+                 aircraftAltitude
+                </a>
+               </td>
+               <td>
+                The altitude of the aircraft at the trajectory point.
+               </td>
+               <td>
+                <a href="european-supplement/AircraftAltitude.html">
+                 AircraftAltitude
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightPhase">
+                 flightPhase
+                </a>
+               </td>
+               <td>
+                The phase of flight in which the aircraft is.
+               </td>
+               <td>
+                <a href="european-supplement/FlightPhase.html">
+                 FlightPhase
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraftDirection">
+                 aircraftDirection
+                </a>
+               </td>
+               <td>
+                The direction of the aircraft at the trajectory point.
+               </td>
+               <td>
+                <a href="european-supplement/AircraftDirection.html">
+                 AircraftDirection
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aircraftAcceleration" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraftAcceleration">
+              aircraftAcceleration
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraftAcceleration
+             </code>
+             <p>
+              The acceleration of the aircraft at the trajectory point.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/AircraftAcceleration.html">
+                AircraftAcceleration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aircraftAltitude" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraftAltitude">
+              aircraftAltitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraftAltitude
+             </code>
+             <p>
+              The altitude of the aircraft at the trajectory point.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/AircraftAltitude.html">
+                AircraftAltitude
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="aircraftAltitudecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/ProfilePointType.html#level" target="_blank" title="fx:ProfilePointType:level">
+                   level
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/TrajectoryPoint4DType.html#level" target="_blank" title="fx:TrajectoryPoint4DType:level">
+                   level
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="flightPhase" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@flightPhase">
+              flightPhase
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@flightPhase
+             </code>
+             <p>
+              The phase of flight in which the aircraft is.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/FlightPhase.html">
+                FlightPhase
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aircraftDirection" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraftDirection">
+              aircraftDirection
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraftDirection
+             </code>
+             <p>
+              The direction of the aircraft at the trajectory point.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/AircraftDirection.html">
+                AircraftDirection
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

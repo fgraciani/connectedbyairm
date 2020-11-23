@@ -153,53 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="ValDistanceType.html">
+               ValDistanceType
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              time
-             </span>
-             <a href="DateTimeWithPlanningType.html">
-              DateTimeWithPlanningType
-             </a>
-             <br/>
-             <span>
-              exitedAirspace
-             </span>
-             <a href="Airspace.html">
-              Airspace
-             </a>
-             <br/>
-             <span>
-              exitPoint
-             </span>
-             <a href="RouteTrajectoryPoint.html">
-              RouteTrajectoryPoint
-             </a>
-             <br/>
-             <span>
-              distanceFlownAtExit
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -218,12 +177,234 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#time">
+                 time
+                </a>
+               </td>
+               <td>
+                The time at which the flight exits the airspace.
+               </td>
+               <td>
+                <a href="DateTimeWithPlanningType.html">
+                 DateTimeWithPlanningType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#distanceFlownAtExit">
+                 distanceFlownAtExit
+                </a>
+               </td>
+               <td>
+                Distance flown at the last exit of the flight from the airspace
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#exitPoint">
+                 exitPoint
+                </a>
+               </td>
+               <td>
+                The trajectory point at which the airspace exit occurs.
+               </td>
+               <td>
+                <a href="RouteTrajectoryPoint.html">
+                 RouteTrajectoryPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#exitedAirspace">
+                 exitedAirspace
+                </a>
+               </td>
+               <td>
+                The airspace that the flight exists.
+               </td>
+               <td>
+                <a href="Airspace.html">
+                 Airspace
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="time" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceExit@time">
+              time
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceExit@time
+             </code>
+             <p>
+              The time at which the flight exits the airspace.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTimeWithPlanningType.html">
+                DateTimeWithPlanningType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="distanceFlownAtExit" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceExit@distanceFlownAtExit">
+              distanceFlownAtExit
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceExit@distanceFlownAtExit
+             </code>
+             <p>
+              Distance flown at the last exit of the flight from the airspace
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="exitPoint" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceExit@exitPoint">
+              exitPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceExit@exitPoint
+             </code>
+             <p>
+              The trajectory point at which the airspace exit occurs.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RouteTrajectoryPoint.html">
+                RouteTrajectoryPoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#exitPointcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="exitPointcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeAirspacePointRoleBaseType.html#EXIT" target="_blank" title="CodeAirspacePointRoleBaseType.EXIT">
+                   EXIT
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="exitedAirspace" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceExit@exitedAirspace">
+              exitedAirspace
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceExit@exitedAirspace
+             </code>
+             <p>
+              The airspace that the flight exists.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Airspace.html">
+                Airspace
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#exitedAirspacecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="exitedAirspacecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AirspaceBorderCrossing.html#exitedAirspace" target="_blank" title="AirspaceBorderCrossing.exitedAirspace">
+                   exitedAirspace
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

@@ -153,53 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              ICAO Doc 4444
-             </span>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              UNDEFINED
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              SUPER
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              MEDIUM
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              LIGHT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              HEAVY
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#HEAVYcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -218,12 +174,380 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#UNDEFINED">
+                 UNDEFINED
+                </a>
+               </td>
+               <td>
+                Not defined, none of the other values is applicable: applicable for AircraftTypes for which it is not clear whether the WTC is light, medium or heavy (e.g. helicopters). There is no relationship with the maximum certified take-off mass.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HEAVY">
+                 HEAVY
+                </a>
+               </td>
+               <td>
+                An aircraft type with a maximum certified take-off mass of 136000 kg or more.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LIGHT">
+                 LIGHT
+                </a>
+               </td>
+               <td>
+                An aircraft type with a maximum certified take-off mass of 7000 kg or less.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MEDIUM">
+                 MEDIUM
+                </a>
+               </td>
+               <td>
+                An aircraft type with a maximum certified take-off mass of less than 136000 kg. but more than 7000 kg.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SUPER">
+                 SUPER
+                </a>
+               </td>
+               <td>
+                A SUPER HEAVY aircraft type e.g. the Airbus A380-800. (In the order of 560,000kg).
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="UNDEFINED" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@UNDEFINED">
+              UNDEFINED
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@UNDEFINED
+             </code>
+             <p>
+              Not defined, none of the other values is applicable: applicable for AircraftTypes for which it is not clear whether the WTC is light, medium or heavy (e.g. helicopters). There is no relationship with the maximum certified take-off mass.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="HEAVY" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@HEAVY">
+              HEAVY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@HEAVY
+             </code>
+             <p>
+              An aircraft type with a maximum certified take-off mass of 136000 kg or more.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="HEAVYcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeWakeTurbulenceBaseType.html#HIGH" target="_blank" title="CodeWakeTurbulenceBaseType.HIGH">
+                   HIGH
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/WakeTurbulenceCategoryType.html#H" target="_blank" title="fx:WakeTurbulenceCategoryType:H">
+                   H
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LIGHT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@LIGHT">
+              LIGHT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@LIGHT
+             </code>
+             <p>
+              An aircraft type with a maximum certified take-off mass of 7000 kg or less.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#LIGHTcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="LIGHTcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeWakeTurbulenceBaseType.html#LOW" target="_blank" title="CodeWakeTurbulenceBaseType.LOW">
+                   LOW
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/WakeTurbulenceCategoryType.html#L" target="_blank" title="fx:WakeTurbulenceCategoryType:L">
+                   L
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MEDIUM" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@MEDIUM">
+              MEDIUM
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@MEDIUM
+             </code>
+             <p>
+              An aircraft type with a maximum certified take-off mass of less than 136000 kg. but more than 7000 kg.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MEDIUMcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="MEDIUMcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/WakeTurbulenceCategoryType.html#M" target="_blank" title="fx:WakeTurbulenceCategoryType:M">
+                   M
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeWakeTurbulenceBaseType.html#MEDIUM" target="_blank" title="CodeWakeTurbulenceBaseType.MEDIUM">
+                   MEDIUM
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="SUPER" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@SUPER">
+              SUPER
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeWakeTurbulenceCategoryType@SUPER
+             </code>
+             <p>
+              A SUPER HEAVY aircraft type e.g. the Airbus A380-800. (In the order of 560,000kg).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#SUPERcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="SUPERcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/WakeTurbulenceCategoryType.html#J" target="_blank" title="fx:WakeTurbulenceCategoryType:J">
+                   J
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

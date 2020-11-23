@@ -161,39 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/RouteTrajectoryPoint.html">
+               RouteTrajectoryPoint
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/Object.html">
-              Object
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              delay
-             </span>
-             <a href="european-supplement/TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              enRouteDelayPoint
-             </span>
-             <a href="european-supplement/RouteTrajectoryPoint.html">
-              RouteTrajectoryPoint
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -212,12 +185,119 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#delay">
+                 delay
+                </a>
+               </td>
+               <td>
+                The duration of the en-route delay.
+               </td>
+               <td>
+                <a href="european-supplement/TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#enRouteDelayPoint">
+                 enRouteDelayPoint
+                </a>
+               </td>
+               <td>
+                The point on the route where a delay is planned to occur.
+               </td>
+               <td>
+                <a href="european-supplement/RouteTrajectoryPoint.html">
+                 RouteTrajectoryPoint
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="delay" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Movement:EnRouteDelay@delay">
+              delay
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Movement:EnRouteDelay@delay
+             </code>
+             <p>
+              The duration of the en-route delay.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#delaycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="delaycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/EnRouteDelayType.html#delayValue" target="_blank" title="fx:EnRouteDelayType:delayValue">
+                   delayValue
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="enRouteDelayPoint" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Movement:EnRouteDelay@enRouteDelayPoint">
+              enRouteDelayPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Flight:Movement:EnRouteDelay@enRouteDelayPoint
+             </code>
+             <p>
+              The point on the route where a delay is planned to occur.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

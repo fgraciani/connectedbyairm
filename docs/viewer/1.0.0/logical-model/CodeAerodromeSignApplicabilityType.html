@@ -153,39 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCAE ED-119 - RTCA DO-291
-             </span>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              VEHICLE
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              BOTH
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              AIRCRAFT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#AIRCRAFTcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -204,12 +174,229 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#VEHICLE">
+                 VEHICLE
+                </a>
+               </td>
+               <td>
+                Sign applies to surface vehicles only.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIRCRAFT">
+                 AIRCRAFT
+                </a>
+               </td>
+               <td>
+                Sign applies to aircraft only.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BOTH">
+                 BOTH
+                </a>
+               </td>
+               <td>
+                Sign applies to both aircraft and surface vehicles.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="VEHICLE" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeAerodromeSignApplicabilityType@VEHICLE">
+              VEHICLE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeAerodromeSignApplicabilityType@VEHICLE
+             </code>
+             <p>
+              Sign applies to surface vehicles only.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#VEHICLEcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="VEHICLEcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/signtypeBaseType.html#Vehicle" target="_blank" title="signtypeBaseType.Vehicle">
+                   Vehicle
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="AIRCRAFT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeAerodromeSignApplicabilityType@AIRCRAFT">
+              AIRCRAFT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeAerodromeSignApplicabilityType@AIRCRAFT
+             </code>
+             <p>
+              Sign applies to aircraft only.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="AIRCRAFTcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/signtypeBaseType.html#Aircraft" target="_blank" title="signtypeBaseType.Aircraft">
+                   Aircraft
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="BOTH" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeAerodromeSignApplicabilityType@BOTH">
+              BOTH
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeAerodromeSignApplicabilityType@BOTH
+             </code>
+             <p>
+              Sign applies to both aircraft and surface vehicles.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#BOTHcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="BOTHcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/signtypeBaseType.html#Both" target="_blank" title="signtypeBaseType.Both">
+                   Both
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

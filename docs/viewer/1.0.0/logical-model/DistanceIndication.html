@@ -153,60 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL-FAA AIXM v.5.1
+              <a href="SignificantPoint.html">
+               SignificantPoint
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              fix
-             </span>
-             <a href="SignificantPoint.html">
-              SignificantPoint
-             </a>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="CodeDistanceIndicationType.html">
-              CodeDistanceIndicationType
-             </a>
-             <br/>
-             <span>
-              minimumReceptionAltitude
-             </span>
-             <a href="ValVerticalDistanceType.html">
-              ValVerticalDistanceType
-             </a>
-             <br/>
-             <span>
-              distance
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              usedPoint
-             </span>
-             <a href="SignificantPoint.html">
-              SignificantPoint
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -225,12 +177,254 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#fix">
+                 fix
+                </a>
+               </td>
+               <td>
+                A selected significant point that may have references (distance and/or angle indications).
+               </td>
+               <td>
+                <a href="SignificantPoint.html">
+                 SignificantPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#usedPoint">
+                 usedPoint
+                </a>
+               </td>
+               <td>
+                A significant point which defines the facility makeup.
+               </td>
+               <td>
+                <a href="SignificantPoint.html">
+                 SignificantPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#distance">
+                 distance
+                </a>
+               </td>
+               <td>
+                The distance from the significant point.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minimumReceptionAltitude">
+                 minimumReceptionAltitude
+                </a>
+               </td>
+               <td>
+                The lowest altitude that an aircraft can receive signal.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of distance indication.
+               </td>
+               <td>
+                <a href="CodeDistanceIndicationType.html">
+                 CodeDistanceIndicationType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="fix" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@fix">
+              fix
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@fix
+             </code>
+             <p>
+              A selected significant point that may have references (distance and/or angle indications).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="SignificantPoint.html">
+                SignificantPoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#fixcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="fixcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/DistanceIndication.html#fix" target="_blank" title="DistanceIndication.fix">
+                   fix
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/DistanceIndication.html#pointChoice" target="_blank" title="DistanceIndication.pointChoice">
+                   pointChoice
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="usedPoint" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@usedPoint">
+              usedPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@usedPoint
+             </code>
+             <p>
+              A significant point which defines the facility makeup.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="distance" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@distance">
+              distance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@distance
+             </code>
+             <p>
+              The distance from the significant point.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="minimumReceptionAltitude" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@minimumReceptionAltitude">
+              minimumReceptionAltitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@minimumReceptionAltitude
+             </code>
+             <p>
+              The lowest altitude that an aircraft can receive signal.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:DistanceIndication@type
+             </code>
+             <p>
+              The type of distance indication.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeDistanceIndicationType.html">
+                CodeDistanceIndicationType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

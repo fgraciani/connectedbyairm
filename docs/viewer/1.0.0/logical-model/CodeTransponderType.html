@@ -153,67 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCONTROL-FAA AIXM v.5.1
-             </span>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              MODE_C
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              MODE_5
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              MODE_3A
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              MODE_S
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              MODE_4
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              MODE_2
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              MODE_1
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MODE_1collapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -232,12 +174,525 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#MODE_C">
+                 MODE_C
+                </a>
+               </td>
+               <td>
+                Mode C provides 4-digit octal code for aircraft's pressure altitude. (military and civilian)
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MODE_1">
+                 MODE_1
+                </a>
+               </td>
+               <td>
+                Mode 1 provides 2-digit 5-bit mission code. (military only - cockpit selectable)
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MODE_2">
+                 MODE_2
+                </a>
+               </td>
+               <td>
+                Mode 2 provides 4-digit octal unit code. (military only - set on ground for fighters, can be changed in flight by transport aircraft)
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MODE_4">
+                 MODE_4
+                </a>
+               </td>
+               <td>
+                Mode 4 provides a 3-pulse reply to crypto coded challenge. (military only)
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MODE_S">
+                 MODE_S
+                </a>
+               </td>
+               <td>
+                Mode S provides multiple information formats to a selective interrogation. Each aircraft is assigned a fixed 24-bit address. (military and civilian) Mode S, or mode select, despite also being called a transponder radar system replacement for Air Traffic Control Radar Beacon System (ATCRBS), is actually a data packet protocol which can be used to augment ATCRBS transponder positioning equipment (radar and TCAS). Mode S is designed to fully interface with ATCRBS systems: mode S SSRs can interrogate ATCRBS transponders, and AIS-P transponders will also reply to older ATCRBS and TCAS interrogations.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MODE_3A">
+                 MODE_3A
+                </a>
+               </td>
+               <td>
+                Mode 3/A provides a 4-digit octal identification code for the aircraft, assigned by the air traffic controller. (military and civilian)
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MODE_5">
+                 MODE_5
+                </a>
+               </td>
+               <td>
+                Mode 5 provides a cryptographically secured version of Mode S and ADS-B GPS position. (military only)
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MODE_C" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_C">
+              MODE_C
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_C
+             </code>
+             <p>
+              Mode C provides 4-digit octal code for aircraft's pressure altitude. (military and civilian)
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MODE_Ccollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="MODE_Ccollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeTransponderBaseType.html#MODE_C" target="_blank" title="CodeTransponderBaseType.MODE_C">
+                   MODE_C
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MODE_1" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_1">
+              MODE_1
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_1
+             </code>
+             <p>
+              Mode 1 provides 2-digit 5-bit mission code. (military only - cockpit selectable)
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="MODE_1collapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeTransponderBaseType.html#MODE_1" target="_blank" title="CodeTransponderBaseType.MODE_1">
+                   MODE_1
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MODE_2" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_2">
+              MODE_2
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_2
+             </code>
+             <p>
+              Mode 2 provides 4-digit octal unit code. (military only - set on ground for fighters, can be changed in flight by transport aircraft)
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MODE_2collapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="MODE_2collapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeTransponderBaseType.html#MODE_2" target="_blank" title="CodeTransponderBaseType.MODE_2">
+                   MODE_2
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MODE_4" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_4">
+              MODE_4
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_4
+             </code>
+             <p>
+              Mode 4 provides a 3-pulse reply to crypto coded challenge. (military only)
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MODE_4collapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="MODE_4collapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeTransponderBaseType.html#MODE_4" target="_blank" title="CodeTransponderBaseType.MODE_4">
+                   MODE_4
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MODE_S" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_S">
+              MODE_S
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_S
+             </code>
+             <p>
+              Mode S provides multiple information formats to a selective interrogation. Each aircraft is assigned a fixed 24-bit address. (military and civilian) Mode S, or mode select, despite also being called a transponder radar system replacement for Air Traffic Control Radar Beacon System (ATCRBS), is actually a data packet protocol which can be used to augment ATCRBS transponder positioning equipment (radar and TCAS). Mode S is designed to fully interface with ATCRBS systems: mode S SSRs can interrogate ATCRBS transponders, and AIS-P transponders will also reply to older ATCRBS and TCAS interrogations.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MODE_Scollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="MODE_Scollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeTransponderBaseType.html#MODE_S" target="_blank" title="CodeTransponderBaseType.MODE_S">
+                   MODE_S
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MODE_3A" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_3A">
+              MODE_3A
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_3A
+             </code>
+             <p>
+              Mode 3/A provides a 4-digit octal identification code for the aircraft, assigned by the air traffic controller. (military and civilian)
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MODE_3Acollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="MODE_3Acollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeTransponderBaseType.html#MODE_3A" target="_blank" title="CodeTransponderBaseType.MODE_3A">
+                   MODE_3A
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MODE_5" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_5">
+              MODE_5
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:Codelists:CodeTransponderType@MODE_5
+             </code>
+             <p>
+              Mode 5 provides a cryptographically secured version of Mode S and ADS-B GPS position. (military only)
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MODE_5collapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="MODE_5collapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeTransponderBaseType.html#MODE_5" target="_blank" title="CodeTransponderBaseType.MODE_5">
+                   MODE_5
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

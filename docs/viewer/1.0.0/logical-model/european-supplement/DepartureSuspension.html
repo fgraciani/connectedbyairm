@@ -161,53 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/CodeInstructionToAircraftType.html">
+               CodeInstructionToAircraftType
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              status
-             </span>
-             <a href="european-supplement/CodeDepartureSuspensionStatusType.html">
-              CodeDepartureSuspensionStatusType
-             </a>
-             <br/>
-             <span>
-              reason
-             </span>
-             <a href="european-supplement/CodeReasonForDepartureSuspensionType.html">
-              CodeReasonForDepartureSuspensionType
-             </a>
-             <br/>
-             <span>
-              originator
-             </span>
-             <a href="european-supplement/CodeAirportCDMActorType.html">
-              CodeAirportCDMActorType
-             </a>
-             <br/>
-             <span>
-              apopInstructionToAircraft
-             </span>
-             <a href="european-supplement/CodeInstructionToAircraftType.html">
-              CodeInstructionToAircraftType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -226,12 +185,168 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#status">
+                 status
+                </a>
+               </td>
+               <td>
+                The status of the suspension request: requested/canceled.
+               </td>
+               <td>
+                <a href="european-supplement/CodeDepartureSuspensionStatusType.html">
+                 CodeDepartureSuspensionStatusType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#apopInstructionToAircraft">
+                 apopInstructionToAircraft
+                </a>
+               </td>
+               <td>
+                The instruction that may be given to a flight that cannot depart for an airport related reason.
+               </td>
+               <td>
+                <a href="european-supplement/CodeInstructionToAircraftType.html">
+                 CodeInstructionToAircraftType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#originator">
+                 originator
+                </a>
+               </td>
+               <td>
+                The originator of the Departure suspension request (AO/APOP).
+               </td>
+               <td>
+                <a href="european-supplement/CodeAirportCDMActorType.html">
+                 CodeAirportCDMActorType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#reason">
+                 reason
+                </a>
+               </td>
+               <td>
+                The reason associated to departure suspension.
+               </td>
+               <td>
+                <a href="european-supplement/CodeReasonForDepartureSuspensionType.html">
+                 CodeReasonForDepartureSuspensionType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="status" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:DepartureSuspension@status">
+              status
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:DepartureSuspension@status
+             </code>
+             <p>
+              The status of the suspension request: requested/canceled.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeDepartureSuspensionStatusType.html">
+                CodeDepartureSuspensionStatusType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="apopInstructionToAircraft" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:DepartureSuspension@apopInstructionToAircraft">
+              apopInstructionToAircraft
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:DepartureSuspension@apopInstructionToAircraft
+             </code>
+             <p>
+              The instruction that may be given to a flight that cannot depart for an airport related reason.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="originator" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:DepartureSuspension@originator">
+              originator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:DepartureSuspension@originator
+             </code>
+             <p>
+              The originator of the Departure suspension request (AO/APOP).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeAirportCDMActorType.html">
+                CodeAirportCDMActorType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="reason" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:DepartureSuspension@reason">
+              reason
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:DepartureSuspension@reason
+             </code>
+             <p>
+              The reason associated to departure suspension.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeReasonForDepartureSuspensionType.html">
+                CodeReasonForDepartureSuspensionType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

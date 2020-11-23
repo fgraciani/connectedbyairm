@@ -161,46 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/missingdata.html">
+               missing data
+              </a>
              </span>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              INCLUDED_EXEMPTED
-             </span>
-             <a href="european-supplement/missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              INCLUDED
-             </span>
-             <a href="european-supplement/missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              EXCLUDED
-             </span>
-             <a href="european-supplement/missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              EXEMPTED
-             </span>
-             <a href="european-supplement/missingdata.html">
-              missing data
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -219,12 +185,168 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#INCLUDED_EXEMPTED">
+                 INCLUDED_EXEMPTED
+                </a>
+               </td>
+               <td>
+                Flights on an INCLUDED_AND_EXEMPTED flow, are considered part of the traffic volume. However hey are also considered as an INCLUDED flow (w.r.t. other flights that are not on an INCLUDED flow) and as an EXEMPTED flow (w.r.t. regulations).
+               </td>
+               <td>
+                <a href="european-supplement/missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#EXEMPTED">
+                 EXEMPTED
+                </a>
+               </td>
+               <td>
+                Flights on EXEMPTED flows are considered part of the traffic volume if there are no INCLUDED / INCLUDED_AND_EXEMPTED flows (so they are taken into account in flight lists or counts on that traffic volume). However, w.r.t. regulations and delay: the flights are exempted. This means only exceptional constraint regulations can impact the flight.
+               </td>
+               <td>
+                <a href="european-supplement/missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#EXCLUDED">
+                 EXCLUDED
+                </a>
+               </td>
+               <td>
+                Flights on EXCLUDED flows are not considered part of the traffic volume (so they are not taken into account in flight lists or counts or regulations on that traffic volume).
+               </td>
+               <td>
+                <a href="european-supplement/missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#INCLUDED">
+                 INCLUDED
+                </a>
+               </td>
+               <td>
+                Flights on INCLUDED flows are considered part of the traffic volume. If there are INCLUDED or INCLUDED_AND_EXEMPTED flows, then any flight that is not on an INCLUDED or INCLUDED_AND_EXEMPTED flow, is considered not part of the traffic volume.
+               </td>
+               <td>
+                <a href="european-supplement/missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="INCLUDED_EXEMPTED" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeFlowCombinationRoleType@INCLUDED_EXEMPTED">
+              INCLUDED_EXEMPTED
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeFlowCombinationRoleType@INCLUDED_EXEMPTED
+             </code>
+             <p>
+              Flights on an INCLUDED_AND_EXEMPTED flow, are considered part of the traffic volume. However hey are also considered as an INCLUDED flow (w.r.t. other flights that are not on an INCLUDED flow) and as an EXEMPTED flow (w.r.t. regulations).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="EXEMPTED" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeFlowCombinationRoleType@EXEMPTED">
+              EXEMPTED
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeFlowCombinationRoleType@EXEMPTED
+             </code>
+             <p>
+              Flights on EXEMPTED flows are considered part of the traffic volume if there are no INCLUDED / INCLUDED_AND_EXEMPTED flows (so they are taken into account in flight lists or counts on that traffic volume). However, w.r.t. regulations and delay: the flights are exempted. This means only exceptional constraint regulations can impact the flight.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="EXCLUDED" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeFlowCombinationRoleType@EXCLUDED">
+              EXCLUDED
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeFlowCombinationRoleType@EXCLUDED
+             </code>
+             <p>
+              Flights on EXCLUDED flows are not considered part of the traffic volume (so they are not taken into account in flight lists or counts or regulations on that traffic volume).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="INCLUDED" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeFlowCombinationRoleType@INCLUDED">
+              INCLUDED
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeFlowCombinationRoleType@INCLUDED
+             </code>
+             <p>
+              Flights on INCLUDED flows are considered part of the traffic volume. If there are INCLUDED or INCLUDED_AND_EXEMPTED flows, then any flight that is not on an INCLUDED or INCLUDED_AND_EXEMPTED flow, is considered not part of the traffic volume.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

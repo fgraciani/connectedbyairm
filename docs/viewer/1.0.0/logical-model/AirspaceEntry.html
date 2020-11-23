@@ -153,67 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              SESAR
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              flight
-             </span>
-             <a href="Flight.html">
-              Flight
-             </a>
-             <br/>
-             <span>
-              boundaryCrossingType
-             </span>
-             <a href="CodeBoundaryCrossingType.html">
-              CodeBoundaryCrossingType
-             </a>
-             <br/>
-             <span>
-              distanceFlownAtEntry
-             </span>
-             <a href="ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              time
-             </span>
-             <a href="DateTimeWithPlanningType.html">
-              DateTimeWithPlanningType
-             </a>
-             <br/>
-             <span>
-              entryPoint
-             </span>
-             <a href="RouteTrajectoryPoint.html">
-              RouteTrajectoryPoint
-             </a>
-             <br/>
-             <span>
-              enteredAirspace
-             </span>
-             <a href="Airspace.html">
-              Airspace
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#enteredAirspacecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -232,12 +174,343 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#flight">
+                 flight
+                </a>
+               </td>
+               <td>
+                The flight entering the airspace.
+               </td>
+               <td>
+                <a href="Flight.html">
+                 Flight
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#enteredAirspace">
+                 enteredAirspace
+                </a>
+               </td>
+               <td>
+                The airspace that the flight enters.
+               </td>
+               <td>
+                <a href="Airspace.html">
+                 Airspace
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#entryPoint">
+                 entryPoint
+                </a>
+               </td>
+               <td>
+                The trajectory point at which the airspace entry occurs.
+               </td>
+               <td>
+                <a href="RouteTrajectoryPoint.html">
+                 RouteTrajectoryPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#time">
+                 time
+                </a>
+               </td>
+               <td>
+                The time at which the flight enters the airspace.
+               </td>
+               <td>
+                <a href="DateTimeWithPlanningType.html">
+                 DateTimeWithPlanningType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#distanceFlownAtEntry">
+                 distanceFlownAtEntry
+                </a>
+               </td>
+               <td>
+                Distance flown at the first entry of the flight in the airspace
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#boundaryCrossingType">
+                 boundaryCrossingType
+                </a>
+               </td>
+               <td>
+                Information about the way the trajectory crosses the frontier between 2 ATC volumes belonging to different areas of responsibility.
+               </td>
+               <td>
+                <a href="CodeBoundaryCrossingType.html">
+                 CodeBoundaryCrossingType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="flight" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@flight">
+              flight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@flight
+             </code>
+             <p>
+              The flight entering the airspace.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Flight.html">
+                Flight
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="enteredAirspace" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@enteredAirspace">
+              enteredAirspace
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@enteredAirspace
+             </code>
+             <p>
+              The airspace that the flight enters.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Airspace.html">
+                Airspace
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="enteredAirspacecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/ElapsedTimeLocationChoiceType.html#region" target="_blank" title="fx:ElapsedTimeLocationChoiceType:region">
+                   region
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AirspaceBorderCrossing.html#enteredAirspace" target="_blank" title="AirspaceBorderCrossing.enteredAirspace">
+                   enteredAirspace
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="entryPoint" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@entryPoint">
+              entryPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@entryPoint
+             </code>
+             <p>
+              The trajectory point at which the airspace entry occurs.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RouteTrajectoryPoint.html">
+                RouteTrajectoryPoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#entryPointcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="entryPointcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeAirspacePointRoleBaseType.html#ENTRY" target="_blank" title="CodeAirspacePointRoleBaseType.ENTRY">
+                   ENTRY
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/BoundaryCrossingType.html#crossingPoint" target="_blank" title="fx:BoundaryCrossingType:crossingPoint">
+                   crossingPoint
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="time" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@time">
+              time
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@time
+             </code>
+             <p>
+              The time at which the flight enters the airspace.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTimeWithPlanningType.html">
+                DateTimeWithPlanningType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="distanceFlownAtEntry" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@distanceFlownAtEntry">
+              distanceFlownAtEntry
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@distanceFlownAtEntry
+             </code>
+             <p>
+              Distance flown at the first entry of the flight in the airspace
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="boundaryCrossingType" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@boundaryCrossingType">
+              boundaryCrossingType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightEvent:AirspaceEntry@boundaryCrossingType
+             </code>
+             <p>
+              Information about the way the trajectory crosses the frontier between 2 ATC volumes belonging to different areas of responsibility.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeBoundaryCrossingType.html">
+                CodeBoundaryCrossingType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

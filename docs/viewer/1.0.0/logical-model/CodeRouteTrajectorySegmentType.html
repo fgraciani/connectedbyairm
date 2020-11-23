@@ -153,81 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              SESAR
-             </span>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              TAXI_PATH
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              TAXI_PATH_ELEMENT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              DEPARTURE_SURFACE_SEGMENT_ELEMENT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              DEPARTURE_SURFACE_SEGMENT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              ARRIVAL_SURFACE_SEGMENT_ELEMENT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              ARRIVAL_SURFACE_SEGMENT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              AIRBORNE_SEGMENT_ELEMENT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              AIRBORNE_SEGMENT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              DIRECT_FLIGHT_SEGMENT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#DIRECT_FLIGHT_SEGMENTcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -246,12 +174,421 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#TAXI_PATH">
+                 TAXI_PATH
+                </a>
+               </td>
+               <td>
+                Part of the agreed 4D trajectory for both Departure and Arrival surface segments.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#DIRECT_FLIGHT_SEGMENT">
+                 DIRECT_FLIGHT_SEGMENT
+                </a>
+               </td>
+               <td>
+                A direct flight (DCT) between two specified significant points.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIRBORNE_SEGMENT">
+                 AIRBORNE_SEGMENT
+                </a>
+               </td>
+               <td>
+                The airborne segment of the trajectory describes the anticipated 4D path of the aircraft using data elements and resolution necessary to deliver a level of fidelity commensurate with requirements for each portion of the trajectory.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIRBORNE_SEGMENT_ELEMENT">
+                 AIRBORNE_SEGMENT_ELEMENT
+                </a>
+               </td>
+               <td>
+                A portion of the airborne segment.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ARRIVAL_SURFACE_SEGMENT">
+                 ARRIVAL_SURFACE_SEGMENT
+                </a>
+               </td>
+               <td>
+                This segment describes the elements of the trajectory from the arrival runway, if applicable, to the arrival gate/stand. This segment reuses the same information items as for the departure surface segment, but in reverse.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ARRIVAL_SURFACE_SEGMENT_ELEMENT">
+                 ARRIVAL_SURFACE_SEGMENT_ELEMENT
+                </a>
+               </td>
+               <td>
+                A portion of the arrival surface segment.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#DEPARTURE_SURFACE_SEGMENT">
+                 DEPARTURE_SURFACE_SEGMENT
+                </a>
+               </td>
+               <td>
+                This segment describes the elements of the overall trajectory from the departure gate up to and including the departure runway.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#DEPARTURE_SURFACE_SEGMENT_ELEMENT">
+                 DEPARTURE_SURFACE_SEGMENT_ELEMENT
+                </a>
+               </td>
+               <td>
+                A portion of the departure surface segment.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TAXI_PATH_ELEMENT">
+                 TAXI_PATH_ELEMENT
+                </a>
+               </td>
+               <td>
+                A portion of the taxi path.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TAXI_PATH" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@TAXI_PATH">
+              TAXI_PATH
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@TAXI_PATH
+             </code>
+             <p>
+              Part of the agreed 4D trajectory for both Departure and Arrival surface segments.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="DIRECT_FLIGHT_SEGMENT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@DIRECT_FLIGHT_SEGMENT">
+              DIRECT_FLIGHT_SEGMENT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@DIRECT_FLIGHT_SEGMENT
+             </code>
+             <p>
+              A direct flight (DCT) between two specified significant points.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="DIRECT_FLIGHT_SEGMENTcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/missing data.html#" target="_blank" title="DirectFlight">
+                   missing data
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/OtherRouteDesignatorType.html#DIRECT" target="_blank" title="fx:OtherRouteDesignatorType:DIRECT">
+                   DIRECT
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="AIRBORNE_SEGMENT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@AIRBORNE_SEGMENT">
+              AIRBORNE_SEGMENT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@AIRBORNE_SEGMENT
+             </code>
+             <p>
+              The airborne segment of the trajectory describes the anticipated 4D path of the aircraft using data elements and resolution necessary to deliver a level of fidelity commensurate with requirements for each portion of the trajectory.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="AIRBORNE_SEGMENT_ELEMENT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@AIRBORNE_SEGMENT_ELEMENT">
+              AIRBORNE_SEGMENT_ELEMENT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@AIRBORNE_SEGMENT_ELEMENT
+             </code>
+             <p>
+              A portion of the airborne segment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ARRIVAL_SURFACE_SEGMENT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@ARRIVAL_SURFACE_SEGMENT">
+              ARRIVAL_SURFACE_SEGMENT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@ARRIVAL_SURFACE_SEGMENT
+             </code>
+             <p>
+              This segment describes the elements of the trajectory from the arrival runway, if applicable, to the arrival gate/stand. This segment reuses the same information items as for the departure surface segment, but in reverse.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ARRIVAL_SURFACE_SEGMENT_ELEMENT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@ARRIVAL_SURFACE_SEGMENT_ELEMENT">
+              ARRIVAL_SURFACE_SEGMENT_ELEMENT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@ARRIVAL_SURFACE_SEGMENT_ELEMENT
+             </code>
+             <p>
+              A portion of the arrival surface segment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="DEPARTURE_SURFACE_SEGMENT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@DEPARTURE_SURFACE_SEGMENT">
+              DEPARTURE_SURFACE_SEGMENT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@DEPARTURE_SURFACE_SEGMENT
+             </code>
+             <p>
+              This segment describes the elements of the overall trajectory from the departure gate up to and including the departure runway.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="DEPARTURE_SURFACE_SEGMENT_ELEMENT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@DEPARTURE_SURFACE_SEGMENT_ELEMENT">
+              DEPARTURE_SURFACE_SEGMENT_ELEMENT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@DEPARTURE_SURFACE_SEGMENT_ELEMENT
+             </code>
+             <p>
+              A portion of the departure surface segment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TAXI_PATH_ELEMENT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@TAXI_PATH_ELEMENT">
+              TAXI_PATH_ELEMENT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectorySegmentType@TAXI_PATH_ELEMENT
+             </code>
+             <p>
+              A portion of the taxi path.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

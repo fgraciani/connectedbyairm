@@ -153,46 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              ISO 19103:2005
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              planningStatus
-             </span>
-             <a href="CodePlanningStatusType.html">
-              CodePlanningStatusType
-             </a>
-             <br/>
-             <span>
-              timeTolerance
-             </span>
-             <a href="TimeRangeType.html">
-              TimeRangeType
-             </a>
-             <br/>
-             <span>
-              valueInterpretation
-             </span>
-             <a href="CodeValueInterpretationType.html">
-              CodeValueInterpretationType
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#valueInterpretationcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -211,12 +174,163 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#planningStatus">
+                 planningStatus
+                </a>
+               </td>
+               <td>
+                Qualification of the planning stage where the information is coming from.
+               </td>
+               <td>
+                <a href="CodePlanningStatusType.html">
+                 CodePlanningStatusType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#valueInterpretation">
+                 valueInterpretation
+                </a>
+               </td>
+               <td>
+                Indication of how the time value should be interpreted.
+               </td>
+               <td>
+                <a href="CodeValueInterpretationType.html">
+                 CodeValueInterpretationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timeTolerance">
+                 timeTolerance
+                </a>
+               </td>
+               <td>
+                Allowable amount of variation in time, expressed symmetrically with regards to the time value.
+               </td>
+               <td>
+                <a href="TimeRangeType.html">
+                 TimeRangeType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="planningStatus" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:TemporalTypes:DateTimeWithPlanningType@planningStatus">
+              planningStatus
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:TemporalTypes:DateTimeWithPlanningType@planningStatus
+             </code>
+             <p>
+              Qualification of the planning stage where the information is coming from.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodePlanningStatusType.html">
+                CodePlanningStatusType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="valueInterpretation" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:TemporalTypes:DateTimeWithPlanningType@valueInterpretation">
+              valueInterpretation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:TemporalTypes:DateTimeWithPlanningType@valueInterpretation
+             </code>
+             <p>
+              Indication of how the time value should be interpreted.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeValueInterpretationType.html">
+                CodeValueInterpretationType
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="valueInterpretationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0.html" target="_blank">
+                   FIXM 4.2.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/TimeConstraintType.html#condition" target="_blank" title="fx:TimeConstraintType:condition">
+                   condition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="timeTolerance" title="urn:aero:airm:1.0.0:LogicalModel:DataTypes:TemporalTypes:DateTimeWithPlanningType@timeTolerance">
+              timeTolerance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:DataTypes:TemporalTypes:DateTimeWithPlanningType@timeTolerance
+             </code>
+             <p>
+              Allowable amount of variation in time, expressed symmetrically with regards to the time value.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="TimeRangeType.html">
+                TimeRangeType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

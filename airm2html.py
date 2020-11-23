@@ -163,6 +163,7 @@ def create_pages_logical_concepts():
   airm = airm100.Airm()
   airm_logical = airm.logical_concepts.to_dict('records')
   scope = ""
+  
 
   for record in airm_logical:
     
@@ -299,8 +300,8 @@ def create_pages_logical_concepts():
 
           if result["property name"] != "":
             td_dc_name = soup.new_tag("td")
-            url = "#"+result["property name"]
-            text = result["property name"]
+            url = "#"+str(result["property name"])
+            text = str(result["property name"])
             new_link = soup.new_tag("a")
             new_link['href'] = url
             new_link.string = text
@@ -377,14 +378,14 @@ def create_pages_logical_concepts():
           p.insert(2,span)
           property_div.insert(3,p)
 
-          connections = airm.get_connections_by_urn(my_airm, trace['urn'])
+          connections = airm.get_connections_by_urn(trace['urn'])
           if connections != None:
             p = soup.new_tag("p")
             button = soup.new_tag("button")
             button["class"] = "btn btn-light"
             button["type"] = "button"
             button["data-toggle"] = "collapse"
-            button["data-target"] = "#"+str(trace["name"])+"collapse"
+            button["data-target"] = "#"+str(trace["property name"])+"collapse"
             button["aria-expanded"] = "false"
             button["aria-controls"] = "collapseExample"
             button.string = "Show presence in semantic correspondences"
@@ -393,7 +394,7 @@ def create_pages_logical_concepts():
 
             sc_div = soup.new_tag("div")
             sc_div["class"] = "table-responsive collapse"
-            sc_div["id"] = str(trace["name"])+"collapse"
+            sc_div["id"] = str(trace["property name"])+"collapse"
             sc_table = soup.new_tag("table")
             sc_table["class"] = "table"
             sc_thead = soup.new_tag("thead")

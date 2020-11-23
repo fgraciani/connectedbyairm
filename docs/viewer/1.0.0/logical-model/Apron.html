@@ -153,116 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              ICAO Annex 1
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              name
-             </span>
-             <a href="CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              availability
-             </span>
-             <a href="ApronAreaAvailability.html">
-              ApronAreaAvailability
-             </a>
-             <br/>
-             <span>
-              airportSuppliesService
-             </span>
-             <a href="AirportSuppliesService.html">
-              AirportSuppliesService
-             </a>
-             <br/>
-             <span>
-              deicingArea
-             </span>
-             <a href="DeicingArea.html">
-              DeicingArea
-             </a>
-             <br/>
-             <span>
-              apronMarking
-             </span>
-             <a href="ApronMarking.html">
-              ApronMarking
-             </a>
-             <br/>
-             <span>
-              surfaceProperties
-             </span>
-             <a href="SurfaceCharacteristics.html">
-              SurfaceCharacteristics
-             </a>
-             <br/>
-             <span>
-              associatedTerminal
-             </span>
-             <a href="Terminal.html">
-              Terminal
-             </a>
-             <br/>
-             <span>
-              associatedAerodrome
-             </span>
-             <a href="Aerodrome.html">
-              Aerodrome
-             </a>
-             <br/>
-             <span>
-              contaminant
-             </span>
-             <a href="ApronContamination.html">
-              ApronContamination
-             </a>
-             <br/>
-             <span>
-              apronLightSystem
-             </span>
-             <a href="ApronLightSystem.html">
-              ApronLightSystem
-             </a>
-             <br/>
-             <span>
-              connectingGuidanceLine
-             </span>
-             <a href="GuidanceLine.html">
-              GuidanceLine
-             </a>
-             <br/>
-             <span>
-              apronElement
-             </span>
-             <a href="ApronElement.html">
-              ApronElement
-             </a>
-             <br/>
-             <span>
-              isAbandoned
-             </span>
-             <a href="Boolean.html">
-              Boolean
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isAbandonedcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -281,12 +174,786 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#name">
+                 name
+                </a>
+               </td>
+               <td>
+                The name or designator used to identify an apron at an aerodrome which has more than one apron.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isAbandoned">
+                 isAbandoned
+                </a>
+               </td>
+               <td>
+                An indicator that an apron is no longer in operational use, but it is still physically present and visible, although usually in a degraded state.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#apronElement">
+                 apronElement
+                </a>
+               </td>
+               <td>
+                An ApronElement which describes a part of the Apron
+               </td>
+               <td>
+                <a href="ApronElement.html">
+                 ApronElement
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#connectingGuidanceLine">
+                 connectingGuidanceLine
+                </a>
+               </td>
+               <td>
+                A GuidanceLine which connects to the Apron
+               </td>
+               <td>
+                <a href="GuidanceLine.html">
+                 GuidanceLine
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#apronLightSystem">
+                 apronLightSystem
+                </a>
+               </td>
+               <td>
+                The LightSystem provided for an Apron
+               </td>
+               <td>
+                <a href="ApronLightSystem.html">
+                 ApronLightSystem
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#contaminant">
+                 contaminant
+                </a>
+               </td>
+               <td>
+                Apron contaminant.
+               </td>
+               <td>
+                <a href="ApronContamination.html">
+                 ApronContamination
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#associatedAerodrome">
+                 associatedAerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome where the apron is situated.
+               </td>
+               <td>
+                <a href="Aerodrome.html">
+                 Aerodrome
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#associatedTerminal">
+                 associatedTerminal
+                </a>
+               </td>
+               <td>
+                Terminal associated with this apron.
+               </td>
+               <td>
+                <a href="Terminal.html">
+                 Terminal
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surfaceProperties">
+                 surfaceProperties
+                </a>
+               </td>
+               <td>
+                The surface characteristics of the apron.
+               </td>
+               <td>
+                <a href="SurfaceCharacteristics.html">
+                 SurfaceCharacteristics
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#apronMarking">
+                 apronMarking
+                </a>
+               </td>
+               <td>
+                The Marking marked on the Apron
+               </td>
+               <td>
+                <a href="ApronMarking.html">
+                 ApronMarking
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#deicingArea">
+                 deicingArea
+                </a>
+               </td>
+               <td>
+                The DeicingArea situated on the Apron
+               </td>
+               <td>
+                <a href="DeicingArea.html">
+                 DeicingArea
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#airportSuppliesService">
+                 airportSuppliesService
+                </a>
+               </td>
+               <td>
+                The AirportSuppliesService
+               </td>
+               <td>
+                <a href="AirportSuppliesService.html">
+                 AirportSuppliesService
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#availability">
+                 availability
+                </a>
+               </td>
+               <td>
+                The operational status of the apron.
+               </td>
+               <td>
+                <a href="ApronAreaAvailability.html">
+                 ApronAreaAvailability
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="name" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@name">
+              name
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@name
+             </code>
+             <p>
+              The name or designator used to identify an apron at an aerodrome which has more than one apron.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#namecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="namecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/ApronElement.html#idapron" target="_blank" title="ApronElement.idapron">
+                   idapron
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AsrnEdge.html#idapron" target="_blank" title="AsrnEdge.idapron">
+                   idapron
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/TaxiwayElement.html#idapron" target="_blank" title="TaxiwayElement.idapron">
+                   idapron
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/ParkingStandArea.html#idapron" target="_blank" title="ParkingStandArea.idapron">
+                   idapron
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Apron.html#name" target="_blank" title="Apron.name">
+                   name
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isAbandoned" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@isAbandoned">
+              isAbandoned
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@isAbandoned
+             </code>
+             <p>
+              An indicator that an apron is no longer in operational use, but it is still physically present and visible, although usually in a degraded state.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="isAbandonedcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Apron.html#abandoned" target="_blank" title="Apron.abandoned">
+                   abandoned
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="apronElement" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@apronElement">
+              apronElement
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@apronElement
+             </code>
+             <p>
+              An ApronElement which describes a part of the Apron
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApronElement.html">
+                ApronElement
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="connectingGuidanceLine" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@connectingGuidanceLine">
+              connectingGuidanceLine
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@connectingGuidanceLine
+             </code>
+             <p>
+              A GuidanceLine which connects to the Apron
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="GuidanceLine.html">
+                GuidanceLine
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="apronLightSystem" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@apronLightSystem">
+              apronLightSystem
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@apronLightSystem
+             </code>
+             <p>
+              The LightSystem provided for an Apron
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApronLightSystem.html">
+                ApronLightSystem
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="contaminant" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@contaminant">
+              contaminant
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@contaminant
+             </code>
+             <p>
+              Apron contaminant.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApronContamination.html">
+                ApronContamination
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#contaminantcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="contaminantcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Apron.html#contaminant" target="_blank" title="Apron.contaminant">
+                   contaminant
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="associatedAerodrome" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@associatedAerodrome">
+              associatedAerodrome
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@associatedAerodrome
+             </code>
+             <p>
+              The aerodrome where the apron is situated.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aerodrome.html">
+                Aerodrome
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#associatedAerodromecollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="associatedAerodromecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Apron.html#associatedAirportHeliport" target="_blank" title="Apron.associatedAirportHeliport">
+                   associatedAirportHeliport
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="associatedTerminal" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@associatedTerminal">
+              associatedTerminal
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@associatedTerminal
+             </code>
+             <p>
+              Terminal associated with this apron.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Terminal.html">
+                Terminal
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="surfaceProperties" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@surfaceProperties">
+              surfaceProperties
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@surfaceProperties
+             </code>
+             <p>
+              The surface characteristics of the apron.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="SurfaceCharacteristics.html">
+                SurfaceCharacteristics
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#surfacePropertiescollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="surfacePropertiescollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Apron.html#surfaceProperties" target="_blank" title="Apron.surfaceProperties">
+                   surfaceProperties
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="apronMarking" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@apronMarking">
+              apronMarking
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@apronMarking
+             </code>
+             <p>
+              The Marking marked on the Apron
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApronMarking.html">
+                ApronMarking
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="deicingArea" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@deicingArea">
+              deicingArea
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@deicingArea
+             </code>
+             <p>
+              The DeicingArea situated on the Apron
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DeicingArea.html">
+                DeicingArea
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="airportSuppliesService" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@airportSuppliesService">
+              airportSuppliesService
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@airportSuppliesService
+             </code>
+             <p>
+              The AirportSuppliesService
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AirportSuppliesService.html">
+                AirportSuppliesService
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="availability" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@availability">
+              availability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Apron@availability
+             </code>
+             <p>
+              The operational status of the apron.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApronAreaAvailability.html">
+                ApronAreaAvailability
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#availabilitycollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="availabilitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0.html" target="_blank">
+                   AIXM 5.1.1
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Apron.html#availability" target="_blank" title="Apron.availability">
+                   availability
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

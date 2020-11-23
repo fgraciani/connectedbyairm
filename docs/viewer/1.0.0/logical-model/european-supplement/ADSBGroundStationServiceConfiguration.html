@@ -161,81 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL ASTERIX
+              <a href="european-supplement/Boolean.html">
+               Boolean
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/Object.html">
-              Object
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              isWamIntegrationValidationCapable
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              reportingPeriod
-             </span>
-             <a href="european-supplement/TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              category21ReportPeriod
-             </span>
-             <a href="european-supplement/TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              isAngleOfArrivalValidationCapable
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isTimeOfArrivalVersusDistanceValidationCapable
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isPowerVersusRangeValidationCapable
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              serviceClass
-             </span>
-             <a href="european-supplement/CodeServiceClassType.html">
-              CodeServiceClassType
-             </a>
-             <br/>
-             <span>
-              isPositionChangeVersusVelocityValidationCapable
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -254,12 +185,332 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#isWamIntegrationValidationCapable">
+                 isWamIntegrationValidationCapable
+                </a>
+               </td>
+               <td>
+                Validation of the reported target data by comparison with the data calculated by a WAM system.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isPositionChangeVersusVelocityValidationCapable">
+                 isPositionChangeVersusVelocityValidationCapable
+                </a>
+               </td>
+               <td>
+                Validation of the reported velocity of the target by comparison with the position change since the last message
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#serviceClass">
+                 serviceClass
+                </a>
+               </td>
+               <td>
+                The class of the service.
+               </td>
+               <td>
+                <a href="european-supplement/CodeServiceClassType.html">
+                 CodeServiceClassType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isPowerVersusRangeValidationCapable">
+                 isPowerVersusRangeValidationCapable
+                </a>
+               </td>
+               <td>
+                Validation of the reported target position by comparison of the amplitude of the signal with the calculated range of the target relative to the sensor.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isTimeOfArrivalVersusDistanceValidationCapable">
+                 isTimeOfArrivalVersusDistanceValidationCapable
+                </a>
+               </td>
+               <td>
+                Validation of the reported position of the target by evaluating the sequence of reception of the message by multiple sensors.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isAngleOfArrivalValidationCapable">
+                 isAngleOfArrivalValidationCapable
+                </a>
+               </td>
+               <td>
+                Validation of the reported position of the target by comparison with the angle of the arriving message
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#category21ReportPeriod">
+                 category21ReportPeriod
+                </a>
+               </td>
+               <td>
+                The report period for Category 021 reports.
+               </td>
+               <td>
+                <a href="european-supplement/TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#reportingPeriod">
+                 reportingPeriod
+                </a>
+               </td>
+               <td>
+                The Service Status Reporting Period.
+               </td>
+               <td>
+                <a href="european-supplement/TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isWamIntegrationValidationCapable" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isWamIntegrationValidationCapable">
+              isWamIntegrationValidationCapable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isWamIntegrationValidationCapable
+             </code>
+             <p>
+              Validation of the reported target data by comparison with the data calculated by a WAM system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isPositionChangeVersusVelocityValidationCapable" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isPositionChangeVersusVelocityValidationCapable">
+              isPositionChangeVersusVelocityValidationCapable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isPositionChangeVersusVelocityValidationCapable
+             </code>
+             <p>
+              Validation of the reported velocity of the target by comparison with the position change since the last message
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="serviceClass" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@serviceClass">
+              serviceClass
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@serviceClass
+             </code>
+             <p>
+              The class of the service.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeServiceClassType.html">
+                CodeServiceClassType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isPowerVersusRangeValidationCapable" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isPowerVersusRangeValidationCapable">
+              isPowerVersusRangeValidationCapable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isPowerVersusRangeValidationCapable
+             </code>
+             <p>
+              Validation of the reported target position by comparison of the amplitude of the signal with the calculated range of the target relative to the sensor.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isTimeOfArrivalVersusDistanceValidationCapable" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isTimeOfArrivalVersusDistanceValidationCapable">
+              isTimeOfArrivalVersusDistanceValidationCapable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isTimeOfArrivalVersusDistanceValidationCapable
+             </code>
+             <p>
+              Validation of the reported position of the target by evaluating the sequence of reception of the message by multiple sensors.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isAngleOfArrivalValidationCapable" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isAngleOfArrivalValidationCapable">
+              isAngleOfArrivalValidationCapable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@isAngleOfArrivalValidationCapable
+             </code>
+             <p>
+              Validation of the reported position of the target by comparison with the angle of the arriving message
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="category21ReportPeriod" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@category21ReportPeriod">
+              category21ReportPeriod
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@category21ReportPeriod
+             </code>
+             <p>
+              The report period for Category 021 reports.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="reportingPeriod" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@reportingPeriod">
+              reportingPeriod
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:SurveillanceInfrastructure:ADSBGroundStationServiceConfiguration@reportingPeriod
+             </code>
+             <p>
+              The Service Status Reporting Period.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

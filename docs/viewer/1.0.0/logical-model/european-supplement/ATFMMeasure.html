@@ -161,95 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              SESAR
+              <a href="european-supplement/TrafficVolume.html">
+               TrafficVolume
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              status
-             </span>
-             <a href="european-supplement/CodeATFMMeasureStatusType.html">
-              CodeATFMMeasureStatusType
-             </a>
-             <br/>
-             <span>
-              concernedFlight
-             </span>
-             <a href="european-supplement/Flight.html">
-              Flight
-             </a>
-             <br/>
-             <span>
-              sourceHotspot
-             </span>
-             <a href="european-supplement/ATFMHotspot.html">
-              ATFMHotspot
-             </a>
-             <br/>
-             <span>
-              runwayVisualRange
-             </span>
-             <a href="european-supplement/ValDistanceType.html">
-              ValDistanceType
-             </a>
-             <br/>
-             <span>
-              isMCDMRequired
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isForCherryPicking
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isExternallyEditable
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isCreatedByFMP
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="european-supplement/CodeATFMMeasureType.html">
-              CodeATFMMeasureType
-             </a>
-             <br/>
-             <span>
-              measureLocation
-             </span>
-             <a href="european-supplement/TrafficVolume.html">
-              TrafficVolume
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -268,12 +185,414 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#status">
+                 status
+                </a>
+               </td>
+               <td>
+                The status of the ATFM measure.
+               </td>
+               <td>
+                <a href="european-supplement/CodeATFMMeasureStatusType.html">
+                 CodeATFMMeasureStatusType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#measureLocation">
+                 measureLocation
+                </a>
+               </td>
+               <td>
+                The traffic volume used select candidate flights for the ATFM measure.
+               </td>
+               <td>
+                <a href="european-supplement/TrafficVolume.html">
+                 TrafficVolume
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                Type of ATFM Measure.
+               </td>
+               <td>
+                <a href="european-supplement/CodeATFMMeasureType.html">
+                 CodeATFMMeasureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isCreatedByFMP">
+                 isCreatedByFMP
+                </a>
+               </td>
+               <td>
+                Indicates whether the measure has been created by an Flow Management Position (FMP) or not.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isExternallyEditable">
+                 isExternallyEditable
+                </a>
+               </td>
+               <td>
+                Indication whether the FMP is entitled to modify the ATFM measure.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isForCherryPicking">
+                 isForCherryPicking
+                </a>
+               </td>
+               <td>
+                Indication whether this ATFM measure is created for flight cherry picking whereby only the selected cherry picked flights are subject to the measure.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isMCDMRequired">
+                 isMCDMRequired
+                </a>
+               </td>
+               <td>
+                Indicates whether Measure Collaborative Decision Making (M-CDM) is required for this regulation.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runwayVisualRange">
+                 runwayVisualRange
+                </a>
+               </td>
+               <td>
+                Minimum visible range in meters for a flight to use slots in the corresponding constraint period.
+               </td>
+               <td>
+                <a href="european-supplement/ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#sourceHotspot">
+                 sourceHotspot
+                </a>
+               </td>
+               <td>
+                ATFM hotspot at the origin of the ATFM Measure.
+               </td>
+               <td>
+                <a href="european-supplement/ATFMHotspot.html">
+                 ATFMHotspot
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#concernedFlight">
+                 concernedFlight
+                </a>
+               </td>
+               <td>
+                Flight concerned, and potentially impacted, by the ATFM measure.
+               </td>
+               <td>
+                <a href="european-supplement/Flight.html">
+                 Flight
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="status" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@status">
+              status
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@status
+             </code>
+             <p>
+              The status of the ATFM measure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeATFMMeasureStatusType.html">
+                CodeATFMMeasureStatusType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="measureLocation" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@measureLocation">
+              measureLocation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@measureLocation
+             </code>
+             <p>
+              The traffic volume used select candidate flights for the ATFM measure.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@type
+             </code>
+             <p>
+              Type of ATFM Measure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeATFMMeasureType.html">
+                CodeATFMMeasureType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isCreatedByFMP" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@isCreatedByFMP">
+              isCreatedByFMP
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@isCreatedByFMP
+             </code>
+             <p>
+              Indicates whether the measure has been created by an Flow Management Position (FMP) or not.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isExternallyEditable" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@isExternallyEditable">
+              isExternallyEditable
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@isExternallyEditable
+             </code>
+             <p>
+              Indication whether the FMP is entitled to modify the ATFM measure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isForCherryPicking" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@isForCherryPicking">
+              isForCherryPicking
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@isForCherryPicking
+             </code>
+             <p>
+              Indication whether this ATFM measure is created for flight cherry picking whereby only the selected cherry picked flights are subject to the measure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isMCDMRequired" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@isMCDMRequired">
+              isMCDMRequired
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@isMCDMRequired
+             </code>
+             <p>
+              Indicates whether Measure Collaborative Decision Making (M-CDM) is required for this regulation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="runwayVisualRange" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@runwayVisualRange">
+              runwayVisualRange
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@runwayVisualRange
+             </code>
+             <p>
+              Minimum visible range in meters for a flight to use slots in the corresponding constraint period.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="sourceHotspot" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@sourceHotspot">
+              sourceHotspot
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@sourceHotspot
+             </code>
+             <p>
+              ATFM hotspot at the origin of the ATFM Measure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ATFMHotspot.html">
+                ATFMHotspot
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="concernedFlight" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@concernedFlight">
+              concernedFlight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure@concernedFlight
+             </code>
+             <p>
+              Flight concerned, and potentially impacted, by the ATFM measure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Flight.html">
+                Flight
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

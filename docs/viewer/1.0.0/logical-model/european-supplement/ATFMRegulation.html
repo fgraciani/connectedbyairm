@@ -161,137 +161,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL CFMU_B2B_FlowServices
+              <a href="european-supplement/Boolean.html">
+               Boolean
+              </a>
              </span>
-             <br/>
-             <b>
-              Synonyms:
-             </b>
-             <span>
-              SlotAllocationMeasure
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="european-supplement/ATFMMeasure.html">
-              ATFMMeasure
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              slotAllocation
-             </span>
-             <a href="european-supplement/ATFMDepartureSlot.html">
-              ATFMDepartureSlot
-             </a>
-             <br/>
-             <span>
-              protectedLocation
-             </span>
-             <a href="european-supplement/ReferenceLocation.html">
-              ReferenceLocation
-             </a>
-             <br/>
-             <span>
-              delayTrafficVolumeSet
-             </span>
-             <a href="european-supplement/TrafficVolumeSet.html">
-              TrafficVolumeSet
-             </a>
-             <br/>
-             <span>
-              slotAllocationList
-             </span>
-             <a href="european-supplement/SlotAllocationList.html">
-              SlotAllocationList
-             </a>
-             <br/>
-             <span>
-              linkedRegulation
-             </span>
-             <a href="european-supplement/ATFMRegulation.html">
-              ATFMRegulation
-             </a>
-             <br/>
-             <span>
-              suplementaryRate
-             </span>
-             <a href="european-supplement/SupplementaryRate.html">
-              SupplementaryRate
-             </a>
-             <br/>
-             <span>
-              regulationCauseLocationCategory
-             </span>
-             <a href="european-supplement/CodeRegulationCauseLocationCategoryType.html">
-              CodeRegulationCauseLocationCategoryType
-             </a>
-             <br/>
-             <span>
-              noDelayWindow
-             </span>
-             <a href="european-supplement/TM_Duration.html">
-              TM_Duration
-             </a>
-             <br/>
-             <span>
-              regulationRate
-             </span>
-             <a href="european-supplement/RegulationRate.html">
-              RegulationRate
-             </a>
-             <br/>
-             <span>
-              isFlightConfirmationMandatory
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              regulationCause
-             </span>
-             <a href="european-supplement/CodeRegulationCauseType.html">
-              CodeRegulationCauseType
-             </a>
-             <br/>
-             <span>
-              iataDelayCode
-             </span>
-             <a href="european-supplement/Integer.html">
-              Integer
-             </a>
-             <br/>
-             <span>
-              designator
-             </span>
-             <a href="european-supplement/CharacterString.html">
-              CharacterString
-             </a>
-             <br/>
-             <span>
-              isTFVActivationUpdateRequired
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
-             <span>
-              isCapacityUpdateRequired
-             </span>
-             <a href="european-supplement/Boolean.html">
-              Boolean
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -310,12 +185,619 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#slotAllocation">
+                 slotAllocation
+                </a>
+               </td>
+               <td>
+                ATFM departure slot resulting from the ATFM regulation.
+               </td>
+               <td>
+                <a href="european-supplement/ATFMDepartureSlot.html">
+                 ATFMDepartureSlot
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isCapacityUpdateRequired">
+                 isCapacityUpdateRequired
+                </a>
+               </td>
+               <td>
+                Indicates that a capacity update will be automatically applied according to the rates of the regulation.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isTFVActivationUpdateRequired">
+                 isTFVActivationUpdateRequired
+                </a>
+               </td>
+               <td>
+                Indication that a traffic volume activation will be achieved according to the applicability period of the regulation.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designator">
+                 designator
+                </a>
+               </td>
+               <td>
+                Unique and immutable designator of the ATFM regulation within an AIRAC cycle.
+               </td>
+               <td>
+                <a href="european-supplement/CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#iataDelayCode">
+                 iataDelayCode
+                </a>
+               </td>
+               <td>
+                The IATA delay code of the regulations due to this regulation cause.
+               </td>
+               <td>
+                <a href="european-supplement/Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#regulationCause">
+                 regulationCause
+                </a>
+               </td>
+               <td>
+                A structured code indicating the reason for implementing an ATFM Regulation.
+               </td>
+               <td>
+                <a href="european-supplement/CodeRegulationCauseType.html">
+                 CodeRegulationCauseType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isFlightConfirmationMandatory">
+                 isFlightConfirmationMandatory
+                </a>
+               </td>
+               <td>
+                Indication whether the flight must be confirmed in this regulation before trying to find a slot for this flight in the associated constraint period.
+               </td>
+               <td>
+                <a href="european-supplement/Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#regulationRate">
+                 regulationRate
+                </a>
+               </td>
+               <td>
+                The coordinated number of flights that can be accommodated in a certain time period.
+               </td>
+               <td>
+                <a href="european-supplement/RegulationRate.html">
+                 RegulationRate
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#noDelayWindow">
+                 noDelayWindow
+                </a>
+               </td>
+               <td>
+                Time window duration around the Estimated Time Over (ETO) within which the regulation does not delay a flight. In certain cases, the window is applied around the minimum Controlled Time Over (CTO).
+               </td>
+               <td>
+                <a href="european-supplement/TM_Duration.html">
+                 TM_Duration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#regulationCauseLocationCategory">
+                 regulationCauseLocationCategory
+                </a>
+               </td>
+               <td>
+                The location category for an ATFM regulation.
+               </td>
+               <td>
+                <a href="european-supplement/CodeRegulationCauseLocationCategoryType.html">
+                 CodeRegulationCauseLocationCategoryType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#suplementaryRate">
+                 suplementaryRate
+                </a>
+               </td>
+               <td>
+                Supplementary rate information expressed by a regulation for a specific supplementary period, expressed as number of slots per hour.
+               </td>
+               <td>
+                <a href="european-supplement/SupplementaryRate.html">
+                 SupplementaryRate
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#linkedRegulation">
+                 linkedRegulation
+                </a>
+               </td>
+               <td>
+                ATFM regulation which is linked to this regulation.
+               </td>
+               <td>
+                <a href="european-supplement/ATFMRegulation.html">
+                 ATFMRegulation
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#slotAllocationList">
+                 slotAllocationList
+                </a>
+               </td>
+               <td>
+                The slot allocation lists which apply to the regulation.
+               </td>
+               <td>
+                <a href="european-supplement/SlotAllocationList.html">
+                 SlotAllocationList
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#delayTrafficVolumeSet">
+                 delayTrafficVolumeSet
+                </a>
+               </td>
+               <td>
+                The traffic volume set to which the delay of this regulation is associated.
+               </td>
+               <td>
+                <a href="european-supplement/TrafficVolumeSet.html">
+                 TrafficVolumeSet
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#protectedLocation">
+                 protectedLocation
+                </a>
+               </td>
+               <td>
+                Reference location that the regulation is meant to protect, when the protected reference location is not the reference location at which the regulation applies.
+               </td>
+               <td>
+                <a href="european-supplement/ReferenceLocation.html">
+                 ReferenceLocation
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="slotAllocation" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@slotAllocation">
+              slotAllocation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@slotAllocation
+             </code>
+             <p>
+              ATFM departure slot resulting from the ATFM regulation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ATFMDepartureSlot.html">
+                ATFMDepartureSlot
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isCapacityUpdateRequired" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@isCapacityUpdateRequired">
+              isCapacityUpdateRequired
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@isCapacityUpdateRequired
+             </code>
+             <p>
+              Indicates that a capacity update will be automatically applied according to the rates of the regulation.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isTFVActivationUpdateRequired" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@isTFVActivationUpdateRequired">
+              isTFVActivationUpdateRequired
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@isTFVActivationUpdateRequired
+             </code>
+             <p>
+              Indication that a traffic volume activation will be achieved according to the applicability period of the regulation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="designator" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@designator">
+              designator
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@designator
+             </code>
+             <p>
+              Unique and immutable designator of the ATFM regulation within an AIRAC cycle.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="iataDelayCode" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@iataDelayCode">
+              iataDelayCode
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@iataDelayCode
+             </code>
+             <p>
+              The IATA delay code of the regulations due to this regulation cause.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="regulationCause" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@regulationCause">
+              regulationCause
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@regulationCause
+             </code>
+             <p>
+              A structured code indicating the reason for implementing an ATFM Regulation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeRegulationCauseType.html">
+                CodeRegulationCauseType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isFlightConfirmationMandatory" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@isFlightConfirmationMandatory">
+              isFlightConfirmationMandatory
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@isFlightConfirmationMandatory
+             </code>
+             <p>
+              Indication whether the flight must be confirmed in this regulation before trying to find a slot for this flight in the associated constraint period.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="regulationRate" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@regulationRate">
+              regulationRate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@regulationRate
+             </code>
+             <p>
+              The coordinated number of flights that can be accommodated in a certain time period.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/RegulationRate.html">
+                RegulationRate
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="noDelayWindow" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@noDelayWindow">
+              noDelayWindow
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@noDelayWindow
+             </code>
+             <p>
+              Time window duration around the Estimated Time Over (ETO) within which the regulation does not delay a flight. In certain cases, the window is applied around the minimum Controlled Time Over (CTO).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TM_Duration.html">
+                TM_Duration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="regulationCauseLocationCategory" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@regulationCauseLocationCategory">
+              regulationCauseLocationCategory
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@regulationCauseLocationCategory
+             </code>
+             <p>
+              The location category for an ATFM regulation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/CodeRegulationCauseLocationCategoryType.html">
+                CodeRegulationCauseLocationCategoryType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="suplementaryRate" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@suplementaryRate">
+              suplementaryRate
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@suplementaryRate
+             </code>
+             <p>
+              Supplementary rate information expressed by a regulation for a specific supplementary period, expressed as number of slots per hour.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/SupplementaryRate.html">
+                SupplementaryRate
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="linkedRegulation" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@linkedRegulation">
+              linkedRegulation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@linkedRegulation
+             </code>
+             <p>
+              ATFM regulation which is linked to this regulation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ATFMRegulation.html">
+                ATFMRegulation
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="slotAllocationList" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@slotAllocationList">
+              slotAllocationList
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@slotAllocationList
+             </code>
+             <p>
+              The slot allocation lists which apply to the regulation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/SlotAllocationList.html">
+                SlotAllocationList
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="delayTrafficVolumeSet" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@delayTrafficVolumeSet">
+              delayTrafficVolumeSet
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@delayTrafficVolumeSet
+             </code>
+             <p>
+              The traffic volume set to which the delay of this regulation is associated.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/TrafficVolumeSet.html">
+                TrafficVolumeSet
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="protectedLocation" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@protectedLocation">
+              protectedLocation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMRegulation@protectedLocation
+             </code>
+             <p>
+              Reference location that the regulation is meant to protect, when the protected reference location is not the reference location at which the regulation applies.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="european-supplement/ReferenceLocation.html">
+                ReferenceLocation
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

@@ -153,67 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              IATA Worldwide Scheduling Guidelines, 21st Edition
+              <a href="CodeAirportSlotKindType.html">
+               CodeAirportSlotKindType
+              </a>
              </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              iataSeason
-             </span>
-             <a href="CodeIATASeasonType.html">
-              CodeIATASeasonType
-             </a>
-             <br/>
-             <span>
-              allocatedSlotTime
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              coordinatedAirport
-             </span>
-             <a href="Aerodrome.html">
-              Aerodrome
-             </a>
-             <br/>
-             <span>
-              requestedSlotTime
-             </span>
-             <a href="DateTime.html">
-              DateTime
-             </a>
-             <br/>
-             <span>
-              yearIATASeason
-             </span>
-             <a href="Date.html">
-              Date
-             </a>
-             <br/>
-             <span>
-              slotKind
-             </span>
-             <a href="CodeAirportSlotKindType.html">
-              CodeAirportSlotKindType
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -232,12 +177,250 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#iataSeason">
+                 iataSeason
+                </a>
+               </td>
+               <td>
+                Scheduling season in which the airport slot is defined.
+               </td>
+               <td>
+                <a href="CodeIATASeasonType.html">
+                 CodeIATASeasonType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#slotKind">
+                 slotKind
+                </a>
+               </td>
+               <td>
+                Code indicating whether the Airport Slot is for the Departure or the Arrival of the flight.
+               </td>
+               <td>
+                <a href="CodeAirportSlotKindType.html">
+                 CodeAirportSlotKindType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#yearIATASeason">
+                 yearIATASeason
+                </a>
+               </td>
+               <td>
+                Year in which the scheduling season starts.
+               </td>
+               <td>
+                <a href="Date.html">
+                 Date
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#requestedSlotTime">
+                 requestedSlotTime
+                </a>
+               </td>
+               <td>
+                Time requested by the Airspace User
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#coordinatedAirport ">
+                 coordinatedAirport
+                </a>
+               </td>
+               <td>
+                Co-ordinated airport for which the slot is allocated.
+               </td>
+               <td>
+                <a href="Aerodrome.html">
+                 Aerodrome
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#allocatedSlotTime">
+                 allocatedSlotTime
+                </a>
+               </td>
+               <td>
+                Time allocated by the Slot Coordinator to the airport slot at which the movement can take place
+               </td>
+               <td>
+                <a href="DateTime.html">
+                 DateTime
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="iataSeason" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@iataSeason">
+              iataSeason
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@iataSeason
+             </code>
+             <p>
+              Scheduling season in which the airport slot is defined.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeIATASeasonType.html">
+                CodeIATASeasonType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="slotKind" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@slotKind">
+              slotKind
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@slotKind
+             </code>
+             <p>
+              Code indicating whether the Airport Slot is for the Departure or the Arrival of the flight.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="yearIATASeason" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@yearIATASeason">
+              yearIATASeason
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@yearIATASeason
+             </code>
+             <p>
+              Year in which the scheduling season starts.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Date.html">
+                Date
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="requestedSlotTime" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@requestedSlotTime">
+              requestedSlotTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@requestedSlotTime
+             </code>
+             <p>
+              Time requested by the Airspace User
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="coordinatedAirport " title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@coordinatedAirport ">
+              coordinatedAirport
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@coordinatedAirport
+             </code>
+             <p>
+              Co-ordinated airport for which the slot is allocated.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aerodrome.html">
+                Aerodrome
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="allocatedSlotTime" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@allocatedSlotTime">
+              allocatedSlotTime
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot@allocatedSlotTime
+             </code>
+             <p>
+              Time allocated by the Slot Coordinator to the airport slot at which the movement can take place
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="DateTime.html">
+                DateTime
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

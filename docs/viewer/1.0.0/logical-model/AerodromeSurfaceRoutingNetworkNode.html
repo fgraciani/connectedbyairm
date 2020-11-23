@@ -153,88 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              EUROCAE ED-99C - RTCA DO-272C
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="GeoTemporalEnabledEntity.html">
-              GeoTemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              apronElement
-             </span>
-             <a href="ApronElement.html">
-              ApronElement
-             </a>
-             <br/>
-             <span>
-              associatedTerminal
-             </span>
-             <a href="Terminal.html">
-              Terminal
-             </a>
-             <br/>
-             <span>
-              nearestRunwayThreshold
-             </span>
-             <a href="InfrastructurePoint.html">
-              InfrastructurePoint
-             </a>
-             <br/>
-             <span>
-              runwayElement
-             </span>
-             <a href="RunwayElement.html">
-              RunwayElement
-             </a>
-             <br/>
-             <span>
-              taxiwayElement
-             </span>
-             <a href="TaxiwayElement.html">
-              TaxiwayElement
-             </a>
-             <br/>
-             <span>
-              guidanceLine
-             </span>
-             <a href="GuidanceLineMarking.html">
-              GuidanceLineMarking
-             </a>
-             <br/>
-             <span>
-              taxiHoldingPosition
-             </span>
-             <a href="TaxiwayHoldingPosition.html">
-              TaxiwayHoldingPosition
-             </a>
-             <br/>
-             <span>
-              paintedCentreLine
-             </span>
-             <a href="RunwayMarking.html">
-              RunwayMarking
-             </a>
-             <br/>
-             <span>
-              type
-             </span>
-             <a href="CodeAerodromeSurfaceRoutingNetworkNodeType.html">
-              CodeAerodromeSurfaceRoutingNetworkNodeType
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#typecollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -253,12 +174,442 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#apronElement">
+                 apronElement
+                </a>
+               </td>
+               <td>
+                An apron element associated with the node.
+               </td>
+               <td>
+                <a href="ApronElement.html">
+                 ApronElement
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of node.
+               </td>
+               <td>
+                <a href="CodeAerodromeSurfaceRoutingNetworkNodeType.html">
+                 CodeAerodromeSurfaceRoutingNetworkNodeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#paintedCentreLine">
+                 paintedCentreLine
+                </a>
+               </td>
+               <td>
+                The painted centreline associated with the node.
+               </td>
+               <td>
+                <a href="RunwayMarking.html">
+                 RunwayMarking
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiHoldingPosition">
+                 taxiHoldingPosition
+                </a>
+               </td>
+               <td>
+                The taxi holding position associated to the node.
+               </td>
+               <td>
+                <a href="TaxiwayHoldingPosition.html">
+                 TaxiwayHoldingPosition
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#guidanceLine">
+                 guidanceLine
+                </a>
+               </td>
+               <td>
+                The guidance line marking associated with the node.
+               </td>
+               <td>
+                <a href="GuidanceLineMarking.html">
+                 GuidanceLineMarking
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#taxiwayElement">
+                 taxiwayElement
+                </a>
+               </td>
+               <td>
+                The taxiway element associated with the node.
+               </td>
+               <td>
+                <a href="TaxiwayElement.html">
+                 TaxiwayElement
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runwayElement">
+                 runwayElement
+                </a>
+               </td>
+               <td>
+                The runway element associated with the node.
+               </td>
+               <td>
+                <a href="RunwayElement.html">
+                 RunwayElement
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#nearestRunwayThreshold">
+                 nearestRunwayThreshold
+                </a>
+               </td>
+               <td>
+                The runway threshold nearest to the node.
+               </td>
+               <td>
+                <a href="InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#associatedTerminal">
+                 associatedTerminal
+                </a>
+               </td>
+               <td>
+                The terminal building associated with the node.
+               </td>
+               <td>
+                <a href="Terminal.html">
+                 Terminal
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="apronElement" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@apronElement">
+              apronElement
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@apronElement
+             </code>
+             <p>
+              An apron element associated with the node.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApronElement.html">
+                ApronElement
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@type
+             </code>
+             <p>
+              The type of node.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeAerodromeSurfaceRoutingNetworkNodeType.html">
+                CodeAerodromeSurfaceRoutingNetworkNodeType
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="typecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AsrnNode.html#nodetype" target="_blank" title="AsrnNode.nodetype">
+                   nodetype
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="paintedCentreLine" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@paintedCentreLine">
+              paintedCentreLine
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@paintedCentreLine
+             </code>
+             <p>
+              The painted centreline associated with the node.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RunwayMarking.html">
+                RunwayMarking
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiHoldingPosition" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@taxiHoldingPosition">
+              taxiHoldingPosition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@taxiHoldingPosition
+             </code>
+             <p>
+              The taxi holding position associated to the node.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="TaxiwayHoldingPosition.html">
+                TaxiwayHoldingPosition
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="guidanceLine" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@guidanceLine">
+              guidanceLine
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@guidanceLine
+             </code>
+             <p>
+              The guidance line marking associated with the node.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="GuidanceLineMarking.html">
+                GuidanceLineMarking
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="taxiwayElement" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@taxiwayElement">
+              taxiwayElement
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@taxiwayElement
+             </code>
+             <p>
+              The taxiway element associated with the node.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="TaxiwayElement.html">
+                TaxiwayElement
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="runwayElement" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@runwayElement">
+              runwayElement
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@runwayElement
+             </code>
+             <p>
+              The runway element associated with the node.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RunwayElement.html">
+                RunwayElement
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="nearestRunwayThreshold" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@nearestRunwayThreshold">
+              nearestRunwayThreshold
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@nearestRunwayThreshold
+             </code>
+             <p>
+              The runway threshold nearest to the node.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="associatedTerminal" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@associatedTerminal">
+              associatedTerminal
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:AerodromeSurfaceRoutingNetworkNode@associatedTerminal
+             </code>
+             <p>
+              The terminal building associated with the node.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Terminal.html">
+                Terminal
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#associatedTerminalcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="associatedTerminalcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/AsrnNode.html#termref" target="_blank" title="AsrnNode.termref">
+                   termref
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

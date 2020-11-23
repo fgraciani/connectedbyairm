@@ -153,53 +153,9 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
-             <span>
-              SESAR
-             </span>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              SNAPSHOT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              BASELINE
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              TEMPORARY_DELTA
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              PERMANENT_DELTA
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              STREAM
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
+             <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#STREAMcollapse" data-toggle="collapse" type="button">
+              Show presence in semantic correspondences
+             </button>
             </p>
            </div>
            <div class="table-responsive">
@@ -218,12 +174,377 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#SNAPSHOT">
+                 SNAPSHOT
+                </a>
+               </td>
+               <td>
+                The snapshot contains the state of an entity at a time instant, merging any permanent changes and temporary changes.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#STREAM">
+                 STREAM
+                </a>
+               </td>
+               <td>
+                The stream contains the state of an entity during a time period, merging any permanent changes and temporary changes.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PERMANENT_DELTA">
+                 PERMANENT_DELTA
+                </a>
+               </td>
+               <td>
+                The data describes the permanent change of an entity.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TEMPORARY_DELTA">
+                 TEMPORARY_DELTA
+                </a>
+               </td>
+               <td>
+                The data describes the temporary change of an entity.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BASELINE">
+                 BASELINE
+                </a>
+               </td>
+               <td>
+                The baseline contains the state of an entity during a time period or a time instant, merging any permanent changes.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="SNAPSHOT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@SNAPSHOT">
+              SNAPSHOT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@SNAPSHOT
+             </code>
+             <p>
+              The snapshot contains the state of an entity at a time instant, merging any permanent changes and temporary changes.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#SNAPSHOTcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="SNAPSHOTcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/interpBaseType.html#Snapshot" target="_blank" title="interpBaseType.Snapshot">
+                   Snapshot
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="STREAM" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@STREAM">
+              STREAM
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@STREAM
+             </code>
+             <p>
+              The stream contains the state of an entity during a time period, merging any permanent changes and temporary changes.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <div class="table-responsive collapse" id="STREAMcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/interpBaseType.html#Stream" target="_blank" title="interpBaseType.Stream">
+                   Stream
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PERMANENT_DELTA" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@PERMANENT_DELTA">
+              PERMANENT_DELTA
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@PERMANENT_DELTA
+             </code>
+             <p>
+              The data describes the permanent change of an entity.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#PERMANENT_DELTAcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="PERMANENT_DELTAcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/interpBaseType.html#PermDelta" target="_blank" title="interpBaseType.PermDelta">
+                   PermDelta
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TEMPORARY_DELTA" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@TEMPORARY_DELTA">
+              TEMPORARY_DELTA
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@TEMPORARY_DELTA
+             </code>
+             <p>
+              The data describes the temporary change of an entity.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#TEMPORARY_DELTAcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="TEMPORARY_DELTAcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/interpBaseType.html#TempDelta" target="_blank" title="interpBaseType.TempDelta">
+                   TempDelta
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="BASELINE" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@BASELINE">
+              BASELINE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeValidityPeriodInterpretationType@BASELINE
+             </code>
+             <p>
+              The baseline contains the state of an entity during a time period or a time instant, merging any permanent changes.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#BASELINEcollapse" data-toggle="collapse" type="button">
+               Show presence in semantic correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="BASELINEcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../../developers/amxm-2.0.0-to-airm-1.0.0.html" target="_blank">
+                   AMXM 2.0.0
+                  </a>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/interpBaseType.html#Baseline" target="_blank" title="interpBaseType.Baseline">
+                   Baseline
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

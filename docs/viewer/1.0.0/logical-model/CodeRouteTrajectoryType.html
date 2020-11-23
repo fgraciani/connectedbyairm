@@ -153,67 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              [AIRM]
+              <a href="missingdata.html">
+               missing data
+              </a>
              </span>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              AIRCRAFT_INTENT
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              DESIRED_4D_TRAJECTORY
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              EXECUTED_4D_TRAJECTORY
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              EXPANDED_ROUTE
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              NOMINAL_PREFERRED_ROUTE
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              FLIGHT_ROUTE
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
-             <span>
-              USER_PREFERRED_TRAJECTORY
-             </span>
-             <a href="missingdata.html">
-              missing data
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -232,12 +177,291 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#AIRCRAFT_INTENT">
+                 AIRCRAFT_INTENT
+                </a>
+               </td>
+               <td>
+                Information on planned future aircraft behaviour, which can be obtained from the aircraft systems (avionics). It is associated with the commanded trajectory and will enhance airborne functions. The aircraft intent data correspond either to aircraft trajectory data that directly relate to the future aircraft trajectory as programmed inside the avionics, or the aircraft control parameters as managed by the automatic flight control system. These aircraft control parameters could either be entered by the flight crew or automatically derived by the flight management system.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#USER_PREFERRED_TRAJECTORY">
+                 USER_PREFERRED_TRAJECTORY
+                </a>
+               </td>
+               <td>
+                A trajectory initially provided by the Airspace User which may be amended during planning phase to integrate ATM constraints from DCB and during execution phase to integrate new ATM constraints from dynamic DCB. Alternate user preferred trajectory may be associated to the RBT/RMT to face pre-defined scenarios.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FLIGHT_ROUTE">
+                 FLIGHT_ROUTE
+                </a>
+               </td>
+               <td>
+                The path of a flight over the surface of the earth, including also altitude and speed information.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NOMINAL_PREFERRED_ROUTE">
+                 NOMINAL_PREFERRED_ROUTE
+                </a>
+               </td>
+               <td>
+                Preferred user route in nominal conditions (e.g. meteorological).
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#EXPANDED_ROUTE">
+                 EXPANDED_ROUTE
+                </a>
+               </td>
+               <td>
+                The expansion of the Flight Planned Route into a set of route points.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#EXECUTED_4D_TRAJECTORY">
+                 EXECUTED_4D_TRAJECTORY
+                </a>
+               </td>
+               <td>
+                The actual 4D trajectory of the aircraft from the start-up to the present position.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#DESIRED_4D_TRAJECTORY">
+                 DESIRED_4D_TRAJECTORY
+                </a>
+               </td>
+               <td>
+                The current 4D trajectory that is requested and generated by the airspace user with knowledge of the ATM System's operational constraints and resource contention.
+               </td>
+               <td>
+                <a href="missingdata.html">
+                 missing data
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="AIRCRAFT_INTENT" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@AIRCRAFT_INTENT">
+              AIRCRAFT_INTENT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@AIRCRAFT_INTENT
+             </code>
+             <p>
+              Information on planned future aircraft behaviour, which can be obtained from the aircraft systems (avionics). It is associated with the commanded trajectory and will enhance airborne functions. The aircraft intent data correspond either to aircraft trajectory data that directly relate to the future aircraft trajectory as programmed inside the avionics, or the aircraft control parameters as managed by the automatic flight control system. These aircraft control parameters could either be entered by the flight crew or automatically derived by the flight management system.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="USER_PREFERRED_TRAJECTORY" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@USER_PREFERRED_TRAJECTORY">
+              USER_PREFERRED_TRAJECTORY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@USER_PREFERRED_TRAJECTORY
+             </code>
+             <p>
+              A trajectory initially provided by the Airspace User which may be amended during planning phase to integrate ATM constraints from DCB and during execution phase to integrate new ATM constraints from dynamic DCB. Alternate user preferred trajectory may be associated to the RBT/RMT to face pre-defined scenarios.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="FLIGHT_ROUTE" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@FLIGHT_ROUTE">
+              FLIGHT_ROUTE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@FLIGHT_ROUTE
+             </code>
+             <p>
+              The path of a flight over the surface of the earth, including also altitude and speed information.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="NOMINAL_PREFERRED_ROUTE" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@NOMINAL_PREFERRED_ROUTE">
+              NOMINAL_PREFERRED_ROUTE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@NOMINAL_PREFERRED_ROUTE
+             </code>
+             <p>
+              Preferred user route in nominal conditions (e.g. meteorological).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="EXPANDED_ROUTE" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@EXPANDED_ROUTE">
+              EXPANDED_ROUTE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@EXPANDED_ROUTE
+             </code>
+             <p>
+              The expansion of the Flight Planned Route into a set of route points.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="EXECUTED_4D_TRAJECTORY" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@EXECUTED_4D_TRAJECTORY">
+              EXECUTED_4D_TRAJECTORY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@EXECUTED_4D_TRAJECTORY
+             </code>
+             <p>
+              The actual 4D trajectory of the aircraft from the start-up to the present position.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="DESIRED_4D_TRAJECTORY" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@DESIRED_4D_TRAJECTORY">
+              DESIRED_4D_TRAJECTORY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeRouteTrajectoryType@DESIRED_4D_TRAJECTORY
+             </code>
+             <p>
+              The current 4D trajectory that is requested and generated by the airspace user with knowledge of the ATM System's operational constraints and resource contention.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="missingdata.html">
+                missing data
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

@@ -153,67 +153,12 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             <b>
-              Source:
-             </b>
+             type:
              <span>
-              EUROCONTROL ASTERIX
+              <a href="RouteTrajectoryPoint.html">
+               RouteTrajectoryPoint
+              </a>
              </span>
-             <br/>
-             <b>
-              Synonyms:
-             </b>
-             <span>
-              StateVector, AircraftStateVector
-             </span>
-             <br/>
-             <b>
-              Parent concept:
-             </b>
-             <a href="TemporalEnabledEntity.html">
-              TemporalEnabledEntity
-             </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
-             <span>
-              attitude
-             </span>
-             <a href="CodeAircraftAttitudeType.html">
-              CodeAircraftAttitudeType
-             </a>
-             <br/>
-             <span>
-              aircraft
-             </span>
-             <a href="Aircraft.html">
-              Aircraft
-             </a>
-             <br/>
-             <span>
-              flightConfiguration
-             </span>
-             <a href="FlightConfiguration.html">
-              FlightConfiguration
-             </a>
-             <br/>
-             <span>
-              aircraftSpeed
-             </span>
-             <a href="AircraftSpeed.html">
-              AircraftSpeed
-             </a>
-             <br/>
-             <span>
-              position
-             </span>
-             <a href="RouteTrajectoryPoint.html">
-              RouteTrajectoryPoint
-             </a>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -232,12 +177,209 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#attitude">
+                 attitude
+                </a>
+               </td>
+               <td>
+                The attitude of the aircraft, derived from the attitude of the aircraft at the WayPoint at the end of the FlightSegment.
+               </td>
+               <td>
+                <a href="CodeAircraftAttitudeType.html">
+                 CodeAircraftAttitudeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#position">
+                 position
+                </a>
+               </td>
+               <td>
+                The position of the aircraft in flight.
+               </td>
+               <td>
+                <a href="RouteTrajectoryPoint.html">
+                 RouteTrajectoryPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraftSpeed">
+                 aircraftSpeed
+                </a>
+               </td>
+               <td>
+                The speed of the aircraft at the trajectory point.
+               </td>
+               <td>
+                <a href="AircraftSpeed.html">
+                 AircraftSpeed
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightConfiguration">
+                 flightConfiguration
+                </a>
+               </td>
+               <td>
+                The configuration of the aircraft in flight.
+               </td>
+               <td>
+                <a href="FlightConfiguration.html">
+                 FlightConfiguration
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraft">
+                 aircraft
+                </a>
+               </td>
+               <td>
+                The aircraft being observed.
+               </td>
+               <td>
+                <a href="Aircraft.html">
+                 Aircraft
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="attitude" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@attitude">
+              attitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@attitude
+             </code>
+             <p>
+              The attitude of the aircraft, derived from the attitude of the aircraft at the WayPoint at the end of the FlightSegment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeAircraftAttitudeType.html">
+                CodeAircraftAttitudeType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="position" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@position">
+              position
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@position
+             </code>
+             <p>
+              The position of the aircraft in flight.
+              <br/>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aircraftSpeed" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraftSpeed">
+              aircraftSpeed
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraftSpeed
+             </code>
+             <p>
+              The speed of the aircraft at the trajectory point.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AircraftSpeed.html">
+                AircraftSpeed
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="flightConfiguration" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@flightConfiguration">
+              flightConfiguration
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@flightConfiguration
+             </code>
+             <p>
+              The configuration of the aircraft in flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="FlightConfiguration.html">
+                FlightConfiguration
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aircraft" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraft">
+              aircraft
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:AircraftState@aircraft
+             </code>
+             <p>
+              The aircraft being observed.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aircraft.html">
+                Aircraft
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>
