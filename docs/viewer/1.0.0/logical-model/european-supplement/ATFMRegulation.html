@@ -59,7 +59,7 @@
          </a>
         </li>
         <li class="breadcrumb-item">
-         <a href="../logical-model.html">
+         <a href="../../logical-model.html">
           <span>
            Logical Model
           </span>
@@ -161,12 +161,32 @@
            </p>
            <div id="INFO_CONCEPT_OTHER">
             <p>
-             type:
+             <b>
+              Source:
+             </b>
              <span>
-              <a href="european-supplement/Boolean.html">
-               Boolean
-              </a>
+              EUROCONTROL CFMU_B2B_FlowServices
              </span>
+             <br/>
+             <b>
+              Synonyms:
+             </b>
+             <span>
+              SlotAllocationMeasure
+             </span>
+             <br/>
+             <b>
+              Parent concept:
+             </b>
+             <a href="ATFMMeasure.html">
+              ATFMMeasure
+             </a>
+             <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -195,7 +215,7 @@
                 ATFM departure slot resulting from the ATFM regulation.
                </td>
                <td>
-                <a href="european-supplement/ATFMDepartureSlot.html">
+                <a href="ATFMDepartureSlot.html">
                  ATFMDepartureSlot
                 </a>
                </td>
@@ -210,7 +230,7 @@
                 Indicates that a capacity update will be automatically applied according to the rates of the regulation.
                </td>
                <td>
-                <a href="european-supplement/Boolean.html">
+                <a href="Boolean.html">
                  Boolean
                 </a>
                </td>
@@ -225,7 +245,7 @@
                 Indication that a traffic volume activation will be achieved according to the applicability period of the regulation.
                </td>
                <td>
-                <a href="european-supplement/Boolean.html">
+                <a href="Boolean.html">
                  Boolean
                 </a>
                </td>
@@ -240,7 +260,7 @@
                 Unique and immutable designator of the ATFM regulation within an AIRAC cycle.
                </td>
                <td>
-                <a href="european-supplement/CharacterString.html">
+                <a href="CharacterString.html">
                  CharacterString
                 </a>
                </td>
@@ -255,7 +275,7 @@
                 The IATA delay code of the regulations due to this regulation cause.
                </td>
                <td>
-                <a href="european-supplement/Integer.html">
+                <a href="Integer.html">
                  Integer
                 </a>
                </td>
@@ -270,7 +290,7 @@
                 A structured code indicating the reason for implementing an ATFM Regulation.
                </td>
                <td>
-                <a href="european-supplement/CodeRegulationCauseType.html">
+                <a href="CodeRegulationCauseType.html">
                  CodeRegulationCauseType
                 </a>
                </td>
@@ -285,7 +305,7 @@
                 Indication whether the flight must be confirmed in this regulation before trying to find a slot for this flight in the associated constraint period.
                </td>
                <td>
-                <a href="european-supplement/Boolean.html">
+                <a href="Boolean.html">
                  Boolean
                 </a>
                </td>
@@ -300,7 +320,7 @@
                 The coordinated number of flights that can be accommodated in a certain time period.
                </td>
                <td>
-                <a href="european-supplement/RegulationRate.html">
+                <a href="RegulationRate.html">
                  RegulationRate
                 </a>
                </td>
@@ -315,7 +335,7 @@
                 Time window duration around the Estimated Time Over (ETO) within which the regulation does not delay a flight. In certain cases, the window is applied around the minimum Controlled Time Over (CTO).
                </td>
                <td>
-                <a href="european-supplement/TM_Duration.html">
+                <a href="TM_Duration.html">
                  TM_Duration
                 </a>
                </td>
@@ -330,7 +350,7 @@
                 The location category for an ATFM regulation.
                </td>
                <td>
-                <a href="european-supplement/CodeRegulationCauseLocationCategoryType.html">
+                <a href="CodeRegulationCauseLocationCategoryType.html">
                  CodeRegulationCauseLocationCategoryType
                 </a>
                </td>
@@ -345,7 +365,7 @@
                 Supplementary rate information expressed by a regulation for a specific supplementary period, expressed as number of slots per hour.
                </td>
                <td>
-                <a href="european-supplement/SupplementaryRate.html">
+                <a href="SupplementaryRate.html">
                  SupplementaryRate
                 </a>
                </td>
@@ -360,7 +380,7 @@
                 ATFM regulation which is linked to this regulation.
                </td>
                <td>
-                <a href="european-supplement/ATFMRegulation.html">
+                <a href="ATFMRegulation.html">
                  ATFMRegulation
                 </a>
                </td>
@@ -375,7 +395,7 @@
                 The slot allocation lists which apply to the regulation.
                </td>
                <td>
-                <a href="european-supplement/SlotAllocationList.html">
+                <a href="SlotAllocationList.html">
                  SlotAllocationList
                 </a>
                </td>
@@ -390,7 +410,7 @@
                 The traffic volume set to which the delay of this regulation is associated.
                </td>
                <td>
-                <a href="european-supplement/TrafficVolumeSet.html">
+                <a href="TrafficVolumeSet.html">
                  TrafficVolumeSet
                 </a>
                </td>
@@ -405,7 +425,7 @@
                 Reference location that the regulation is meant to protect, when the protected reference location is not the reference location at which the regulation applies.
                </td>
                <td>
-                <a href="european-supplement/ReferenceLocation.html">
+                <a href="ReferenceLocation.html">
                  ReferenceLocation
                 </a>
                </td>
@@ -430,7 +450,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/ATFMDepartureSlot.html">
+               <a href="ATFMDepartureSlot.html">
                 ATFMDepartureSlot
                </a>
               </span>
@@ -453,6 +473,14 @@
               Indicates that a capacity update will be automatically applied according to the rates of the regulation.
               <br/>
              </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
              <p class="text-right">
               <a href="#top">
                <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
@@ -474,7 +502,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/Boolean.html">
+               <a href="Boolean.html">
                 Boolean
                </a>
               </span>
@@ -500,7 +528,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/CharacterString.html">
+               <a href="CharacterString.html">
                 CharacterString
                </a>
               </span>
@@ -526,7 +554,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/Integer.html">
+               <a href="Integer.html">
                 Integer
                </a>
               </span>
@@ -552,7 +580,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/CodeRegulationCauseType.html">
+               <a href="CodeRegulationCauseType.html">
                 CodeRegulationCauseType
                </a>
               </span>
@@ -578,7 +606,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/Boolean.html">
+               <a href="Boolean.html">
                 Boolean
                </a>
               </span>
@@ -604,7 +632,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/RegulationRate.html">
+               <a href="RegulationRate.html">
                 RegulationRate
                </a>
               </span>
@@ -630,7 +658,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/TM_Duration.html">
+               <a href="TM_Duration.html">
                 TM_Duration
                </a>
               </span>
@@ -656,7 +684,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/CodeRegulationCauseLocationCategoryType.html">
+               <a href="CodeRegulationCauseLocationCategoryType.html">
                 CodeRegulationCauseLocationCategoryType
                </a>
               </span>
@@ -682,7 +710,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/SupplementaryRate.html">
+               <a href="SupplementaryRate.html">
                 SupplementaryRate
                </a>
               </span>
@@ -708,7 +736,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/ATFMRegulation.html">
+               <a href="ATFMRegulation.html">
                 ATFMRegulation
                </a>
               </span>
@@ -734,7 +762,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/SlotAllocationList.html">
+               <a href="SlotAllocationList.html">
                 SlotAllocationList
                </a>
               </span>
@@ -760,7 +788,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/TrafficVolumeSet.html">
+               <a href="TrafficVolumeSet.html">
                 TrafficVolumeSet
                </a>
               </span>
@@ -786,7 +814,7 @@
              <p>
               type:
               <span>
-               <a href="european-supplement/ReferenceLocation.html">
+               <a href="ReferenceLocation.html">
                 ReferenceLocation
                </a>
               </span>
