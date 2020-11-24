@@ -37,9 +37,13 @@
 * ~~build~~
 * fix Semantic Correspondence display for changeRequest and outOfScope [(example page)](https://fgraciani.github.io/connectedbyairm/developers/aixm-5.1.1-to-airm-1.0.0/CodeAerialRefuellingBaseType.html#OTHER)
 
-### ADR Extension to AIXM Mapping Explorer
+### ADR Extension to AIXM Mapping Explorer [(Testing page)](https://fgraciani.github.io/connectedbyairm/developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0.html)
 
-* build
+* ~~build~~
+* remove unknown values
+* remove types from index?
+* fix links to supplement
+* remove false properties
 
 ### all explorers
 
