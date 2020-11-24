@@ -160,7 +160,7 @@ def create_html_pages():
       code["class"] = "text-secondary"
       soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
 
-      definition = fixm.get_fixm_class_definition(info_concept['Identifier'])
+      definition = fixm.get_fixm_class_definition(info_concept['Information Concept'])
       soup.find(text="FIXM_CLASS_DEFINITION").replace_with(definition)
       
       traces = fixm.get_traces_by_info_concept(info_concept['Information Concept'])

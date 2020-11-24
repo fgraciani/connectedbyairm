@@ -28,21 +28,23 @@ class Fixm:
       print(airm_urn)
       return True
   
-  def get_fixm_class_definition(self, fixm_id):
+  def get_fixm_class_definition(self, fixm_class):
     fixm_df = self.fixm_definitions_dataframe.copy()
     
-    filter = fixm_df["Identifier"]==fixm_id
-    fixm_df.sort_values("Identifier", inplace = True)
+    filter = fixm_df["Information Concept"]==fixm_class
+    fixm_df.sort_values("Information Concept", inplace = True)
     fixm_df.where(filter, inplace = True) 
     df_results = fixm_df.dropna(how='all')   
     definition = ""   
+    print("*******FOUND DEFINITION FOR:"+fixm_class)
+    print(df_results)
     if df_results.empty:
       return definition
     else:
       results_dict = df_results.to_dict('records')
       definition = ""
       for record in results_dict:
-        if record['Identifier'] == fixm_id:
+        if record['Information Concept'] == fixm_class:
           definition = record['Definiton']
       return results_dict
 
