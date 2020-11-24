@@ -437,11 +437,9 @@ def create_pages_logical_concepts():
                 td = soup.new_tag("td")
                 url = "../../../developers/fixm-4.2.0-to-airm-1.0.0.html"
                 text = "FIXM 4.2.0"
-                a = soup.new_tag("a")
-                a['href'] = url
-                a['target'] = "_blank"
-                a.string = text
-                td.insert(1,a)
+                pm = soup.new_tag("p")
+                pm.string = text
+                td.insert(1,pm)
                 tr.insert(1,td)
                 td = soup.new_tag("td")
                 parts = str(entry["concept_id"]).split(":")
@@ -462,11 +460,9 @@ def create_pages_logical_concepts():
                 td = soup.new_tag("td")
                 url = "../../../developers/amxm-2.0.0-to-airm-1.0.0.html"
                 text = "AMXM 2.0.0"
-                a = soup.new_tag("a")
-                a['href'] = url
-                a['target'] = "_blank"
-                a.string = text
-                td.insert(1,a)
+                pm = soup.new_tag("p")
+                pm.string = text
+                td.insert(1,pm)
                 tr.insert(1,td)
                 td = soup.new_tag("td")
                 if "." in str(entry["concept_id"]):
@@ -488,11 +484,9 @@ def create_pages_logical_concepts():
                 td = soup.new_tag("td")
                 url = "../../../developers/aixm-5.1.1-to-airm-1.0.0.html"
                 text = "AIXM 5.1.1"
-                a = soup.new_tag("a")
-                a['href'] = url
-                a['target'] = "_blank"
-                a.string = text
-                td.insert(1,a)
+                pm = soup.new_tag("p")
+                pm.string = text
+                td.insert(1,pm)
                 tr.insert(1,td)
                 td = soup.new_tag("td")
                 if "." in str(entry["concept_id"]):
