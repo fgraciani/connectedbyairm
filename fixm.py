@@ -38,6 +38,7 @@ class Fixm:
     definition = ""   
     print("*******FOUND DEFINITION FOR:"+fixm_class)
     print(df_results)
+    
     if df_results.empty:
       return definition
     else:
@@ -45,7 +46,8 @@ class Fixm:
       definition = ""
       for record in results_dict:
         if record['Information Concept'] == fixm_class:
-          definition = record['Definiton']
+          definition = record['Definition']
+          print(definition)
       return results_dict
 
   def get_from_fixm_mapping(self, airm_urn):
