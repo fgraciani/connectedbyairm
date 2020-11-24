@@ -249,21 +249,29 @@ def create_pages_logical_concepts():
       
       if record["parent"] != "missing data":
         b = soup.new_tag("b")
-        b.string = "Parent concept: "
-        p.insert(insert_index,b)
-        insert_index = insert_index+1
+        parent = str(record["parent"])    
 
-        filename = str(record["parent"])+".html"
+        if "Supplements:" in parent:
+          parent = parent.replace("Supplements: ","")
+          b.string = "Supplements: "
+          supplements = True
+        else:
+          b.string = "Parent concept: "
+          supplements = False
+        p.insert(insert_index,b)
+        insert_index = insert_index+1        
+        
+        filename = parent+".html"
         filename = filename.replace("/", "-")
         filename = filename.replace("*", "-")
         filename = filename.replace(" ", "")
         filename = filename.replace("\t", "")
         filename = filename.replace("\n", "")
-        if scope == "global":
+        if supplements:
+          url = "../"+filename
+        else:
           url = filename
-        elif scope == "European Supplement":
-          url = filename
-        text = record["parent"]
+        text = parent
         print(text)
         new_link = soup.new_tag("a")
         new_link['href'] = url
