@@ -1403,7 +1403,7 @@ def create_html_pages():
             button["data-target"] = "#"+str(trace["name"])+"collapse"
             button["aria-expanded"] = "false"
             button["aria-controls"] = "collapseExample"
-            button.string = "Show presence in semantic correspondences"
+            button.string = "Show correspondences"
             p.insert(1,button)
             property_div.insert(4,p)
 
@@ -1431,13 +1431,10 @@ def create_html_pages():
               tr = soup.new_tag("tr")
               if entry["model_name"] == "FIXM 4.2.0":
                 td = soup.new_tag("td")
-                url = "../../../developers/fixm-4.2.0-to-airm-1.0.0.html"
                 text = "FIXM 4.2.0"
-                a = soup.new_tag("a")
-                a['href'] = url
-                a['target'] = "_blank"
-                a.string = text
-                td.insert(1,a)
+                pm = soup.new_tag("p")
+                pm.string = text
+                td.insert(1,pm)
                 tr.insert(1,td)
                 td = soup.new_tag("td")
                 parts = str(entry["concept_id"]).split(":")
