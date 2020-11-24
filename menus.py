@@ -38,6 +38,8 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       print("22: VIEWER - CP - Create pages")
       print("23: VIEWER - LOGICAL - Create index")
       print("24: VIEWER - LOGICAL - Create pages")
+      print("25: Create index from AIXM ADR mapping")
+      print("26: Create pages from AIXM ADR mapping")
 
       choice = input ("Please make a choice: ")
 
