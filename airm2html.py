@@ -324,7 +324,7 @@ def create_pages_logical_concepts():
           if record["stereotype"] == "CodeList":
             td_dc_type = soup.new_tag("td")
             enump = soup.new_tag("p")
-            p.string = "enum value"
+            enump.string = "enum value"
             td_dc_type.insert(1,enump)
             tr.insert(3,td_dc_type)
           elif result["type"] != "":
