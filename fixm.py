@@ -48,7 +48,7 @@ class Fixm:
         if record['Information Concept'] == fixm_class:
           definition = record['Definition']
           print(definition)
-      return results_dict
+      return definition
 
   def get_from_fixm_mapping(self, airm_urn):
     #print("Searching for " + airm_urn)
