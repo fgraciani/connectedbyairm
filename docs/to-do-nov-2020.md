@@ -55,7 +55,7 @@
 ### Terms [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/contextual-model-terms.html)
 
 * ~~create index page~~
-* fix page title
+* ~~fix page title~~
 * adjust ellipsis
 * margin top for link to supplements
 
@@ -63,14 +63,13 @@
 
 * ~~create index page~~
 * fix initial order
-* fix page title
+* ~~fix page title~~
 * adjust ellipsis
 * margin top for link to supplements
 
 * ~~create all pages~~
 * fix page size (white space at the bottom)
-* fix badge size
-* too much white space?
+* ~~fix badge size~~
 
 ### Abbreviations [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/contextual-model-abbreviations.html)
 
@@ -83,8 +82,7 @@
 * ~~create index page~~
 * ~~create all pages~~
 * fix page size (white space at the bottom)
-* fix badge size
-* too much white space?
+* ~~fix badge size~~
 
 ### Conceptual Model [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/conceptual-model.html)
 
@@ -102,12 +100,11 @@
 
 ### Logical Model (with Supplements) [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/logical-model-with-supplements.html)
 
-* ~~create index page~~
+* ~~create all pages~~
 * ~~replace current import module. we need an excel filem too many problems with the xmi~~
 
-* ~~create all pages~~[(Testing page)](https://fgraciani.github.io/connectedbyairm/advanced-viewer/1.0.0/logical-model.html)
-* Sources to be imported.
-* Parent class (inheritance) to be imported
+* ~~Sources to be imported.~~
+* ~~Parent class (inheritance) to be imported~~
 * insert semantic correspondence presence per class
 * ~~insert semantic correspondence presence per property~~
 * enum properties show missing data as type
