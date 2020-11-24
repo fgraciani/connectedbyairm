@@ -163,7 +163,6 @@ def create_pages_logical_concepts():
   airm = airm100.Airm()
   airm_logical = airm.logical_concepts.to_dict('records')
   scope = ""
-  
 
   for record in airm_logical:
     
@@ -182,22 +181,23 @@ def create_pages_logical_concepts():
       soup = BeautifulSoup(html, "lxml") 
 
       soup.title.string = str(record['class name'])+" - Logical Model | AIRM.aero"
+      
       soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(record['class name']))
 
       h2 = soup.new_tag("h2")
       h2.string = str(record['class name'])
-
       span_supplement = soup.new_tag("spam")
       if record["supplement"] == "\t\t\tEuropean Supplement":
         span_supplement['class'] = "badge badge-secondary"
         span_supplement.string = "European Supplement"
       h2.insert(1,span_supplement)
-
       soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+
       code = soup.new_tag("code")
       code.string = record['urn']
       code["class"] = "text-secondary"
       soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+
       soup.find(text="FIXM_CLASS_DEFINITION").replace_with(str(record['definition']))
       
       p = soup.new_tag("p")
@@ -262,7 +262,7 @@ def create_pages_logical_concepts():
         if scope == "global":
           url = filename
         elif scope == "European Supplement":
-          url = "european-supplement/"+filename
+          url = filename
         text = record["parent"]
         print(text)
         new_link = soup.new_tag("a")
@@ -324,7 +324,7 @@ def create_pages_logical_concepts():
             if scope == "global":
               url = filename
             elif scope == "European Supplement":
-              url = "european-supplement/"+filename
+              url = filename
             text = result["type"]
             new_link = soup.new_tag("a")
             new_link['href'] = url
@@ -351,14 +351,14 @@ def create_pages_logical_concepts():
           code["class"] = "text-secondary"
           property_div.insert(1,code)
           
-          p = soup.new_tag("p")
-          p.string = str(trace["definition"])
+          p2 = soup.new_tag("p")
+          p2.string = str(trace["definition"])
           br = soup.new_tag("br")
-          p.insert(2,br)
-          property_div.insert(2,p)
+          p2.insert(2,br)
+          property_div.insert(2,p2)
           
-          p = soup.new_tag("p")
-          p.string = "type: "
+          p3 = soup.new_tag("p")
+          p3.string = "type: "
           span = soup.new_tag("span")
           filename = str(trace['type'])+".html"
           filename = filename.replace("/", "-")
@@ -369,18 +369,18 @@ def create_pages_logical_concepts():
           if scope == "global":
             url = filename
           elif scope == "European Supplement":
-            url = "european-supplement/"+filename
+            url = filename
           text = trace["type"]
           new_link = soup.new_tag("a")
           new_link['href'] = url
           new_link.string = text
           span.insert(1,new_link)
-          p.insert(2,span)
-          property_div.insert(3,p)
+          p3.insert(2,span)
+          property_div.insert(3,p3)
 
           connections = airm.get_connections_by_urn(trace['urn'])
           if connections != None:
-            p = soup.new_tag("p")
+            p4 = soup.new_tag("p")
             button = soup.new_tag("button")
             button["class"] = "btn btn-light"
             button["type"] = "button"
@@ -389,8 +389,8 @@ def create_pages_logical_concepts():
             button["aria-expanded"] = "false"
             button["aria-controls"] = "collapseExample"
             button.string = "Show presence in semantic correspondences"
-            p.insert(1,button)
-            property_div.insert(4,p)
+            p4.insert(1,button)
+            property_div.insert(4,p4)
 
             sc_div = soup.new_tag("div")
             sc_div["class"] = "table-responsive collapse"
@@ -512,10 +512,6 @@ def create_pages_logical_concepts():
 
           soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
           
-          
-
-      
-
       soup.find(id="INFO_CONCEPT_OTHER").insert(insert_index,p)
 
       filename = str(record['class name'])+".html"
