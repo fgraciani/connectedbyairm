@@ -407,7 +407,7 @@ def create_pages_logical_concepts():
             button["data-target"] = "#"+str(trace["property name"])+"collapse"
             button["aria-expanded"] = "false"
             button["aria-controls"] = "collapseExample"
-            button.string = "Show presence in semantic correspondences"
+            button.string = "Show correspondences"
             p4.insert(1,button)
             property_div.insert(4,p4)
 
