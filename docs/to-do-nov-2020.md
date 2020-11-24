@@ -107,10 +107,10 @@
 * ~~Parent class (inheritance) to be imported~~
 * insert semantic correspondence presence per class
 * ~~insert semantic correspondence presence per property~~
-* enum properties show missing data as type
-* remove links to models from presence in mappings
+* enum properties show missing data as type TEST
+* remove links to models from presence in mappings TEST
 * ~~change mappings to semantic correspondences~~
-* change long text to Show correspondences
+* change long text to Show correspondences TEST
 * (nice to have) copy to clipboard
 * (nice to have) definition column in semantic correspondences
 
