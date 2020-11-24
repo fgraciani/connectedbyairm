@@ -321,7 +321,13 @@ def create_pages_logical_concepts():
             td_def.string = str(result["definition"])
             tr.insert(2,td_def)
           
-          if result["type"] != "":
+          if record["stereotype"] == "CodeList":
+            td_dc_type = soup.new_tag("td")
+            enump = soup.new_tag("p")
+            p.string = "enum value"
+            td_dc_type.insert(1,enump)
+            tr.insert(3,td_dc_type)
+          elif result["type"] != "":
             td_dc_type = soup.new_tag("td")
             filename = str(result['type'])+".html"
             filename = filename.replace("/", "-")
@@ -365,26 +371,31 @@ def create_pages_logical_concepts():
           p2.insert(2,br)
           property_div.insert(2,p2)
           
-          p3 = soup.new_tag("p")
-          p3.string = "type: "
-          span = soup.new_tag("span")
-          filename = str(trace['type'])+".html"
-          filename = filename.replace("/", "-")
-          filename = filename.replace("*", "-")
-          filename = filename.replace(" ", "")
-          filename = filename.replace("\t", "")
-          filename = filename.replace("\n", "")
-          if scope == "global":
-            url = filename
-          elif scope == "European Supplement":
-            url = filename
-          text = trace["type"]
-          new_link = soup.new_tag("a")
-          new_link['href'] = url
-          new_link.string = text
-          span.insert(1,new_link)
-          p3.insert(2,span)
-          property_div.insert(3,p3)
+          if record["stereotype"] == "CodeList":
+            p3 = soup.new_tag("p")
+            p3.string = "type: enum value"
+            property_div.insert(3,p3)
+          else:
+            p3 = soup.new_tag("p")
+            p3.string = "type: "
+            span = soup.new_tag("span")
+            filename = str(trace['type'])+".html"
+            filename = filename.replace("/", "-")
+            filename = filename.replace("*", "-")
+            filename = filename.replace(" ", "")
+            filename = filename.replace("\t", "")
+            filename = filename.replace("\n", "")
+            if scope == "global":
+              url = filename
+            elif scope == "European Supplement":
+              url = filename
+            text = trace["type"]
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link.string = text
+            span.insert(1,new_link)
+            p3.insert(2,span)
+            property_div.insert(3,p3)
 
           connections = airm.get_connections_by_urn(trace['urn'])
           if connections != None:
