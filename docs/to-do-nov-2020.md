@@ -10,9 +10,9 @@
 ## Semantic Correspondences Page [(Testing page)](https://fgraciani.github.io/connectedbyairm/developers/semantic-correspondences.html)
 
 * ~~Transform to table view~~
-* Add excel files to repo and update download links
-* Add license files to repo and update view links
-* Add introduction text
+* ~~Add excel files to repo and update download links~~
+* ~~Add license files to repo and update view links~~
+* ~~Add introduction text~~
 
 ## Mapping Exporers
 
@@ -44,7 +44,7 @@
 ### all explorers
 
 * ~~add back to top~~
-* Fix breadcrumbs bar links
+* ~~Fix breadcrumbs bar links~~
 
 ### Superset mapping Explorer
 
