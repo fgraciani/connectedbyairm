@@ -109,7 +109,7 @@ def create_url(urn):
       prop = ""
       if len(components) == 2:
         prop = components[1]
-      url="../../advanced-viewer/1.0.0/LM/"+entity+"#"+prop
+      url="../../viewer/1.0.0/logical-model/"+entity+"#"+prop
   return url
 
 def create_name(urn):
@@ -159,6 +159,9 @@ def create_html_pages():
       code.string = identifier
       code["class"] = "text-secondary"
       soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+
+      definition = fixm.get_fixm_class_definition(info_concept['Identifier']
+      soup.find(text="FIXM_CLASS_DEFINITION").replace_with(definition)
       
       traces = fixm.get_traces_by_info_concept(info_concept['Information Concept'])
       for trace in traces:

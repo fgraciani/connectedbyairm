@@ -178,7 +178,7 @@ def create_url(urn):
       prop = ""
       if len(components) == 2:
         prop = components[1]
-      url="../../advanced-viewer/1.0.0/LM/"+entity+"#"+prop
+      url="../../viewer/1.0.0/logical-model/"+entity+"#"+prop
   return url
 
 def create_name(urn):

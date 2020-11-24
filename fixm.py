@@ -2,11 +2,13 @@ import pandas as pd
 
 class Fixm:
   fixm_mapping_dataframe = pd.read_excel (r'data/xlsx/mapping FIXM 4.2.0.xlsx', sheet_name='semantic correspondences')
+  fixm_definitions_dataframe = pd.read_excel (r'data/xlsx/FIXM classes.xlsx', sheet_name='FIXM Core 4.2.0')
   #classes = pd.Dataframe() #TO DO load in init
   #properties = pd.Dataframe() #TO DO load in init
      
   def __init__(self):
     self.fixm_mapping_dataframe.fillna("missing data", inplace = True)
+    self.fixm_definitions_dataframe.fillna("missing data", inplace = True)
     #self.classes.fillna("missing data", inplace = True)
     #self.properties.fillna("missing data", inplace = True)
   
@@ -25,6 +27,24 @@ class Fixm:
     else:
       print(airm_urn)
       return True
+  
+  def get_fixm_class_definition(self, fixm_id):
+    fixm_df = self.fixm_definitions_dataframe.copy()
+    
+    filter = fixm_df["Identifier"]==fixm_id
+    fixm_df.sort_values("Identifier", inplace = True)
+    fixm_df.where(filter, inplace = True) 
+    df_results = fixm_df.dropna(how='all')   
+    definition = ""   
+    if df_results.empty:
+      return definition
+    else:
+      results_dict = df_results.to_dict('records')
+      definition = ""
+      for record in results_dict
+        if record['Identifier'] == fixm_id:
+          definition = record['Definiton']
+      return results_dict
 
   def get_from_fixm_mapping(self, airm_urn):
     #print("Searching for " + airm_urn)
