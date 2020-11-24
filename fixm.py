@@ -41,7 +41,7 @@ class Fixm:
     else:
       results_dict = df_results.to_dict('records')
       definition = ""
-      for record in results_dict
+      for record in results_dict:
         if record['Identifier'] == fixm_id:
           definition = record['Definiton']
       return results_dict
