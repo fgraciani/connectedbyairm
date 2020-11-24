@@ -193,7 +193,21 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
           import airm2html
           airm2html.create_pages_logical_concepts()
           print("Done")
-          main()   
+          main()    
+      elif choice == "25":
+          print('\n')
+          print("Creating html pages from xls file...")
+          import aixm_adr2html
+          aixm_adr2html.create_html()
+          print("Done")
+          main()  
+      elif choice == "26":
+          print('\n')
+          print("Creating html pages from xls file...")
+          import aixm_adr2html
+          aixm_adr2html.create_html_pages()
+          print("Done")
+          main() 
       else:
           print("I don't understand your choice.")
           main()
