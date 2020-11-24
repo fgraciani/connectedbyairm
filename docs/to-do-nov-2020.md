@@ -20,7 +20,7 @@
 
 * ~~Fix page title for index page~~
 * ~~Fix type links in index page. many link to non existing pages~~
-* inject FIXM class definition. We need to import this from a new source.
+* ~~inject FIXM class definition. We need to import this from a new source.~~
 * expand/fix ids (discuss with Hubert) also in types
 * ~~remove empty fields from pages (only insert if not empty)~~
 * ~~improve or remove urn tooltip for sem correspondence~~
