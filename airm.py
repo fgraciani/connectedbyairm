@@ -158,6 +158,18 @@ def create_connected_index():
       else:
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "AIXM 5.1.1", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
 
+  import aixm_adr
+  aixm_adr = aixm_adr.Aixm_adr()
+  aixm_adr_mapping_dict = aixm_adr.aixm_adr_mapping_dataframe.to_dict('records')
+
+  for entry in aixm_adr_mapping_dict:
+    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
+    for line in sem_correspondences:
+      urn = line
+      if str(entry["Data Concept"]) == "":
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "ADR 23.5.0 Extension (AIXM 5.1.1)", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+      else:
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "ADR 23.5.0 Extension (AIXM 5.1.1)", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
   
   df_connected_index_out = pd.DataFrame(df_connected_index_rows, columns = df_connected_index_cols) 
   with pd.ExcelWriter('data/xlsx/'+'connected_index.xlsx', engine='xlsxwriter') as writer:  
