@@ -505,6 +505,30 @@ def create_pages_logical_concepts():
                 a.string = text
                 td.insert(1,a)
                 tr.insert(2,td)
+              elif entry["model_name"] == "ADR 23.5.0 Extension (AIXM 5.1.1)":
+                td = soup.new_tag("td")
+                url = "../../../developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0"
+                text = "ADR 23.5.0 Extension (AIXM 5.1.1)"
+                pm = soup.new_tag("p")
+                pm.string = text
+                td.insert(1,pm)
+                tr.insert(1,td)
+                td = soup.new_tag("td")
+                if "." in str(entry["concept_id"]):
+                  parts = str(entry["concept_id"]).split(".")
+                  url = "../../../developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/"+parts[-2]+".html#"+str(entry["concept_name"])
+                else:
+                  url = "../../../developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/"+str(entry["concept_name"])+".html#"
+                text = str(entry["concept_name"])
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a["data-toggle"] = "tooltip"
+                a["data-placement"] = "left"
+                a["title"] = entry["concept_id"]
+                a.string = text
+                td.insert(1,a)
+                tr.insert(2,td)
               tbody.insert(1,tr)
 
             sc_table.insert(2,tbody)
