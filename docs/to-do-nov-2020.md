@@ -43,7 +43,7 @@
 * remove unknown values
 * remove types from index?
 * fix links to supplement
-* remove false properties
+* remove false properties "missing data"
 
 ### all explorers
 
