@@ -357,6 +357,7 @@ def create_pages_logical_concepts():
           h3["data-toggle"] = "tooltip"
           h3["data-placement"] = "right"
           h3["title"] = trace["urn"]
+          h3["style"] = "padding-top: 120px; margin-top: -120px;"
           property_div.insert(0,h3)
 
           code = soup.new_tag("code")
@@ -1361,6 +1362,7 @@ def create_html_pages():
           h3["data-toggle"] = "tooltip"
           h3["data-placement"] = "right"
           h3["title"] = trace["urn"]
+          h3["style"] = "padding-top: 120px; margin-top: -120px;"
           property_div.insert(0,h3)
 
           code = soup.new_tag("code")

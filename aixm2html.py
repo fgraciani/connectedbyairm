@@ -205,6 +205,7 @@ def create_html_pages():
         h3 = soup.new_tag("h3")
         h3.string = str(trace["Data Concept"])
         h3["id"] = str(trace["Data Concept"])
+        h3["style"] = "padding-top: 120px; margin-top: -120px;"
         property_div.insert(0,h3)
 
         code = soup.new_tag("code")
