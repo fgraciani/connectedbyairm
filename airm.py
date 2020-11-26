@@ -129,7 +129,7 @@ def create_connected_index():
     sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
     for line in sem_correspondences:
       urn = line
-      if str(entry["Data Concept"]) == "":
+      if str(entry["Data Concept"]) == "missing data":
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
       else:
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
@@ -140,7 +140,7 @@ def create_connected_index():
     sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
     for line in sem_correspondences:
       urn = line
-      if str(entry["Data Concept"]) == "":
+      if str(entry["Data Concept"]) == "missing data":
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
       else:
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
@@ -153,7 +153,7 @@ def create_connected_index():
     sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
     for line in sem_correspondences:
       urn = line
-      if str(entry["Data Concept"]) == "":
+      if str(entry["Data Concept"]) == "missing data":
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "AIXM 5.1.1", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
       else:
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "AIXM 5.1.1", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
@@ -166,7 +166,7 @@ def create_connected_index():
     sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
     for line in sem_correspondences:
       urn = line
-      if str(entry["Data Concept"]) == "":
+      if str(entry["Data Concept"]) == "missing data":
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "ADR 23.5.0 Extension (AIXM 5.1.1)", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
       else:
         df_connected_index_rows.append({"airm_urn": urn, "model_name": "ADR 23.5.0 Extension (AIXM 5.1.1)", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
