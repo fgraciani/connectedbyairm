@@ -60,8 +60,8 @@
 
 * ~~create index page~~
 * ~~fix page title~~
-* adjust ellipsis
-* margin top for link to supplements
+* ~~adjust ellipsis~~
+* ~~margin top for link to supplements~~
 
 ### Terms (with Supplements) [(Testing page)](https://fgraciani.github.io/connectedbyairm/viewer/1.0.0/contextual-model-terms-with-supplements.html)
 
