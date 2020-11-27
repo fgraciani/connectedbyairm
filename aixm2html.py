@@ -244,7 +244,7 @@ def create_html_pages():
         tbody = soup.new_tag("tbody")
         #for each insert row
         print('\t\tSemantic Corresponce:')
-        if str(trace['AIRM Concept Identifier']) == "":
+        if str(trace['AIRM Concept Identifier']) == "missing data":
             tr = soup.new_tag("tr")
             td = soup.new_tag("td")
             line = str(trace['Special Case'])

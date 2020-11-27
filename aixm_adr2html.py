@@ -252,9 +252,6 @@ def create_html_pages():
               line = str(trace['Special Case'])
               url = create_url(line)
               text = create_name(line)
-              print("******text and url:")
-              print(text)
-              print(url)
               a = soup.new_tag("a")
               a['href'] = url
               a['target'] = "_blank"
