@@ -175,164 +175,166 @@ def create_html_pages():
       
       traces = aixm.get_traces_by_info_concept(info_concept['Information Concept'])
       for trace in traces:
-        print('\t'+str(trace['Data Concept']))
-        
-        tr = soup.new_tag("tr")
+        if trace['Data Concept'] != 'missing data':
+          print('\t'+str(trace['Data Concept']))
+          
+          tr = soup.new_tag("tr")
 
-        if str(trace["Data Concept"]) != "":
-          td_dc_name = soup.new_tag("td")
-          url = "#"+str(trace["Data Concept"])
-          text = str(trace["Data Concept"])
-          new_link = soup.new_tag("a")
-          new_link['href'] = url
-          new_link.string = text
-          td_dc_name.insert(1,new_link)
-          tr.insert(1,td_dc_name)
-        
-        if trace["Concept Definition"] != "":
-          td_def = soup.new_tag("td")
-          definition = str(trace["Concept Definition"])
-          definition = definition.replace("Definition: ","")
-          td_def.string = definition
-          tr.insert(2,td_def)
-                
-        soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
+          if str(trace["Data Concept"]) != "":
+            td_dc_name = soup.new_tag("td")
+            url = "#"+str(trace["Data Concept"])
+            text = str(trace["Data Concept"])
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link.string = text
+            td_dc_name.insert(1,new_link)
+            tr.insert(1,td_dc_name)
+          
+          if trace["Concept Definition"] != "":
+            td_def = soup.new_tag("td")
+            definition = str(trace["Concept Definition"])
+            definition = definition.replace("Definition: ","")
+            td_def.string = definition
+            tr.insert(2,td_def)
+                  
+          soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
 
       for trace in traces:
-        property_div = soup.new_tag("div")
-        property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
+        if trace['Data Concept'] != 'missing data':
+          property_div = soup.new_tag("div")
+          property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
 
-        h3 = soup.new_tag("h3")
-        h3.string = str(trace["Data Concept"])
-        h3["id"] = str(trace["Data Concept"])
-        h3["style"] = "padding-top: 120px; margin-top: -120px;"
-        property_div.insert(0,h3)
+          h3 = soup.new_tag("h3")
+          h3.string = str(trace["Data Concept"])
+          h3["id"] = str(trace["Data Concept"])
+          h3["style"] = "padding-top: 120px; margin-top: -120px;"
+          property_div.insert(0,h3)
 
-        code = soup.new_tag("code")
-        identifier = trace['Concept Identifier']
-        code.string = identifier
-        code["class"] = "text-secondary"
-        property_div.insert(1,code)
-        
-        p = soup.new_tag("p")
-        definition = str(trace["Concept Definition"])
-        definition = definition.replace("Definition: ","")
-        p.string = definition
-        br = soup.new_tag("br")
-        p.insert(2,br)
-        property_div.insert(2,p)
-        
-        sc_h5 = soup.new_tag("h5")
-        sc_h5.string = "Semantic Correspondence"
-        sc_h5['style'] = "margin-top: 40px;"
-        property_div.insert(3,sc_h5)
-
-        sc_div = soup.new_tag("div")
-        sc_div["class"] = "table-responsive"
-        sc_table = soup.new_tag("table")
-        sc_table["class"] = "table"
-        sc_thead = soup.new_tag("thead")
-        tr = soup.new_tag("tr")
-        th = soup.new_tag("th")
-        th.string = "AIRM Concept"
-        tr.insert(1,th)
-        th = soup.new_tag("th")
-        th.string = "Definition"
-        tr.insert(2,th)
-        sc_thead.insert(1,tr)
-        sc_table.insert(1,sc_thead)
-        tbody = soup.new_tag("tbody")
-        #for each insert row
-        print('\t\tSemantic Corresponce:')
-        if str(trace['AIRM Concept Identifier']) == "":
-            tr = soup.new_tag("tr")
-            td = soup.new_tag("td")
-            line = str(trace['Special Case'])
-            url = create_url(line)
-            text = create_name(line)
-            a = soup.new_tag("a")
-            a['href'] = url
-            a['target'] = "_blank"
-            a.string = text
-            
-            a["data-toggle"] = "tooltip"
-            a["data-placement"] = "right"
-            a["title"] = line
-
-            td.insert(1,a)
-            tr.insert(1,td)
-            td = soup.new_tag("td")
-            airm_entry = airm.load_and_find_urn(line)
-            td.string = airm_entry["definition"]
-            tr.insert(2,td)
-            tbody.insert(1,tr)
-        else:
-          sem_correspondences = str(trace['AIRM Concept Identifier']).split('\n')
-          for line in sem_correspondences:
-            print('\t\t\t'+line)
-            tr = soup.new_tag("tr")
-            td = soup.new_tag("td")
-            
-            url = create_url(line)
-            text = create_name(line)
-            a = soup.new_tag("a")
-            a['href'] = url
-            a['target'] = "_blank"
-            a.string = text
-            
-            a["data-toggle"] = "tooltip"
-            a["data-placement"] = "right"
-            a["title"] = line
-
-            td.insert(1,a)
-            tr.insert(1,td)
-            td = soup.new_tag("td")
-            airm_entry = airm.load_and_find_urn(line)
-            td.string = airm_entry["definition"]
-            tr.insert(2,td)
-            tbody.insert(1,tr)
-
-        sc_table.insert(2,tbody)
-        sc_div.insert(1,sc_table)
-        property_div.insert(4,sc_div)
-        
-
-        
-        
-        if str(trace["Rationale"]) != "missing data":
-          h5 = soup.new_tag("h5")
-          h5.string = "Rationale"
-          property_div.insert(5,h5)
-
+          code = soup.new_tag("code")
+          identifier = trace['Concept Identifier']
+          code.string = identifier
+          code["class"] = "text-secondary"
+          property_div.insert(1,code)
+          
           p = soup.new_tag("p")
-          p.string = str(trace["Rationale"])
-          print('Rationale:'+str(trace["Rationale"]))
-          property_div.insert(6,p)
-        
-        if str(trace["Remarks"]) != "missing data":
-          notes_h5 = soup.new_tag("h5")
-          notes_h5.string = "Remarks"
-          property_div.insert(7,notes_h5)
+          definition = str(trace["Concept Definition"])
+          definition = definition.replace("Definition: ","")
+          p.string = definition
+          br = soup.new_tag("br")
+          p.insert(2,br)
+          property_div.insert(2,p)
+          
+          sc_h5 = soup.new_tag("h5")
+          sc_h5.string = "Semantic Correspondence"
+          sc_h5['style'] = "margin-top: 40px;"
+          property_div.insert(3,sc_h5)
 
-          p = soup.new_tag("p")
-          p.string = str(trace["Remarks"])
-          print('Remarks:'+str(trace["Remarks"]))
-          property_div.insert(8,p)
+          sc_div = soup.new_tag("div")
+          sc_div["class"] = "table-responsive"
+          sc_table = soup.new_tag("table")
+          sc_table["class"] = "table"
+          sc_thead = soup.new_tag("thead")
+          tr = soup.new_tag("tr")
+          th = soup.new_tag("th")
+          th.string = "AIRM Concept"
+          tr.insert(1,th)
+          th = soup.new_tag("th")
+          th.string = "Definition"
+          tr.insert(2,th)
+          sc_thead.insert(1,tr)
+          sc_table.insert(1,sc_thead)
+          tbody = soup.new_tag("tbody")
+          #for each insert row
+          print('\t\tSemantic Corresponce:')
+          if str(trace['AIRM Concept Identifier']) == "missing data":
+              tr = soup.new_tag("tr")
+              td = soup.new_tag("td")
+              line = str(trace['Special Case'])
+              url = create_url(line)
+              text = create_name(line)
+              a = soup.new_tag("a")
+              a['href'] = url
+              a['target'] = "_blank"
+              a.string = text
+              
+              a["data-toggle"] = "tooltip"
+              a["data-placement"] = "right"
+              a["title"] = line
 
-        top_link_p = soup.new_tag("p")
-        new_link = soup.new_tag("a")
-        new_link['href'] = "#top"
-        new_icon = soup.new_tag("i")
-        new_icon['class'] = "fa fa-arrow-circle-up"
-        new_icon["data-toggle"] = "tooltip"
-        new_icon["data-placement"] = "left"
-        new_icon["title"] = "Top of page"
-        new_link.insert(1,new_icon)
-        top_link_p.insert(1,new_link)
-        top_link_p['class'] =   "text-right"
-        property_div.insert(9,top_link_p)
+              td.insert(1,a)
+              tr.insert(1,td)
+              td = soup.new_tag("td")
+              airm_entry = airm.load_and_find_urn(line)
+              td.string = airm_entry["definition"]
+              tr.insert(2,td)
+              tbody.insert(1,tr)
+          else:
+            sem_correspondences = str(trace['AIRM Concept Identifier']).split('\n')
+            for line in sem_correspondences:
+              print('\t\t\t'+line)
+              tr = soup.new_tag("tr")
+              td = soup.new_tag("td")
+              
+              url = create_url(line)
+              text = create_name(line)
+              a = soup.new_tag("a")
+              a['href'] = url
+              a['target'] = "_blank"
+              a.string = text
+              
+              a["data-toggle"] = "tooltip"
+              a["data-placement"] = "right"
+              a["title"] = line
 
-        soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
+              td.insert(1,a)
+              tr.insert(1,td)
+              td = soup.new_tag("td")
+              airm_entry = airm.load_and_find_urn(line)
+              td.string = airm_entry["definition"]
+              tr.insert(2,td)
+              tbody.insert(1,tr)
+
+          sc_table.insert(2,tbody)
+          sc_div.insert(1,sc_table)
+          property_div.insert(4,sc_div)
+          
+
+          
+          
+          if str(trace["Rationale"]) != "missing data":
+            h5 = soup.new_tag("h5")
+            h5.string = "Rationale"
+            property_div.insert(5,h5)
+
+            p = soup.new_tag("p")
+            p.string = str(trace["Rationale"])
+            print('Rationale:'+str(trace["Rationale"]))
+            property_div.insert(6,p)
+          
+          if str(trace["Remarks"]) != "missing data":
+            notes_h5 = soup.new_tag("h5")
+            notes_h5.string = "Remarks"
+            property_div.insert(7,notes_h5)
+
+            p = soup.new_tag("p")
+            p.string = str(trace["Remarks"])
+            print('Remarks:'+str(trace["Remarks"]))
+            property_div.insert(8,p)
+
+          top_link_p = soup.new_tag("p")
+          new_link = soup.new_tag("a")
+          new_link['href'] = "#top"
+          new_icon = soup.new_tag("i")
+          new_icon['class'] = "fa fa-arrow-circle-up"
+          new_icon["data-toggle"] = "tooltip"
+          new_icon["data-placement"] = "left"
+          new_icon["title"] = "Top of page"
+          new_link.insert(1,new_icon)
+          top_link_p.insert(1,new_link)
+          top_link_p['class'] =   "text-right"
+          property_div.insert(9,top_link_p)
+
+          soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
 
       f= open("docs/developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/"+str(info_concept['Information Concept'])+".html","w+")
       f.write(soup.prettify())
