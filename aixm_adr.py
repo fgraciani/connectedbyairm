@@ -59,4 +59,5 @@ class Aixm_adr:
         
       else:
         results_dict = df_results.to_dict('records')
+        print(results_dict)
         return results_dict
