@@ -163,12 +163,12 @@
              <tbody id="DATA_CONCEPTS_LIST">
               <tr>
                <td>
-                <a href="#missing data">
-                 missing data
+                <a href="#coord">
+                 coord
                 </a>
                </td>
                <td>
-                A monumented survey control point.
+                Published reference coordinates (x/y/z or lat/long/elevation, depending on system of coordinates used) of survey point as provided by authorized survey institution
                </td>
               </tr>
               <tr>
@@ -231,16 +231,6 @@
                 Full name of horizontal datum of reference coordinates
                </td>
               </tr>
-              <tr>
-               <td>
-                <a href="#coord">
-                 coord
-                </a>
-               </td>
-               <td>
-                Published reference coordinates (x/y/z or lat/long/elevation, depending on system of coordinates used) of survey point as provided by authorized survey institution
-               </td>
-              </tr>
              </tbody>
             </table>
            </div>
@@ -248,14 +238,14 @@
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="missing data" style="padding-top: 120px; margin-top: -120px;">
-              missing data
+             <h3 id="coord" style="padding-top: 120px; margin-top: -120px;">
+              coord
              </h3>
              <code class="text-secondary">
-              SurveyControlPoint
+              SurveyControlPoint.coord
              </code>
              <p>
-              A monumented survey control point.
+              Published reference coordinates (x/y/z or lat/long/elevation, depending on system of coordinates used) of survey point as provided by authorized survey institution
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -276,27 +266,23 @@
                <tbody>
                 <tr>
                  <td>
-                  <a data-placement="right" data-toggle="tooltip" href="../../viewer/1.0.0/logical-model/SignificantPoint	#" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:AirspaceInfrastructurePoint:SignificantPoint	">
-                   SignificantPoint
+                  <a data-placement="right" data-toggle="tooltip" href="../../viewer/1.0.0/logical-model/LinguisticNote#note" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:LinguisticNote@note">
+                   LinguisticNote@note
                   </a>
                  </td>
                  <td>
-                  not found
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <a data-placement="right" data-toggle="tooltip" href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType#SURVEY_CONTROL_POINT" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeInfrastructurePointUsageType@SURVEY_CONTROL_POINT">
-                   CodeInfrastructurePointUsageType@SURVEY_CONTROL_POINT
-                  </a>
-                 </td>
-                 <td>
-                  A monumented survey control point.
+                  The text of the note, in a specific language.
                  </td>
                 </tr>
                </tbody>
               </table>
              </div>
+             <h5>
+              Remarks
+             </h5>
+             <p>
+              It would be better not to rely on annotations here
+             </p>
              <p class="text-right">
               <a href="#top">
                <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
@@ -579,59 +565,6 @@
                </tbody>
               </table>
              </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="coord" style="padding-top: 120px; margin-top: -120px;">
-              coord
-             </h3>
-             <code class="text-secondary">
-              SurveyControlPoint.coord
-             </code>
-             <p>
-              Published reference coordinates (x/y/z or lat/long/elevation, depending on system of coordinates used) of survey point as provided by authorized survey institution
-              <br/>
-             </p>
-             <h5 style="margin-top: 40px;">
-              Semantic Correspondence
-             </h5>
-             <div class="table-responsive">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  AIRM Concept
-                 </th>
-                 <th>
-                  Definition
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <a data-placement="right" data-toggle="tooltip" href="../../viewer/1.0.0/logical-model/LinguisticNote#note" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:LinguisticNote@note">
-                   LinguisticNote@note
-                  </a>
-                 </td>
-                 <td>
-                  The text of the note, in a specific language.
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <h5>
-              Remarks
-             </h5>
-             <p>
-              It would be better not to rely on annotations here
-             </p>
              <p class="text-right">
               <a href="#top">
                <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">

@@ -163,12 +163,12 @@
              <tbody id="DATA_CONCEPTS_LIST">
               <tr>
                <td>
-                <a href="#missing data">
-                 missing data
+                <a href="#idrwy">
+                 idrwy
                 </a>
                </td>
                <td>
-                Line captured along the center of a runway that precludes extension through &lt;b&gt;RunwayDisplacedAreas &lt;/b&gt;connecting either the two thresholds in the case of a bidirectional runway or the threshold and the opposite end of the runway in the case of a unidirectional runway.
+                Name of feature instance&lt;/para&gt;&lt;para&gt; Encoding: Runway/helipad-designator of both runway/helipad directions, separated by a period (beginning with smaller number). The numerical part shall always use two digits 01 through 36.&lt;/para&gt;&lt;para&gt; Example: 07L.25R
                </td>
               </tr>
               <tr>
@@ -181,16 +181,6 @@
                 Line object
                </td>
               </tr>
-              <tr>
-               <td>
-                <a href="#idrwy">
-                 idrwy
-                </a>
-               </td>
-               <td>
-                Name of feature instance&lt;/para&gt;&lt;para&gt; Encoding: Runway/helipad-designator of both runway/helipad directions, separated by a period (beginning with smaller number). The numerical part shall always use two digits 01 through 36.&lt;/para&gt;&lt;para&gt; Example: 07L.25R
-               </td>
-              </tr>
              </tbody>
             </table>
            </div>
@@ -198,14 +188,14 @@
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="missing data" style="padding-top: 120px; margin-top: -120px;">
-              missing data
+             <h3 id="idrwy" style="padding-top: 120px; margin-top: -120px;">
+              idrwy
              </h3>
              <code class="text-secondary">
-              PaintedCenterline
+              PaintedCenterline.idrwy
              </code>
              <p>
-              Line captured along the center of a runway that precludes extension through &lt;b&gt;RunwayDisplacedAreas &lt;/b&gt;connecting either the two thresholds in the case of a bidirectional runway or the threshold and the opposite end of the runway in the case of a unidirectional runway.
+              Name of feature instance&lt;/para&gt;&lt;para&gt; Encoding: Runway/helipad-designator of both runway/helipad directions, separated by a period (beginning with smaller number). The numerical part shall always use two digits 01 through 36.&lt;/para&gt;&lt;para&gt; Example: 07L.25R
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -226,22 +216,12 @@
                <tbody>
                 <tr>
                  <td>
-                  <a data-placement="right" data-toggle="tooltip" href="../../viewer/1.0.0/logical-model/RunwayMarking	#" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:RunwayMarking	">
-                   RunwayMarking
+                  <a data-placement="right" data-toggle="tooltip" href="../../viewer/1.0.0/logical-model/Runway#designator" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Runway@designator">
+                   Runway@designator
                   </a>
                  </td>
                  <td>
-                  not found
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <a data-placement="right" data-toggle="tooltip" href="../../viewer/1.0.0/logical-model/CodeRunwayMarkingType#RUNWAY_CENTRELINE_MARKING" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeRunwayMarkingType@RUNWAY_CENTRELINE_MARKING">
-                   CodeRunwayMarkingType@RUNWAY_CENTRELINE_MARKING
-                  </a>
-                 </td>
-                 <td>
-                  Runway centreline marking
+                  The designator of a runway, used to uniquely identify it at an aerodrome.
                  </td>
                 </tr>
                </tbody>
@@ -289,53 +269,6 @@
                  </td>
                  <td>
                   The geometry of the entity expressed as a curve which is a connected sequence of points.
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="idrwy" style="padding-top: 120px; margin-top: -120px;">
-              idrwy
-             </h3>
-             <code class="text-secondary">
-              PaintedCenterline.idrwy
-             </code>
-             <p>
-              Name of feature instance&lt;/para&gt;&lt;para&gt; Encoding: Runway/helipad-designator of both runway/helipad directions, separated by a period (beginning with smaller number). The numerical part shall always use two digits 01 through 36.&lt;/para&gt;&lt;para&gt; Example: 07L.25R
-              <br/>
-             </p>
-             <h5 style="margin-top: 40px;">
-              Semantic Correspondence
-             </h5>
-             <div class="table-responsive">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  AIRM Concept
-                 </th>
-                 <th>
-                  Definition
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <a data-placement="right" data-toggle="tooltip" href="../../viewer/1.0.0/logical-model/Runway#designator" target="_blank" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Runway@designator">
-                   Runway@designator
-                  </a>
-                 </td>
-                 <td>
-                  The designator of a runway, used to uniquely identify it at an aerodrome.
                  </td>
                 </tr>
                </tbody>
