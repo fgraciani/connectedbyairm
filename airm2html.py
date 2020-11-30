@@ -522,7 +522,7 @@ def create_pages_logical_concepts():
                 tr.insert(1,td)
                 td = soup.new_tag("td")
                 parts = str(entry["concept_id"]).split(":")
-                if len(parts) == 3:
+                if len(parts) == 4:
                   url = url_path+"aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/"+parts[-2]+".html#"+str(entry["concept_name"])
                 else:
                   url = url_path+"aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/"+str(entry["concept_name"])+".html"
