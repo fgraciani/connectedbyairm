@@ -435,7 +435,8 @@ def create_pages_logical_concepts():
               #print('\t\t\t'+line)
               tr = soup.new_tag("tr")
               url_path = ""
-              if supplements:
+
+              if scope == "European Supplement":
                 url_path = "../../../../developers/"
               else:
                 url_path = "../../../developers/"
