@@ -112,6 +112,10 @@ def create_url(urn):
     elif urn.startswith("noSemanticCorrespondence"):
       url=issue_url
     elif urn.startswith("urn"):
+      if "ses:eurocontrol" in urn:
+        scope = "european-supplement"
+      else:
+        scope = "global"
       components = urn.split(":")
       last_component = components[-1]
       components = last_component.split("@")
@@ -119,7 +123,10 @@ def create_url(urn):
       prop = ""
       if len(components) == 2:
         prop = components[1]
-      url="../../viewer/1.0.0/logical-model/"+entity+"#"+prop
+      if scope == "global":
+        url="../../viewer/1.0.0/logical-model/"+entity+"#"+prop
+      elif scope == "european-supplement":
+        url="../../viewer/1.0.0/logical-model/european-supplement/"+entity+"#"+prop
   return url
 
 def create_name(urn):
