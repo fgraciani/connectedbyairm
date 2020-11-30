@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AIRM Components - Documentation | AIRM.aero</title>
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/airm-custom.css">
+    <link rel="stylesheet" href="../assets/css/beta.css">
+    <link rel="stylesheet" href="../assets/css/Brands.css">
+    <link rel="stylesheet" href="../assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/scroll.css">
+    <link rel="stylesheet" href="../assets/css/smoothproducts.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+</script>
+</head>
+
+<body>
+    <main class="page blog-post">
+        <section class="clean-block clean-post dark" style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="block-content" style="padding-top: 0px;">
+                    <div class="text-justify post-body">
+                        <h6 class="text-center text-info"><a class="text-center" href="../documentation.html"><br>AIRM Docs<br></a></h6>
+                        <h1 class="text-center">Details about the AIRM Components</h1>
+                        <div>
+                            <h4>The AIRM Product Structure</h4>
+                            <p style="margin-bottom: 10px;">The AIRM includes:<br></p>
+                            <ul>
+                                <li><strong>Main content.&nbsp;</strong>This content was extracted from ICAO Annexes and Documents as well as specifications and standards that were accepted at the global level.</li>
+                                <li><strong>Supplements.&nbsp;</strong>The supplements elaborate the main content for a particular community.&nbsp;They follow the same structure and rules as the main content. Supplements are part of the reference as their
+                                    content is of interest to the global ATM Community.</li>
+                            </ul>
+                            <p style="margin-bottom: 10px;">The main content is in three components,&nbsp;moving from a “top-down” ATM-wide model to a model focussed solely on the information that is exchanged by users and providers of information:<br></p>
+                            <ul>
+                                <li class="text-justify"><strong>AIRM Contextual Model</strong>. The AIRM Contextual Model contains the terminology, abbreviations, standards and classification scheme used in the developement of the AIRM. It is used to set the context in which
+                                    the AIRM is developed.<br></li>
+                                <li class="text-justify"><strong>AIRM Conceptual Model</strong>. The AIRM Conceptual Model provides a reference vocabulary for operational experts. The vocabulary consists of terms, definitions and relationships between them that are of relevance
+                                    to ATM.</li>
+                                <li class="text-justify"><strong>AIRM Logical Model</strong>. The AIRM Logical Model provides a reference set of the data concepts for service architects and system implementers. It contains the information elements necessary to model the shared
+                                    information of ATM.&nbsp;It allows analysis of a system’s data definition aspect, without consideration of implementation specific or product specific issues.<br><br></li>
+                            </ul>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div>
+                            <h4>Unified Modelling Language<br></h4>
+                            <p>The AIRM models are represented using the Unified Modelling Language’s (UML) class diagrams. UML is a standardised modelling notation and has been used to add formalism and consistency to the AIRM models.&nbsp;<br></p>
+                        </div>
+                        <div>
+                            <h4 id="ContextualModel">AIRM Contextual Model<br></h4>
+                            <p>The AIRM Contextual Model is organised in a series of packages containing business terms imported from international organisations: <br></p>
+                            <ul>
+                                <li>ICAO. This includes the terms and definitions from ICAO Annexes and Docs.<br></li>
+                                <li>ISO. This includes the types from the ISO standards including basic types such as Integer, Boolean and CharacterString.<br></li>
+                                <li>WMO. This includes the terms and definitions from WMO documents.<br></li>
+                                <li>Abbreviations. This includes the abbreviations used in the AIRM.<br></li>
+                            </ul>
+                            <p>In addition the Contextual Model contains packages created by the AIRM developers from multiple sources but which are essential in the development of the AIRM:<br></p>
+                            <ul>
+                                <li>AIRM Standards Catalog. This lists the standards which are acceptable sources for modelling the AIRM.<br></li>
+                                <li>AIRM Standards Baseline. This imports key external standards into the AIRM for use by AIRM developers.<br></li>
+                            </ul>
+                            <ul></ul>
+                        </div>
+                        <div>
+                            <h4 id="ConceptualModel">AIRM Conceptual Model<br></h4>
+                            <p>The AIRM Conceptual Model is organised in a series of subjects.<br></p>
+                            <p>The Flight subjects describes concepts about a specific flight and its trajectory. However, as a flight is enabled by ATM operations and uses infrastructure, it is linked to the relevant entities from related subjects. For
+                                example, the information relevant to the Flight subject would typically include the information concept of aerodrome whose Annex 15 definition is included in the BaseInfrastructure subject, and potentially also includes
+                                a meteorological report that is defined by Annex 3 and defined as part of the Meteorology subject.<br></p>
+                            <p>The AirTrafficOperations, Surveillance, and Meteorology subjects describe concepts about the operations that are necessary for safe, efficient and environmentally friendly flights.<br></p>
+                            <p>The BaseInfrastructure (where, for example, the “aerodrome” concept is found), AirspaceInfrastructure and Aircraft subjects describe concepts about the infrastructure of ATM. The infrastructure exists even if no operations
+                                are actually conducted.<br></p>
+                            <p>The Stakeholders, and the Common subjects are of a transversal nature. They cover information on stakeholders and the activities they perform.<br></p>
+                            <p>Each subject contains a number of entities and is represented by a series of diagrams. The focus is on the capture of the operational language in terms of relationships between the entities. To support a more analytic/taxonomy
+                                view of the concepts of the operational language, diagrams providing definition hierarchies in terms of UML specialisations are also provided.<br></p>
+                        </div>
+                        <h5>Is this the right model for me?<br></h5>
+                        <p>The AIRM Conceptual Model provides a reference for operational experts. It contains terms, definitions and relationships relevant to the ATM operational discourse and concerns. It can be used, for example, in disambiguating terms
+                            used in operational documents and developing information exchange requirements.<br></p>
+                        <div>
+                            <h4 id="LogicalModel">AIRM Logical Model<br></h4>
+                            <p>The AIRM Logical Model provides a (semantic) reference model of the data concepts for service architects and system implementers. It contains the information elements necessary to model the shared information of ATM. It can
+                                be used in order to construct “derived” logical data models and, indeed, exchange models or physical data models. As such, it can be used to create a model that can be used to build services and operations. <br></p>
+                            <p>It is important to understand that the AIRM Logical Model takes a cross-subdomain view. Consequently, in many cases it will contain a much more detailed representation of the exchanged information than is required in a sub-domain
+                                specific information exchange context. The use in creating a derived model will usually require restricting the AIRM structures.<br></p>
+                            <h5>Organisation<br></h5>
+                            <p>It is best to think of the AIRM Logical Model in groupings:<br></p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Grouping</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Abstract<br></td>
+                                            <td>This package contains generic abstract types that are used to add extra meaning to the entities within the Logical Model.<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Subjects<br></td>
+                                            <td>A subject is a field of specific knowledge. The subjects in the Logical Model correspond to those captured in the AIRM Conceptual Model.<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>DataTypes<br></td>
+                                            <td>A data type is a classification identifying one of various types of data. Common data types may include: integers, booleans, alphanumeric strings.<br></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>The following figure illustrates the relationship between these groupings. Subjects are dependent on DataTypes and a realisation of the Abstract.<br></p>
+                            <figure class="figure"><img class="img-fluid figure-img" src="../assets/img/logical-model-packages.png">
+                                <figcaption class="figure-caption text-center">Logical Model Packages</figcaption>
+                            </figure>
+                            <h5>Is this the right model for me?<br></h5>
+                            <p>The AIRM Logical Model contains a lot of detail. It is not a good starting point if you only need to find a definition for a specific terms. It is used to build other models. As such it is of most interest to system designers
+                                and service architects.<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block clean-services dark">
+            <div class="container">
+                <div class="block-heading" style="padding-top: 0px;">
+                    <h2 class="text-info" style="padding-bottom: 20px;">Related Documentation</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card"><img class="card-img-top w-100 d-block" src="../assets/img/martin-adams-1062002-unsplashtest.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">What is the AIRM?</h4>
+                                    <p class="card-text">A page to answer the big question.</p>
+                                </div>
+                                <div><a class="btn btn-outline-primary btn-sm" role="button" href="what-is-the-airm.html">Learn More</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card"><img class="card-img-top w-100 d-block" src="../assets/img/filipe-dos-santos-mendes-183138-unsplash-min.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Using the AIRM<br></h4>
+                                    <p class="card-text">Find out the best way to use the AIRM</p>
+                                </div>
+                                <div><a class="btn btn-outline-primary btn-sm" role="button" href="using-the-airm.html">Learn More</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card"><img class="card-img-top w-100 d-block" src="../assets/img/drone.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Request a Change in the AIRM<br></h4>
+                                    <p class="card-text">There are many ways to submit a change request.&nbsp;<br></p>
+                                </div>
+                                <div><a class="btn btn-outline-primary btn-sm" role="button" href="airm-change-request.html">Learn More</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card"><img class="card-img-top w-100 d-block" src="../assets/img/clement-h-544786-unsplash-min.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">AIRM and Information Exchange Models</h4>
+                                    <p class="card-text">All about the AIRM and the -XMs</p>
+                                </div>
+                                <div><a class="btn btn-outline-primary btn-sm" role="button" href="airm-information-exchange-models.html">Learn More</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card"><img class="card-img-top w-100 d-block" src="../assets/img/mihai-surdu-170005-unsplash.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">AIRM Change Management</h4>
+                                    <p class="card-text">What is the CCB? When is the next AIRM version being released?</p>
+                                </div>
+                                <div><a class="btn btn-outline-primary btn-sm" role="button" href="airm-change-management.html">Learn More</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card"><img class="card-img-top w-100 d-block" src="../assets/img/kyle-glenn-598701-unsplash-min.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Supplements</h4>
+                                    <p class="card-text">More about the AIRM Supplements.</p>
+                                </div>
+                                <div><a class="btn btn-outline-primary btn-sm" role="button" href="documentation/supplements.html">Learn More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-3">
+                    <h5>Get Started</h5>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#start">Start using the AIRM</a></li>
+                        <li><a href="../developers/downloads.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li><a href="../community.html">AIRM Community</a></li>
+                        <li><a href="../documentation/airm-change-management.html">AIRM CCB</a></li>
+                        <li><a href="../contact-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../documentation.html">AIRM Docs</a></li>
+                        <li><a href="https://www.cookiesandyou.com/">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h5>AIRM Viewer</h5>
+                    <ul>
+                        <li><a href="../viewer.html">Home</a></li>
+                        <li><a href="viewer/1.0.0/contextual-model-terms.html">Terms</a></li>
+                        <li><a href="viewer/1.0.0/contextual-model-abbreviations.html">Abbreviations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p style="font-size: 11px;"><a href="https://www.eurocontrol.int/"><br>©&nbsp;2019 EUROCONTROL<br><br></a></p>
+        </div>
+    </footer>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="../index.html"><img style="height: 33px;" src="../assets/img/Picture2.png" alt="AIRM.aero"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../search.html">AIRM Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../documentation.html" data-toggle="tooltip" data-placement="bottom" title="Documentation">DOCS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">&nbsp;</a></li>
+                    <li class="nav-item" style="filter: blur(0px);"><a class="nav-link" style="color: rgb(131,155,201);" href="../developers.html">Developers</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/smart-forms.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/tooltips.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="../assets/js/smoothproducts.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/clipboard.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="../assets/js/ie.js"></script>
+    <script src="../assets/js/smooth.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/navbarfix.js"></script>
+</body>
+
+</html>
