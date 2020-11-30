@@ -434,9 +434,15 @@ def create_pages_logical_concepts():
             for entry in connections:
               #print('\t\t\t'+line)
               tr = soup.new_tag("tr")
+              url_path = ""
+              if supplements:
+                url_path = "../../../../developers/"
+              else:
+                url_path = "../../../developers/"
+
               if entry["model_name"] == "FIXM 4.2.0" and entry["concept_name"] != 'missing data':
                 td = soup.new_tag("td")
-                url = "../../../developers/fixm-4.2.0-to-airm-1.0.0.html"
+                url = url_path+"fixm-4.2.0-to-airm-1.0.0.html"
                 text = "FIXM 4.2.0"
                 pm = soup.new_tag("p")
                 pm.string = text
@@ -446,7 +452,7 @@ def create_pages_logical_concepts():
                 parts = str(entry["concept_id"]).split(":")
                 print("PARTS:")
                 print(parts)
-                url = "../../../developers/fixm-4.2.0-to-airm-1.0.0/"+parts[1]+".html#"+entry["concept_name"]
+                url = url_path+"fixm-4.2.0-to-airm-1.0.0/"+parts[1]+".html#"+entry["concept_name"]
                 text = entry["concept_name"]
                 a = soup.new_tag("a")
                 a['href'] = url
@@ -459,7 +465,7 @@ def create_pages_logical_concepts():
                 tr.insert(2,td)
               elif entry["model_name"] == "AMXM 2.0.0":
                 td = soup.new_tag("td")
-                url = "../../../developers/amxm-2.0.0-to-airm-1.0.0.html"
+                url = url_path+"amxm-2.0.0-to-airm-1.0.0.html"
                 text = "AMXM 2.0.0"
                 pm = soup.new_tag("p")
                 pm.string = text
@@ -468,9 +474,9 @@ def create_pages_logical_concepts():
                 td = soup.new_tag("td")
                 if "." in str(entry["concept_id"]):
                   parts = str(entry["concept_id"]).split(".")
-                  url = "../../../developers/amxm-2.0.0-to-airm-1.0.0/"+parts[-2]+".html#"+entry["concept_name"]
+                  url = url_path+"amxm-2.0.0-to-airm-1.0.0/"+parts[-2]+".html#"+entry["concept_name"]
                 else:
-                  url = "../../../developers/amxm-2.0.0-to-airm-1.0.0/"+entry["concept_name"]+".html#"
+                  url = url_path+"amxm-2.0.0-to-airm-1.0.0/"+entry["concept_name"]+".html#"
                 text = entry["concept_name"]
                 a = soup.new_tag("a")
                 a['href'] = url
@@ -483,7 +489,7 @@ def create_pages_logical_concepts():
                 tr.insert(2,td)
               elif entry["model_name"] == "AIXM 5.1.1":
                 td = soup.new_tag("td")
-                url = "../../../developers/aixm-5.1.1-to-airm-1.0.0.html"
+                url = url_path+"aixm-5.1.1-to-airm-1.0.0.html"
                 text = "AIXM 5.1.1"
                 pm = soup.new_tag("p")
                 pm.string = text
@@ -492,9 +498,9 @@ def create_pages_logical_concepts():
                 td = soup.new_tag("td")
                 if "." in str(entry["concept_id"]):
                   parts = str(entry["concept_id"]).split(".")
-                  url = "../../../developers/aixm-5.1.1-to-airm-1.0.0/"+parts[-2]+".html#"+str(entry["concept_name"])
+                  url = url_path+"aixm-5.1.1-to-airm-1.0.0/"+parts[-2]+".html#"+str(entry["concept_name"])
                 else:
-                  url = "../../../developers/aixm-5.1.1-to-airm-1.0.0/"+str(entry["concept_name"])+".html#"
+                  url = url_path+"aixm-5.1.1-to-airm-1.0.0/"+str(entry["concept_name"])+".html#"
                 text = str(entry["concept_name"])
                 a = soup.new_tag("a")
                 a['href'] = url
@@ -507,18 +513,18 @@ def create_pages_logical_concepts():
                 tr.insert(2,td)
               elif entry["model_name"] == "ADR 23.5.0 Extension (AIXM 5.1.1)":
                 td = soup.new_tag("td")
-                url = "../../../developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0"
+                url = url_path+"aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0"
                 text = "ADR 23.5.0 Extension (AIXM 5.1.1)"
                 pm = soup.new_tag("p")
                 pm.string = text
                 td.insert(1,pm)
                 tr.insert(1,td)
                 td = soup.new_tag("td")
-                if "." in str(entry["concept_id"]):
-                  parts = str(entry["concept_id"]).split(".")
-                  url = "../../../developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/"+parts[-2]+".html#"+str(entry["concept_name"])
+                parts = str(entry["concept_id"]).split(":")
+                if len(parts) == 3:
+                  url = url_path+"aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/"+parts[-2]+".html#"+str(entry["concept_name"])
                 else:
-                  url = "../../../developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/"+str(entry["concept_name"])+".html#"
+                  url = url_path+"aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/"+str(entry["concept_name"])+".html"
                 text = str(entry["concept_name"])
                 a = soup.new_tag("a")
                 a['href'] = url
