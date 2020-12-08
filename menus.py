@@ -95,8 +95,8 @@ def main(): #See https://github.com/Mckinsey666/bullet for improvements
       elif choice == "9":
           print('\n')
           print("Creating conncected index...")
-          import airm
-          airm.create_connected_index()
+          import airm100
+          airm100.create_connected_index()
           main()  
       
           
